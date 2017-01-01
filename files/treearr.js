@@ -66,7 +66,7 @@
   ["材质页", "source/_build/1_overview/3_additional_information/texture_pages.html", "11"],
   ["使用缓冲区", "source/_build/1_overview/3_additional_information/using_buffers.html", "11"]
  ],
- ["编辑器编辑器", "1",
+ ["编辑器", "source/_build/2_interface/1_editors/index.html", "1",
   ["扩展", "source/_build/2_interface/1_editors/extensions.html", "11"],
   ["字体", "source/_build/2_interface/1_editors/fonts.html", "11"],
   ["图片", "source/_build/2_interface/1_editors/images.html", "11"],
@@ -86,7 +86,7 @@
    ["绘制事件", "source/_build/2_interface/1_editors/events/draw_events.html", "11"]
   ]
  ],
- ["工具编辑器", "1",
+ ["工具", "source/_build/2_interface/2_tools/index.html", "1",
   ["调试", "source/_build/2_interface/2_tools/debugging.html", "11"],
   ["设备管理器", "source/_build/2_interface/2_tools/device_manager.html", "11"],
   ["市场", "source/_build/2_interface/2_tools/marketplace.html", "11"],
@@ -113,7 +113,7 @@
  ["脚本", "source/_build/3_scripting/index.html", "1",
   ["DnD概述", "source/_build/3_scripting/1_drag_and_drop_overview/index.html", "1",
    ["动作脚本", "source/_build/3_scripting/1_drag_and_drop_overview/action_scripts.html", "11"],
-   ["DnD??应用动作", "source/_build/3_scripting/1_drag_and_drop_overview/applying_actions.html", "11"],
+   ["DnD  应用动作", "source/_build/3_scripting/1_drag_and_drop_overview/applying_actions.html", "11"],
    ["DnD转换", "source/_build/3_scripting/1_drag_and_drop_overview/changing_dnd.html", "11"],
    ["创建动作块代码", "source/_build/3_scripting/1_drag_and_drop_overview/creating_action_block_code.html", "11"]
   ],
