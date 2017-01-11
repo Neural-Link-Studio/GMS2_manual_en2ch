@@ -4,7 +4,7 @@
 <head>
 <meta name="keywords" content="online documentation, web online help, web help, chm2web" />
 <meta http-equiv="Content-Style-Type" content="text/css" />
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
 
 <meta name="generator" content="chm2web Pro 2.85 (unicode)" />
 <title>Draw Events</title>
@@ -24,8 +24,8 @@ chmtop.c2wtopf.pageid = "_build/2_interface/1_editors/events/draw_events.html";
 <body><script type="text/JavaScript"> 
 if (window.name != "content") 
   document.write(" <table width=\"100%\" bgcolor=\"#e1e1e1\"cellspacing=\"2\" cellpadding=\"0\" style=\"border-collapse: collapse; font-family: sans-serif; font-size: 14px; color: #000000; text-decoration: none;  \"> <tr> <td align=\"center\" style=\"border-bottom: 2px solid gray\" > <br>&nbsp;Click <a href=\"../../../../../index.html?page=source%2F_build%2F2_interface%2F1_editors%2Fevents%2Fdraw_events.html\">here</a> to show toolbars of the Web Online Help System: <a href=\"../../../../../index.html?page=source%2F_build%2F2_interface%2F1_editors%2Fevents%2Fdraw_events.html\">show toolbars</a><br>&nbsp;</td></tr></table><br> "); 
-</script>
-<!-- !chm2web! -->
+</script><!-- !chm2web! -->
+
 
 <h2>Draw Events</h2>
 
@@ -122,7 +122,7 @@ given.<br></li>
 </ul></div>
 <br>
 <a name="draw_GUI" id="draw_GUI"></a> <label class="collapse" for=
-"two">Draw GUI</label> <input id="two" type="checkbox">
+"two">绘制GUI</label> <input id="two" type="checkbox">
 <div class="index_list">The <b>Draw Gui</b> sub-event type falls
 under the <b>Draw Event</b> category and is specifically designed
 for drawing GUI (Graphical User Interface) elements that are not
@@ -222,6 +222,7 @@ without it being cleared. However you can use <a href=
 "../../../3_scripting/4_gml_reference/drawing/colour/draw_clear_alpha.html">
 <tt>draw_clear_alpha</tt></a> to do this yourself.</div>
 <br>
+
 The <b>Post Draw</b> sub-event is triggered after the standard draw
 events, but before the Draw GUI events. Like the Pre Draw event, it
 is based on the size of the screen buffer size, and is placed
@@ -231,7 +232,7 @@ without interfering with any HUD/GUI elements that you may have in
 your game.</div>
 <br>
 <a name="draw_resize" id="draw_resize"></a> <label class="collapse"
-for="four">Window Resize</label> <input id="four" type="checkbox">
+for="four">窗口大小调整</label> <input id="four" type="checkbox">
 <div class="index_list">This event type falls under the <b>Draw
 Event</b> category, and although it doesn't actually draw anything,
 it does react to changes in the draw canvas - specifically, it is

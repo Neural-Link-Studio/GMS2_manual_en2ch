@@ -4,7 +4,7 @@
 <head>
 <meta name="keywords" content="online documentation, web online help, web help, chm2web" />
 <meta http-equiv="Content-Style-Type" content="text/css" />
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
 
 <meta name="generator" content="chm2web Pro 2.85 (unicode)" />
 <title>Expressions</title>
@@ -24,8 +24,8 @@ chmtop.c2wtopf.pageid = "_build/3_scripting/3_gml_overview/12_expressions.html";
 <body><script type="text/JavaScript"> 
 if (window.name != "content") 
   document.write(" <table width=\"100%\" bgcolor=\"#e1e1e1\"cellspacing=\"2\" cellpadding=\"0\" style=\"border-collapse: collapse; font-family: sans-serif; font-size: 14px; color: #000000; text-decoration: none;  \"> <tr> <td align=\"center\" style=\"border-bottom: 2px solid gray\" > <br>&nbsp;Click <a href=\"../../../../index.html?page=source%2F_build%2F3_scripting%2F3_gml_overview%2F12_expressions.html\">here</a> to show toolbars of the Web Online Help System: <a href=\"../../../../index.html?page=source%2F_build%2F3_scripting%2F3_gml_overview%2F12_expressions.html\">show toolbars</a><br>&nbsp;</td></tr></table><br> "); 
-</script>
-<!-- !chm2web! -->
+</script><!-- !chm2web! -->
+
 
 <h2>Expressions</h2>
 
@@ -89,6 +89,7 @@ can perform bitwise operations with these, where | = bitwise or,
 <p class="code">x = (x &amp; $ffffffe0) + 32;<br>
 if (y ^ $1f) &gt; 0 {do something...};<br></p>
 <br>
+
 You can find additional information on how to use the bitwise
 operators and what they do from the section: <a href=
 "../../1_overview/3_additional_information/bitwise_operators.html">Bitwise
@@ -118,6 +119,7 @@ incremented value.</li>
 <li><b>a++</b> will increment the variable but return the value
 before it was incremented.</li>
 </ul>
+
 Therefore, if you have something like this:<br>
 <br>
 
@@ -125,6 +127,7 @@ Therefore, if you have something like this:<br>
 show_debug_message(string(a++));<br>
 show_debug_message(string(++a));<br></p>
 <br>
+
 The debug output would be 1 and 3. Here are some examples of
 use:<br>
 <br>
@@ -141,6 +144,7 @@ left, meaning that this:<br>
 <p class="code"><i>val = max(num, ++num, num++);<br></i>
 </p>
 <br>
+
 will give different results depending on the platform.</div>
 <br>
 <label class="collapse" for="seven">Division and Modulo (div, %,
@@ -157,6 +161,8 @@ time_str = string(time div 60);<br></p></div>
 <label class="collapse" for="eight">Unary (!, -, ~)</label>
 <input id="eight" type="checkbox">
 <div class="index_list">Also, the following unary operators exist:
+
+
 
 <blockquote>
 <ul>
