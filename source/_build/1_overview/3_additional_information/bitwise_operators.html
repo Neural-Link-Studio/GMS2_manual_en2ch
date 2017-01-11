@@ -4,7 +4,7 @@
 <head>
 <meta name="keywords" content="online documentation, web online help, web help, chm2web" />
 <meta http-equiv="Content-Style-Type" content="text/css" />
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
 
 <meta name="generator" content="chm2web Pro 2.85 (unicode)" />
 <title>Bitwise Operators And Binary</title>
@@ -24,8 +24,8 @@ chmtop.c2wtopf.pageid = "_build/1_overview/3_additional_information/bitwise_oper
 <body><script type="text/JavaScript"> 
 if (window.name != "content") 
   document.write(" <table width=\"100%\" bgcolor=\"#e1e1e1\"cellspacing=\"2\" cellpadding=\"0\" style=\"border-collapse: collapse; font-family: sans-serif; font-size: 14px; color: #000000; text-decoration: none;  \"> <tr> <td align=\"center\" style=\"border-bottom: 2px solid gray\" > <br>&nbsp;Click <a href=\"../../../../index.html?page=source%2F_build%2F1_overview%2F3_additional_information%2Fbitwise_operators.html\">here</a> to show toolbars of the Web Online Help System: <a href=\"../../../../index.html?page=source%2F_build%2F1_overview%2F3_additional_information%2Fbitwise_operators.html\">show toolbars</a><br>&nbsp;</td></tr></table><br> "); 
-</script>
-<!-- !chm2web! -->
+</script><!-- !chm2web! -->
+
 
 <h2>Bitwise Operators And Binary</h2>
 
@@ -71,6 +71,7 @@ table:<br>
 010 = 2<br>
 100 = 4<br></p>
 <br>
+
 Each 1 or 0 represents a single <i>bit</i> of data, and as you can
 see this means that in binary, 10 equals 2! Each bit is <i>2 times
 the previous value</i> with the first bit being equal to 1. So bit
@@ -87,6 +88,7 @@ the previous value</i> with the first bit being equal to 1. So bit
 01000000 = 64<br>
 10000000 = 128<br></p>
 <br>
+
 That's fine if you want numbers that are a power of 2, but how do
 we create more complex numbers? Well a single binary number can
 only store a 0 or 1, and that's it, so for more complex numbers we
@@ -98,6 +100,7 @@ would add 4 and 2 together like so.<br>
 00000100 = 4<br>
 00000110 = 6<br></p>
 <br>
+
 This is true of <i>all</i> binary numbers, and how the computer
 makes up any number internally. Let's take a slightly more
 complicated number as a further example: 23. The number 23 is
@@ -126,6 +129,7 @@ How would we do this? Well pretty easily it turns out:<br>
 
 <p class="code">flags = flags | 1;<br></p>
 <br>
+
 The "|" operator is a <b>bitwise OR</b>, and this means the above
 instruction ORs 1 into flags. If you remember from earlier, using a
 1 will set the first bit. If we wanted to set the second bit, we
@@ -134,6 +138,7 @@ would do this:<br>
 
 <p class="code">flags = flags | 2;<br></p>
 <br>
+
 We OR in 2, because the bit pattern 00000010 is equal to 2. So what
 exactly does the binary OR operator do? Well, it merges all the
 bits together into a single value, like this:<br>
@@ -144,6 +149,7 @@ bits together into a single value, like this:<br>
 110111101<br></p>
 
 <p><br>
+
 Here's what's known as a <i>truth table</i> for the OR
 operator:<br>
 <br></p>
@@ -153,6 +159,7 @@ operator:<br>
 01 | 01 = 01<br>
 01 | 00 = 01<br></p>
 <br>
+
 So where there is a value with 2 zeros, it'll stay zero. The
 advantage of using BITS as a true/false state, is they you can set
 several flags in one operation, something you simply couldn't do
@@ -163,6 +170,7 @@ with a normal Boolean value. For example, let's say bit 1 is an
 
 <p class="code">flags = flags | 5;<br></p>
 <br>
+
 This is because 5 is 00000101 in binary, and following the rule
 above, the variable "flags" will get both these 2 bits merged with
 its own. So even if bit 1 was already set, the operation still
@@ -178,6 +186,7 @@ mask, are removed - like this:<br>
 00110000100<br>
 00110000100<br></p>
 <br>
+
 As you can see, where there is a bit in each value, the bit is
 kept, and where there is a mix or 0's and 1's these are reset to 0.
 Here's the truth table for ANDing:<br>
@@ -189,6 +198,7 @@ Here's the truth table for ANDing:<br>
 01 &amp; 01 = 01<br></p>
 
 <p><br>
+
 So, only when there is a bit in each place will it be kept. What
 this means, is that just as you are able to <i>set</i> multiple
 flags at once, you can also <i>clear</i> multiple flags at once.
@@ -206,6 +216,7 @@ bits 1 and 3 using the mask above, I would end up with this...<br>
 11111111111111111111111111111010<br>
 00000000000000000000001000111010<br></p>
 <br>
+
 This is great, but if we had to work this out every time we needed
 to clear flags, it would become tiresome. What we need is a way to
 flip bits easily (and preferably without CPU cost). Fortunately
@@ -220,6 +231,7 @@ truth table for NOT.<br>
 ~10 = 01<br>
 ~11 = 00<br></p>
 <br>
+
 This operator makes removing flags very simple, and better yet,
 it's usually a compile time optimisation meaning if you're using a
 constant number (i.e. not a variable) then the compiler will flip
@@ -229,6 +241,7 @@ to clear bits 1 and 3 again:<br>
 
 <p class="code">a = a &amp; ~5;<br></p>
 <br>
+
 This will actually compile down to just "a &amp;
 11111111111111111111111111111010". This makes life pretty simple in
 terms of clearing flags.<br>
@@ -243,6 +256,7 @@ sometimes called XOR), this operator flips the bits set in
 1 ^ 0 = 1<br>
 1 ^ 1 = 0<br></p>
 <br>
+
 This is a curious one, but incredibly useful. For example, let's
 say we want a counter that simply counts from 0 to 1 and back to 0
 (toggling between 0 and 1), we could add one and do an IF to see if
@@ -253,6 +267,7 @@ we can do this:<br>
 
 <p class="code">a = a ^ 1;<br></p>
 <br>
+
 What this does, is first time through is 0 ^ 1 = 1, then the second
 time 1 ^ 1 = 0, thereby toggling things back and forth from 0 to
 1.<br>
@@ -274,6 +289,7 @@ a very simple example 1+1.<br>
 00000001<br>
 00000010<br></p>
 <br>
+
 Just like normal additions, we add numbers together and then we
 overflow into the next column, but unlike a normal decimal
 addition, we can only go to 1, not 9. So adding a 1+1 means we
@@ -284,6 +300,7 @@ overflow into 10. So let's look at a more complex example.<br>
 00101101 = 45<br>
 10001000 = 136<br></p>
 <br>
+
 It's obviously harder to see here, but the overflows ripple along
 until there are no ones in a column - or 2 at which point an
 overflow bit makes 3 and it stays there. Fortunately, you don't
@@ -306,6 +323,7 @@ LEFT by one. Like this:<br>
 
 <p class="code">00000100 * 2 = 00001000 = 8</p>
 <br>
+
 All the bits in this case have moved to the left by one, making it
 move from the 3rd bit, to the 4th, and changing the value from 4 to
 8. How about a larger number?<br>
@@ -313,6 +331,7 @@ move from the 3rd bit, to the 4th, and changing the value from 4 to
 
 <p class="code">101 = 01100101 * 2 = 11001010 = 202</p>
 <br>
+
 Again, all the bits move on one, and that multiples by 2. So, how
 about a multiple by 4? Easy, we shift everything left by 2, rather
 than one. So how about 16, or 128? This would require a left shift
@@ -331,6 +350,7 @@ some examples:<br>
 00000001 &lt;&lt; 7 = 010000000 = 128<br>
 00000001 &lt;&lt; 8 = 100000000 = 256<br></p>
 <br>
+
 Now, aside from being very useful for fast/simple multiplications,
 it's also very useful for setting specific BITs, without having to
 figure out the bit value. Let's say we wanted to set bit 27, what
@@ -340,6 +360,7 @@ above to easily set flags like this:<br>
 
 <p class="code">A = A | (1&lt;&lt;27)<br></p>
 <br>
+
 Okay... so actually this would be bit 26 the way I've been
 describing things so far (as bits have been starting at one), but
 actually... bits start at bit 0, and go upwards, not at bit 1. So
@@ -355,6 +376,7 @@ flag. How can we set both?<br>
 BOOM = 0;<br>
 A = A | (1&lt;&lt;ACTIVE) | (1&lt;&lt;BOOM);<br></p>
 <br>
+
 This may look like a lot of code, but if these numbers are
 constants, the compiler will pre-compile these operations into a
 single value so that we end up with this as actual code.<br>
@@ -362,6 +384,7 @@ single value so that we end up with this as actual code.<br>
 
 <p class="code">A = A | 13421772;<br></p>
 <br>
+
 Clearing these bits (as we saw above) is simply a matter of using
 the NOT modifier, like this:<br>
 <br>
@@ -369,6 +392,7 @@ the NOT modifier, like this:<br>
 <p class="code">A = A &amp; ~((1&lt;&lt;ACTIVE) |
 (1&lt;&lt;BOOM));<br></p>
 <br>
+
 So this happily lets us set and clear any bits we'd like, and it
 also lets us compress out data structures massively. Compressing
 data structures is a good thing, because if you use less memory,
@@ -386,6 +410,7 @@ number - 64 - and divide by 32:<br>
 
 <p class="code">64 / 32 = 01000000 &gt;&gt; 5 = 00000010<br></p>
 <br>
+
 So there you shift the single bit <i>down</i> by 5 (which is the
 number of shifts required for 32 – look above), which gives us 2.
 But what happens if here are other bits in there? Well let's take a
@@ -394,6 +419,7 @@ look:<br>
 
 <p class="code">68 / 32 = 01000100 &gt;&gt; 5 = 00000010<br></p>
 <br>
+
 So there you go…. It's exactly the same. The bits we shift down are
 simply lost. This is actually really useful, because when dividing
 down if we need the remainder, there's an even easier way to get
@@ -408,6 +434,7 @@ of things, and access them very quickly. So here we go:<br>
 var Y_index = y&gt;&gt;5;<br>
 cell_data = mygrid[# X_index,Y_index];<br></p>
 <br>
+
 This is quick, very quick. This avoids the need to do a floating
 point divide, and then a floor( ) calculation – which all adds
 up.<br>
@@ -420,6 +447,7 @@ remainder is as simple as doing an AND:<br>
 <p class="code">var r = x &amp; 31<br>
 var X_Index = x&gt;&gt;5;<br></p>
 <br>
+
 Now, the sharp-sighted amongst you might have noticed we've used
 both here (as is so often the case), but this is still only a
 couple of instructions. But why the 31? Well, as bit 5 is 32, then
@@ -432,6 +460,7 @@ understanding binary, it would look like this:<br>
 <p class="code">var r = x mod 32;<br>
 var X_Index = floor(x/32);<br></p>
 <br>
+
 So why is this much worse? Well, in order to divide by 32, we have
 to execute a floating point divide – which obviously takes time,
 but in order to do the mod 32, you actually have to do another one!
@@ -476,6 +505,7 @@ simply do this:<br>
 
 <p class="code">X = x&amp;~31;<br></p>
 <br>
+
 That's right, that's ALL that it takes to align to a 32 pixel
 boundary. By changing the 31 we can align to anything we like – as
 long as it's a power of 2. (This is the equivalent of dividing by
@@ -516,6 +546,7 @@ them.<br>
 
 <p class="code">counter = (counter+1)&amp;31;<br></p>
 <br>
+
 Since 16 frames is a power of 2 number, and since 0 is included in
 the counter, we can reduce the POW2 number by 1 and use it as a
 MASK, and using that we can use it to wrap our counter. If the
@@ -533,6 +564,7 @@ will return TRUE if argument0 is a power of 2.<br>
 
 <p class="code">return (argument0&amp;(argument0-1))==0;<br></p>
 <br>
+
 So if we had the number 51 (110011) what does this do? Well, we get
 this... 110011 &amp; 110010, which obviously leaves us with FALSE,
 as there are lots of "bits" left after the AND. If we had 64
