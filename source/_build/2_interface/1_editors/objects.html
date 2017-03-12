@@ -4,7 +4,7 @@
 <head>
 <meta name="keywords" content="online documentation, web online help, web help, chm2web" />
 <meta http-equiv="Content-Style-Type" content="text/css" />
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
 
 <meta name="generator" content="chm2web Pro 2.85 (unicode)" />
 <title>The Object Editor</title>
@@ -24,8 +24,8 @@ chmtop.c2wtopf.pageid = "_build/2_interface/1_editors/objects.html";
 <body><script type="text/JavaScript"> 
 if (window.name != "content") 
   document.write(" <table width=\"100%\" bgcolor=\"#e1e1e1\"cellspacing=\"2\" cellpadding=\"0\" style=\"border-collapse: collapse; font-family: sans-serif; font-size: 14px; color: #000000; text-decoration: none;  \"> <tr> <td align=\"center\" style=\"border-bottom: 2px solid gray\" > <br>&nbsp;Click <a href=\"../../../../index.html?page=source%2F_build%2F2_interface%2F1_editors%2Fobjects.html\">here</a> to show toolbars of the Web Online Help System: <a href=\"../../../../index.html?page=source%2F_build%2F2_interface%2F1_editors%2Fobjects.html\">show toolbars</a><br>&nbsp;</td></tr></table><br> "); 
-</script>
-<!-- !chm2web! -->
+</script><!-- !chm2web! -->
+
 
 <h2>The Object Editor</h2>
 
@@ -34,7 +34,7 @@ if (window.name != "content")
 </p>
 
 <p><img class="center" src="images/editor_objects.png" alt=
-"Object Editor"> Objects are the resource that we use to control
+"Object Editor">  Objects are the resource that we use to control
 aspects of a game and to do specific things. Most of the time they
 have a sprite associated with them so that you see them in the game
 rooms, but sometimes they are used as a "behind the scenes"
@@ -106,7 +106,7 @@ button <img style="vertical-align:middle" src=
 </div>
 <br>
 <a name="object_collision_mask" id="object_collision_mask"></a>
-<label class="collapse" for="nineteen">Collision Mask</label>
+<label class="collapse" for="nineteen">碰撞遮罩</label>
 <input id="nineteen" type="checkbox">
 <div class="index_list">
 <p>Beneath the sprite assignment area you have a button for
@@ -123,14 +123,14 @@ sprite.</p>
 </div>
 <br>
 <a name="object_properties" id="object_properties"></a>
-<label class="collapse" for="two">Properties</label> <input id=
+<label class="collapse" for="two">属性</label> <input id=
 "two" type="checkbox">
 <div class="index_list">
 <p>Here you are presented with the following options for your
 object:</p>
 
 <blockquote><a name="object_visible" id="object_visible"></a>
-<label class="collapse" for="four">Visible</label> <input id="four"
+<label class="collapse" for="four">可见</label> <input id="four"
 type="checkbox">
 <div class="index_list">
 <p><b>Visible</b> indicates whether instances of this object are
@@ -146,7 +146,7 @@ checked.</p>
 </div>
 <br>
 <a name="object_solid" id="object_solid"></a> <label class=
-"collapse" for="a">Solid</label> <input id="a" type="checkbox">
+"collapse" for="a">固体</label> <input id="a" type="checkbox">
 <div class="index_list">
 <p>When you flag an instance as being solid, you are telling
 <i>GameMaker Studio 2</i> that it should try to resolve any
@@ -158,7 +158,7 @@ in the event itself, and as such is of limited use.</p>
 </div>
 <br>
 <a name="object_persistence" id="object_persistence"></a>
-<label class="collapse" for="five">Persistent</label> <input id=
+<label class="collapse" for="five">保持</label> <input id=
 "five" type="checkbox">
 <div class="index_list">
 <p><b>Persistent</b> - A persistent object is one that does not go
@@ -188,7 +188,7 @@ unless re-activated before the Room End event is triggered.</p>
 </div>
 <br>
 <a name="object_uses_physics" id="object_uses_physics"></a>
-<label class="collapse" for="six">Uses Physics</label> <input id=
+<label class="collapse" for="six">使用物理</label> <input id=
 "six" type="checkbox">
 <div class="index_list">
 <p>When you check the <b>Uses Physics</b> box you are telling
@@ -208,7 +208,7 @@ section on <a href="#object_physics">Physics</a>.</p>
 <p><a name="object_options" id="object_options"></a>
 </p>
 
-<h2>Options</h2>
+<h2>选项</h2>
 
 <p>The options section defines the different property options for
 your object and how the instances will behave when placed in a
@@ -218,7 +218,7 @@ the physics properties if you want to enable the physics
 functions.</p>
 
 <blockquote><a name="object_events" id="object_events"></a>
-<label class="collapse" for="seven">Events</label> <input id=
+<label class="collapse" for="seven">事件</label> <input id=
 "seven" type="checkbox">
 <div class="index_list">
 <p>So, what are events? Basically, these are discreet moments in
@@ -232,6 +232,7 @@ choose to place code or DnD actions in your objects that respond to
 these events.</p>
 
 <p>Let's look at a typical object setup with events and code:
+
 <img class="center" src="images/editor_objects_events.png" alt=
 "Object Editor Events View"></p>
 
@@ -241,7 +242,7 @@ create an object this list is empty and you must decide which
 events you need and what instances of that object should do when
 those events are triggered. To add events into the object, you
 press the <b>Add Event</b> button found at the bottom of the events
-list which will bring up the following window: <img class="center"
+list which will bring up the following window:  <img class="center"
 src="images/editor_objects_eventlist.png" alt=
 "Object Editor Events List"></p>
 
@@ -316,7 +317,7 @@ Alarm event</p>
 
 <p class="code">/// @description This is the AI Fight alarm</p>
 
-<p>And now in your Event Editor you'll see this: <img class=
+<p>And now in your Event Editor you'll see this:  <img class=
 "center" src="images/editor_objects_namedevents.png" alt=
 "Object Editor Named Events"></p>
 </div>
@@ -337,14 +338,14 @@ Events List</span></a>
 <p>The other options for an object are:</p>
 
 <blockquote><a name="object_parent" id="object_parent"></a>
-<label class="collapse" for="eight">Parent</label> <input id=
+<label class="collapse" for="eight">父</label> <input id=
 "eight" type="checkbox">
 <div class="index_list">
 <p>When working with objects in the <i>GameMaker Studio 2</i> IDE,
 you can set up <b>Parent / Child hierarchies</b>. This is done by
 clicking the "Parent" button in the object editor and then choosing
 another object from the resource tree to be the "parent" of the one
-being edited: <img class="center" src=
+being edited:  <img class="center" src=
 "images/editor_objects_parent.png" alt="Parents"></p>
 
 <p>So, every object in your game project can have a parent object,
@@ -371,7 +372,7 @@ object for all the enemies, then we can create one collision event
 with the parent object only and it will trigger no matter which one
 of the four "child" enemy objects touch the player. Handy stuff! In
 the actual <i>GameMaker Studio 2</i> object you would see something
-like this: <img class="center" src=
+like this:  <img class="center" src=
 "images/editor_object_parentcollision.png" alt="Parents"></p>
 
 <p>On the left we have four separate collision events and on the
@@ -404,7 +405,7 @@ whenever an event for the child object contains actions, these are
 executed instead of the actions contained in the event of the
 parent. If you also want to execute the parent event you can call
 the so-called "inherited" event using the appropriate action or
-code. <img class="center" src=
+code.  <img class="center" src=
 "images/editor_object_inheritevents.png" alt=
 "Inheriting Events"></p>
 
@@ -446,7 +447,7 @@ mechanism.</p>
 </div>
 <br>
 <a name="object_physics" id="object_physics"></a> <label class=
-"collapse" for="nine">Physics</label> <input id="nine" type=
+"collapse" for="nine">物理</label> <input id="nine" type=
 "checkbox">
 <div class="index_list">When you first create a new object
 resource, there is a check-box marked <b>Uses Physics</b>, which is
@@ -499,7 +500,7 @@ configured by changing the following parameters:</p>
 
 <blockquote><a name="object_physics_density" id=
 "object_physics_density"></a> <label class="collapse" for=
-"ten">Density</label> <input id="ten" type="checkbox">
+"ten">密度</label> <input id="ten" type="checkbox">
 <div class="index_list">The density of something is defined as its
 <i>mass per unit volume</i>, which basically means how much mass is
 crammed into the space it takes up in the world. So, a balloon
@@ -517,7 +518,7 @@ smaller mass (like a balloon).</div>
 <br>
 <a name="object_physics_restitution" id=
 "object_physics_restitution"></a> <label class="collapse" for=
-"eleven">Restitution</label> <input id="eleven" type="checkbox">
+"eleven">恢复系数</label> <input id="eleven" type="checkbox">
 <div class="index_list">In physics, restitution is defined as
 "<i>the return of an object or system to its original state after
 elastic deformation</i>", but as the fixtures in the <i>GameMaker
@@ -529,7 +530,7 @@ that act on the instance like gravity and friction.</div>
 <br>
 <a name="object_physics_collisiongroup" id=
 "object_physics_collisiongroup"></a> <label class="collapse" for=
-"twelve">Collision Group</label> <input id="twelve" type=
+"twelve">碰撞组</label> <input id="twelve" type=
 "checkbox">
 <div class="index_list">By default, the collision group for all
 physics objects is <b>0</b>, and this means that they will interact
@@ -555,7 +556,7 @@ be used only when absolutely necessary, and you should have as few
 groups as possible.</div></div>
 <br>
 <a name="object_physics_linear" id="object_physics_linear"></a>
-<label class="collapse" for="thirteen">Linear Damping</label>
+<label class="collapse" for="thirteen">线性阻尼</label>
 <input id="thirteen" type="checkbox">
 <div class="index_list">Damping is used to reduce the physics world
 velocity of an instance, and differs from friction in that friction
@@ -565,7 +566,7 @@ but please note that damping is not a replacement for friction; the
 two effects can, and should, be used together.</div>
 <br>
 <a name="object_physics_angular" id="object_physics_angular"></a>
-<label class="collapse" for="fourteen">Angular Damping</label>
+<label class="collapse" for="fourteen">角度阻尼</label>
 <input id="fourteen" type="checkbox">
 <div class="index_list">If you think about any rotating object in
 the "real world", unless it has a motor or is in space, it slows
@@ -576,7 +577,7 @@ instances in the physics world, as, without it, any rotating
 instance would continue to rotate infinitely.</div>
 <br>
 <a name="object_physics_friction" id="object_physics_friction"></a>
-<label class="collapse" for="fifteen">Friction</label> <input id=
+<label class="collapse" for="fifteen">摩擦力</label> <input id=
 "fifteen" type="checkbox">
 <div class="index_list">Friction is the force that resists the
 relative motion of material elements sliding against each other,
@@ -593,7 +594,7 @@ following ways:</p>
 
 <blockquote><a name="object_physics_sensor" id=
 "object_physics_sensor"></a> <label class="collapse" for=
-"sixteen">Sensor</label> <input id="sixteen" type="checkbox">
+"sixteen">传感器?</label> <input id="sixteen" type="checkbox">
 <div class="index_list">By checking this box, you are telling
 GameMaker Studio 2 to basically "ignore" the physical properties of
 the object, but still return a collision event with the objects
@@ -612,7 +613,7 @@ occur). If they stop overlapping and overlap subsequently there
 will be another collision event triggered.</div></div>
 <br>
 <a name="object_physics_awake" id="object_physics_awake"></a>
-<label class="collapse" for="seventeen">Start Awake</label>
+<label class="collapse" for="seventeen">起动唤醒?</label>
 <input id="seventeen" type="checkbox">
 <div class="index_list">This is checked by default and represents
 the initial "state" of the fixture at the start of the room it has
@@ -626,7 +627,7 @@ simulation unless something acts upon it.</div>
 <br>
 <a name="object_physics_kinematic" id=
 "object_physics_kinematic"></a> <label class="collapse" for=
-"eitghteen">Kinematic</label> <input id="eitghteen" type=
+"eitghteen">运动?</label> <input id="eitghteen" type=
 "checkbox">
 <div class="index_list">There will be certain instances in a
 physics based game which you want to move around but do not wish to

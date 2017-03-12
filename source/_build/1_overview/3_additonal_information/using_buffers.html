@@ -4,7 +4,7 @@
 <head>
 <meta name="keywords" content="online documentation, web online help, web help, chm2web" />
 <meta http-equiv="Content-Style-Type" content="text/css" />
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
 
 <meta name="generator" content="chm2web Pro 2.85 (unicode)" />
 <title>Using Buffers</title>
@@ -24,8 +24,8 @@ chmtop.c2wtopf.pageid = "_build/1_overview/3_additonal_information/using_buffers
 <body><script type="text/JavaScript"> 
 if (window.name != "content") 
   document.write(" <table width=\"100%\" bgcolor=\"#e1e1e1\"cellspacing=\"2\" cellpadding=\"0\" style=\"border-collapse: collapse; font-family: sans-serif; font-size: 14px; color: #000000; text-decoration: none;  \"> <tr> <td align=\"center\" style=\"border-bottom: 2px solid gray\" > <br>&nbsp;Click <a href=\"../../../../index.html?page=source%2F_build%2F1_overview%2F3_additonal_information%2Fusing_buffers.html\">here</a> to show toolbars of the Web Online Help System: <a href=\"../../../../index.html?page=source%2F_build%2F1_overview%2F3_additonal_information%2Fusing_buffers.html\">show toolbars</a><br>&nbsp;</td></tr></table><br> "); 
-</script>
-<!-- !chm2web! -->
+</script><!-- !chm2web! -->
+
 
 <h2>Using Buffers</h2>
 
@@ -96,6 +96,7 @@ available buffer types (defined as <b>constants</b> in GML):<br>
 <tr>
 <td>buffer_fixed</td>
 <td><br>
+
 A buffer of a fixed size in bytes. The size is set when the buffer
 is created and cannot be changed again.<br>
 <br></td>
@@ -104,6 +105,7 @@ is created and cannot be changed again.<br>
 <tr class="alt">
 <td>buffer_grow</td>
 <td><br>
+
 A buffer that will <i>grow</i> dynamically as data is added. You
 create it with an initial size (which should be an approximation of
 the size of the data expected to be stored), and then it will
@@ -114,6 +116,7 @@ expand to accept further data that overflows this initial size.<br>
 <tr>
 <td>buffer_wrap</td>
 <td><br>
+
 A buffer where the data will <i>wrap</i>. When the data being added
 reaches the limit of the buffer size, the overwrite will be placed
 back at the start of the buffer, and further writing will continue
@@ -124,6 +127,7 @@ from that point.<br>
 <tr class="alt">
 <td>buffer_fast</td>
 <td><br>
+
 This is a special "stripped down" buffer that is extremely fast to
 read/write to. However it can only be used with <tt>buffer_u8</tt>
 data types, and must be 1 byte aligned. (Information on <b>data
@@ -135,6 +139,7 @@ page).<br>
 </div>
 <br>
 <br>
+
 Those are the buffer types available to you when using <i>GameMaker
 Studio 2</i>, and which one you choose will greatly depend on the
 use you wish to put it to. For example, a <b>grow</b> buffer would
@@ -157,6 +162,7 @@ this:<br>
 <p class="code">player_buffer = buffer_create(16384, buffer_fixed,
 2);</p>
 <br>
+
 That would create a fixed buffer of 16384 bytes and <b>byte
 aligned</b> to 2, with the function returning a unique <b>id</b>
 value that is stored in a variable for later referencing of this
@@ -180,18 +186,21 @@ being of a set type. This means that you should ideally be aware of
 what data you are writing to the buffer at all times. These <b>data
 types</b> are defined in GML by the following <i>constants</i>:
 
+
+
 <div class="compat">
 <table>
 <tr>
 <th>Data Type Constant</th>
 <th>Bytes</th>
-<th>Description</th>
+<th>描述</th>
 </tr>
 
 <tr>
 <td>buffer_u8</td>
 <td>1</td>
 <td><br>
+
 An unsigned, 8bit integer. This is a positive value from 0 to
 255.<br>
 <br></td>
@@ -201,6 +210,7 @@ An unsigned, 8bit integer. This is a positive value from 0 to
 <td>buffer_s8</td>
 <td>1</td>
 <td><br>
+
 A signed, 8bit integer. This can be a positive or negative value
 from -128 to 127 (0 is classed as positive).<br>
 <br></td>
@@ -210,6 +220,7 @@ from -128 to 127 (0 is classed as positive).<br>
 <td>buffer_u16</td>
 <td>2</td>
 <td><br>
+
 An unsigned, 16bit integer. This is a positive value from 0 -
 65,535.<br>
 <br></td>
@@ -219,6 +230,7 @@ An unsigned, 16bit integer. This is a positive value from 0 -
 <td>buffer_s16</td>
 <td>2</td>
 <td><br>
+
 A signed, 16bit integer. This can be a positive or negative value
 from -32,768 to 32,767 (0 is classed as positive).<br>
 <br></td>
@@ -228,6 +240,7 @@ from -32,768 to 32,767 (0 is classed as positive).<br>
 <td>buffer_u32</td>
 <td>4</td>
 <td><br>
+
 An unsigned, 32bit integer. This is a positive value from 0 to
 4,294,967,295.<br>
 <br></td>
@@ -237,6 +250,7 @@ An unsigned, 32bit integer. This is a positive value from 0 to
 <td>buffer_s32</td>
 <td>4</td>
 <td><br>
+
 A signed, 32bit integer. This can be a positive or negative value
 from -2,147,483,648 to 2,147,483,647 (0 is classed as
 positive).<br>
@@ -247,6 +261,7 @@ positive).<br>
 <td>buffer_f16</td>
 <td>2</td>
 <td><br>
+
 A 16bit floating point number. This can be a positive or negative
 value within the range of +/- 65504. <b>(Not currently
 supported!)</b><br>
@@ -257,6 +272,7 @@ supported!)</b><br>
 <td>buffer_f32</td>
 <td>4</td>
 <td><br>
+
 A 32bit floating point number. This can be a positive or negative
 value within the range of +/-16777216.<br>
 <br></td>
@@ -266,6 +282,7 @@ value within the range of +/-16777216.<br>
 <td>buffer_f64</td>
 <td>8</td>
 <td><br>
+
 A 64bit floating point number. This can be a positive or negative
 value from -(2<sup>52</sup>) to 2<sup>52</sup> - 1.<br>
 <br></td>
@@ -275,6 +292,7 @@ value from -(2<sup>52</sup>) to 2<sup>52</sup> - 1.<br>
 <td>buffer_bool</td>
 <td>1</td>
 <td><br>
+
 A boolean value. Can only be either 1 or 0 (<tt>true</tt> or
 <tt>false</tt>)<br>
 <br></td>
@@ -284,6 +302,7 @@ A boolean value. Can only be either 1 or 0 (<tt>true</tt> or
 <td>buffer_string</td>
 <td>N/A</td>
 <td><br>
+
 This is a UTF-8 null terminated (0x00) string. Basically a
 GameMaker string is dumped in the buffer, and a 0 is put at the
 end.<br>
@@ -293,6 +312,7 @@ end.<br>
 </div>
 <br>
 <br>
+
 So, say you have created a buffer and you want to write information
 to it, then you would use something like the following code:<br>
 <br>
@@ -303,6 +323,7 @@ buffer_write(buff, buffer_s16, obj_Player.x);<br>
 buffer_write(buff, buffer_s16, obj_Player.y);<br>
 buffer_write(buff, buffer_string, global.Player_Name);<br></p>
 <br>
+
 looking at the example above you can see that you can write
 different types of data to a buffer (you are only limited to a
 specific data type when using the <b>fast</b> buffer type), and
@@ -320,6 +341,7 @@ obj_Player.x = buffer_read(buff, buffer_s16);<br>
 obj_Player.y = buffer_read(buff, buffer_s16);<br>
 global.Player_Name = buffer_read(buff, buffer_string);<br></p>
 <br>
+
 As you can see, you read out information in the same order that you
 read it into the buffer. For further information on how to add and
 remove data from the buffer please see the <b>Examples</b> section
@@ -389,6 +411,7 @@ functions</a>, due to the fact that the game will not save any of
 the dynamic resources that you can create at run-time like data
 structures, surfaces, added backgrounds and sprites etc...</div>
 <br>
+
 The first thing we need to do is create a new object to control the
 saving and loading, so you would make one and give it a <b>Create
 Event</b>. In this event, you could place the following code:<br>
@@ -398,6 +421,7 @@ Event</b>. In this event, you could place the following code:<br>
 1);<br>
 StateSaved = false;<br></p>
 <br>
+
 The first line creates a <b>grow</b> buffer (since we don't know
 the final size of the saved data) of 1024 bytes and aligned to 1
 byte. A variable is then created to check against and see if the
@@ -411,6 +435,7 @@ will save the current game state to the created buffer:<br>
 buffer_seek(SaveBuffer, buffer_seek_start, 0);<br>
 game_save_buffer(SaveBuffer);<br></p>
 <br>
+
 The above will first set the control variable to true (so that this
 is saved when we save the game to the buffer) and then <i>seek</i>
 to the start of the buffer before writing the current save state
@@ -436,6 +461,7 @@ Event</b>:<br>
 &nbsp;&nbsp;&nbsp;game_load_buffer(SaveBuffer);<br>
 &nbsp;&nbsp;&nbsp;}<br></p>
 <br>
+
 The game will then be loaded at the end of the event in which you
 place the above code.<br>
 <br>
@@ -444,6 +470,7 @@ place the above code.<br>
 room, and not for generating complete saved games for after your
 game has been closed or restarted!</div>
 <br>
+
 The final thing to add to the controller object is a "clean up"
 code. Buffers are stored in memory and as such if you do not clean
 up when you are finished with them, you can get memory leaks that
@@ -454,6 +481,7 @@ with:<br>
 
 <p class="code">buffer_delete(SaveBuffer);</p>
 <br>
+
 This object can now be placed into a room and on a key press save
 and load the room state from a buffer.<br>
 <br></div>
@@ -477,6 +505,7 @@ assign a buffer like this:<br>
 
 <p class="code">send_buff = buffer_create(256, buffer_grow, 1);</p>
 <br>
+
 We make the buffer small (256bytes) as it is not intended for
 holding large amounts of data, we make it a <i>grow</i> buffer to
 ensure no errors should we need to add more data to be sent at any
@@ -495,6 +524,7 @@ buffer_write(buff, buffer_s16, vk_left);<br>
 buffer_write(buff, buffer_bool, true);<br>
 network_send_packet(client, buff, buffer_tell(buff));<br></p>
 <br>
+
 Before writing to the buffer we have set the "tell" to the start of
 the buffer as networking <i>always</i> takes the data from the
 <b>start</b> of a buffer. We then write the <i>check</i> value
@@ -525,6 +555,7 @@ if cmd == buffer_read(buff, buffer_u8);<br>
 &nbsp;&nbsp;&nbsp;key_state = buffer_read(buff, buffer_bool);<br>
 &nbsp;&nbsp;&nbsp;}<br></p>
 <br>
+
 The asynchronous event will contain a special temporary
 <tt>ds_map</tt> (it is removed at the end of the event
 automatically) which contains different information depending on

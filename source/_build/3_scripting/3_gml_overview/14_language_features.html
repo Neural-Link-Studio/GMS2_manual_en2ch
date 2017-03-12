@@ -4,7 +4,7 @@
 <head>
 <meta name="keywords" content="online documentation, web online help, web help, chm2web" />
 <meta http-equiv="Content-Style-Type" content="text/css" />
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
 
 <meta name="generator" content="chm2web Pro 2.85 (unicode)" />
 <title>Language Features</title>
@@ -24,8 +24,8 @@ chmtop.c2wtopf.pageid = "_build/3_scripting/3_gml_overview/14_language_features.
 <body><script type="text/JavaScript"> 
 if (window.name != "content") 
   document.write(" <table width=\"100%\" bgcolor=\"#e1e1e1\"cellspacing=\"2\" cellpadding=\"0\" style=\"border-collapse: collapse; font-family: sans-serif; font-size: 14px; color: #000000; text-decoration: none;  \"> <tr> <td align=\"center\" style=\"border-bottom: 2px solid gray\" > <br>&nbsp;Click <a href=\"../../../../index.html?page=source%2F_build%2F3_scripting%2F3_gml_overview%2F14_language_features.html\">here</a> to show toolbars of the Web Online Help System: <a href=\"../../../../index.html?page=source%2F_build%2F3_scripting%2F3_gml_overview%2F14_language_features.html\">show toolbars</a><br>&nbsp;</td></tr></table><br> "); 
-</script>
-<!-- !chm2web! -->
+</script><!-- !chm2web! -->
+
 
 <h2>Language Features</h2>
 
@@ -47,12 +47,14 @@ form:<br>
 
 <p class="code">if (&lt;expression&gt;) &lt;statement&gt;</p>
 <br>
+
 or it can have the slightly more complex "if... else..." form:<br>
 <br>
 
 <p class="code">if (&lt;expression&gt;) &lt;statement&gt; else
 &lt;statement&gt;</p>
 <br>
+
 In this case the expression will be evaluated, and if the (rounded)
 value is &lt; = 0 (<tt>false</tt>) the statement after else is
 executed, otherwise (<tt>true</tt>) the other statement is
@@ -72,6 +74,7 @@ else<br>
 &nbsp;&nbsp;&nbsp;&lt;statement&gt;<br>
 &nbsp;&nbsp;&nbsp;}<br></p>
 <br>
+
 As a small example, consider the following code which will move the
 instance towards the position x=200 in the room:<br>
 <br>
@@ -85,6 +88,7 @@ else<br>
 &nbsp;&nbsp;&nbsp;x -= 4;<br>
 &nbsp;&nbsp;&nbsp;}<br></p>
 <br>
+
 Note that you can also do <i>compound</i> checks in an if, ie:
 check various values or expressions in the same statement. When you
 do this, <i>GameMaker Studio 2</i> will evaluate each of them one
@@ -99,6 +103,7 @@ will be skipped. For example:<br>
 &nbsp;&nbsp;&nbsp;alarm[0] = room_speed<br>
 &nbsp;&nbsp;&nbsp;}<br></p>
 <br>
+
 You can also perform <b>conditional operations</b> (also know as
 <b>ternary</b> operations), which is essentially a "shortcut" way
 of performing a basic "if". It has the following syntax:<br>
@@ -107,6 +112,7 @@ of performing a basic "if". It has the following syntax:<br>
 <p class="code">variable = condition ? &lt;expression1 (if
 <i>true</i>)&gt; : &lt;expression2 (if <i>false</i>)&gt;</p>
 <br>
+
 The conditional operator will return one of two given values
 depending on whether the condition evaluates to <tt>true</tt> or
 <tt>false</tt>, for example:<br>
@@ -115,6 +121,7 @@ depending on whether the condition evaluates to <tt>true</tt> or
 <p class="code">var temp_x = x &lt; (room_width / 2) ? 32:
 room_width - 32;</p>
 <br>
+
 The above code will check the value of "x" against the value of
 half the room width and then if it is less it will set "temp_x" to
 32 otherwise "temp_x" will be room_width - 32. Here are a few more
@@ -134,6 +141,7 @@ type="checkbox">
 
 <p class="code">repeat (&lt;expression&gt;) &lt;statement&gt;</p>
 <br>
+
 The statement is repeated the number of times indicated by the
 rounded value of the expression. For example, the following program
 creates five balls at random positions.<br>
@@ -144,6 +152,7 @@ repeat (5) instance_create(random(400), random(400), obj_ball);<br>
 }<br></p>
 
 <p><br>
+
 This can be very useful to avoid typing out the same code multiple
 times, or for using arrays, or for counting through a number of
 operations etc... For example:<br>
@@ -168,6 +177,7 @@ type="checkbox">
 
 <p class="code">while (&lt;expression&gt;) &lt;statement&gt;</p>
 <br>
+
 As long as the expression is true, the statement (which can also be
 a code block) is executed. <b>Be careful with your while loops!</b>
 You can easily make infinite loops, in which case your game will
@@ -183,6 +193,7 @@ while (!place_free(x, y))<br>
 &nbsp;&nbsp;&nbsp;}<br>
 }<br></p>
 <br>
+
 The above program tries to place the current object at a free
 position (this is about the same as the action to move an object to
 a random position).</div>
@@ -196,6 +207,7 @@ form:<br>
 
 <p class="code">do &lt;statement&gt; until (&lt;expression&gt;)</p>
 <br>
+
 The statement (which can also be a code block) is executed until
 the expression is found true, and the initial statement is always
 executed at least once. Be careful with your do loops, as you can
@@ -212,6 +224,7 @@ do<br>
 &nbsp;&nbsp;&nbsp;}<br>
 until (place_free(x, y)); }<br></p>
 <br>
+
 The above program tries to place the current object at a free
 position (this is about the same as the action to move an object to
 a random position).</div>
@@ -224,6 +237,7 @@ type="checkbox">
 <p class="code">for (&lt;statement1&gt; ; &lt;expression&gt;
 ;&lt;statement2&gt;) &lt;statement3&gt;</p>
 <br>
+
 This works as follows - First statement1 is executed, then the
 expression is evaluated and, if it is true, statement 3 is
 executed. Then statement 2 and then the expression is evaluated
@@ -242,6 +256,7 @@ should interpret it as:<br>
 <li>Statement2 is the "step" statement that goes to the next loop
 evaluation.</li>
 </ul>
+
 This extremely useful for doing repetitive tasks that would involve
 multiple lines of code in any other way, and is commonly used as a
 counter for evaluating arrays, or drawing things. the following
@@ -257,6 +272,7 @@ string(scr[i]));<br>
 &nbsp;&nbsp;&nbsp;}<br>
 }<br></p>
 <br>
+
 The above code initialises a for loop, starting at 0 and counting
 up until 9, and then uses the loop value of "i" to draw the values
 stored in an array down the screen. Note how the "for" loop
@@ -283,6 +299,7 @@ case &lt;expression2&gt;: &lt;statement2&gt;; ... ; break;<br>
 default: &lt;statement&gt;;<br>
 }<br></p>
 <br>
+
 This works as follows:<br>
 <br>
 
@@ -299,6 +316,7 @@ correct value, <i>until a break statement is encountered</i>.</li>
 continued after the default statement (it is not required to have a
 default statement, in which case no action will be taken).</li>
 </ul>
+
 Note that multiple case statements can be placed for the same
 statement. Also, the break is not required, and if there is no
 break statement the execution simply continues with the code for
@@ -330,6 +348,7 @@ switch (keyboard_key)<br>
 &nbsp;&nbsp;&nbsp;}<br>
 }<br></p>
 <br>
+
 The above code uses "switch" to check for a keyboard event and then
 compares that to the cases listed. If it meets any of the required
 values then the corresponding code is executed. Note how in the
@@ -364,6 +383,7 @@ for (i = 0; i &lt; 10; i += 1)<br>
 num = i;<br>
 }<br></p>
 <br>
+
 "break" in a <tt>repeat</tt> loop:<br>
 <br>
 
@@ -378,6 +398,7 @@ repeat (10)<br>
 &nbsp;&nbsp;&nbsp;}<br>
 }<br></p>
 <br>
+
 "break" in a <tt>while</tt> loop:<br>
 <br>
 
@@ -392,6 +413,7 @@ while (!place_free(x, y))<br>
 &nbsp;&nbsp;&nbsp;}<br>
 }<br></p>
 <br>
+
 "break" when using <tt>with</tt>:<br>
 <br>
 
@@ -412,6 +434,7 @@ with (obj_Enemy)<br>
 
 <p class="code">continue</p>
 <br>
+
 If used inside of a statement that forms a loop (<tt>repeat</tt>,
 <tt>while</tt>, <tt>do... until</tt> or <tt>for</tt>), it will
 immediately jump back to the beginning of the loop as if the loop
@@ -432,6 +455,7 @@ for (i = 0; i &lt; 10; i += 1)<br>
 &nbsp;&nbsp;&nbsp;}<br>
 }<br></p>
 <br>
+
 The above code will skip back to the beginning of the loop if the
 array[i] value is already an empty string.</div>
 <br>
@@ -442,6 +466,7 @@ array[i] value is already an empty string.</div>
 
 <p class="code">exit;</p>
 <br>
+
 "Exit" simply ends the execution of the current script or event.
 Note there is a slight difference in use here depending on the
 scope: if you use <tt>exit</tt> in a script is will simply exit the
@@ -463,9 +488,12 @@ while (place_meeting(x, y))<br>
 &nbsp;&nbsp;&nbsp;}<br>
 }<br></p>
 <br>
+
 The above code checks a variable and if it resolves to true, then
 it exists the code block, otherwise it goes ahead and runs the rest
 of the code.
+
+
 
 <div class="note"><b>Note:</b> It does not end the execution of the
 game. For that you need to use the function <a href=
@@ -485,6 +513,7 @@ simply by the following piece of code:<br>
 
 <p class="code">obj_ball.y = obj_ball.y + 8;</p>
 <br>
+
 But this is not correct, as the right side of the assignment gets
 the value of the y-coordinate of the first ball and adds 8 to it.
 Next this new value is set as y-coordinate of all balls, so the
@@ -494,6 +523,7 @@ use the following:<br>
 
 <p class="code">obj_ball.y += 8;</p>
 <br>
+
 it will have exactly the same effect because it is simply an
 abbreviation of the first statement. So how <i>do</i> we achieve
 this? For this purpose there exists the <b>with</b> statement in
@@ -502,6 +532,7 @@ GML. Its global form is:<br>
 
 <p class="code">with (&lt;expression&gt;) &lt;statement&gt;</p>
 <br>
+
 &lt;Expression&gt; indicates one or more instances, and for this
 you can use an instance id, the name of an object (which indicates
 <i>all instances</i> of this object are to run the code block) or
@@ -514,6 +545,7 @@ down, you can type:<br>
 
 <p class="code">with (obj_ball) y += 8;</p>
 <br>
+
 If you want to execute multiple statements, put curly brackets
 around them, the same as you would around any other program. So for
 example, to move all balls to a random position, you can use:<br>
@@ -525,6 +557,7 @@ example, to move all balls to a random position, you can use:<br>
 &nbsp;&nbsp;&nbsp;y = random(room_height);<br>
 &nbsp;&nbsp;&nbsp;}<br></p>
 <br>
+
 Note that, within the statement(s), the indicated instance has
 become the target (self) instance that runs the code block, which
 means that the statements the original instance (that contains the
@@ -535,6 +568,7 @@ instance, you can type this:<br>
 
 <p class="code">with (obj_ball) { x = other.x; y = other.y; }</p>
 <br>
+
 The with statement is an extremely powerful tool and is useful in
 many, many circumstances so it is important that you understand
 fully how it can be used. To help there are a few more examples of
@@ -547,6 +581,7 @@ use below:<br>
 &nbsp;&nbsp;&nbsp;direction = other.direction;<br>
 &nbsp;&nbsp;&nbsp;}<br></p>
 <br>
+
 The above code will create an instance of obj_Ball and assign it
 the speed and direction of the instance that runs the whole code
 block.<br>
@@ -557,6 +592,7 @@ block.<br>
 &nbsp;&nbsp;&nbsp;instance_destroy();<br>
 &nbsp;&nbsp;&nbsp;}<br></p>
 <br>
+
 The above code will destroy the instance of obj_Ball nearest to the
 instance running the code.<br>
 <br>
@@ -569,6 +605,7 @@ with (obj_ball)<br>
 &nbsp;&nbsp;&nbsp;}<br>
 if inst != noone target = inst;<br></p>
 <br>
+
 The above code is slightly more complex than previous ones due to
 it using a local variable. This variable is local to the
 <i>script</i> and not to the instance and so can be used and
@@ -592,6 +629,7 @@ type="checkbox">
 
 <p class="code">return (&lt;expression&gt;)<br></p>
 <br>
+
 You only use the <tt>return</tt> statement in <a href=
 "../../2_interface/1_editors/scripts.html">scripts</a>, and it is
 used to return a value from the script to be used in further code
@@ -615,6 +653,7 @@ else<br>
 &nbsp;&nbsp;&nbsp;}<br>
 }<br></p>
 <br>
+
 To call a script from within a piece of code, just act the same way
 as when calling functions - that is, write the script name with the
 argument values in parentheses. So, the above script would be
