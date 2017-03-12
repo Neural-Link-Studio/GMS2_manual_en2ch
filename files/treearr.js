@@ -1,4 +1,4 @@
-﻿var TITEMS = [ 
+var TITEMS = [ 
  ["前言", "source/_build/index.html", "11"],
  ["入门", "source/_build/1_overview/1_getting_started/index.html", "1",
   ["许可证", "source/_build/1_overview/1_getting_started/1_licences.html", "11"],

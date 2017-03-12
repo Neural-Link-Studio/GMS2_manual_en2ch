@@ -26,6 +26,9 @@ if (window.name != "content")
 </script><!-- !chm2web! -->
 
 
+<script type="text/JavaScript">
+ if( typeof(chmtop.helpStyle) != 'undefined' ) { var linkNodes = document.getElementsByTagName("link");  for( var i=0; i < linkNodes.length; ++i ) { var link = linkNodes[i];    if( link.href.endsWith("default.css")) {    var style = link.href.replace("default.css", chmtop.helpStyle); document.write('<link id="newstyleLink" rel="stylesheet" href=' + style + ' type="text/css">');    break; } } } 
+</script>
 <h2>颜色</h2>
 
 <p><i>GameMaker Studio 2</i> has a comprehensive selection of
@@ -42,9 +45,9 @@ a number of constants that can be used as base colours in these
 <div class="compat">
 <table class="compat">
 <tr>
-<th>Constant</th>
+<th>常量</th>
 <th>颜色</th>
-<th>Value</th>
+<th>值</th>
 </tr>
 
 <tr>

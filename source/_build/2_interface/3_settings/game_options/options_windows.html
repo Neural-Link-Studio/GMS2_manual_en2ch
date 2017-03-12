@@ -27,6 +27,9 @@ if (window.name != "content")
 </script><!-- !chm2web! -->
 
 
+<script type="text/JavaScript">
+ if( typeof(chmtop.helpStyle) != 'undefined' ) { var linkNodes = document.getElementsByTagName("link");  for( var i=0; i < linkNodes.length; ++i ) { var link = linkNodes[i];    if( link.href.endsWith("default.css")) {    var style = link.href.replace("default.css", chmtop.helpStyle); document.write('<link id="newstyleLink" rel="stylesheet" href=' + style + ' type="text/css">');    break; } } } 
+</script>
 <h2>Windows Options</h2>
 
 <div class="body-scroll">
@@ -37,7 +40,7 @@ if (window.name != "content")
 that control how your Windows game projects will be compiled. The
 different sections are:</p>
 
-<blockquote><label class="collapse" for="a">General</label>
+<blockquote><label class="collapse" for="a">常规（General）</label>
 <input id="a" type="checkbox">
 <div class="index_list">
 <p><img class="center" src="images/windows_general_options.png"

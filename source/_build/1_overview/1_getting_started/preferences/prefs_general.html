@@ -27,6 +27,9 @@ if (window.name != "content")
 </script><!-- !chm2web! -->
 
 
+<script type="text/JavaScript">
+ if( typeof(chmtop.helpStyle) != 'undefined' ) { var linkNodes = document.getElementsByTagName("link");  for( var i=0; i < linkNodes.length; ++i ) { var link = linkNodes[i];    if( link.href.endsWith("default.css")) {    var style = link.href.replace("default.css", chmtop.helpStyle); document.write('<link id="newstyleLink" rel="stylesheet" href=' + style + ' type="text/css">');    break; } } } 
+</script>
 <h2>Preferences - General</h2>
 
 <div class="body-scroll">
@@ -34,7 +37,7 @@ if (window.name != "content")
 </p>
 
 <p><img class="center" src="images/general_prefs.png" alt=
-"General Preferences">
+"常规偏好设置">
 </p>
 
 <p>The <b>General Preferences</b> are used to define the general
@@ -118,7 +121,7 @@ have it only show one or the other.</p>
 </div>
 <br>
 <a name="prefs_background" id="prefs_background"></a> <label class=
-"collapse" for="two">Background</label> <input id="two" type=
+"collapse" for="two">背景</label> <input id="two" type=
 "checkbox">
 <div class="index_list"><img class="center" src=
 "images/general_background_prefs.png" alt=

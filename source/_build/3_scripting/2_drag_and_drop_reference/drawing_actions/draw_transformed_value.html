@@ -27,6 +27,9 @@ if (window.name != "content")
 </script><!-- !chm2web! -->
 
 
+<script type="text/JavaScript">
+ if( typeof(chmtop.helpStyle) != 'undefined' ) { var linkNodes = document.getElementsByTagName("link");  for( var i=0; i < linkNodes.length; ++i ) { var link = linkNodes[i];    if( link.href.endsWith("default.css")) {    var style = link.href.replace("default.css", chmtop.helpStyle); document.write('<link id="newstyleLink" rel="stylesheet" href=' + style + ' type="text/css">');    break; } } } 
+</script>
 <h2><img style="vertical-align:middle" src=
 "images/i_drawing_draw_transformed_value.png"> 绘制转换后的值</h2>
 
@@ -86,7 +89,7 @@ Events</a>, and will not draw anything if used elsewhere.</div>
 </tr>
 
 <tr class="alt">
-<td>Value</td>
+<td>值</td>
 <td>The value to draw (real, variable or string)</td>
 </tr>
 
@@ -111,7 +114,7 @@ Events</a>, and will not draw anything if used elsewhere.</div>
 </tr>
 
 <tr>
-<td>Rotation</td>
+<td>旋转</td>
 <td>The rotation angle for drawing the text</td>
 </tr>
 </table>

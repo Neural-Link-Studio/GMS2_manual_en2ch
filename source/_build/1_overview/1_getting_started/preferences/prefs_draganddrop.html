@@ -27,6 +27,9 @@ if (window.name != "content")
 </script><!-- !chm2web! -->
 
 
+<script type="text/JavaScript">
+ if( typeof(chmtop.helpStyle) != 'undefined' ) { var linkNodes = document.getElementsByTagName("link");  for( var i=0; i < linkNodes.length; ++i ) { var link = linkNodes[i];    if( link.href.endsWith("default.css")) {    var style = link.href.replace("default.css", chmtop.helpStyle); document.write('<link id="newstyleLink" rel="stylesheet" href=' + style + ' type="text/css">');    break; } } } 
+</script>
 <h2>偏好设置 - 拖拽按钮（Drag and Drop）</h2>
 
 <div class="body-scroll">
@@ -43,48 +46,25 @@ if (window.name != "content")
 <li><b>默认状态下工具箱的位置？（What is the default Toolbox location?）</b>：默认状态下DnD的工具箱（持有各种动作库）会出现在编辑器的右侧，但是你可以使用这个选项来让他出现在左侧。<br>
 <br></li>
 
-<li><b>什么时候概览图出现在节点的旁边？（When does the overview appear next to a node?）</b>：一个节点的“概览”是出现在某个动作工作区中某个动作旁边的一段简短的描述性文字，比如这个<b>销毁实例（Destroy Instance）</b>动作：你可以选择启用一直显示、启用它们在动作块折叠时候显示（默认）或者是禁止它们显示。<br>
+<li><b>概览图什么时候出现在节点的旁边？（When does the overview appear next to a node?）</b>：一个节点的“概览”是出现在某个动作工作区中某个动作旁边的一段简短的描述性文字，比如这个<b>销毁实例（Destroy Instance）</b>动作：你可以选择启用一直显示、启用它们在动作块折叠时候显示（默认）或者是禁止它们显示。<br>
 <br></li>
 
-<li><b>Default message for converting Drag and Drop to GML</b>:
-When you convert a Drag and Drop event or script into GML code, you
-will by default get a message warning you about what you are about
-to do and asking if you want to continue. Setting this option to
-"OK" will simply okay the change without showing the message.<br>
+<li><b>转换拖拽按钮为GML时默认该消息（Default message for converting Drag and Drop to GML）</b>：当你酱拖拽按钮事件或脚本转换为GML代码时，默认地你会得到一个关于你要做什么并且询问你是否继续的警告消息。将该选项置为"是"（OK）就会不显示这条警告信息而直接进行变动。<br>
 <br></li>
 
-<li><b>Maximum size of toolbox Action thumbnails</b>: At the bottom
-of the Action Toolbox you have a slider for changing the size of
-the Drag and Drop icons. This setting will be used to define the
-maximum permitted size (default 64px).<br>
+<li><b>工具箱中动作按钮的缩略图最大尺寸（Maximum size of toolbox Action thumbnails）</b>：在动作按钮工具箱的底部你会看到一个滑条来改变拖拽按钮的图标大小。这项设定将被用于定义允许的最大尺寸（默认为64像素）。<br>
 <br></li>
 
-<li><b>Minimum size of toolbox Action thumbnails</b>: At the bottom
-of the Action Toolbox you have a slider for changing the size of
-the Drag and Drop icons. This setting will be used to define the
-minimum permitted size (default 16px).<br>
+<li><b>工具箱中动作按钮的缩略图最小尺寸（Minimum size of toolbox Action thumbnails）</b>：在动作按钮工具箱的底部你会看到一个滑条来改变拖拽按钮的图标大小。这项设定将被用于定义允许的最小尺寸（默认为16像素。）<br>
 <br></li>
 
-<li><b>Default size of toolbox Action thumbnails</b>: This setting
-will be used to define the default size for all action icons in the
-toolbox (default 32px).<br>
+<li><b>工具箱中动作按钮缩略图的默认尺寸（Default size of toolbox Action thumbnails）</b>：这个设置用于定义工具箱中所有动作图标的默认大小。（默认为32像素）<br>
 <br></li>
 
-<li><b>Maximum amount of recently used actions</b>: In the action
-toolbox there is a library at the top which holds the actions you
-have most recently used. You can use this option to change the
-maximum number of recent actions that will be shown (default
-5).<br>
+<li><b>最近使用动作的最大数量（Maximum amount of recently used actions）</b>：在动作工具箱的顶端有一个库，其持有你最近使用过的动作按钮。你可以使用这个选项来改变最近使用的动作的最大显示数量（默认为5）。<br>
 <br></li>
 
-<li><b>Time in milliseconds to hold the mouse down to drag
-nodes</b>: When you click on a node and drag it, you will be
-repositioning the node within the action code. However if you hold
-the mouse down for a moment and then move, you will be moving the
-node position within the workspace but <i>not</i> within the order
-of the code. This setting sets the number of milliseconds to have
-to wait with the mouse button pressed before the node can be moved
-(not repositioned). Default is 350.<br>
+<li><b>按住鼠标到拖动节点所需的毫秒时间（Time in milliseconds to hold the mouse down to drag nodes）</b>：当你点击一个节点并拖拽时，你就会在动作代码中改变节点的位置。然而如果按住鼠标一段时间This setting sets the number of milliseconds to have to wait with the mouse button pressed before the node can be moved (not repositioned). Default is 350.<br>
 <br></li>
 
 <li><b>Should new toolboxes collapse it you have a floating

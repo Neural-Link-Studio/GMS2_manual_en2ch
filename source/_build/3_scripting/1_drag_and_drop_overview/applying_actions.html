@@ -27,6 +27,9 @@ if (window.name != "content")
 </script><!-- !chm2web! -->
 
 
+<script type="text/JavaScript">
+ if( typeof(chmtop.helpStyle) != 'undefined' ) { var linkNodes = document.getElementsByTagName("link");  for( var i=0; i < linkNodes.length; ++i ) { var link = linkNodes[i];    if( link.href.endsWith("default.css")) {    var style = link.href.replace("default.css", chmtop.helpStyle); document.write('<link id="newstyleLink" rel="stylesheet" href=' + style + ' type="text/css">');    break; } } } 
+</script>
 <h2>Applying Actions To Other Instances</h2>
 
 <div class="body-scroll">
@@ -127,7 +130,7 @@ matter what object they have been created from.</p>
 <br>
 <a name="dnd_scope_object" id="dnd_scope_object"></a> <label class=
 "collapse" for="four"><img style="vertical-align:middle" src=
-"images/i_scope_object.png">  Object</label> <input id="four" type=
+"images/i_scope_object.png"> 物体</label> <input id="four" type=
 "checkbox">
 <div class="index_list">
 <div style="margin-left: 2em">

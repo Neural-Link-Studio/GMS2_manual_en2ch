@@ -27,6 +27,9 @@ if (window.name != "content")
 </script><!-- !chm2web! -->
 
 
+<script type="text/JavaScript">
+ if( typeof(chmtop.helpStyle) != 'undefined' ) { var linkNodes = document.getElementsByTagName("link");  for( var i=0; i < linkNodes.length; ++i ) { var link = linkNodes[i];    if( link.href.endsWith("default.css")) {    var style = link.href.replace("default.css", chmtop.helpStyle); document.write('<link id="newstyleLink" rel="stylesheet" href=' + style + ' type="text/css">');    break; } } } 
+</script>
 <h2><img style="vertical-align:middle" src=
 "images/i_collision_at.png"> 如果物体在...</h2>
 
@@ -83,7 +86,7 @@ below:  <img class="center" src="images/if_collision_at.png" alt=
 </tr>
 
 <tr>
-<td>Object</td>
+<td>物体</td>
 <td>The object to check for instances of</td>
 </tr>
 

@@ -27,6 +27,9 @@ if (window.name != "content")
 </script><!-- !chm2web! -->
 
 
+<script type="text/JavaScript">
+ if( typeof(chmtop.helpStyle) != 'undefined' ) { var linkNodes = document.getElementsByTagName("link");  for( var i=0; i < linkNodes.length; ++i ) { var link = linkNodes[i];    if( link.href.endsWith("default.css")) {    var style = link.href.replace("default.css", chmtop.helpStyle); document.write('<link id="newstyleLink" rel="stylesheet" href=' + style + ' type="text/css">');    break; } } } 
+</script>
 <h2>实例变量</h2>
 
 <div class="body-scroll">
@@ -242,7 +245,7 @@ how the instance interacts with one, if assigned:
 </ul></div>
 <br>
 <a name="timeline_vars" id="timeline_vars"></a> <label class=
-"collapse" for="six">时间线</label> <input id="six" type=
+"collapse" for="six">时间轴（Timelines）</label> <input id="six" type=
 "checkbox">
 <div class="index_list">These variables are for setting an instance
 to use a timeline:

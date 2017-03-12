@@ -27,6 +27,9 @@ if (window.name != "content")
 </script><!-- !chm2web! -->
 
 
+<script type="text/JavaScript">
+ if( typeof(chmtop.helpStyle) != 'undefined' ) { var linkNodes = document.getElementsByTagName("link");  for( var i=0; i < linkNodes.length; ++i ) { var link = linkNodes[i];    if( link.href.endsWith("default.css")) {    var style = link.href.replace("default.css", chmtop.helpStyle); document.write('<link id="newstyleLink" rel="stylesheet" href=' + style + ' type="text/css">');    break; } } } 
+</script>
 <h2><img style="vertical-align:middle" src=
 "images/i_instance_set_alarm.png"> 设置计时器的倒计时</h2>
 
@@ -78,7 +81,7 @@ triggered when it reaches 0).</td>
 </tr>
 
 <tr class="alt">
-<td>Countdown</td>
+<td>倒计时</td>
 <td>The count down value in game steps.</td>
 </tr>
 </table>

@@ -27,6 +27,9 @@ if (window.name != "content")
 </script><!-- !chm2web! -->
 
 
+<script type="text/JavaScript">
+ if( typeof(chmtop.helpStyle) != 'undefined' ) { var linkNodes = document.getElementsByTagName("link");  for( var i=0; i < linkNodes.length; ++i ) { var link = linkNodes[i];    if( link.href.endsWith("default.css")) {    var style = link.href.replace("default.css", chmtop.helpStyle); document.write('<link id="newstyleLink" rel="stylesheet" href=' + style + ' type="text/css">');    break; } } } 
+</script>
 <h2>Particles Library</h2>
 
 <div class="body-scroll">
@@ -148,10 +151,9 @@ particle systems:</p>
 <tr>
 <td class="icons"><a href="create_particle_system.html"><img align=
 "middle" src="images/i_particles_create_particle_system.png" alt=
-"Create Particle System"></a>
+"创建粒子系统"></a>
 </td>
-<td class="text"><a href="create_particle_system.html">Create
-Particle System</a>
+<td class="text"><a href="create_particle_system.html">创建粒子系统</a>
 </td>
 </tr>
 
@@ -159,140 +161,126 @@ Particle System</a>
 <td class="icons"><a href=
 "destroy_particle_system.html"><img align="middle" src=
 "images/i_particles_destroy_particle_system.png" alt=
-"Destroy Particle System"></a>
+"销毁粒子系统"></a>
 </td>
-<td class="text"><a href="destroy_particle_system.html">Destroy
-Particle System</a>
+<td class="text"><a href="destroy_particle_system.html">销毁粒子系统</a>
 </td>
 </tr>
 
 <tr>
 <td class="icons"><a href="clear_particle_system.html"><img align=
 "middle" src="images/i_particles_clear_particle_system.png" alt=
-"Clear Particle System"></a>
+"清除粒子系统"></a>
 </td>
-<td class="text"><a href="clear_particle_system.html">Clear
-Particle System</a>
+<td class="text"><a href="clear_particle_system.html">清除粒子系统</a>
 </td>
 </tr>
 
 <tr>
 <td class="icons"><a href="pause_particle_system.html"><img align=
 "middle" src="images/i_particles_pause_particle_system.png" alt=
-"Pause Particle System"></a>
+"暂停粒子系统"></a>
 </td>
-<td class="text"><a href="pause_particle_system.html">Pause
-Particle System</a>
+<td class="text"><a href="pause_particle_system.html">暂停粒子系统</a>
 </td>
 </tr>
 
 <tr>
 <td class="icons"><a href="update_particle_system.html"><img align=
 "middle" src="images/i_particles_update_particle_system.png" alt=
-"Update Particle System"></a>
+"更新粒子系统"></a>
 </td>
-<td class="text"><a href="update_particle_system.html">Update
-Particle System</a>
+<td class="text"><a href="update_particle_system.html">更新粒子系统</a>
 </td>
 </tr>
 
 <tr>
 <td class="icons"><a href="create_particle_type.html"><img align=
 "middle" src="images/i_particles_create_particle_type.png" alt=
-"Create Particle Type"></a>
+"创建粒子类型"></a>
 </td>
-<td class="text"><a href="create_particle_type.html">Create
-Particle Type</a>
+<td class="text"><a href="create_particle_type.html">创建粒子类型</a>
 </td>
 </tr>
 
 <tr>
 <td class="icons"><a href="destroy_particle_type.html"><img align=
 "middle" src="images/i_particles_destroy_particle_type.png" alt=
-"Destroy Particle Type"></a>
+"销毁粒子类型"></a>
 </td>
-<td class="text"><a href="destroy_particle_type.html">Destroy
-Particle Type</a>
+<td class="text"><a href="destroy_particle_type.html">销毁粒子类型</a>
 </td>
 </tr>
 
 <tr>
 <td class="icons"><a href="set_particle_size.html"><img align=
 "middle" src="images/i_particles_set_particle_size.png" alt=
-"Set Particle Size"></a>
+"设置粒子大小"></a>
 </td>
-<td class="text"><a href="set_particle_size.html">Set Particle
-Size</a>
+<td class="text"><a href="set_particle_size.html">设置粒子大小</a>
 </td>
 </tr>
 
 <tr>
 <td class="icons"><a href="set_particle_sprite.html"><img align=
 "middle" src="images/i_particles_set_particle_sprite.png" alt=
-"Set Particle Sprite"></a>
+"设置粒子的精灵"></a>
 </td>
-<td class="text"><a href="set_particle_sprite.html">Set Particle
-Sprite</a>
+<td class="text"><a href="set_particle_sprite.html">设置粒子的精灵</a>
 </td>
 </tr>
 
 <tr>
 <td class="icons"><a href="set_particle_shape.html"><img align=
 "middle" src="images/i_particles_set_particle_shape.png" alt=
-"Set Particle Shape"></a>
+"设置粒子形状"></a>
 </td>
-<td class="text"><a href="set_particle_shape.html">Set Particle
-Shape</a>
+<td class="text"><a href="set_particle_shape.html">设置粒子形状</a>
 </td>
 </tr>
 
 <tr>
 <td class="icons"><a href="set_particle_colour.html"><img align=
 "middle" src="images/i_particles_set_particle_colour.png" alt=
-"Set Particle Colour"></a>
+"设置粒子颜色"></a>
 </td>
-<td class="text"><a href="set_particle_colour.html">Set Particle
-Colour</a>
+<td class="text"><a href="set_particle_colour.html">设置粒子颜色</a>
 </td>
 </tr>
 
 <tr>
 <td class="icons"><a href="set_particle_alpha.html"><img align=
 "middle" src="images/i_particles_set_particle_alpha.png" alt=
-"Set Particle Alpha"></a>
+"设置粒子透明度"></a>
 </td>
-<td class="text"><a href="set_particle_alpha.html">Set Particle
-Alpha</a>
+<td class="text"><a href="set_particle_alpha.html">设置粒子透明度</a>
 </td>
 </tr>
 
 <tr>
 <td class="icons"><a href="set_particle_life.html"><img align=
 "middle" src="images/i_particles_set_particle_life.png" alt=
-"Set Particle Life"></a>
+"设置粒子生命期。"></a>
 </td>
-<td class="text"><a href="set_particle_life.html">Set Particle
-Life</a>
+<td class="text"><a href="set_particle_life.html">设置粒子生命期。</a>
 </td>
 </tr>
 
 <tr>
 <td class="icons"><a href="set_particle_speed.html"><img align=
 "middle" src="images/i_particles_set_particle_speed.png" alt=
-"Set Particle Speed"></a>
+"设置粒子速度"></a>
 </td>
-<td class="text"><a href="set_particle_speed.html">Set Particle
-Speed</a>
+<td class="text"><a href="set_particle_speed.html">设置粒子速度</a>
 </td>
 </tr>
 
 <tr>
 <td class="icons"><a href="set_particle_direction.html"><img align=
 "middle" src="images/i_particles_set_particle_direction.png" alt=
-"Set Particle Direction"></a>
+"设置的粒子方向"></a>
 </td>
-<td class="text"><a href="set_particle_direction.html">Set Particle
-Direction</a>
+<td class="text"><a href="set_particle_direction.html">设置的粒子方向</a>
 </td>
 </tr>
 
@@ -300,39 +288,36 @@ Direction</a>
 <td class="icons"><a href=
 "set_particle_orientation.html"><img align="middle" src=
 "images/i_particles_set_particle_orientation.png" alt=
-"Set Particle Orientation"></a>
+"设置粒子方位。"></a>
 </td>
-<td class="text"><a href="set_particle_orientation.html">Set
-Particle Orientation</a>
+<td class="text"><a href="set_particle_orientation.html">设置粒子方位。</a>
 </td>
 </tr>
 
 <tr>
 <td class="icons"><a href="set_particle_gravity.html"><img align=
 "middle" src="images/i_particles_set_particle_gravity.png" alt=
-"Set Particle Gravity"></a>
+"设置粒子的重力加速度。"></a>
 </td>
-<td class="text"><a href="set_particle_gravity.html">Set Particle
-Gravity</a>
+<td class="text"><a href="set_particle_gravity.html">设置粒子的重力加速度。</a>
 </td>
 </tr>
 
 <tr>
 <td class="icons"><a href="set_secondary_particle.html"><img align=
 "middle" src="images/i_particles_set_secondary_particles.png" alt=
-"Set Secondary Particles"></a>
+"设置第二种粒子"></a>
 </td>
-<td class="text"><a href="set_secondary_particle.html">Set
-Secondary Particles</a>
+<td class="text"><a href="set_secondary_particle.html">设置第二种粒子</a>
 </td>
 </tr>
 
 <tr>
 <td class="icons"><a href="burst_particles.html"><img align=
 "middle" src="images/i_particles_burst_particles.png" alt=
-"Burst Particles"></a>
+"喷发粒子"></a>
 </td>
-<td class="text"><a href="burst_particles.html">Burst Particles</a>
+<td class="text"><a href="burst_particles.html">喷发粒子</a>
 </td>
 </tr>
 
@@ -340,10 +325,9 @@ Secondary Particles</a>
 <td class="icons"><a href=
 "create_particle_emitter.html"><img align="middle" src=
 "images/i_particles_create_particle_emitter.png" alt=
-"Create Particle Emitter"></a>
+"创建粒子发射器"></a>
 </td>
-<td class="text"><a href="create_particle_emitter.html">Create
-Particle Emitter</a>
+<td class="text"><a href="create_particle_emitter.html">创建粒子发射器</a>
 </td>
 </tr>
 
@@ -351,37 +335,35 @@ Particle Emitter</a>
 <td class="icons"><a href=
 "destroy_particle_emitter.html"><img align="middle" src=
 "images/i_particles_destroy_particle_emitter.png" alt=
-"Destroy Particle Emitter"></a>
+"销毁粒子发射器"></a>
 </td>
-<td class="text"><a href="destroy_particle_emitter.html">Destroy
-Particle Emitter</a>
+<td class="text"><a href="destroy_particle_emitter.html">销毁粒子发射器</a>
 </td>
 </tr>
 
 <tr>
 <td class="icons"><a href="emit_particles.html"><img align="middle"
 src="images/i_particles_emit_particles.png" alt=
-"Emit Particles"></a>
+"发射粒子"></a>
 </td>
-<td class="text"><a href="emit_particles.html">Emit Particles</a>
+<td class="text"><a href="emit_particles.html">发射粒子</a>
 </td>
 </tr>
 
 <tr>
 <td class="icons"><a href="set_emitter_region.html"><img align=
 "middle" src="images/i_particles_set_emitter_region.png" alt=
-"Set Emitter Region"></a>
+"设置发射器区域"></a>
 </td>
-<td class="text"><a href="set_emitter_region.html">Set Emitter
-Region</a>
+<td class="text"><a href="set_emitter_region.html">设置发射器区域</a>
 </td>
 </tr>
 
 <tr>
 <td class="icons"><a href="do_effect.html"><img align="middle" src=
-"images/i_particles_do_effect.png" alt="Do Effect"></a>
+"images/i_particles_do_effect.png" alt="产生特效?"></a>
 </td>
-<td class="text"><a href="do_effect.html">Do Effect</a>
+<td class="text"><a href="do_effect.html">产生特效?</a>
 </td>
 </tr>
 </table>

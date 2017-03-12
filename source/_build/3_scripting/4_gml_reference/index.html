@@ -27,6 +27,9 @@ if (window.name != "content")
 </script><!-- !chm2web! -->
 
 
+<script type="text/JavaScript">
+ if( typeof(chmtop.helpStyle) != 'undefined' ) { var linkNodes = document.getElementsByTagName("link");  for( var i=0; i < linkNodes.length; ++i ) { var link = linkNodes[i];    if( link.href.endsWith("default.css")) {    var style = link.href.replace("default.css", chmtop.helpStyle); document.write('<link id="newstyleLink" rel="stylesheet" href=' + style + ' type="text/css">');    break; } } } 
+</script>
 <h2><i>GameMaker Studio 2</i> Language Reference</h2>
 
 <div class="body-scroll">
@@ -143,7 +146,7 @@ Functions</span></a>
 </h4>
 <br>
 
-<h4><a href="timelines/index.html">时间线</a>
+<h4><a href="timelines/index.html">时间轴（Timelines）</a>
 </h4>
 <br>
 
@@ -190,7 +193,7 @@ Object Functions</span></a>
 <blockquote>
 <ol>
 <li><a href="rooms/general/index.html"><span class=
-"list_link">General</span></a>
+"list_link">常规（General）</span></a>
 </li>
 
 <li><a href="rooms/layers/index.html"><span class=
@@ -628,7 +631,7 @@ Files</a>
 <br>
 </div>
 <br>
-<label class="collapse" for="fourteen">Buffers</label> <input id=
+<label class="collapse" for="fourteen">缓冲区</label> <input id=
 "fourteen" type="checkbox">
 <div class="index_list">
 <p>Buffers enable you to directly access areas of memory, adding,
@@ -643,7 +646,7 @@ Buffers</a>
 </h4>
 <br>
 
-<h4><a href="buffers/index.html">Buffers</a>
+<h4><a href="buffers/index.html">缓冲区</a>
 </h4>
 <br>
 </div>

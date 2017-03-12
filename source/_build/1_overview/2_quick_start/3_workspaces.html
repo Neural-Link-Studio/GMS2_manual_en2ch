@@ -27,6 +27,9 @@ if (window.name != "content")
 </script><!-- !chm2web! -->
 
 
+<script type="text/JavaScript">
+ if( typeof(chmtop.helpStyle) != 'undefined' ) { var linkNodes = document.getElementsByTagName("link");  for( var i=0; i < linkNodes.length; ++i ) { var link = linkNodes[i];    if( link.href.endsWith("default.css")) {    var style = link.href.replace("default.css", chmtop.helpStyle); document.write('<link id="newstyleLink" rel="stylesheet" href=' + style + ' type="text/css">');    break; } } } 
+</script>
 <h2>工作区</h2>
 
 <div class="body-scroll">
@@ -367,7 +370,7 @@ hidden and unhidden.</td>
 
 <tr>
 <td class="icons"><img align="middle" src=
-"images/qs_icon_laptopmode.png" alt="Laptop Mode">
+"images/qs_icon_laptopmode.png" alt="笔记本模式（Laptop Mode）">
 </td>
 <td class="text">This will toggle laptop mode on and off (This will
 only appear if you are currently using a laptop - see the section

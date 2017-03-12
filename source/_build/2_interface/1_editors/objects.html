@@ -27,6 +27,9 @@ if (window.name != "content")
 </script><!-- !chm2web! -->
 
 
+<script type="text/JavaScript">
+ if( typeof(chmtop.helpStyle) != 'undefined' ) { var linkNodes = document.getElementsByTagName("link");  for( var i=0; i < linkNodes.length; ++i ) { var link = linkNodes[i];    if( link.href.endsWith("default.css")) {    var style = link.href.replace("default.css", chmtop.helpStyle); document.write('<link id="newstyleLink" rel="stylesheet" href=' + style + ' type="text/css">');    break; } } } 
+</script>
 <h2>The Object Editor</h2>
 
 <div class="body-scroll">
@@ -34,7 +37,7 @@ if (window.name != "content")
 </p>
 
 <p><img class="center" src="images/editor_objects.png" alt=
-"Object Editor">  Objects are the resource that we use to control
+"物体编辑器（Object Editor）">  Objects are the resource that we use to control
 aspects of a game and to do specific things. Most of the time they
 have a sprite associated with them so that you see them in the game
 rooms, but sometimes they are used as a "behind the scenes"

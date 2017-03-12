@@ -27,6 +27,9 @@ if (window.name != "content")
 </script><!-- !chm2web! -->
 
 
+<script type="text/JavaScript">
+ if( typeof(chmtop.helpStyle) != 'undefined' ) { var linkNodes = document.getElementsByTagName("link");  for( var i=0; i < linkNodes.length; ++i ) { var link = linkNodes[i];    if( link.href.endsWith("default.css")) {    var style = link.href.replace("default.css", chmtop.helpStyle); document.write('<link id="newstyleLink" rel="stylesheet" href=' + style + ' type="text/css">');    break; } } } 
+</script>
 <h2>Debugging</h2>
 
 <div class="body-scroll">
@@ -343,7 +346,7 @@ instance variables, the same as for the Instances window.</p>
 well as the line number for the code being stepped through.</p>
 </div>
 <br>
-<label class="collapse" for="ten">Buffer</label> <input id="ten"
+<label class="collapse" for="ten">缓冲区?</label> <input id="ten"
 type="checkbox">
 <div class="index_list">
 <p>If you have initialised any buffers in your game, then this

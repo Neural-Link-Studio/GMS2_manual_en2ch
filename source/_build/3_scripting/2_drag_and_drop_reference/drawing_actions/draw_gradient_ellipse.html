@@ -27,6 +27,9 @@ if (window.name != "content")
 </script><!-- !chm2web! -->
 
 
+<script type="text/JavaScript">
+ if( typeof(chmtop.helpStyle) != 'undefined' ) { var linkNodes = document.getElementsByTagName("link");  for( var i=0; i < linkNodes.length; ++i ) { var link = linkNodes[i];    if( link.href.endsWith("default.css")) {    var style = link.href.replace("default.css", chmtop.helpStyle); document.write('<link id="newstyleLink" rel="stylesheet" href=' + style + ' type="text/css">');    break; } } } 
+</script>
 <h2><img style="vertical-align:middle" src=
 "images/i_drawing_draw_ellipse_gradient.png">  Draw Ellipse
 Rectangle</h2>
@@ -79,27 +82,27 @@ Events</a>, and will not draw anything if used elsewhere.</div>
 </tr>
 
 <tr class="alt">
-<td>Top</td>
+<td>顶</td>
 <td>The top position to start drawing from</td>
 </tr>
 
 <tr>
-<td>右键</td>
+<td>右</td>
 <td>The right position to end drawing from</td>
 </tr>
 
 <tr class="alt">
-<td>Bottom</td>
+<td>底</td>
 <td>The bottom position to end drawing from</td>
 </tr>
 
 <tr>
-<td>Center</td>
+<td>中心</td>
 <td>The colour to blend from the center</td>
 </tr>
 
 <tr class="alt">
-<td>Edge</td>
+<td>边缘</td>
 <td>The colour to blend from the edge</td>
 </tr>
 </table>

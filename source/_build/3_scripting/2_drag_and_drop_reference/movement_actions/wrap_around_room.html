@@ -27,6 +27,9 @@ if (window.name != "content")
 </script><!-- !chm2web! -->
 
 
+<script type="text/JavaScript">
+ if( typeof(chmtop.helpStyle) != 'undefined' ) { var linkNodes = document.getElementsByTagName("link");  for( var i=0; i < linkNodes.length; ++i ) { var link = linkNodes[i];    if( link.href.endsWith("default.css")) {    var style = link.href.replace("default.css", chmtop.helpStyle); document.write('<link id="newstyleLink" rel="stylesheet" href=' + style + ' type="text/css">');    break; } } } 
+</script>
 <h2><img style="vertical-align:middle" src=
 "images/i_movement_snap_to_grid.png"> 房间卷动</h2>
 
@@ -71,17 +74,17 @@ alt="Wrap Around Room Syntax">
 </tr>
 
 <tr>
-<td>Margin</td>
+<td>边缘?</td>
 <td>The margin around the edge of the room to check</td>
 </tr>
 
 <tr class="alt">
-<td>Horizontal</td>
+<td>水平</td>
 <td>Enable horizontal wrapping (on by default)</td>
 </tr>
 
 <tr>
-<td>Vertical</td>
+<td>垂直</td>
 <td>Enable vertical wrapping (on by default)</td>
 </tr>
 </table>

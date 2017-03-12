@@ -27,6 +27,9 @@ if (window.name != "content")
 </script><!-- !chm2web! -->
 
 
+<script type="text/JavaScript">
+ if( typeof(chmtop.helpStyle) != 'undefined' ) { var linkNodes = document.getElementsByTagName("link");  for( var i=0; i < linkNodes.length; ++i ) { var link = linkNodes[i];    if( link.href.endsWith("default.css")) {    var style = link.href.replace("default.css", chmtop.helpStyle); document.write('<link id="newstyleLink" rel="stylesheet" href=' + style + ' type="text/css">');    break; } } } 
+</script>
 <h2><img style="vertical-align:middle" src=
 "images/i_drawing_draw_instance_health.png"> 绘制实例健康值</h2>
 
@@ -79,7 +82,7 @@ alt="Draw Instance Health Syntax">
 </tr>
 
 <tr>
-<td>Direction</td>
+<td>方向</td>
 <td>The direction to draw the healthbar contents</td>
 </tr>
 
@@ -89,27 +92,27 @@ alt="Draw Instance Health Syntax">
 </tr>
 
 <tr>
-<td>Top</td>
+<td>顶</td>
 <td>The position of the top of the healthbar</td>
 </tr>
 
 <tr class="alt">
-<td>右键</td>
+<td>右</td>
 <td>The position of the right side of the healthbar</td>
 </tr>
 
 <tr>
-<td>Bottom</td>
+<td>底</td>
 <td>The position of the bottom of the healthbar</td>
 </tr>
 
 <tr class="alt">
-<td>Background</td>
+<td>背景</td>
 <td>The colour to draw as the background on the healthbar</td>
 </tr>
 
 <tr>
-<td>Outline</td>
+<td>轮廓</td>
 <td>The colour to use to outline the healthbar</td>
 </tr>
 

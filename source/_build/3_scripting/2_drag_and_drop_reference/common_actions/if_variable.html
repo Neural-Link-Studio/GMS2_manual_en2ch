@@ -27,6 +27,9 @@ if (window.name != "content")
 </script><!-- !chm2web! -->
 
 
+<script type="text/JavaScript">
+ if( typeof(chmtop.helpStyle) != 'undefined' ) { var linkNodes = document.getElementsByTagName("link");  for( var i=0; i < linkNodes.length; ++i ) { var link = linkNodes[i];    if( link.href.endsWith("default.css")) {    var style = link.href.replace("default.css", chmtop.helpStyle); document.write('<link id="newstyleLink" rel="stylesheet" href=' + style + ' type="text/css">');    break; } } } 
+</script>
 <h2><img style="vertical-align:middle" src=
 "images/i_common_if_variable.png"> 如果变量...</h2>
 
@@ -112,12 +115,12 @@ performed after the "if" block.</p>
 </tr>
 
 <tr>
-<td>Variable</td>
+<td>变量</td>
 <td>The name of the variable to check.</td>
 </tr>
 
 <tr class="alt">
-<td>Not</td>
+<td>不?</td>
 <td>Set to check if the expression does <i>not</i> evaluate to
 true.</td>
 </tr>
@@ -128,7 +131,7 @@ true.</td>
 </tr>
 
 <tr class="alt">
-<td>Value</td>
+<td>值</td>
 <td>The value to check the variable against.</td>
 </tr>
 </table>

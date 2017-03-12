@@ -27,6 +27,9 @@ if (window.name != "content")
 </script><!-- !chm2web! -->
 
 
+<script type="text/JavaScript">
+ if( typeof(chmtop.helpStyle) != 'undefined' ) { var linkNodes = document.getElementsByTagName("link");  for( var i=0; i < linkNodes.length; ++i ) { var link = linkNodes[i];    if( link.href.endsWith("default.css")) {    var style = link.href.replace("default.css", chmtop.helpStyle); document.write('<link id="newstyleLink" rel="stylesheet" href=' + style + ' type="text/css">');    break; } } } 
+</script>
 <h2>The Tile Set Editor</h2>
 
 <div class="body-scroll">
@@ -34,7 +37,7 @@ if (window.name != "content")
 </p>
 
 <p><img class="center" src="images/editor_tilesets.png" alt=
-"Tile Set Editor">  A tile set is a graphic resource for drawing
+"图块集编辑器（Tile Set Editor）">  A tile set is a graphic resource for drawing
 levels and other static components of your game. A tile set is
 comprised of a single image that is then split into different
 "cells" (tiles), and each tile can be place into the room editor to

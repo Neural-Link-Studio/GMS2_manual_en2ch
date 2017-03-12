@@ -26,6 +26,9 @@ if (window.name != "content")
 </script><!-- !chm2web! -->
 
 
+<script type="text/JavaScript">
+ if( typeof(chmtop.helpStyle) != 'undefined' ) { var linkNodes = document.getElementsByTagName("link");  for( var i=0; i < linkNodes.length; ++i ) { var link = linkNodes[i];    if( link.href.endsWith("default.css")) {    var style = link.href.replace("default.css", chmtop.helpStyle); document.write('<link id="newstyleLink" rel="stylesheet" href=' + style + ' type="text/css">');    break; } } } 
+</script>
 <h2>Physics Joint Constants</h2>
 
 <p>There are a great number of constants included within the
@@ -40,7 +43,7 @@ type of joint</i>. Also note that while you can get all these
 values with the appropriate function, you can only set those that
 are marked as not being read-only.</p>
 
-<blockquote><label class="collapse" for="one">General</label>
+<blockquote><label class="collapse" for="one">常规（General）</label>
 <input id="one" type="checkbox">
 <div class="index_list">
 <p>The following constants can be applied to any of the available
@@ -49,7 +52,7 @@ joint types:</p>
 <div class="compat">
 <table>
 <tr>
-<th>Constant</th>
+<th>常量</th>
 <th>描述</th>
 <th>Read Only</th>
 </tr>
@@ -115,7 +118,7 @@ attached to them (revolute, prismatic, wheel):</p>
 <div class="compat">
 <table>
 <tr>
-<th>Constant</th>
+<th>常量</th>
 <th>描述</th>
 <th>Read Only</th>
 </tr>
@@ -164,7 +167,7 @@ as the <i>motor</i> constants if one has been added):</p>
 <div class="compat">
 <table>
 <tr>
-<th>Constant</th>
+<th>常量</th>
 <th>描述</th>
 <th>Read Only</th>
 </tr>
@@ -209,7 +212,7 @@ to <tt>true</tt> to enable or <tt>false</tt> to disable.</td>
 <div class="compat">
 <table>
 <tr>
-<th>Constant</th>
+<th>常量</th>
 <th>描述</th>
 <th>Read Only</th>
 </tr>
@@ -239,7 +242,7 @@ as those for distance joints):</p>
 <div class="compat">
 <table>
 <tr>
-<th>Constant</th>
+<th>常量</th>
 <th>描述</th>
 <th>Read Only</th>
 </tr>
@@ -270,7 +273,7 @@ constants (as well as those for pulley joints):</p>
 <div class="compat">
 <table>
 <tr>
-<th>Constant</th>
+<th>常量</th>
 <th>描述</th>
 <th>Read Only</th>
 </tr>
@@ -305,7 +308,7 @@ physics_world_update_speed</tt></a>.</td>
 <div class="compat">
 <table>
 <tr>
-<th>Constant</th>
+<th>常量</th>
 <th>描述</th>
 <th>Read Only</th>
 </tr>
@@ -333,7 +336,7 @@ physics_world_update_speed</tt></a>.</td>
 <div class="compat">
 <table>
 <tr>
-<th>Constant</th>
+<th>常量</th>
 <th>描述</th>
 <th>Read Only</th>
 </tr>

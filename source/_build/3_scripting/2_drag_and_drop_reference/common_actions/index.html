@@ -27,6 +27,9 @@ if (window.name != "content")
 </script><!-- !chm2web! -->
 
 
+<script type="text/JavaScript">
+ if( typeof(chmtop.helpStyle) != 'undefined' ) { var linkNodes = document.getElementsByTagName("link");  for( var i=0; i < linkNodes.length; ++i ) { var link = linkNodes[i];    if( link.href.endsWith("default.css")) {    var style = link.href.replace("default.css", chmtop.helpStyle); document.write('<link id="newstyleLink" rel="stylesheet" href=' + style + ' type="text/css">');    break; } } } 
+</script>
 <h2>Common Actions Library</h2>
 
 <div class="body-scroll">
@@ -63,16 +66,15 @@ Variable</a>
 
 <tr>
 <td class="icons"><a href="set_global_var.html"><img align="middle"
-src="images/i_common_set_global.png" alt="Set Global Variable"></a>
+src="images/i_common_set_global.png" alt="设置全局变量"></a>
 </td>
-<td class="text"><a href="set_global_var.html">Set Global
-Variable</a>
+<td class="text"><a href="set_global_var.html">设置全局变量</a>
 </td>
 </tr>
 
 <tr>
 <td class="icons"><a href="get_global_var.html"><img align="middle"
-src="images/i_common_get_global.png" alt="Get Global Variable"></a>
+src="images/i_common_get_global.png" alt="获取全局变量"></a>
 </td>
 <td class="text"><a href="get_global_var.html">Get Global Variable
 Variable</a>
@@ -124,6 +126,16 @@ src="images/i_common_execute_code.png" alt="执行代码"></a>
 src="images/i_common_execute_script.png" alt="执行脚本"></a>
 </td>
 <td class="text"><a href="execute_script.html">执行脚本</a>
+</td>
+</tr>
+
+<tr>
+<td class="icons"><a href="execute_function.html"><img align=
+"middle" src="images/i_common_execute_function.png" alt=
+"Execute Function"></a>
+</td>
+<td class="text"><a href="execute_function.html">Execute
+Function</a>
 </td>
 </tr>
 

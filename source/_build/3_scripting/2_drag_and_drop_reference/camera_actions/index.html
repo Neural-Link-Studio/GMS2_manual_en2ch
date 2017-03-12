@@ -27,6 +27,9 @@ if (window.name != "content")
 </script><!-- !chm2web! -->
 
 
+<script type="text/JavaScript">
+ if( typeof(chmtop.helpStyle) != 'undefined' ) { var linkNodes = document.getElementsByTagName("link");  for( var i=0; i < linkNodes.length; ++i ) { var link = linkNodes[i];    if( link.href.endsWith("default.css")) {    var style = link.href.replace("default.css", chmtop.helpStyle); document.write('<link id="newstyleLink" rel="stylesheet" href=' + style + ' type="text/css">');    break; } } } 
+</script>
 <h2>Camera Library</h2>
 
 <div class="body-scroll">
@@ -50,20 +53,18 @@ functions.</p>
 <tr>
 <td class="icons"><a href="set_view_variable.html"><img align=
 "middle" src="images/i_cameras_set_view_variable.png" alt=
-"Set View Variable"></a>
+"设置视野变量"></a>
 </td>
-<td class="text"><a href="set_view_variable.html">Set View
-Variable</a>
+<td class="text"><a href="set_view_variable.html">设置视野变量</a>
 </td>
 </tr>
 
 <tr>
 <td class="icons"><a href="get_view_variable.html"><img align=
 "middle" src="images/i_cameras_get_view_variable.png" alt=
-"Get View Variable"></a>
+"获取视野变量"></a>
 </td>
-<td class="text"><a href="get_view_variable.html">Get View
-Variable</a>
+<td class="text"><a href="get_view_variable.html">获取视野变量</a>
 </td>
 </tr>
 </table>

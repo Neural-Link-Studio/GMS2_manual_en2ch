@@ -27,6 +27,9 @@ if (window.name != "content")
 </script><!-- !chm2web! -->
 
 
+<script type="text/JavaScript">
+ if( typeof(chmtop.helpStyle) != 'undefined' ) { var linkNodes = document.getElementsByTagName("link");  for( var i=0; i < linkNodes.length; ++i ) { var link = linkNodes[i];    if( link.href.endsWith("default.css")) {    var style = link.href.replace("default.css", chmtop.helpStyle); document.write('<link id="newstyleLink" rel="stylesheet" href=' + style + ' type="text/css">');    break; } } } 
+</script>
 <h2><img style="vertical-align:middle" src=
 "images/i_gamepad_if_button_down.png"> 如果手柄按钮按住...</h2>
 
@@ -83,7 +86,7 @@ will be performed after the "if" block.</p>
 </tr>
 
 <tr>
-<td>Not</td>
+<td>不?</td>
 <td>Negate the check (true becomes false and vice versa)</td>
 </tr>
 </table>

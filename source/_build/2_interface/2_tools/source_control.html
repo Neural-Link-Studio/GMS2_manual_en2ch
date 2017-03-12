@@ -27,6 +27,9 @@ if (window.name != "content")
 </script><!-- !chm2web! -->
 
 
+<script type="text/JavaScript">
+ if( typeof(chmtop.helpStyle) != 'undefined' ) { var linkNodes = document.getElementsByTagName("link");  for( var i=0; i < linkNodes.length; ++i ) { var link = linkNodes[i];    if( link.href.endsWith("default.css")) {    var style = link.href.replace("default.css", chmtop.helpStyle); document.write('<link id="newstyleLink" rel="stylesheet" href=' + style + ' type="text/css">');    break; } } } 
+</script>
 <h2>源码控制</h2>
 
 <div class="body-scroll">
@@ -92,7 +95,7 @@ Now, in your project, open up <a href=
 the <i>Enable Source Control</i> option to activate SCM for the
 current project.  <img class="center" src=
 "images/scm_enablesourcecontrol.png" alt=
-"启用源控制?"></p>
+"启用源代码控制"></p>
 
 <p>Once you have enabled source control (and applied it or closed
 the Game Options) a new context menu will appear at the top of the

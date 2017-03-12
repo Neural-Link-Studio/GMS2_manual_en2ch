@@ -26,6 +26,9 @@ if (window.name != "content")
 </script><!-- !chm2web! -->
 
 
+<script type="text/JavaScript">
+ if( typeof(chmtop.helpStyle) != 'undefined' ) { var linkNodes = document.getElementsByTagName("link");  for( var i=0; i < linkNodes.length; ++i ) { var link = linkNodes[i];    if( link.href.endsWith("default.css")) {    var style = link.href.replace("default.css", chmtop.helpStyle); document.write('<link id="newstyleLink" rel="stylesheet" href=' + style + ' type="text/css">');    break; } } } 
+</script>
 <h2>Scripting</h2>
 
 <div class="body-scroll">
@@ -103,8 +106,8 @@ not limit you to <i>only</i> using that one language.</p>
 <div class="footer">
 <div class="buttons">
 <div class="clear">
-<div style="float:left">Back: <a href=
-"../index.html">Contents</a></div>
+<div style="float:left">上一页：<a href=
+"../index.html">目录</a></div>
 
 <div style="float:right">Next: <a href=
 "../1_overview/1_getting_started/index.html">Getting

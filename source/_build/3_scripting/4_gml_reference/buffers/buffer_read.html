@@ -26,6 +26,9 @@ if (window.name != "content")
 </script><!-- !chm2web! -->
 
 
+<script type="text/JavaScript">
+ if( typeof(chmtop.helpStyle) != 'undefined' ) { var linkNodes = document.getElementsByTagName("link");  for( var i=0; i < linkNodes.length; ++i ) { var link = linkNodes[i];    if( link.href.endsWith("default.css")) {    var style = link.href.replace("default.css", chmtop.helpStyle); document.write('<link id="newstyleLink" rel="stylesheet" href=' + style + ' type="text/css">');    break; } } } 
+</script>
 <h2>buffer_read</h2>
 
 <div class="body-scroll">
@@ -75,7 +78,7 @@ constants:<br>
 <div class="compat">
 <table>
 <tr>
-<th>Constant</th>
+<th>常量</th>
 <th>描述</th>
 </tr>
 

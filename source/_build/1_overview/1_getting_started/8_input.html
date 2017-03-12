@@ -27,6 +27,9 @@ if (window.name != "content")
 </script><!-- !chm2web! -->
 
 
+<script type="text/JavaScript">
+ if( typeof(chmtop.helpStyle) != 'undefined' ) { var linkNodes = document.getElementsByTagName("link");  for( var i=0; i < linkNodes.length; ++i ) { var link = linkNodes[i];    if( link.href.endsWith("default.css")) {    var style = link.href.replace("default.css", chmtop.helpStyle); document.write('<link id="newstyleLink" rel="stylesheet" href=' + style + ' type="text/css">');    break; } } } 
+</script>
 <h2>IDE输入</h2>
 
 <div class="body-scroll">
@@ -102,7 +105,7 @@ src="../../images/icon_alt.png">键的时候，你可以改用键盘上的<i>右
 <label class="collapse" for="two">触控屏支持</label>
 <input id="two" type="checkbox">
 <div class="index_list">
-<p>最后我们这里要说的就是<i>GameMaker Studio 2</i>的IDE还有一些对于触控屏的支持。在所有操作系统上你都可以使用触控屏点击或拖拽项目到主工作空间里，并且我们支持两个同时存在的触控来表示右键请注意，在Windows 8或更高版本中，<i>GameMaker Studio 2</i>还会支持触控笔设备。</p>
+<p>最后我们这里要说的就是<i>GameMaker Studio 2</i>的IDE还有一些对于触控屏的支持。在所有操作系统上你都可以使用触控屏点击或拖拽项目到主工作空间里，并且我们支持两个同时存在的触控来表示右键Note that on Windows 8 and above, the <i>GameMaker Studio 2</i> IDE will support pen devices too.</p>
 </div></blockquote>
 
 <p><br>

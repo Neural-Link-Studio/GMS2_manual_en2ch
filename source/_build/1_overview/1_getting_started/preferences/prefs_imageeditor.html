@@ -27,6 +27,9 @@ if (window.name != "content")
 </script><!-- !chm2web! -->
 
 
+<script type="text/JavaScript">
+ if( typeof(chmtop.helpStyle) != 'undefined' ) { var linkNodes = document.getElementsByTagName("link");  for( var i=0; i < linkNodes.length; ++i ) { var link = linkNodes[i];    if( link.href.endsWith("default.css")) {    var style = link.href.replace("default.css", chmtop.helpStyle); document.write('<link id="newstyleLink" rel="stylesheet" href=' + style + ' type="text/css">');    break; } } } 
+</script>
 <h2>Preferences - Image Editor</h2>
 
 <div class="body-scroll">
@@ -86,7 +89,7 @@ The Image Editor Preferences also has the following sub-categories:
 
 <blockquote><a name="prefs_image_background" id=
 "prefs_image_background"></a> <label class="collapse" for=
-"two">Background</label> <input id="two" type="checkbox">
+"two">背景</label> <input id="two" type="checkbox">
 <div class="index_list"><img class="center" src=
 "images/imageeditor_background_prefs.png" alt=
 "The Image Editor Background Preferences">

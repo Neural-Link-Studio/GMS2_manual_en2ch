@@ -27,6 +27,9 @@ if (window.name != "content")
 </script><!-- !chm2web! -->
 
 
+<script type="text/JavaScript">
+ if( typeof(chmtop.helpStyle) != 'undefined' ) { var linkNodes = document.getElementsByTagName("link");  for( var i=0; i < linkNodes.length; ++i ) { var link = linkNodes[i];    if( link.href.endsWith("default.css")) {    var style = link.href.replace("default.css", chmtop.helpStyle); document.write('<link id="newstyleLink" rel="stylesheet" href=' + style + ' type="text/css">');    break; } } } 
+</script>
 <h2>关键词</h2>
 
 <div class="body-scroll">
@@ -50,7 +53,7 @@ recommended</b> and could cause issues later on.</p>
 <div class="compat">
 <table>
 <tr>
-<th>Keyword</th>
+<th>关键词</th>
 <th>描述</th>
 <th>value</th>
 </tr>
@@ -78,7 +81,7 @@ reasons.</p>
 <div class="compat">
 <table>
 <tr>
-<th>Keyword</th>
+<th>关键词</th>
 <th>描述</th>
 <th>value</th>
 </tr>
@@ -149,7 +152,7 @@ creating it if the variable doesn't already exist<br></p>
 <div class="compat">
 <table>
 <tr>
-<th>Keyword</th>
+<th>关键词</th>
 <th>描述</th>
 <th>value</th>
 </tr>
@@ -204,7 +207,7 @@ effect.</p>
 <div class="compat">
 <table>
 <tr>
-<th>Keyword</th>
+<th>关键词</th>
 <th>描述</th>
 <th>value</th>
 </tr>

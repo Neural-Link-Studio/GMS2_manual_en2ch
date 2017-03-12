@@ -26,6 +26,9 @@ if (window.name != "content")
 </script><!-- !chm2web! -->
 
 
+<script type="text/JavaScript">
+ if( typeof(chmtop.helpStyle) != 'undefined' ) { var linkNodes = document.getElementsByTagName("link");  for( var i=0; i < linkNodes.length; ++i ) { var link = linkNodes[i];    if( link.href.endsWith("default.css")) {    var style = link.href.replace("default.css", chmtop.helpStyle); document.write('<link id="newstyleLink" rel="stylesheet" href=' + style + ' type="text/css">');    break; } } } 
+</script>
 <div style=
 "height:99px; background-color:#000000; border-radius:1em 1em 0 0;">
 <img class="center" src="images/zeus_banner.gif" alt=
@@ -69,7 +72,7 @@ to the different target platforms, please see the <a href=
 <p><a name="getting_started" id="getting_started"></a>
 </p>
 
-<h2>Getting Started</h2>
+<h2>入门</h2>
 
 <p>This section is the obligatory first stop for using <i>GameMaker
 Studio 2</i> and getting to grips with how things work. You'll find
@@ -81,7 +84,7 @@ can then move on to the more in-depth look at the components of
 <i>GameMaker Studio 2</i> in the <a href="#interface">Interface</a>
 section below.</p>
 
-<blockquote><label class="collapse" for="one">Setting Up</label>
+<blockquote><label class="collapse" for="one">部署</label>
 <input id="one" type="checkbox">
 <div class="index_list">
 <ol>
@@ -97,7 +100,7 @@ section below.</p>
 
 <li><a href=
 "1_overview/1_getting_started/3_updating.html"><span class=
-"list_link">Updating</span></a><br>
+"list_link">更新</span></a><br>
 </li>
 
 <li><a href=
@@ -117,13 +120,12 @@ section below.</p>
 
 <li><a href=
 "1_overview/1_getting_started/7_preferences.html"><span class=
-"list_link">General Preferences</span></a><br>
+"list_link">常规偏好设置</span></a><br>
 </li>
 
 <li><a href=
 "1_overview/1_getting_started/8_input.html"><span class="list_link">
-
-IDE Input</span></a><br>
+IDE输入</span></a><br>
 </li>
 </ol>
 </div>
@@ -134,7 +136,7 @@ IDE Input</span></a><br>
 <ol>
 <li><a href=
 "1_overview/2_quick_start/1_introduction.html"><span class=
-"list_link">Introduction</span></a><br>
+"list_link">介绍</span></a><br>
 </li>
 
 <li><a href="1_overview/2_quick_start/2_start.html"><span class=
@@ -287,7 +289,7 @@ some of these advanced tools will depend on the <a href=
 </li>
 
 <li><a href="2_interface/1_editors/timelines.html"><span class=
-"list_link">时间线</span></a><br>
+"list_link">时间轴（Timelines）</span></a><br>
 </li>
 
 <li><a href="2_interface/1_editors/objects.html"><span class=
@@ -343,7 +345,7 @@ type="checkbox">
 </li>
 
 <li><a href="2_interface/2_tools/marketplace.html"><span class=
-"list_link">市场</span></a><br>
+"list_link">市场（Marketplace）</span></a><br>
 </li>
 </ol>
 </div>

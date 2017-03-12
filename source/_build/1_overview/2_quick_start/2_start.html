@@ -27,6 +27,9 @@ if (window.name != "content")
 </script><!-- !chm2web! -->
 
 
+<script type="text/JavaScript">
+ if( typeof(chmtop.helpStyle) != 'undefined' ) { var linkNodes = document.getElementsByTagName("link");  for( var i=0; i < linkNodes.length; ++i ) { var link = linkNodes[i];    if( link.href.endsWith("default.css")) {    var style = link.href.replace("default.css", chmtop.helpStyle); document.write('<link id="newstyleLink" rel="stylesheet" href=' + style + ' type="text/css">');    break; } } } 
+</script>
 <h2>The Start Page</h2>
 
 <div class="body-scroll">
@@ -222,7 +225,7 @@ Studio 2</i> (see below for more information).</div></blockquote>
 you will be taken to a screen which shows the tutorials/demos that
 you own and the Official tutorials/demos that are available for
 downloading:  <img class="center" src="images/qs_tutorials.png" alt=
-"Tutorials"></p>
+"教程"></p>
 
 <p>To download any of the Official tutorials or demos, simply click
 on the icon for the one you wish to go through and it will added to

@@ -27,6 +27,9 @@ if (window.name != "content")
 </script><!-- !chm2web! -->
 
 
+<script type="text/JavaScript">
+ if( typeof(chmtop.helpStyle) != 'undefined' ) { var linkNodes = document.getElementsByTagName("link");  for( var i=0; i < linkNodes.length; ++i ) { var link = linkNodes[i];    if( link.href.endsWith("default.css")) {    var style = link.href.replace("default.css", chmtop.helpStyle); document.write('<link id="newstyleLink" rel="stylesheet" href=' + style + ' type="text/css">');    break; } } } 
+</script>
 <h2>Data Structure Library</h2>
 
 <div class="body-scroll">
@@ -154,178 +157,170 @@ The <b>Data Structure</b> library has the following actions:</p>
 <table class="icons">
 <tr>
 <td class="icons"><a href="create_list.html"><img align="middle"
-src="images/i_ds_create_list.png" alt="Create List"></a>
+src="images/i_ds_create_list.png" alt="创建一个列表"></a>
 </td>
-<td class="text"><a href="create_list.html">Create List</a>
+<td class="text"><a href="create_list.html">创建一个列表</a>
 </td>
 </tr>
 
 <tr>
 <td class="icons"><a href="create_map.html"><img align="middle"
-src="images/i_ds_create_map.png" alt="Create Map"></a>
+src="images/i_ds_create_map.png" alt="创建一个映射数据(map)"></a>
 </td>
-<td class="text"><a href="create_map.html">Create Map</a>
+<td class="text"><a href="create_map.html">创建一个映射数据(map)</a>
 </td>
 </tr>
 
 <tr>
 <td class="icons"><a href="create_grid.html"><img align="middle"
-src="images/i_ds_create_grid.png" alt="Create Grid"></a>
+src="images/i_ds_create_grid.png" alt="创建网格"></a>
 </td>
-<td class="text"><a href="create_grid.html">Create Grid</a>
+<td class="text"><a href="create_grid.html">创建网格</a>
 </td>
 </tr>
 
 <tr>
 <td class="icons"><a href="create_stack.html"><img align="middle"
-src="images/i_ds_create_stack.png" alt="Create Stack"></a>
+src="images/i_ds_create_stack.png" alt="创建堆栈"></a>
 </td>
-<td class="text"><a href="create_stack.html">Create Stack</a>
+<td class="text"><a href="create_stack.html">创建堆栈</a>
 </td>
 </tr>
 
 <tr>
 <td class="icons"><a href="clear_data_structure.html"><img align=
 "middle" src="images/i_ds_clear_data_structure.png" alt=
-"Clear Data Structure"></a>
+"清除数据结构"></a>
 </td>
-<td class="text"><a href="clear_data_structure.html">Clear Data
-Structure</a>
+<td class="text"><a href="clear_data_structure.html">清除数据结构</a>
 </td>
 </tr>
 
 <tr>
 <td class="icons"><a href="free_data_structure.html"><img align=
 "middle" src="images/i_ds_free_data_structure.png" alt=
-"Free Data Structure"></a>
+"释放数据结构"></a>
 </td>
-<td class="text"><a href="free_data_structure.html">Free Data
-Structure</a>
+<td class="text"><a href="free_data_structure.html">释放数据结构</a>
 </td>
 </tr>
 
 <tr>
 <td class="icons"><a href="add_to_list.html"><img align="middle"
-src="images/i_ds_add_to_list.png" alt="Add To List"></a>
+src="images/i_ds_add_to_list.png" alt="添加到列表中"></a>
 </td>
-<td class="text"><a href="add_to_list.html">Add To List</a>
+<td class="text"><a href="add_to_list.html">添加到列表中</a>
 </td>
 </tr>
 
 <tr>
 <td class="icons"><a href="remove_from_list.html"><img align=
 "middle" src="images/i_ds_remove_from_list.png" alt=
-"Remove From List"></a>
+"从列表中删除"></a>
 </td>
-<td class="text"><a href="remove_from_list.html">Remove From
-List</a>
+<td class="text"><a href="remove_from_list.html">从列表中删除</a>
 </td>
 </tr>
 
 <tr>
 <td class="icons"><a href="get_list_item_at.html"><img align=
 "middle" src="images/i_ds_get_list_item_at.png" alt=
-"Get List Item At"></a>
+"获取所在的列表项"></a>
 </td>
-<td class="text"><a href="get_list_item_at.html">Get List Item
-At</a>
+<td class="text"><a href="get_list_item_at.html">获取所在的列表项</a>
 </td>
 </tr>
 
 <tr>
 <td class="icons"><a href="get_index_of_list_item.html"><img align=
 "middle" src="images/i_ds_get_index_of_list_item.png" alt=
-"Get Index Of List Item"></a>
+"获取列表项的索引"></a>
 </td>
-<td class="text"><a href="get_index_of_list_item.html">Get Index Of
-List Item</a>
+<td class="text"><a href="get_index_of_list_item.html">获取列表项的索引</a>
 </td>
 </tr>
 
 <tr>
 <td class="icons"><a href="insert_into_list.html"><img align=
 "middle" src="images/i_ds_insert_into_list.png" alt=
-"Insert Into List"></a>
+"插入列表中"></a>
 </td>
-<td class="text"><a href="insert_into_list.html">Insert Into
-List</a>
+<td class="text"><a href="insert_into_list.html">插入列表中</a>
 </td>
 </tr>
 
 <tr>
 <td class="icons"><a href="get_list_item_count.html"><img align=
 "middle" src="images/i_ds_get_list_item_count.png" alt=
-"Get List Item Count"></a>
+"获取列表项总数"></a>
 </td>
-<td class="text"><a href="get_list_item_count.html">Get List Item
-Count</a>
+<td class="text"><a href="get_list_item_count.html">获取列表项总数</a>
 </td>
 </tr>
 
 <tr>
 <td class="icons"><a href="set_map_value.html"><img align="middle"
-src="images/i_ds_set_map_value.png" alt="Set Map Value"></a>
+src="images/i_ds_set_map_value.png" alt="设置一个映射数据(map)的值"></a>
 </td>
-<td class="text"><a href="set_map_value.html">Set Map Value</a>
+<td class="text"><a href="set_map_value.html">设置一个映射数据(map)的值</a>
 </td>
 </tr>
 
 <tr>
 <td class="icons"><a href="get_map_value.html"><img align="middle"
-src="images/i_ds_get_map_value.png" alt="Get Map Value"></a>
+src="images/i_ds_get_map_value.png" alt="获取映射数据的值"></a>
 </td>
-<td class="text"><a href="get_map_value.html">Get Map Value</a>
+<td class="text"><a href="get_map_value.html">获取映射数据的值</a>
 </td>
 </tr>
 
 <tr>
 <td class="icons"><a href="remove_map_entry.html"><img align=
 "middle" src="images/i_ds_remove_map_entry.png" alt=
-"Remove Map Entry"></a>
+"删除映射数据条目"></a>
 </td>
-<td class="text"><a href="remove_map_entry.html">Remove Map
-Entry</a>
+<td class="text"><a href="remove_map_entry.html">删除映射数据条目</a>
 </td>
 </tr>
 
 <tr>
 <td class="icons"><a href="set_grid_value.html"><img align="middle"
-src="images/i_ds_set_grid_value.png" alt="Set Grid Value"></a>
+src="images/i_ds_set_grid_value.png" alt="设置网络值"></a>
 </td>
-<td class="text"><a href="set_grid_value.html">Set Grid Value</a>
+<td class="text"><a href="set_grid_value.html">设置网络值</a>
 </td>
 </tr>
 
 <tr>
 <td class="icons"><a href="get_grid_value.html"><img align="middle"
-src="images/i_ds_get_grid_value.png" alt="Get Grid Value"></a>
+src="images/i_ds_get_grid_value.png" alt="获取网格值"></a>
 </td>
-<td class="text"><a href="get_grid_value.html">Get Grid Value</a>
+<td class="text"><a href="get_grid_value.html">获取网格值</a>
 </td>
 </tr>
 
 <tr>
 <td class="icons"><a href="clear_grid.html"><img align="middle"
-src="images/i_ds_clear_grid.png" alt="Clear Grid"></a>
+src="images/i_ds_clear_grid.png" alt="清除网格"></a>
 </td>
-<td class="text"><a href="clear_grid.html">Clear Grid</a>
+<td class="text"><a href="clear_grid.html">清除网格</a>
 </td>
 </tr>
 
 <tr>
 <td class="icons"><a href="push_onto_stack.html"><img align=
 "middle" src="images/i_ds_push_onto_stack.png" alt=
-"Push Onto Stack"></a>
+"推值入栈"></a>
 </td>
-<td class="text"><a href="push_onto_stack.html">Push Onto Stack</a>
+<td class="text"><a href="push_onto_stack.html">推值入栈</a>
 </td>
 </tr>
 
 <tr>
 <td class="icons"><a href="pop_stack.html"><img align="middle" src=
-"images/i_ds_pop_stack.png" alt="Pop Stack"></a>
+"images/i_ds_pop_stack.png" alt="出栈"></a>
 </td>
-<td class="text"><a href="pop_stack.html">Pop Stack</a>
+<td class="text"><a href="pop_stack.html">出栈</a>
 </td>
 </tr>
 
@@ -333,10 +328,9 @@ src="images/i_ds_clear_grid.png" alt="Clear Grid"></a>
 <td class="icons"><a href=
 "if_data_structure_exists.html"><img align="middle" src=
 "images/i_ds_if_data_structure_exists.png" alt=
-"If Data Structure Exists"></a>
+"是否存在数据结构"></a>
 </td>
-<td class="text"><a href="if_data_structure_exists.html">If Data
-Structure Exists</a>
+<td class="text"><a href="if_data_structure_exists.html">是否存在数据结构</a>
 </td>
 </tr>
 
@@ -344,10 +338,9 @@ Structure Exists</a>
 <td class="icons"><a href=
 "if_data_structure_empty.html"><img align="middle" src=
 "images/i_ds_if_data_structure_empty.png" alt=
-"If Data Structure Empty"></a>
+"是否数据结构为空"></a>
 </td>
-<td class="text"><a href="if_data_structure_empty.html">If Data
-Structure Empty</a>
+<td class="text"><a href="if_data_structure_empty.html">是否数据结构为空</a>
 </td>
 </tr>
 </table>

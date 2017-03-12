@@ -27,6 +27,9 @@ if (window.name != "content")
 </script><!-- !chm2web! -->
 
 
+<script type="text/JavaScript">
+ if( typeof(chmtop.helpStyle) != 'undefined' ) { var linkNodes = document.getElementsByTagName("link");  for( var i=0; i < linkNodes.length; ++i ) { var link = linkNodes[i];    if( link.href.endsWith("default.css")) {    var style = link.href.replace("default.css", chmtop.helpStyle); document.write('<link id="newstyleLink" rel="stylesheet" href=' + style + ' type="text/css">');    break; } } } 
+</script>
 <h2>资源</h2>
 
 <div class="body-scroll">
@@ -40,7 +43,7 @@ paths and a number of other things. A basic game in <i>GameMaker
 Studio 2</i> will require a room to run in, and usually at least
 one object and a sprite, although you'll likely use a lot more!
 <img class="center" src="images/qs_resources.png" alt=
-"资源树"> You can add a resource to the resource tree by
+"资源树（Resource Tree）"> You can add a resource to the resource tree by
 right clicking <img style="vertical-align:middle" src=
 "../../images/icon_rmb.png"> on it and selecting the <b>Create</b>
 option from the pop-up menu (for full details on this pop-up menu,
@@ -278,7 +281,7 @@ Editor</a>.</div>
 <a name="timelines" id="timelines"></a> <label class="collapse"
 for="seven"><img style=
 "vertical-align:middle; position: relative; left:-26px;" src=
-"../../2_interface/1_editors/images/icon_timeline.png">时间线</label>
+"../../2_interface/1_editors/images/icon_timeline.png">时间轴（Timelines）</label>
 <input id="seven" type="checkbox">
 <div class="index_list">In most games you will want certain things
 to happen at certain moments in time. Now, you can try to achieve

@@ -27,6 +27,9 @@ if (window.name != "content")
 </script><!-- !chm2web! -->
 
 
+<script type="text/JavaScript">
+ if( typeof(chmtop.helpStyle) != 'undefined' ) { var linkNodes = document.getElementsByTagName("link");  for( var i=0; i < linkNodes.length; ++i ) { var link = linkNodes[i];    if( link.href.endsWith("default.css")) {    var style = link.href.replace("default.css", chmtop.helpStyle); document.write('<link id="newstyleLink" rel="stylesheet" href=' + style + ' type="text/css">');    break; } } } 
+</script>
 <h2><img style="vertical-align:middle" src=
 "images/i_loops_for.png">  For</h2>
 
@@ -93,18 +96,18 @@ will iterate 10 times, counting backwards from 10 to 0.</p>
 </tr>
 
 <tr>
-<td>Initialise</td>
+<td>初始化</td>
 <td>Initialise the variable that will be used for counting to a
 value (can be flagged as a temporary local variable)</td>
 </tr>
 
 <tr>
-<td>Condition</td>
+<td>条件</td>
 <td>The condition to check to break the loop</td>
 </tr>
 
 <tr>
-<td>Increment</td>
+<td>增量</td>
 <td>The amount to increment (or decrement) the initial count
 variable by each iteration of the loop</td>
 </tr>

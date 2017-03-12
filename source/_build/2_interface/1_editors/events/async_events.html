@@ -27,6 +27,9 @@ if (window.name != "content")
 </script><!-- !chm2web! -->
 
 
+<script type="text/JavaScript">
+ if( typeof(chmtop.helpStyle) != 'undefined' ) { var linkNodes = document.getElementsByTagName("link");  for( var i=0; i < linkNodes.length; ++i ) { var link = linkNodes[i];    if( link.href.endsWith("default.css")) {    var style = link.href.replace("default.css", chmtop.helpStyle); document.write('<link id="newstyleLink" rel="stylesheet" href=' + style + ' type="text/css">');    break; } } } 
+</script>
 <h2>The Asynchronous Events</h2>
 
 <div class="body-scroll">
@@ -235,7 +238,7 @@ network, you could save it to disk... Once you have your recorded
 audio in a buffer, you can do basically anything you want.</div>
 <br>
 <a name="async_cloud" id="async_cloud"></a> <label class="collapse"
-for="five">Cloud</label> <input id="five" type="checkbox">
+for="five">云</label> <input id="five" type="checkbox">
 <div class="index_list">The Cloud Event is one that is triggered by
 the call back from one of the <a href=
 "../../../3_scripting/4_gml_reference/asynchronous%20functions/index.html">
@@ -490,7 +493,7 @@ constant values:
 <div class="compat">
 <table>
 <tr>
-<th>Constant</th>
+<th>常量</th>
 <th>描述</th>
 </tr>
 
@@ -550,7 +553,7 @@ it's value:<br>
 <div class="compat">
 <table>
 <tr>
-<th>Constant</th>
+<th>常量</th>
 <th>描述</th>
 </tr>
 
@@ -756,7 +759,7 @@ three constants listed below:
 <div class="compat">
 <table>
 <tr>
-<th>Constant</th>
+<th>常量</th>
 <th>描述</th>
 </tr>
 
@@ -959,7 +962,7 @@ listed in the sections below.
 
 <blockquote><a name="async_saveload_buffers" id=
 "async_saveload_buffers"></a> <label class="collapse" for=
-"twentynine">Buffers</label> <input id="twentynine" type=
+"twentynine">缓冲区</label> <input id="twentynine" type=
 "checkbox">
 <div class="index_list">When you use the functions <a href=
 "../../../3_scripting/4_gml_reference/buffers/buffer_save_async.html">
@@ -1531,7 +1534,7 @@ of the un-subscribed item</li>
 </ul></div></blockquote></div>
 <br>
 <a name="async_system" id="async_system"></a> <label class=
-"collapse" for="fourteen">System</label> <input id="fourteen" type=
+"collapse" for="fourteen">系统</label> <input id="fourteen" type=
 "checkbox">
 <div class="index_list">This event can only be triggered by a
 system level event (currently the only event detected is the
@@ -1585,7 +1588,7 @@ required.</div></blockquote></div></blockquote>
 <div style="float:left">Back: <a href="../objects.html">The Object
 Editor</a></div>
 
-<div style="float:right">Next: <a href="index.html">Object
+<div style="float:right">Next: <a href="draw_events.html">Draw
 Events</a></div>
 </div>
 </div>

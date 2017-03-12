@@ -27,6 +27,9 @@ if (window.name != "content")
 </script><!-- !chm2web! -->
 
 
+<script type="text/JavaScript">
+ if( typeof(chmtop.helpStyle) != 'undefined' ) { var linkNodes = document.getElementsByTagName("link");  for( var i=0; i < linkNodes.length; ++i ) { var link = linkNodes[i];    if( link.href.endsWith("default.css")) {    var style = link.href.replace("default.css", chmtop.helpStyle); document.write('<link id="newstyleLink" rel="stylesheet" href=' + style + ' type="text/css">');    break; } } } 
+</script>
 <h2><img style="vertical-align:middle" src=
 "images/i_drawing_draw_stacked_sprites.png"> 绘制叠加的精灵</h2>
 
@@ -81,12 +84,12 @@ alt="Draw Stacked Sprites Syntax">
 </tr>
 
 <tr class="alt">
-<td>Stack Order</td>
+<td>堆栈顺序</td>
 <td>The order to draw in (either Row or Column)</td>
 </tr>
 
 <tr>
-<td>Number</td>
+<td>数字</td>
 <td>The number of sprites to draw</td>
 </tr>
 

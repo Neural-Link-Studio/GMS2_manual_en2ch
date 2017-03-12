@@ -27,6 +27,9 @@ if (window.name != "content")
 </script><!-- !chm2web! -->
 
 
+<script type="text/JavaScript">
+ if( typeof(chmtop.helpStyle) != 'undefined' ) { var linkNodes = document.getElementsByTagName("link");  for( var i=0; i < linkNodes.length; ++i ) { var link = linkNodes[i];    if( link.href.endsWith("default.css")) {    var style = link.href.replace("default.css", chmtop.helpStyle); document.write('<link id="newstyleLink" rel="stylesheet" href=' + style + ' type="text/css">');    break; } } } 
+</script>
 <h2><img style="vertical-align:middle" src=
 "images/i_common_if_undefined.png"> 如果未定义...</h2>
 
@@ -75,12 +78,12 @@ performed after the "if" block.</p>
 </tr>
 
 <tr>
-<td>Variable</td>
+<td>变量</td>
 <td>The name of the variable to check.</td>
 </tr>
 
 <tr class="alt">
-<td>Not</td>
+<td>不?</td>
 <td>Set to check if undefined does <i>not</i> evaluate to
 true.</td>
 </tr>

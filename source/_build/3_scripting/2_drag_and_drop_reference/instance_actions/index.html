@@ -27,6 +27,9 @@ if (window.name != "content")
 </script><!-- !chm2web! -->
 
 
+<script type="text/JavaScript">
+ if( typeof(chmtop.helpStyle) != 'undefined' ) { var linkNodes = document.getElementsByTagName("link");  for( var i=0; i < linkNodes.length; ++i ) { var link = linkNodes[i];    if( link.href.endsWith("default.css")) {    var style = link.href.replace("default.css", chmtop.helpStyle); document.write('<link id="newstyleLink" rel="stylesheet" href=' + style + ' type="text/css">');    break; } } } 
+</script>
 <h2>Instance Actions Library</h2>
 
 <div class="body-scroll">
@@ -109,29 +112,27 @@ Object Instance</a>
 <tr>
 <td class="icons"><a href="call_user_event.html"><img align=
 "middle" src="images/i_instance_call_user_event.png" alt=
-"Call User Event"></a>
+"调用用户事件"></a>
 </td>
-<td class="text"><a href="call_user_event.html">Call User Event</a>
+<td class="text"><a href="call_user_event.html">调用用户事件</a>
 </td>
 </tr>
 
 <tr>
 <td class="icons"><a href="set_instance_variable.html"><img align=
 "middle" src="images/i_instance_set_instance_variable.png" alt=
-"Set Instance Variable"></a>
+"设置实例变量"></a>
 </td>
-<td class="text"><a href="set_instance_variable.html">Set Instance
-Variable</a>
+<td class="text"><a href="set_instance_variable.html">设置实例变量</a>
 </td>
 </tr>
 
 <tr>
 <td class="icons"><a href="get_instance_variable.html"><img align=
 "middle" src="images/i_instance_set_instance_variable.png" alt=
-"Get Instance Variable"></a>
+"获取实例变量"></a>
 </td>
-<td class="text"><a href="get_instance_variable.html">Get Instance
-Variable</a>
+<td class="text"><a href="get_instance_variable.html">获取实例变量</a>
 </td>
 </tr>
 
@@ -191,10 +192,9 @@ src="images/i_instance_set_sprite.png" alt="设置精灵"></a>
 <tr>
 <td class="icons"><a href="if_instance_exists.html"><img align=
 "middle" src="images/i_instance_exists.png" alt=
-"If Instance Exists"></a>
+"如果实例存在"></a>
 </td>
-<td class="text"><a href="if_instance_exists.html">If Instance
-Exists</a>
+<td class="text"><a href="if_instance_exists.html">如果实例存在</a>
 </td>
 </tr>
 
