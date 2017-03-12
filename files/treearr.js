@@ -62,6 +62,7 @@
   ["文件系统", "source/_build/1_overview/3_additional_information/file_system.html", "11"],
   ["导入非位图精灵", "source/_build/1_overview/3_additional_information/importing_non_bitmap_sprites.html", "11"],
   ["JSDoc", "source/_build/1_overview/3_additional_information/jsdoc.html", "11"],
+  ["微型Web服务器", "source/_build/1_overview/3_additional_information/micro_web_server.html", "11"],
   ["过时函数", "source/_build/1_overview/3_additional_information/obsolete_functions.html", "11"],
   ["材质页", "source/_build/1_overview/3_additional_information/texture_pages.html", "11"],
   ["使用缓冲区", "source/_build/1_overview/3_additional_information/using_buffers.html", "11"]
@@ -83,7 +84,8 @@
   ["时间线", "source/_build/2_interface/1_editors/timelines.html", "11"],
   ["事件", "source/_build/2_interface/1_editors/events/index.html", "1",
    ["异步事件", "source/_build/2_interface/1_editors/events/async_events.html", "11"],
-   ["绘制事件", "source/_build/2_interface/1_editors/events/draw_events.html", "11"]
+   ["绘制事件", "source/_build/2_interface/1_editors/events/draw_events.html", "11"],
+   ["手势事件", "source/_build/2_interface/1_editors/events/gesture_events.html", "11"]
   ]
  ],
  ["工具", "source/_build/2_interface/2_tools/index.html", "1",
@@ -163,6 +165,7 @@
     ["指定值", "source/_build/3_scripting/2_drag_and_drop_reference/common_actions/assign_var.html", "11"],
     ["else", "source/_build/3_scripting/2_drag_and_drop_reference/common_actions/else.html", "11"],
     ["运行代码", "source/_build/3_scripting/2_drag_and_drop_reference/common_actions/execute_code.html", "11"],
+    ["execute_function", "source/_build/3_scripting/2_drag_and_drop_reference/common_actions/execute_function.html", "11"],
     ["运行脚本", "source/_build/3_scripting/2_drag_and_drop_reference/common_actions/execute_script.html", "11"],
     ["退出", "source/_build/3_scripting/2_drag_and_drop_reference/common_actions/exit.html", "11"],
     ["获取全局变量", "source/_build/3_scripting/2_drag_and_drop_reference/common_actions/get_global_var.html", "11"],
@@ -214,6 +217,8 @@
     ["绘制堆叠的精灵", "source/_build/3_scripting/2_drag_and_drop_reference/drawing_actions/draw_stacked_sprites.html", "11"],
     ["绘制变幻的值", "source/_build/3_scripting/2_drag_and_drop_reference/drawing_actions/draw_transformed_value.html", "11"],
     ["绘制值", "source/_build/3_scripting/2_drag_and_drop_reference/drawing_actions/draw_value.html", "11"],
+    ["获取绘制透明度", "source/_build/3_scripting/2_drag_and_drop_reference/drawing_actions/get_draw_alpha.html", "11"],
+    ["获取绘制颜色", "source/_build/3_scripting/2_drag_and_drop_reference/drawing_actions/get_draw_colour.html", "11"],
     ["设置绘制透明度", "source/_build/3_scripting/2_drag_and_drop_reference/drawing_actions/set_draw_alpha.html", "11"],
     ["绘制绘制颜色", "source/_build/3_scripting/2_drag_and_drop_reference/drawing_actions/set_draw_colour.html", "11"],
     ["设置字体", "source/_build/3_scripting/2_drag_and_drop_reference/drawing_actions/set_font.html", "11"],
@@ -283,6 +288,7 @@
     ["while", "source/_build/3_scripting/2_drag_and_drop_reference/loop_actions/while.html", "11"]
    ],
    ["数学动作", "source/_build/3_scripting/2_drag_and_drop_reference/mathematics_actions/index.html", "1",
+    ["choose", "source/_build/3_scripting/2_drag_and_drop_reference/mathematics_actions/choose.html", "11"],
     ["获取随机数值", "source/_build/3_scripting/2_drag_and_drop_reference/mathematics_actions/get_random_number.html", "11"],
     ["随机设置随机种子", "source/_build/3_scripting/2_drag_and_drop_reference/mathematics_actions/randomise.html", "11"]
    ],
@@ -358,13 +364,22 @@
    ],
    ["Switch动作", "source/_build/3_scripting/2_drag_and_drop_reference/switch_actions/index.html", "1",
     ["case", "source/_build/3_scripting/2_drag_and_drop_reference/switch_actions/case.html", "11"],
+    ["default", "source/_build/3_scripting/2_drag_and_drop_reference/switch_actions/default.html", "11"],
     ["switch", "source/_build/3_scripting/2_drag_and_drop_reference/switch_actions/switch.html", "11"]
    ],
    ["图块动作", "source/_build/3_scripting/2_drag_and_drop_reference/tile_actions/index.html", "1",
     ["获取指定坐标的图块", "source/_build/3_scripting/2_drag_and_drop_reference/tile_actions/get_tile_at_pixel.html", "11"],
+    ["获取指定像素位置图块数据", "source/_build/3_scripting/2_drag_and_drop_reference/tile_actions/get_tile_data_at_pixel.html", "11"],
+    ["获取指定单元格图块数据", "source/_build/3_scripting/2_drag_and_drop_reference/tile_actions/get_tile_data_in_cell.html", "11"],
+    ["获取图块数据变换", "source/_build/3_scripting/2_drag_and_drop_reference/tile_actions/get_tile_data_transform.html", "11"],
     ["获取指定格子的图块", "source/_build/3_scripting/2_drag_and_drop_reference/tile_actions/get_tile_in_cell.html", "11"],
+    ["获取图块地图变量", "source/_build/3_scripting/2_drag_and_drop_reference/tile_actions/get_tilemap_variable.html", "11"],
     ["设置指定坐标的图块", "source/_build/3_scripting/2_drag_and_drop_reference/tile_actions/set_tile_at_pixel.html", "11"],
-    ["设置指定格子的图块", "source/_build/3_scripting/2_drag_and_drop_reference/tile_actions/set_tile_in_cell.html", "11"]
+    ["设置指定像素位置图块数据", "source/_build/3_scripting/2_drag_and_drop_reference/tile_actions/set_tile_data_at_pixel.html", "11"],
+    ["设置单元格图块数据", "source/_build/3_scripting/2_drag_and_drop_reference/tile_actions/set_tile_data_in_cell.html", "11"],
+    ["设置图块数据变换", "source/_build/3_scripting/2_drag_and_drop_reference/tile_actions/set_tile_data_transform.html", "11"],
+    ["设置指定格子的图块", "source/_build/3_scripting/2_drag_and_drop_reference/tile_actions/set_tile_in_cell.html", "11"],
+    ["设置图块集", "source/_build/3_scripting/2_drag_and_drop_reference/tile_actions/set_tile_set.html", "11"]
    ],
    ["时间线动作", "source/_build/3_scripting/2_drag_and_drop_reference/timeline_actions/index.html", "1",
     ["在实例中设置时间线", "source/_build/3_scripting/2_drag_and_drop_reference/timeline_actions/set_instance_timeline.html", "11"],
@@ -411,6 +426,7 @@
    ],
    ["检测数据类型", "source/_build/3_scripting/3_gml_overview/checking_data_types/index.html", "1",
     ["is_array", "source/_build/3_scripting/3_gml_overview/checking_data_types/is_array.html", "11"],
+    ["is_bool", "source/_build/3_scripting/3_gml_overview/checking_data_types/is_bool.html", "11"],
     ["is_int32", "source/_build/3_scripting/3_gml_overview/checking_data_types/is_int32.html", "11"],
     ["is_int64", "source/_build/3_scripting/3_gml_overview/checking_data_types/is_int64.html", "11"],
     ["is_matrix", "source/_build/3_scripting/3_gml_overview/checking_data_types/is_matrix.html", "11"],
@@ -428,6 +444,7 @@
     ["variable_global_set", "source/_build/3_scripting/3_gml_overview/variable_functions/variable_global_set.html", "11"],
     ["variable_instance_exists", "source/_build/3_scripting/3_gml_overview/variable_functions/variable_instance_exists.html", "11"],
     ["variable_instance_get", "source/_build/3_scripting/3_gml_overview/variable_functions/variable_instance_get.html", "11"],
+    ["variable_instance_get_names", "source/_build/3_scripting/3_gml_overview/variable_functions/variable_instance_get_names.html", "11"],
     ["variable_instance_set", "source/_build/3_scripting/3_gml_overview/variable_functions/variable_instance_set.html", "11"]
    ]
   ],
@@ -700,6 +717,7 @@
      ["display_reset", "source/_build/3_scripting/4_gml_reference/cameras and display/display/display_reset.html", "11"],
      ["display_set_gui_maximise", "source/_build/3_scripting/4_gml_reference/cameras and display/display/display_set_gui_maximise.html", "11"],
      ["display_set_gui_size", "source/_build/3_scripting/4_gml_reference/cameras and display/display/display_set_gui_size.html", "11"],
+     ["display_set_ui_visibility", "source/_build/3_scripting/4_gml_reference/cameras and display/display/display_set_ui_visibility.html", "11"],
      ["screen_save", "source/_build/3_scripting/4_gml_reference/cameras and display/display/screen_save.html", "11"],
      ["screen_save_part", "source/_build/3_scripting/4_gml_reference/cameras and display/display/screen_save_part.html", "11"],
      ["游戏窗口", "source/_build/3_scripting/4_gml_reference/cameras and display/display/the game window/index.html", "1",
@@ -771,6 +789,18 @@
      ["gamepad_set_button_threshold", "source/_build/3_scripting/4_gml_reference/controls/gamepad input/gamepad_set_button_threshold.html", "11"],
      ["gamepad_set_colour", "source/_build/3_scripting/4_gml_reference/controls/gamepad input/gamepad_set_colour.html", "11"],
      ["gamepad_set_vibration", "source/_build/3_scripting/4_gml_reference/controls/gamepad input/gamepad_set_vibration.html", "11"]
+    ],
+    ["Gesture Input", "source/_build/3_scripting/4_gml_reference/controls/gesture input/index.html", "1",
+     ["gesture_double_tap_distance", "source/_build/3_scripting/4_gml_reference/controls/gesture input/gesture_double_tap_distance.html", "11"],
+     ["gesture_double_tap_time", "source/_build/3_scripting/4_gml_reference/controls/gesture input/gesture_double_tap_time.html", "11"],
+     ["gesture_drag_distance", "source/_build/3_scripting/4_gml_reference/controls/gesture input/gesture_drag_distance.html", "11"],
+     ["gesture_drag_time", "source/_build/3_scripting/4_gml_reference/controls/gesture input/gesture_drag_time.html", "11"],
+     ["gesture_flick_speed", "source/_build/3_scripting/4_gml_reference/controls/gesture input/gesture_flick_speed.html", "11"],
+     ["gesture_get_double_tap_distance", "source/_build/3_scripting/4_gml_reference/controls/gesture input/gesture_get_double_tap_distance.html", "11"],
+     ["gesture_get_double_tap_time", "source/_build/3_scripting/4_gml_reference/controls/gesture input/gesture_get_double_tap_time.html", "11"],
+     ["gesture_get_drag_distance", "source/_build/3_scripting/4_gml_reference/controls/gesture input/gesture_get_drag_distance.html", "11"],
+     ["gesture_get_drag_time", "source/_build/3_scripting/4_gml_reference/controls/gesture input/gesture_get_drag_time.html", "11"],
+     ["gesture_get_flick_speed", "source/_build/3_scripting/4_gml_reference/controls/gesture input/gesture_get_flick_speed.html", "11"]
     ],
     ["键盘输入", "source/_build/3_scripting/4_gml_reference/controls/keyboard input/index.html", "1",
      ["io_clear", "source/_build/3_scripting/4_gml_reference/controls/keyboard input/io_clear.html", "11"],
@@ -868,6 +898,7 @@
      ["ds_list_mark_as_map", "source/_build/3_scripting/4_gml_reference/data_structures/ds lists/ds_list_mark_as_map.html", "11"],
      ["ds_list_read", "source/_build/3_scripting/4_gml_reference/data_structures/ds lists/ds_list_read.html", "11"],
      ["ds_list_replace", "source/_build/3_scripting/4_gml_reference/data_structures/ds lists/ds_list_replace.html", "11"],
+     ["ds_list_set", "source/_build/3_scripting/4_gml_reference/data_structures/ds lists/ds_list_set.html", "11"],
      ["ds_list_shuffle", "source/_build/3_scripting/4_gml_reference/data_structures/ds lists/ds_list_shuffle.html", "11"],
      ["ds_list_size", "source/_build/3_scripting/4_gml_reference/data_structures/ds lists/ds_list_size.html", "11"],
      ["ds_list_sort", "source/_build/3_scripting/4_gml_reference/data_structures/ds lists/ds_list_sort.html", "11"],
@@ -1253,6 +1284,7 @@
      ["texture_get_texel_width", "source/_build/3_scripting/4_gml_reference/drawing/textures/texture_get_texel_width.html", "11"],
      ["texture_get_uvs", "source/_build/3_scripting/4_gml_reference/drawing/textures/texture_get_uvs.html", "11"],
      ["texture_get_width", "source/_build/3_scripting/4_gml_reference/drawing/textures/texture_get_width.html", "11"],
+     ["texture_global_scale", "source/_build/3_scripting/4_gml_reference/drawing/textures/texture_global_scale.html", "11"],
      ["texture_set_stage", "source/_build/3_scripting/4_gml_reference/drawing/textures/texture_set_stage.html", "11"]
     ]
    ],
@@ -2093,6 +2125,7 @@
     ["script_get_name", "source/_build/3_scripting/4_gml_reference/scripts/script_get_name.html", "11"]
    ],
    ["着色器", "source/_build/3_scripting/4_gml_reference/shaders/index.html", "1",
+    ["shader_current", "source/_build/3_scripting/4_gml_reference/shaders/shader_current.html", "11"],
     ["shader_enable_corner_id", "source/_build/3_scripting/4_gml_reference/shaders/shader_enable_corner_id.html", "11"],
     ["shader_get_sampler_index", "source/_build/3_scripting/4_gml_reference/shaders/shader_get_sampler_index.html", "11"],
     ["shader_get_uniform", "source/_build/3_scripting/4_gml_reference/shaders/shader_get_uniform.html", "11"],
@@ -2150,10 +2183,13 @@
      ["skeleton_animation_get", "source/_build/3_scripting/4_gml_reference/sprites/skeletal animations/skeleton_animation_get.html", "11"],
      ["skeleton_animation_get_duration", "source/_build/3_scripting/4_gml_reference/sprites/skeletal animations/skeleton_animation_get_duration.html", "11"],
      ["skeleton_animation_get_ext", "source/_build/3_scripting/4_gml_reference/sprites/skeletal animations/skeleton_animation_get_ext.html", "11"],
+     ["skeleton_animation_get_frame", "source/_build/3_scripting/4_gml_reference/sprites/skeletal animations/skeleton_animation_get_frame.html", "11"],
+     ["skeleton_animation_get_frames", "source/_build/3_scripting/4_gml_reference/sprites/skeletal animations/skeleton_animation_get_frames.html", "11"],
      ["skeleton_animation_list", "source/_build/3_scripting/4_gml_reference/sprites/skeletal animations/skeleton_animation_list.html", "11"],
      ["skeleton_animation_mix", "source/_build/3_scripting/4_gml_reference/sprites/skeletal animations/skeleton_animation_mix.html", "11"],
      ["skeleton_animation_set", "source/_build/3_scripting/4_gml_reference/sprites/skeletal animations/skeleton_animation_set.html", "11"],
      ["skeleton_animation_set_ext", "source/_build/3_scripting/4_gml_reference/sprites/skeletal animations/skeleton_animation_set_ext.html", "11"],
+     ["skeleton_animation_set_frame", "source/_build/3_scripting/4_gml_reference/sprites/skeletal animations/skeleton_animation_set_frame.html", "11"],
      ["skeleton_attachment_create", "source/_build/3_scripting/4_gml_reference/sprites/skeletal animations/skeleton_attachment_create.html", "11"],
      ["skeleton_attachment_get", "source/_build/3_scripting/4_gml_reference/sprites/skeletal animations/skeleton_attachment_get.html", "11"],
      ["skeleton_attachment_set", "source/_build/3_scripting/4_gml_reference/sprites/skeletal animations/skeleton_attachment_set.html", "11"],
@@ -2162,6 +2198,9 @@
      ["skeleton_bone_state_get", "source/_build/3_scripting/4_gml_reference/sprites/skeletal animations/skeleton_bone_state_get.html", "11"],
      ["skeleton_bone_state_set", "source/_build/3_scripting/4_gml_reference/sprites/skeletal animations/skeleton_bone_state_set.html", "11"],
      ["skeleton_collision_draw_set", "source/_build/3_scripting/4_gml_reference/sprites/skeletal animations/skeleton_collision_draw_set.html", "11"],
+     ["skeleton_get_bounds", "source/_build/3_scripting/4_gml_reference/sprites/skeletal animations/skeleton_get_bounds.html", "11"],
+     ["skeleton_get_minmax", "source/_build/3_scripting/4_gml_reference/sprites/skeletal animations/skeleton_get_minmax.html", "11"],
+     ["skeleton_get_num_bounds", "source/_build/3_scripting/4_gml_reference/sprites/skeletal animations/skeleton_get_num_bounds.html", "11"],
      ["skeleton_skin_get", "source/_build/3_scripting/4_gml_reference/sprites/skeletal animations/skeleton_skin_get.html", "11"],
      ["skeleton_skin_list", "source/_build/3_scripting/4_gml_reference/sprites/skeletal animations/skeleton_skin_list.html", "11"],
      ["skeleton_skin_set", "source/_build/3_scripting/4_gml_reference/sprites/skeletal animations/skeleton_skin_set.html", "11"],
