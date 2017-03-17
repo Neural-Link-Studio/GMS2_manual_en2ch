@@ -236,19 +236,14 @@ the help file to open in workspace within the IDE.</li>
 </div>
 <br>
 <a name="prefs_input" id="prefs_input"></a> <label class="collapse"
-for="six">输入</label> <input id="six" type="checkbox">
+for="six">输入（Input）</label> <input id="six" type="checkbox">
 <div class="index_list"><img class="center" src=
-"images/general_input_prefs.png" alt="The Input Preferences">
-<p>The Input preferences control certain aspects of the mouse and keyboard input within the IDE. 可用的选项有：<br>
+"images/general_input_prefs.png" alt="输入偏好设置">
+<p>输入偏好设置用于控制一些The Input preferences control certain aspects of the mouse and keyboard input within the IDE. 可用的选项有：<br>
 <br></p>
 
 <ul>
-<li><b>Slow double click time (ms)</b>: Some areas of the IDE
-require a slower double click to work correctly, for example when
-renaming a resource (a fast double click will open the resource
-editor, while a slow double click will permit you to rename it).
-This option permits you to set the detection speed, with a default
-value of 350ms.<br>
+<li><b>慢双击时间（毫秒）（Slow double click time (ms)）</b>: Some areas of the IDE require a slower double click to work correctly, for example when renaming a resource (a fast double click will open the resource editor, while a slow double click will permit you to rename it). This option permits you to set the detection speed, with a default value of 350ms.<br>
 <br></li>
 
 <li><b>Distance tab must be dragged to un-maximise the desktop</b>:
@@ -271,10 +266,7 @@ can then scroll "B", so you don't accidentally start scrolling
 different panels. The default value is 500ms.<br>
 <br></li>
 
-<li><b>Minimum zoom level to allow mouse interaction with window
-contents</b>: This option controls the zoom cut-off point at which
-the mouse will no longer be able to interact with workspace windows
-(ie: add nodes, drag windows, etc...). The default value is 40.<br>
+<li><b>Minimum zoom level to allow mouse interaction with window contents</b>: This option controls the zoom cut-off point at which the mouse will no longer be able to interact with workspace windows (ie: add nodes, drag windows, etc...). 默认值为40.<br>
 <br></li>
 
 <li><b>Control key must be held down for mouse wheel zoom</b>: When
@@ -289,199 +281,132 @@ un-checking it will enable zoom with <i>only</i> the mouse wheel
 </div>
 <br>
 <a name="prefs_output_windows" id="prefs_output_windows"></a>
-<label class="collapse" for="twelve">输出窗口</label>
+<label class="collapse" for="twelve">输出窗口（Output Windows）</label>
 <input id="twelve" type="checkbox">
 <div class="index_list"><img class="center" src=
 "images/general_outputwindow_prefs.png" alt=
-"The Output Window Preferences">
-<p>The Output Window preferences control the different colour and
-formatting options for the various different output windows in the
-IDE. Each of the different windows has the same set of options,
-which are listed below:<br>
+"输出窗口偏好设置">
+<p>The Output Window preferences control the different colour and formatting options for the various different output windows in the IDE. 每一个不同的窗口都共有相同的一组选项，列举如下：<br>
 <br></p>
 
 <ul>
-<li><b>Colour</b>: The default colour for the text being written to
-the window.<br>
+<li><b>颜色（Colour）</b>: The default colour for the text being written to the window.<br>
 <br></li>
 
-<li><b>Font Name</b>: The name of the font to use (available fonts
-will depend on those installed on your system).<br>
+<li><b>字体名称（Font Name）</b>: The name of the font to use (available fonts will depend on those installed on your system).<br>
 <br></li>
 
-<li><b>Style</b>: The font style to use, like <b>bold</b> or
-<i>italics</i> (note that not all windows will permit the same
-styles and it will also depend on the font used).<br>
+<li><b>字体样式（Style）</b>: The font style to use, like <b>bold</b> or <i>italics</i> (note that not all windows will permit the same styles and it will also depend on the font used).<br>
 <br></li>
 
-<li><b>Size</b>: The size to set the font to for the given output
-window.<br>
+<li><b>大小（Size）</b>: The size to set the font to for the given output window.<br>
 <br></li>
 
-<li><b>Anti-Aliasing Mode</b>: Here you can set the anti-aliasing
-mode for the output windows font rendering. You can choose to let
-the IDE decide by selecting <i>Use Default</i>, or you can force it
-<i>On</i> or <i>Off</i> by selecting either of those options.</li>
+<li><b>抗锯齿模式（Anti-Aliasing Mode）</b>: Here you can set the anti-aliasing mode for the output windows font rendering. You can choose to let the IDE decide by selecting <i>Use Default</i>, or you can force it <i>On</i> or <i>Off</i> by selecting either of those options.</li>
 </ul>
 </div>
 <br>
 <a name="prefs_paths" id="prefs_paths"></a> <label class="collapse"
-for="seven">路径</label> <input id="seven" type="checkbox">
+for="seven">文件路径（Paths）</label> <input id="seven" type="checkbox">
 <div class="index_list"><img class="center" src=
-"images/general_paths_prefs.png" alt="The Path Preferences">
-<p>The Path preferences control the different file paths required
-by elements in the <i>GameMaker Studio 2</i> IDE as well as for any
-external editors that you require. The following options exist for
-the IDE:<br>
+"images/general_paths_prefs.png" alt="文件路径偏好设置">
+<p>文件路径偏好设置（Path Preference）用于控制<i>GameMaker Studio 2</i>中的一些要素以及你所要求的外部编辑器（External Editors）所需的各种文件路径。在IDE中有如下选项：<br>
 <br></p>
 
 <ul>
-<li><b>Temp Location</b>: The location for saving all the temporary
-folders. By default this is
-<tt>\Users\&lt;Username&gt;\AppData\Local\Temp\GameMakerStudio2</tt>.<br>
+<li><b>临时文件位置（Temp Location）</b>：该位置用于存储所有的临时文件夹。默认地，该路径为<tt>\Users\&lt;Username&gt;\AppData\Local\Temp\GameMakerStudio2</tt>。<br>
 
 <br></li>
 
-<li><b>Asset Cache</b>: The location for saving the asset cache for
-each project. By default this is
-<tt>D:\Users\&lt;Username&gt;\AppData\Roaming\GameMakerStudio2-Dev\Cache</tt>.<br>
+<li><b>资源缓存（Asset Cache）</b>：该位置用于存储每个工程的资源缓存。默认地，该路径为<tt>D:\Users\&lt;Username&gt;\AppData\Roaming\GameMakerStudio2-Dev\Cache</tt>。<br>
 
 <br></li>
 
-<li><b>"My Projects" Location</b>: The location qhere <i>GameMaker
-Studio 2</i> will initially create new projects. By default this is
-<tt>D:\Users\&lt;Username&gt;\Documents\GameMakerStudio2</tt>.<br>
+<li><b>“我的工程”文件夹位置（"My Projects" Location）</b><i>GameMaker Studio 2</i>创建新工程的初始位置。默认地，该路径为<tt>D:\Users\&lt;Username&gt;\Documents\GameMakerStudio2</tt>。<br>
 <br></li>
 
-<li><b>Auto Delete Temp Folder</b>: Checking this will force
-<i>GameMaker Studio 2</i> to automatically delete the Temp folder
-that it creates per project for compiling etc... This setting is on
-by default, and un-checking it will switch it off (meaning that you
-will have to manually remove any temp files later).<br>
+<li><b>自动删除临时文件夹（Auto Delete Temp Folder）</b>：勾选此项将会强制<i>GameMaker Studio 2</i>自动删除每次编译工程等时候产生的临时文件夹。该选项默认为开，解除勾选此项会将其关闭（意味着你需要在以后手动地删除所有的临时文件）。<br>
 <br></li>
 
-<li><b>Delete Asset Cache On Quit</b>: If this is checked then the
-asset compiler cache folder will be removed when you quit
-<i>GameMaker Studio 2</i>. This is off by default, and enabling it
-will mean that everytime you load and run any project the cache
-will need to be rebuilt (which can take time depending on the size
-of the game).<br>
+<li><b>退出时删除资源缓存（Delete Asset Cache On Quit）</b>：如果勾选此项，则在你退出<i>GameMaker Studio 2</i>时候删除资源编译器缓存。. 该选项默认为关，启用此项意味着每次你载入并运行工程时需要重新创建缓存（取决于游戏的大小，这可能会花一些时间）。<br>
 <br></li>
 
-<li><b>Delete Temp Folder</b>: Clicking this button will delete the
-temp folder for the project.<br>
+<li><b>删除临时文件夹（Delete Temp Folder）</b>：点击该按钮将会删除该工程的临时文件夹。<br>
 <br></li>
 
-<li><b>Delete Asset Cache</b>: Clicking this button will delete the
-compiler asset cache for the project.</li>
+<li><b>删除资源缓存（Delete Asset Cache）</b>：点击该按钮将会删除该工程的资源缓存。</li>
 </ul>
 
-<p>The following options exist for setting paths to external
-editors:<br>
+<p>还有下列用于设定外部编辑器路径的选项：<br>
 <br></p>
 
 <ul>
-<li><b>Path to external editor/viewer for SWF files</b>: If you are
-working with SWF format sprites, you can set this to the path of
-your preferred viewer/editor and when you click the <i>Edit
-Image</i> button in the Sprite Editor then it will open the given
-program. The default value here is to have no path.<br>
+<li><b>SWF文件的外部编辑器/查看器（Path to external editor/viewer for SWF files）</b>：如果你要处理SWF类型的精灵，你可以将该选项设置为你喜欢的查看器/编辑器的路径，并且当你在精灵编辑器（Sprite Editor）中点击<i>编辑精灵（Edit Sprite）</i>按钮的时候，它会打开被给定的程序。此处默认值为无路径。<br>
 <br></li>
 
-<li><b>Path to external editor/viewer for Spine files</b>: If you
-are working with Spine format sprites, you can set this to the path
-of your preferred viewer/editor and when you click the <i>Edit
-Image</i> button in the Sprite Editor then it will open the given
-program. The default value here is to have no path.<br>
+<li><b>Spine文件的外部编辑器/查看器（Path to external editor/viewer for Spine files）</b>：如果你要处理Spine类型的精灵，你可以将该选项设置为你喜欢的查看器/编辑器的路径，并且当你在精灵编辑器（Sprite Editor）中点击<i>编辑精灵（Edit Sprite）</i>按钮的时候，它会打开被给定的程序。此处默认值为无路径。<br>
 <br></li>
 </ul>
 </div>
 <br>
 <a name="prefs_power" id="prefs_power"></a> <label class="collapse"
-for="eleven">Power Saving</label> <input id="eleven" type=
+for="eleven">节能（Power Saving）</label> <input id="eleven" type=
 "checkbox">
 <div class="index_list"><img class="center" src=
 "images/general_power_prefs.png" alt=
-"The Power Saving Preferences">
-<p>The Power Saving preferences here will affect how much CPU power and GPU power will be used to generate the <i>GameMaker Studio 2</i> IDE (essentially this will lower the base framerate at which the program runs and so lower power consumption). 选项有：<br>
+"节能偏好设置">
+<p>节能偏好设置（Power Saving Preferences）将会影响生成<i>GameMaker Studio 2</i> IDE所使用的CPU及GPU功率（必要时这些设置会在程序运行时降低基本帧率及功耗）。选项有：<br>
 <br></p>
 
 <ul>
-<li><b>% when on AC power</b>: The base power consumption when
-connected to a power input. Default is 100%.<br>
+<li><b>% 在使用交流电源时（% when on AC power）</b>：当连接输入电源时的基本功耗。默认值为100%<br>
 <br></li>
 
-<li><b>% when on battery power</b>: The base power consumption when
-using battery to power the machine. Default is 35%.<br>
+<li><b>% 在使用电池电源时（% when on battery power）</b>：当使用机器电池时的基本功耗。默认值为35%。<br>
 <br></li>
 
-<li><b>% when application is not in focus</b>: The base power
-consumption when <i>GameMaker Studio 2</i> is not in focus
-(regardless of the power supply). Default is 15%.</li>
+<li><b>% 在应用程序失去焦点时（% when application is not in focus）</b>：当<i>GameMaker Studio 2</i>失去焦点时的基本功耗（该情况下无视电源类型）。默认值为15%</li>
 </ul>
 </div>
 <br>
 <a name="prefs_resources" id="prefs_resources"></a> <label class=
-"collapse" for="thirteen">资源</label> <input id="thirteen"
+"collapse" for="thirteen">资源（Resources）</label> <input id="thirteen"
 type="checkbox">
 <div class="index_list"><img class="center" src=
 "images/general_resources_prefs.png" alt=
-"The Resources Preferences">
+"资源偏好设置">
 <p>The preferences here contain options for how certain resources
 will be drawn in your projects:<br>
 <br></p>
 
 <ul>
-<li><b>Initial default draw colour for new projects</b>: When you
-use a font or draw a shape using the <i>GameMaker Studio 2</i>
-functions or DnD™ actions without specifying a colour, the colour
-set here is the one that will be used. The default colour is white
-($ffffff).</li>
+<li><b>在新工程中默认的绘制初始色（Initial default draw colour for new projects）</b>：当你使用<i>GameMaker Studio 2</i>的函数或拖拽按钮（DnD™）动作调用字体或绘制形状时若没有指定绘制颜色，则会使用此处的颜色。默认颜色为白色($ffffff)。</li>
 </ul>
 </div>
 <br>
 <a name="prefs_workspace" id="prefs_workspace"></a> <label class=
-"collapse" for="eight">工作区</label> <input id="eight" type=
+"collapse" for="eight">工作空间（Workspace）</label> <input id="eight" type=
 "checkbox">
 <div class="index_list"><img class="center" src=
 "images/general_workspace_prefs.png" alt=
-"The Workspace Preferences">
+"工作空间偏好设置">
 <p>The preferences here will affect how you move around within the different <i>GameMaker Studio 2</i> workspaces. 选项有：<br>
 <br></p>
 
 <ul>
-<li><b>The degree range allowed when looking for a window using
-shortcuts</b>: Within a workspace you can have multiple windows
-open for different objects and resources, and so to move around
-quickly between them you can use the <a href=
-"../../2_quick_start/8_shortcuts.html">keyboard shortcut</a>
-<img style="vertical-align:middle" src=
+<li><b>使用快捷键浏览窗口时允许的角度范围（The degree range allowed when looking for a window using shortcuts）</b>: Within a workspace you can have multiple windows open for different objects and resources, and so to move around quickly between them you can use the <a href=
+"../../2_quick_start/8_shortcuts.html">keyboard shortcut</a> <img style="vertical-align:middle" src=
 "../../../images/icon_ctrl.png"> + <img style=
-"vertical-align:middle" src="../../../images/icon_alt.png"> +
-<tt>&lt;Arrow Keys&gt;</tt> to move between them. Given that the
-windows within a workspace are not grid aligned the IDE has to
-choose which window you mean when you press any of the possible 8
-directions, and this option permits you to set the "look angle"
-that is used. The default value is 40°.<br>
+"vertical-align:middle" src="../../../images/icon_alt.png"> + <tt>&lt;Arrow Keys&gt;</tt> to move between them. Given that the windows within a workspace are not grid aligned the IDE has to choose which window you mean when you press any of the possible 8 directions, and this option permits you to set the "look angle" that is used. 默认值为40°<br>
 <br></li>
 
-<li><b>The padding between two columns in a chain</b>: Workspace
-elements are often "chained" to each other (for example, the Code
-Editor is chained to the Event Editor is chained to the Object
-Editor), and this option permits you to set the horizontal distance
-between any two chained windows. The default value is 30px.<br>
+<li><b>连接线所连接两个栏目的间隔宽度（The padding between two columns in a chain）</b>: Workspace elements are often "chained" to each other (for example, the Code Editor is chained to the Event Editor is chained to the Object Editor), and this option permits you to set the horizontal distance between any two chained windows. 默认值为30px（30像素）。<br>
 <br></li>
 
-<li><b>The padding between two rows in a chain</b>: As mentioned
-above, workspace elements are often "chained" to each other and
-this option permits you to set the vertical distance between any
-two chained windows. The default value is 20px.<br>
+<li><b>The padding between two rows in a chain</b>: As mentioned above, workspace elements are often "chained" to each other and this option permits you to set the vertical distance between any two chained windows. 默认值为20px（20像素）。<br>
 <br></li>
 
-<li><b>How Many Segments Should Render Chains Have?</b>: Here you
-can set the maximum number of segments for render chains. Lowering
-this value may help performance on lower end machines. The default
-value is 20.<br>
+<li><b>连接线需要渲染出多少段？（How Many Segments Should Render Chains Have?）</b>: Here you can set the maximum number of segments for render chains. 降低该值可能有助于在低配置机器上发挥更好的性能。默认值为20.<br>
 <br></li>
 
 <li><b>The link colour for workspace chains</b>: This is the colour
@@ -489,26 +414,15 @@ that will be used to display chains between workspace elements.
 Default colour is $99DD00 with an alpha of 153 ($99).<br>
 <br></li>
 
-<li><b>Whether we should reset back to 1:1 when moving between
-windows using shortcuts</b>: As mentioned above, you can skip from
-window to window within the workspace using keyboard shortcuts. You
-can also zoom the workspace in and out using the <img style=
-"vertical-align:middle" src="../../../images/icon_ctrl.png"> + the
-mouse wheel <img style="vertical-align:middle" src=
-"../../../images/icon_lmb.png">. Setting this option will mean that
-if you have the workspace zoomed and use the shortcuts to skip to
-another window, then the workspace will be returned to a 1:1 view
-and centered on the selected window. This option is off by
-default.<br>
+<li><b>Whether we should reset back to 1:1 when moving between windows using shortcuts</b>: As mentioned above, you can skip from window to window within the workspace using keyboard shortcuts. You can also zoom the workspace in and out using the <img style=
+"vertical-align:middle" src="../../../images/icon_ctrl.png"> + the mouse wheel <img style="vertical-align:middle" src=
+"../../../images/icon_lmb.png">. Setting this option will mean that if you have the workspace zoomed and use the shortcuts to skip to another window, then the workspace will be returned to a 1:1 view and centered on the selected window. 该选项默认为关。<br>
 <br></li>
 
-<li><b>Allow workspace chains to overlap</b>: When enabled this option will permit workspace chains to cross and overlap. 该选项默认关闭<br>
+<li><b>允许工作空间的连接线交叉（Allow workspace chains to overlap）</b>: When enabled this option will permit workspace chains to cross and overlap. 该选项默认为关<br>
 <br></li>
 
-<li><b>Select the IDE skin to use</b>: Here you can select from the
-different skins that the IDE can use. By default <i>GameMaker
-Studio 2</i> comes with two skins, one light and one dark, and the
-initial setup uses the dark skin.<br>
+<li><b>选择使用的IDE皮肤（Select the IDE skin to use）</b>: Here you can select from the different skins that the IDE can use. By default <i>GameMaker Studio 2</i> comes with two skins, one light and one dark, and the initial setup uses the dark skin.<br>
 <br></li>
 
 <li><b>DPI Override</b>: This option lets you override the default
@@ -529,8 +443,8 @@ any work being done on the currently open project.</li>
 <div style="float:left">上一页：<a href=
 "../7_preferences.html">偏好设置索引</a></div>
 
-<div style="float:right">Next: <a href=
-"prefs_draganddrop.html">Drag and Drop</a></div>
+<div style="float:right">下一页：<a href=
+"prefs_draganddrop.html">拖拽按钮</a></div>
 </div>
 </div>
 
