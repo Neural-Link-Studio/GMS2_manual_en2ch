@@ -833,7 +833,7 @@
     <Cell><Data ss:Type="String">数字</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell><Data ss:Type="String">下方向键</Data></Cell>
+    <Cell><Data ss:Type="String">下</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">结束</Data></Cell>
@@ -851,7 +851,7 @@
     <Cell><Data ss:Type="String">Home键</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell><Data ss:Type="String">插入</Data></Cell>
+    <Cell><Data ss:Type="String">插入（Insert）</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">小键盘</Data></Cell>
@@ -3203,7 +3203,7 @@
     <Cell><Data ss:Type="String">水平偏移：</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell><Data ss:Type="String">插入</Data></Cell>
+    <Cell><Data ss:Type="String">插入（Insert）</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">速度：</Data></Cell>
@@ -12077,16 +12077,16 @@
     <Cell><Data ss:Type="String">双击</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell><Data ss:Type="String">拖拽开始</Data></Cell>
+    <Cell><Data ss:Type="String">拖拽起点</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">拖拽</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell><Data ss:Type="String">拖拽结束</Data></Cell>
+    <Cell><Data ss:Type="String">拖拽终点</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell><Data ss:Type="String">轻拂</Data></Cell>
+    <Cell><Data ss:Type="String">划过</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">全局点击</Data></Cell>
@@ -12104,7 +12104,7 @@
     <Cell><Data ss:Type="String">全局拖拽结束</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell><Data ss:Type="String">全局轻点</Data></Cell>
+    <Cell><Data ss:Type="String">全局划过</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">仅下载</Data></Cell>
