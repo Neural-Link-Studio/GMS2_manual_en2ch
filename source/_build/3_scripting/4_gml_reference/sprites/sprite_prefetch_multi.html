@@ -35,14 +35,14 @@ if (window.name != "content")
 <p><br>
 </p>
 
-<h3>Syntax:</h3>
+<h3>语法：</h3>
 
 <p class="code">sprite_prefetch_multi</p>
 
 <blockquote>
 <table>
 <tr>
-<th>Argument</th>
+<th>参数</th>
 <th>描述</th>
 </tr>
 
@@ -72,16 +72,13 @@ You supply an array populated with the sprite indices (as defined
 when you created the sprite asset) and the texture pages that they
 are on will be loaded into memory.</p>
 
-<div class="note"><b>NOTE</b>: There is a performance hit as the
-texture is uploaded to texture memory on most devices, so it's
-recommended that you call <tt>sprite_preftech</tt> on any required
-graphics at the start of a level to avoid any stalls.</div>
+<div class="note"><b>注意</b>： There is a performance hit as the texture is uploaded to texture memory on most devices, so it's recommended that you call <tt>sprite_preftech</tt> on any required graphics at the start of a level to avoid any stalls.</div>
 </blockquote>
 
 <p><br>
 </p>
 
-<h3>Example:</h3>
+<h3>举例：</h3>
 
 <p class="code">spr_a[0] = spr_Player_Aura1;<br>
 spr_a[1] = spr_Player_Aura2;<br>

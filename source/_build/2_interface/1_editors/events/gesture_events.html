@@ -7,7 +7,7 @@
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
 
 <meta name="generator" content="chm2web Pro 2.85 (unicode)" />
-<title>The Gesture Events</title>
+<title>手势事件</title>
 <meta http-equiv="X-UA-Compatible" content="IE=9">
 
 <link rel="stylesheet" href="../../../../../files/helpindex.css"
@@ -30,13 +30,13 @@ if (window.name != "content")
 <script type="text/JavaScript">
  if( typeof(chmtop.helpStyle) != 'undefined' ) { var linkNodes = document.getElementsByTagName("link");  for( var i=0; i < linkNodes.length; ++i ) { var link = linkNodes[i];    if( link.href.endsWith("default.css")) {    var style = link.href.replace("default.css", chmtop.helpStyle); document.write('<link id="newstyleLink" rel="stylesheet" href=' + style + ' type="text/css">');    break; } } } 
 </script>
-<h2>The Gesture Events</h2>
+<h2>手势事件</h2>
 
 <div class="body-scroll">
 <p><br>
 </p>
 <img class="center" src="images/editor_objects_gesture.png" alt=
-"Object Editor Gesture Events">
+"物体编辑器的手势事件">
 <p>The <b>Gesture Event</b> will be triggered whenever <i>GameMaker
 Studio 2</i> detects a "gesture" of the mouse or a touch screen
 event (while these gesture events are designed specifically for
@@ -85,7 +85,7 @@ value of -1 at all other times.</div>
 <table>
 <tr>
 <th>键</th>
-<th>Value Description</th>
+<th>值描述</th>
 </tr>
 
 <tr>
@@ -261,14 +261,7 @@ first detected.</p>
 <label class="collapse" for="a">点击</label> <input id="a" type=
 "checkbox">
 <div class="index_list">
-<p>The <b>Tap</b> event will be triggered when an instance has been
-touched or clicked or - if it is a global event - when the game
-registers a touch or click anywhere in the room. A tap is
-considered a quick touch and release, and if the touch lasts too
-long then it will be considered a Drag (and trigger the Drag
-gesture events instead of the Tap event). This event will generate
-an <tt>event_data</tt> DS map which you can then use to get
-information about the event. For example:</p>
+<p>The <b>Tap</b> event will be triggered when an instance has been touched or clicked or - if it is a global event - when the game registers a touch or click anywhere in the room. A tap is considered a quick touch and release, and if the touch lasts too long then it will be considered a Drag (and trigger the Drag gesture events instead of the Tap event). This event will generate an <tt>event_data</tt> DS map which you can then use to get information about the event. 比如：</p>
 
 <p class="code">// CREATE EVENT<br>
 x_goto = x;<br>
@@ -297,15 +290,7 @@ it shorter (value is in seconds and defaults to 0.16).</p>
 <label class="collapse" for="b">双击</label> <input id="b"
 type="checkbox">
 <div class="index_list">
-<p>The <b>Double Tap</b> event will be triggered when an instance
-has been touched or clicked twice in quick succession (or - if it
-is a global event - when the game registers two quick touches or
-clicks anywhere in the room). A double tap is considered two quick
-touches and releases, but if any of the touches lasts too long then
-it will be considered a Drag (and trigger the Drag gesture events
-instead of the Double Tap event). This event will generate an
-<tt>event_data</tt> DS map which you can then use to get
-information about the event. For example:</p>
+<p>The <b>Double Tap</b> event will be triggered when an instance has been touched or clicked twice in quick succession (or - if it is a global event - when the game registers two quick touches or clicks anywhere in the room). A double tap is considered two quick touches and releases, but if any of the touches lasts too long then it will be considered a Drag (and trigger the Drag gesture events instead of the Double Tap event). This event will generate an <tt>event_data</tt> DS map which you can then use to get information about the event. 比如：</p>
 
 <p class="code">// CREATE EVENT<br>
 x_goto = x;<br>
@@ -328,21 +313,11 @@ tap event).</p>
 </div>
 <br>
 <a name="gesture_drag_start" id="gesture_drag_start"></a>
-<label class="collapse" for="c">拖拽开始</label> <input id="c"
+<label class="collapse" for="c">拖拽起点</label> <input id="c"
 type="checkbox">
 <div class="index_list">
-<p>The <b>Drag Start</b> event will be triggered when the user
-maintains a touch or click without releasing it. It will be
-triggered once when a set time has passed after the initial touch,
-which is 0.16 seconds by default (although you can set this to any
-other value in seconds using the function <a href=
-"../../../3_scripting/4_gml_reference/controls/gesture%20input/gesture_drag_time.html">
-<tt>gesture_drag_time</tt></a>). After this event has been
-triggered, and as long as the user has a touch/click held down,
-then the <b>Dragging</b> event will be triggered every step until
-the touch/click has been released. This event will generate an
-<tt>event_data</tt> DS map which you can then use to get
-information about the event. For example:</p>
+<p>The <b>Drag Start</b> event will be triggered when the user maintains a touch or click without releasing it. It will be triggered once when a set time has passed after the initial touch, which is 0.16 seconds by default (although you can set this to any other value in seconds using the function <a href=
+"../../../3_scripting/4_gml_reference/controls/gesture%20input/gesture_drag_time.html"> <tt>gesture_drag_time</tt></a>). After this event has been triggered, and as long as the user has a touch/click held down, then the <b>Dragging</b> event will be triggered every step until the touch/click has been released. This event will generate an <tt>event_data</tt> DS map which you can then use to get information about the event. 比如：</p>
 
 <p class="code">// CREATE EVENT<br>
 drag_offsetX = 0;<br>
@@ -363,18 +338,8 @@ of this example).</p>
 <a name="gesture_dragging" id="gesture_dragging"></a> <label class=
 "collapse" for="d">拖拽</label> <input id="d" type="checkbox">
 <div class="index_list">
-<p>The <b>Dragging</b> event is triggered after the <b>Drag
-Start</b> event, and will be triggered for every step that the user
-maintains the touch/click on the instance (or the screen, if it's a
-global event) and moves more than the defined dragging threshold.
-This distance is 0.1 inches by default but can be set using the
-function <a href=
-"../../../3_scripting/4_gml_reference/controls/gesture%20input/gesture_drag_distance.html">
-<tt>gesture_drag_distance</tt></a>. If there is no movement or the
-movement is under the defined threshold, the event will not be
-triggered. This event will generate an <tt>event_data</tt> DS map
-which you can then use to get information about the event. For
-example:</p>
+<p>The <b>Dragging</b> event is triggered after the <b>Drag Start</b> event, and will be triggered for every step that the user maintains the touch/click on the instance (or the screen, if it's a global event) and moves more than the defined dragging threshold. This distance is 0.1 inches by default but can be set using the function <a href=
+"../../../3_scripting/4_gml_reference/controls/gesture%20input/gesture_drag_distance.html"> <tt>gesture_drag_distance</tt></a>. If there is no movement or the movement is under the defined threshold, the event will not be triggered. This event will generate an <tt>event_data</tt> DS map which you can then use to get information about the event. 比如：</p>
 
 <p class="code">// CREATE EVENT<br>
 drag_offsetX = 0;<br>
@@ -394,7 +359,7 @@ y = event_data[?"posY"] + drag_offsetY;<br></p>
 </div>
 <br>
 <a name="gesture_drag_end" id="gesture_drag_end"></a> <label class=
-"collapse" for="e">拖拽结束</label> <input id="e" type="checkbox">
+"collapse" for="e">拖拽终点</label> <input id="e" type="checkbox">
 <div class="index_list">
 <p>The <b>Drag End</b> event is triggered when the user releases
 the touch/click on the instance (or the screen if the event is
@@ -443,17 +408,10 @@ instance in the step event.</p>
 </div>
 <br>
 <a name="gesture_flick" id="gesture_flick"></a> <label class=
-"collapse" for="f">轻拂</label> <input id="f" type="checkbox">
+"collapse" for="f">划过</label> <input id="f" type="checkbox">
 <div class="index_list">
-<p>The <b>Flick</b> event is only triggered when a touch/click has
-been held, dragged and then released and the distance between the
-last drag position and the release position is greater than 2
-inches per second (this is the default setting, although this can
-be changed using the function <a href=
-"../../../3_scripting/4_gml_reference/controls/gesture%20input/gesture_flick_speed.html">
-<tt>gesture_flick_speed</tt></a>). This event will generate an
-<tt>event_data</tt> DS map which you can then use to get
-information about the event. For example:</p>
+<p>The <b>Flick</b> event is only triggered when a touch/click has been held, dragged and then released and the distance between the last drag position and the release position is greater than 2 inches per second (this is the default setting, although this can be changed using the function <a href=
+"../../../3_scripting/4_gml_reference/controls/gesture%20input/gesture_flick_speed.html"> <tt>gesture_flick_speed</tt></a>). This event will generate an <tt>event_data</tt> DS map which you can then use to get information about the event. 比如：</p>
 
 <p class="code">// CREATE EVENT<br>
 flickVelX = 0.0;<br>
@@ -483,11 +441,9 @@ step event.</p>
 <div class="footer">
 <div class="buttons">
 <div class="clear">
-<div style="float:left">Back: <a href="../objects.html">The Object
-Editor</a></div>
+<div style="float:left">上一页：<a href="../objects.html">物体编辑器</a></div>
 
-<div style="float:right">Next: <a href="async_events.html">Async
-Events</a></div>
+<div style="float:right">下一页：<a href="async_events.html">异步事件</a></div>
 </div>
 </div>
 

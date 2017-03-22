@@ -40,7 +40,7 @@ if (window.name != "content")
 that control how your Mac OS game projects will be compiled. The
 different sections are:</p>
 
-<blockquote><label class="collapse" for="a">常规（General）</label>
+<blockquote><label class="collapse" for="a">全局</label>
 <input id="a" type="checkbox">
 <div class="index_list">
 <p><img class="center" src="images/mac_general_options.png" alt=
@@ -78,25 +78,16 @@ determine how your game will use the graphics card of your target
 Mac. The following options are included for you to modify:</p>
 
 <ul>
-<li><b>Allow Menu And Dock In Fullscreen</b>: When checked, this
-option will show the OS menu and dock if the game is in fullscreen
-mode. This is off by default.<br>
+<li><b>Allow Menu And Dock In Fullscreen</b>: When checked, this option will show the OS menu and dock if the game is in fullscreen mode. 该选项默认为关<br>
 <br></li>
 
-<li><b>Display Cursor</b>: When this is checked the regular Mac OS
-cursor will be show, and un-checking it will mean that no cursor is
-shown unless you have created one in your game code. This is off by
-default.<br>
+<li><b>Display Cursor</b>: When this is checked the regular Mac OS cursor will be show, and un-checking it will mean that no cursor is shown unless you have created one in your game code. 该选项默认为关<br>
 <br></li>
 
-<li><b>Start Fullscreen</b>: If this is checked, the game will
-start in fullscreen mode otherwise it will start windowed. This is
-off by default.<br>
+<li><b>Start Fullscreen</b>: If this is checked, the game will start in fullscreen mode otherwise it will start windowed. 该选项默认为关<br>
 <br></li>
 
-<li><b>Allow Fullscreen Switching</b>: With this ticked the user
-can switch from fullscreen to windowed and back again using the
-standard Mac OS shortcuts. This is off by default.<br>
+<li><b>Allow Fullscreen Switching</b>: With this ticked the user can switch from fullscreen to windowed and back again using the standard Mac OS shortcuts. 该选项默认为关<br>
 <br></li>
 
 <li><b>Interpolate colours between pixels</b>: Turns on
@@ -106,18 +97,10 @@ smoothed edged graphics it is better left on.This is off by
 default.<br>
 <br></li>
 
-<li><b>Use synchronization to avoid tearing</b>: This toggles
-v-sync on or off (v-sync is used to synchronise your game update
-speed to the refresh rate of the monitor). Note, that if you have a
-game with a room speed of 120 and the player has a monitor with a
-refresh rate of 60, turning this option on will lock your game
-speed to 60 too. This is off by default.<br>
+<li><b>Use synchronization to avoid tearing</b>: This toggles v-sync on or off (v-sync is used to synchronise your game update speed to the refresh rate of the monitor). Note, that if you have a game with a room speed of 120 and the player has a monitor with a refresh rate of 60, turning this option on will lock your game speed to 60 too. 该选项默认为关<br>
 <br></li>
 
-<li><b>Allow the player to resize the game window</b>: Checking
-this permits the user to change the size of the game window (the
-<b>Borderless Window</b> option needs to be <i>off</i> for this to
-work). This option is off by default.<br>
+<li><b>Allow the player to resize the game window</b>: Checking this permits the user to change the size of the game window (the <b>Borderless Window</b> option needs to be <i>off</i> for this to work). 该选项默认为关。<br>
 <br></li>
 
 <li><b>Scaling</b>: Here you can choose to maintain aspect ratio
@@ -142,12 +125,10 @@ how they look. This can be very useful if you wish to see how the
 texture pages are structured and to prevent having texture pages
 larger (or smaller) than necessary.</p>
 
-<div class="note"><b>NOTE</b>: Be aware that the larger the size of
-the texture page, the less compatible your game will be on Macs
-with lower specifications.</div>
+<div class="note"><b>注意</b>： Be aware that the larger the size of the texture page, the less compatible your game will be on Macs with lower specifications.</div>
 </div>
 <br>
-<label class="collapse" for="c">Images</label> <input id="c" type=
+<label class="collapse" for="c">图片</label> <input id="c" type=
 "checkbox">
 <div class="index_list">
 <p><img class="center" src="images/mac_images_options.png" alt=

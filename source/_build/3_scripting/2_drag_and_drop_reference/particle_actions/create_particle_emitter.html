@@ -57,24 +57,14 @@ need to be stored in a temporary local variable, but for certain
 things, like drawing particles to a surface, it may be
 required).</p>
 
-<div class="note"><b>NOTE</b>: A particle emitter, once created,
-remains resident in the system memory for the duration of the game,
-and so if you need to recreate it at any point (for example, if you
-call the <a href="../game_actions/restart_game.html">Restart
-Game</a> action), then you <b>must destroy the current particle
-emitter</b> otherwise you get a memory leak. This happens when a
-resource is added to memory and then "de-referenced", meaning that
-<i>GameMaker Studio 2</i> has no way to interact with that resource
-any more. This leads to the memory being clogged by inaccessible
-resources which in turn can cause issues with your game. To destroy
-a particle emitter when no longer required use the action <a href=
+<div class="note"><b>注意</b>： A particle emitter, once created, remains resident in the system memory for the duration of the game, and so if you need to recreate it at any point (for example, if you call the <a href="../game_actions/restart_game.html">Restart Game</a> action), then you <b>must destroy the current particle emitter</b> otherwise you get a memory leak. This happens when a resource is added to memory and then "de-referenced", meaning that <i>GameMaker Studio 2</i> has no way to interact with that resource any more. This leads to the memory being clogged by inaccessible resources which in turn can cause issues with your game. To destroy a particle emitter when no longer required use the action <a href=
 "destroy_particle_emitter.html">Destroy Particle Emitter</a>.</div>
 </blockquote>
 
 <p><br>
 </p>
 
-<h3>Action Syntax:</h3>
+<h3>动作语法：</h3>
 <img class="center" src=
 "images/a_particles_create_particle_emitter.png" alt=
 "Create Particle Emitter Syntax">
@@ -86,7 +76,7 @@ a particle emitter when no longer required use the action <a href=
 <blockquote>
 <table>
 <tr>
-<th>Argument</th>
+<th>参数</th>
 <th>描述</th>
 </tr>
 
@@ -96,7 +86,7 @@ a particle emitter when no longer required use the action <a href=
 </tr>
 
 <tr class="alt">
-<td>目标?</td>
+<td>目标变量</td>
 <td>The target variable to hold the emitter ID</td>
 </tr>
 </table>
@@ -105,7 +95,7 @@ a particle emitter when no longer required use the action <a href=
 <p><br>
 </p>
 
-<h3>Example:</h3>
+<h3>举例：</h3>
 <img class="center" src=
 "images/e_particles_create_particle_emitter.png" alt=
 "Create Particle Emitter Example">
@@ -120,8 +110,7 @@ particles.</blockquote>
 <div class="footer">
 <div class="buttons">
 <div class="clear">
-<div style="float:left">Back: <a href="index.html">Particle
-Actions</a></div>
+<div style="float:left">上一页：<a href="index.html">粒子动作</a></div>
 
 <div style="float:right">next: <a href=
 "destroy_particle_emitter.html">Destroy Particle Emitter</a></div>

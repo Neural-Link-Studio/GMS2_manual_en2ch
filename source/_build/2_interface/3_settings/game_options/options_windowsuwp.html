@@ -40,7 +40,7 @@ if (window.name != "content")
 that control how your UWP (Universal Windows Platform) game
 projects will be compiled. The different sections are:</p>
 
-<blockquote><label class="collapse" for="a">常规（General）</label>
+<blockquote><label class="collapse" for="a">全局</label>
 <input id="a" type="checkbox">
 <div class="index_list">
 <p><img class="center" src="images/uwp_general_options.png" alt=
@@ -73,9 +73,7 @@ publisher.<br>
 <li><b>Version</b>: The version number of your game.</li>
 </ul>
 
-<p>After setting that up you can select the different
-<i>Orientations</i> that your game can be run on for the best user
-experience. The available options are:</p>
+<p>After setting that up you can select the different <i>Orientations</i> that your game can be run on for the best user experience. 可用的选项有：</p>
 
 <ul>
 <li>横向</li>
@@ -94,16 +92,13 @@ de-select those that you do not require.</p>
 your UWP app will need from the following options:</p>
 
 <ul>
-<li><b>Enable Internet Permission</b>: Flags the game as having
-access to internet. This is off by default.<br>
+<li><b>Enable Internet Permission</b>: Flags the game as having access to internet. 该选项默认为关<br>
 <br></li>
 
-<li><b>Enable Microphone Permission</b>: Flags the game as having
-access to the microphone of the device. This is off by default.<br>
+<li><b>Enable Microphone Permission</b>: Flags the game as having access to the microphone of the device. 该选项默认为关<br>
 <br></li>
 
-<li><b>Enable IAP Sandbox</b>: Flags the game as using sandboxed In
-App Purchases. This is off by default.</li>
+<li><b>Enable IAP Sandbox</b>: Flags the game as using sandboxed In App Purchases. 该选项默认为关</li>
 </ul>
 </div>
 <br>
@@ -165,12 +160,10 @@ how they look. This can be very useful if you wish to see how the
 texture pages are structured and to prevent having texture pages
 larger (or smaller) than necessary.</p>
 
-<div class="note"><b>NOTE</b>: Be aware that the larger the size of
-the texture page, the less compatible your game will be on UWP
-devices with lower specifications.</div>
+<div class="note"><b>注意</b>： Be aware that the larger the size of the texture page, the less compatible your game will be on UWP devices with lower specifications.</div>
 </div>
 <br>
-<label class="collapse" for="c">Images</label> <input id="c" type=
+<label class="collapse" for="c">图片</label> <input id="c" type=
 "checkbox">
 <div class="index_list">
 <p><img class="center" src="images/uwp_images2_options.png" alt=
@@ -260,16 +253,7 @@ Executable</i> the certification installation process will
 automatically be launched if the <tt>*.pfx</tt> has yet to be
 registered).</p>
 
-<div class="note"><b>NOTE</b>: When it comes to uploading your app
-to the store you will need to get the correct <tt>*.pfx</tt> for
-your title. This is done via associating your app with the Windows
-Store in Visual Studio which causes Visual Studio to generate a new
-<tt>*.pfx</tt> specifically for the app. It is also worth noting
-that you can associate any app with the Windows Store in Visual
-Studio, meaning you can associate a blank project with the Windows
-Store app and simply copy the generated <tt>pfx</tt> to a safe
-location which can then be used within UWP Game Options. You can
-find instructions on how this is done from the <a href=
+<div class="note"><b>注意</b>： When it comes to uploading your app to the store you will need to get the correct <tt>*.pfx</tt> for your title. This is done via associating your app with the Windows Store in Visual Studio which causes Visual Studio to generate a new <tt>*.pfx</tt> specifically for the app. It is also worth noting that you can associate any app with the Windows Store in Visual Studio, meaning you can associate a blank project with the Windows Store app and simply copy the generated <tt>pfx</tt> to a safe location which can then be used within UWP Game Options. You can find instructions on how this is done from the <a href=
 "http://help.yoyogames.com/hc/en-us/articles/115001349488" target=
 "_blank">YoYo Games Knowledge Base</a>.</div>
 </div></blockquote>

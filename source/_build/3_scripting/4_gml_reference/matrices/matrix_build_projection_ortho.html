@@ -48,16 +48,14 @@ gives a "flat" view of the elements drawn (ie: no perspective) in a
 3D game. See the image below to get an idea of the difference
 between orthographic and perspective views.</p>
 
-<div class="note"><b>NOTE</b>: You may also need to temporarily
-switch off hidden surface removal if you want the information to be
-drawn regardless of the current depth value.</div>
+<div class="note"><b>注意</b>： You may also need to temporarily switch off hidden surface removal if you want the information to be drawn regardless of the current depth value.</div>
 <img class="center" src="images/ortho_persp_image.png">
 </blockquote>
 
 <p><br>
 </p>
 
-<h3>Syntax:</h3>
+<h3>语法：</h3>
 
 <p class="code">matrix_build_projection_ortho(width, height, znear,
 zfar);</p>
@@ -70,7 +68,7 @@ zfar);</p>
 <blockquote>
 <table>
 <tr>
-<th>Argument</th>
+<th>参数</th>
 <th>描述</th>
 </tr>
 
@@ -106,7 +104,7 @@ zfar);</p>
 <p><br>
 </p>
 
-<h3>Example:</h3>
+<h3>举例：</h3>
 
 <p class="code">viewmat = matrix_build_lookat(640, 240, -10, 640,
 240, 0, 0, 1, 0);<br>

@@ -47,23 +47,13 @@ for all further function calls to the buffer. You can supply a
 global variable, an instance variable or have the action create a
 temporary local variable for storing the buffer ID.</p>
 
-<div class="note"><b>NOTE</b>: It's important that you remove any
-dynamically created resources like this from memory when you no
-longer need them to prevent memory leaks, so when you are finished
-with the buffer that you have created you should free it up again
-using <a href="delete_buffer.html">Delete Buffer</a> action (in the
-<a href="../../../2_interface/1_editors/events/index.html">Other -
-Clean Up</a> event, for example). This is especially important to
-remember when using a temporary local variable, as if you do not
-remove the buffer again before the end of the event or action
-script then you will no longer be able access it and can have
-issues later.</div>
+<div class="note"><b>注意</b>： It's important that you remove any dynamically created resources like this from memory when you no longer need them to prevent memory leaks, so when you are finished with the buffer that you have created you should free it up again using <a href="delete_buffer.html">Delete Buffer</a> action (in the <a href="../../../2_interface/1_editors/events/index.html">Other - Clean Up</a> event, for example). This is especially important to remember when using a temporary local variable, as if you do not remove the buffer again before the end of the event or action script then you will no longer be able access it and can have issues later.</div>
 </blockquote>
 
 <p><br>
 </p>
 
-<h3>Action Syntax:</h3>
+<h3>动作语法：</h3>
 <img class="center" src="images/a_buffers_create_buffer.png" alt=
 "Create Buffer Syntax">
 <p><br>
@@ -74,12 +64,12 @@ issues later.</div>
 <blockquote>
 <table>
 <tr>
-<th>Argument</th>
+<th>参数</th>
 <th>描述</th>
 </tr>
 
 <tr>
-<td>缓冲区?</td>
+<td>缓冲区</td>
 <td>The buffer index (stored in a variable)</td>
 </tr>
 
@@ -93,7 +83,7 @@ issues later.</div>
 <p><br>
 </p>
 
-<h3>Example:</h3>
+<h3>举例：</h3>
 <img class="center" src="images/e_buffers_create_buffer.png" alt=
 "Create Buffer Example">
 <blockquote>The above action block code creates a global variable

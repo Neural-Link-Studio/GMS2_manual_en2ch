@@ -7,7 +7,7 @@
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
 
 <meta name="generator" content="chm2web Pro 2.85 (unicode)" />
-<title>The Asynchronous Events</title>
+<title>异步事件</title>
 <meta http-equiv="X-UA-Compatible" content="IE=9">
 
 <link rel="stylesheet" href="../../../../../files/helpindex.css"
@@ -30,11 +30,11 @@ if (window.name != "content")
 <script type="text/JavaScript">
  if( typeof(chmtop.helpStyle) != 'undefined' ) { var linkNodes = document.getElementsByTagName("link");  for( var i=0; i < linkNodes.length; ++i ) { var link = linkNodes[i];    if( link.href.endsWith("default.css")) {    var style = link.href.replace("default.css", chmtop.helpStyle); document.write('<link id="newstyleLink" rel="stylesheet" href=' + style + ' type="text/css">');    break; } } } 
 </script>
-<h2>The Asynchronous Events</h2>
+<h2>异步事件</h2>
 
 <div class="body-scroll">
 <p><img class="center" src="images/editor_objects_async.png" alt=
-"Object Editor Async Events">  An <b>asynchronous event</b> is one
+"物体编辑器异步事件">  An <b>asynchronous event</b> is one
 that is fired off when <i>GameMaker Studio 2</i> receives a "call
 back" from some external source, which can be from the web or from
 the device running your game. Basically, you tell <i>GameMaker
@@ -49,10 +49,7 @@ you can do an <tt>http_get</tt> call in one instance, yet have the
 Asynchronous HTTP event in another to deal with the call
 back.<br></p>
 
-<div class="note"><b>NOTE</b>: You should be aware that due to XSS
-protection in browsers, requests to and attempts to load resources
-from across domains are blocked and may appear to return blank
-results when using any of the following events</div>
+<div class="note"><b>注意</b>： You should be aware that due to XSS protection in browsers, requests to and attempts to load resources from across domains are blocked and may appear to return blank results when using any of the following events</div>
 
 <p><br>
 
@@ -60,18 +57,13 @@ There are various types of events associated with the Asynchronous
 event category, and they are all explained in the sections
 below:</p>
 
-<div class="note"><b>NOTE:</b> The variable <tt>async_load</tt>
-which is mentioned in the following sections is <b>only valid in
-these events</b>, as the <tt>ds_map</tt> that is points to is
-created at the start of the event, then deleted again at the end,
-with this variable being reset to a value of -1 at all other
-times.</div>
+<div class="note"><b>注意：</b> The variable <tt>async_load</tt> which is mentioned in the following sections is <b>only valid in these events</b>, as the <tt>ds_map</tt> that is points to is created at the start of the event, then deleted again at the end, with this variable being reset to a value of -1 at all other times.</div>
 
 <p><br>
 </p>
 
 <blockquote><a name="async_audio_play" id="async_audio_play"></a>
-<label class="collapse" for="thirteen">Audio Playback</label>
+<label class="collapse" for="thirteen">音频播放器</label>
 <input id="thirteen" type="checkbox">
 <div class="index_list">This event can only be triggered by the
 <a href=
@@ -294,7 +286,7 @@ in the following table:
 <div class="compat">
 <table>
 <tr>
-<th>Status Value</th>
+<th>状态值</th>
 <th>errorString / resultString</th>
 <th>描述</th>
 </tr>
@@ -1015,7 +1007,7 @@ and it can then be used to change rooms, or play a music track
 etc...</div></blockquote></div>
 <br>
 <a name="async_social" id="async_social"></a> <label class=
-"collapse" for="eight">Social</label> <input id="eight" type=
+"collapse" for="eight">社交（Social）</label> <input id="eight" type=
 "checkbox">
 <div class="index_list">This event can only be triggered by the
 various specific <a href=
@@ -1585,11 +1577,9 @@ required.</div></blockquote></div></blockquote>
 <div class="footer">
 <div class="buttons">
 <div class="clear">
-<div style="float:left">Back: <a href="../objects.html">The Object
-Editor</a></div>
+<div style="float:left">上一页：<a href="../objects.html">物体编辑器</a></div>
 
-<div style="float:right">Next: <a href="draw_events.html">Draw
-Events</a></div>
+<div style="float:right">下一页：<a href="draw_events.html">绘制事件</a></div>
 </div>
 </div>
 
