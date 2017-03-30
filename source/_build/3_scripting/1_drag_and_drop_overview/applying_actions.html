@@ -7,7 +7,7 @@
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
 
 <meta name="generator" content="chm2web Pro 2.85 (unicode)" />
-<title>Applying Actions To Other Instances</title>
+<title>将动作应用于其他实例</title>
 <meta http-equiv="X-UA-Compatible" content="IE=9">
 
 <link rel="stylesheet" href="../../../../files/helpindex.css" type=
@@ -30,7 +30,7 @@ if (window.name != "content")
 <script type="text/JavaScript">
  if( typeof(chmtop.helpStyle) != 'undefined' ) { var linkNodes = document.getElementsByTagName("link");  for( var i=0; i < linkNodes.length; ++i ) { var link = linkNodes[i];    if( link.href.endsWith("default.css")) {    var style = link.href.replace("default.css", chmtop.helpStyle); document.write('<link id="newstyleLink" rel="stylesheet" href=' + style + ' type="text/css">');    break; } } } 
 </script>
-<h2>Applying Actions To Other Instances</h2>
+<h2>将动作应用于其他实例</h2>
 
 <div class="body-scroll">
 <p><br>
@@ -39,7 +39,7 @@ if (window.name != "content")
 <p>Most actions in the DnD™ libraries have an option to apply the
 action in different ways. This is called setting the action
 <i>scope</i> and it can be one of several things: <img class=
-"center" src="images/dnd_applies_to.png" alt="DnD™ Applies To">
+"center" src="images/dnd_applies_to.png" alt="DnD™ 应用于">
 Essentially what you are telling <i>GameMaker Studio 2</i> from
 which instance to run the action. The default action scope is
 <tt>self</tt>, which means that once the object is created as an
@@ -71,7 +71,7 @@ the code.</p>
 <br>
 <a name="dnd_scope_other" id="dnd_scope_other"></a> <label class=
 "collapse" for="two"><img style="vertical-align:middle" src=
-"images/i_scope_other.png"> 其它</label> <input id="two" type=
+"images/i_scope_other.png"> 对方</label> <input id="two" type=
 "checkbox">
 <div class="index_list">
 <div style="margin-left: 2em">
@@ -101,7 +101,7 @@ scope to <tt>other</tt> to perform an action on the instance
 running the whole event block, and not the instance that is being
 scoped in the apply yo code blocks. The image below gives an
 example: <img class="center" src="images/dnd_scope_other.png" alt=
-"DnD™ Scope"> In the image, we are checking for a mouse press in
+"DnD™ 作用域"> In the image, we are checking for a mouse press in
 the instance, and if one is detected we change scope using the
 <b>Apply To...</b> action. The next two action blocks are now being
 called from the "obj_Player" instance (if there is more than one
@@ -151,21 +151,11 @@ will change direction.</p>
 "five" type="checkbox">
 <div class="index_list">
 <div style="margin-left: 2em">
-<p>The <b>Expression</b> input field is for you to input the ID of
-a specific instance that you want the action to work on. It can be
-the unique ID value assigned to an instance from the <a href=
-"../../2_interface/1_editors/rooms.html#room_instance_layer">Room
-Editor</a> or it can be the ID of an instance that you've stored in
-a variable (where the variable would be the input value) or it can
-even be an expression using code, as shown in the image below:
-<img class="center" src="images/dnd_scope_target.png" alt=
-"DnD™ Target"> In this case, an instance calls the <a href=
-"../2_drag_and_drop_reference/instance_actions/set_sprite.html">Set
-Sprite</a> from the instance created by the code given for the
-Expression. Note that in this case, the instance being created will
-run its <a href=
-"../../2_interface/1_editors/events/index.html">Create Event</a>
-<i>first</i> before the action is applied to it.</p>
+<p><b>表达式（Expression）</b>输入字段供你输入一个你希望执行动作的实例id。It can be the unique ID value assigned to an instance from the <a href=
+"../../2_interface/1_editors/rooms.html#room_instance_layer">Room Editor</a> or it can be the ID of an instance that you've stored in a variable (where the variable would be the input value) or it can even be an expression using code, as shown in the image below: <img class="center" src="images/dnd_scope_target.png" alt=
+"DnD™ 目标变量"> In this case, an instance calls the <a href=
+"../2_drag_and_drop_reference/instance_actions/set_sprite.html">Set Sprite</a> from the instance created by the code given for the Expression. Note that in this case, the instance being created will run its <a href=
+"../../2_interface/1_editors/events/index.html">Create Event</a> <i>first</i> before the action is applied to it.</p>
 </div>
 </div></blockquote>
 
@@ -176,11 +166,9 @@ run its <a href=
 <div class="footer">
 <div class="buttons">
 <div class="clear">
-<div style="float:left">Back: <a href="index.html">Drag And Drop
-Overview</a></div>
+<div style="float:left">上一页：<a href="index.html">拖拽按钮概览</a></div>
 
-<div style="float:right">Next: <a href="action_scripts.html">Action
-Scripts</a></div>
+<div style="float:right">下一页：<a href="action_scripts.html">动作脚本</a></div>
 </div>
 </div>
 

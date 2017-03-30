@@ -39,7 +39,7 @@ if (window.name != "content")
 <h3>描述</h3>
 
 <blockquote>
-<p>With this function you can check to see if two arrays are equal (equivalent or the same). You give the two arrays to check, and the function will return <tt>true</tt> if they are equal (either equivalent or the same) or <tt>false</tt> if they are not. Note that this is <i>not</i> the same as checking if two arrays are the same using ==, which will not check to see if the two arrays hold equivalent values, but only to see if the arrays are referencing the same initial array. 比如：</p>
+<p>使用该函数你可以检测两个数组是否相等（等价或一致）你需要两个待检测的数组，并且如果它们相等（可以是等价或者一致），函数将会返回<tt>true</tt>，否则返回<tt>false</tt>。请注意，这并<i>不</i>与使用==来判断数组是否相同的方法完全一致，使用==判断的方法不会检测两个数组是否具有相同的值，而只会查看两个数组是否引用了同一个初始数组。比如：</p>
 
 <p class="code">var a = [1,2,3,4];<br>
 var b = [1,2,3,4];<br>
@@ -75,19 +75,19 @@ if (array_equals(a, b))<br>
 
 <tr>
 <td>var1</td>
-<td>The index of the first array.</td>
+<td>第一个数组的句柄</td>
 </tr>
 
 <tr>
 <td>var2</td>
-<td>The index of the second array.</td>
+<td>第二个数组的句柄</td>
 </tr>
 </table>
 </blockquote>
 
-<h3>Returns:</h3>
+<h3>返回：</h3>
 
-<p class="code">Boolean</p>
+<p class="code">布尔值</p>
 
 <p><br>
 </p>
@@ -102,10 +102,7 @@ len);<br>
 &nbsp;&nbsp;&nbsp;}<br></p>
 
 <blockquote>
-<p>The above code will check two arrays to see if they hold
-equivalent values, and if they do not then the code will copy the
-entire contents of the array "inventory_array" to the array
-"item_array".</p>
+<p>上述代码将会检测两个数组来查看它们是否承载了相等的值，如果不是，这段代码将会拷贝数组"inventory_array"的全部内容给数组"item_array"。</p>
 </blockquote>
 
 <p><br>
@@ -115,10 +112,10 @@ entire contents of the array "inventory_array" to the array
 <div class="footer">
 <div class="buttons">
 <div class="clear">
-<div style="float:left">Back: <a href=
-"../10_arrays.html">Arrays</a></div>
+<div style="float:left">上一页：<a href=
+"../10_arrays.html">数组</a></div>
 
-<div style="float:right">Next: <a href=
+<div style="float:right">下一页：<a href=
 "array_length_1d.html">array_length_1d</a></div>
 </div>
 </div>

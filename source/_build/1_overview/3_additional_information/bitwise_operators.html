@@ -129,14 +129,7 @@ if (window.name != "content")
 11111111111111111111111111111010<br>
 00000000000000000000001000111010<br></p>
 <br>
-
-This is great, but if we had to work this out every time we needed
-to clear flags, it would become tiresome. What we need is a way to
-flip bits easily (and preferably without CPU cost). Fortunately
-there is an easy way of doing this by using the NOT operator.<br>
-<br>
-The NOT operator is just what it says - NOT those bits. Here's a
-truth table for NOT.<br>
+这是很不错的思路，但每次我们需要清除标志时，如果不得不解决这个问题，这样会变得非常烦琐。我们需要的是一种比较容易翻转“位”的方法（最好没有CPU开销）。幸运的是的确还有简单的方法，那就是使用“非（NOT）”运算符。<br><br>“非”运算就像它说的一样 - “非”那些位。下面是“非”运算的真值表。<br>
 <br>
 
 <p class="code">~00 = 11<br>
@@ -144,24 +137,12 @@ truth table for NOT.<br>
 ~10 = 01<br>
 ~11 = 00<br></p>
 <br>
-
-This operator makes removing flags very simple, and better yet,
-it's usually a compile time optimisation meaning if you're using a
-constant number (i.e. not a variable) then the compiler will flip
-the bits automatically for you. Take this statement where we want
-to clear bits 1 and 3 again:<br>
+这个运算符让删除标志非常简单，而且更好，这通常是一个编译时间上的优化。如果你使用一个常数值（即不是变量），然后编译器将为你自动翻转“位”。我们想要再次清除位1和位3的地方使用这个语句：<br>
 <br>
 
 <p class="code">a = a &amp; ~5;<br></p>
 <br>
-
-This will actually compile down to just "a &amp;
-11111111111111111111111111111010". This makes life pretty simple in
-terms of clearing flags.<br>
-<br>
-The last operator we want to look at is EOR (Exclusive OR,
-sometimes called XOR), this operator flips the bits set in
-<i>both</i> values. Here's the EOR truth table:<br>
+这将实际编译为 "a  &amp; 11111111111111111111111111111010"。就清除标志来说，这变得相当简单。<br><br>最后我们要看的运算符是“异或（EOR，有时叫 XOR）” ，这个运算翻转位设置，当<i>两个位</i>相同时为0，不同时为1。这里是“异或”的真值表：<br>
 <br>
 
 <p class="code">0 ^ 0 = 0<br>
@@ -169,43 +150,22 @@ sometimes called XOR), this operator flips the bits set in
 1 ^ 0 = 1<br>
 1 ^ 1 = 0<br></p>
 <br>
-
-This is a curious one, but incredibly useful. For example, let's
-say we want a counter that simply counts from 0 to 1 and back to 0
-(toggling between 0 and 1), we could add one and do an IF to see if
-it's gotten to 2, and then reset it back to 1. Or...we could add 1
-and then AND it with 1 (since 01+01 = 10, and 10 &amp; 01 = 0) or
-we can do this:<br>
+异或很奇特，但非常有用。例如，我们要一个计数器，简单的从0数到1然后回到0（0和1之间切换），我们可以递增1，使用“IF”检查是否获得2，然后重新设置为1。或者……我们加1然后“与”1（ 因为01+01 = 10，以及10 &amp; 01 = 0）或者我们这样做：<br>
 <br>
 
 <p class="code">a = a ^ 1;<br></p>
 <br>
-
-What this does, is first time through is 0 ^ 1 = 1, then the second
-time 1 ^ 1 = 0, thereby toggling things back and forth from 0 to
-1.<br>
-<br>
-So - OR (|), AND(&amp;), NOT(~) and EOR(^) let us manipulate bits
-with relative ease, allowing us, at the simplest level, to control
-multiple bits at once. We can obviously use these operations for
-other things when developing our games, like masking sprites, doing
-integer MOD operations (using AND) or doing nice looping
-counters.</div>
+这样做，第一次的时候（a=0）是 0 ^ 1 = 1，然后第二次（a=1）是1 ^ 1 = 0，从而触发从0到1再到0的来回。<br><br>所以 - 或 (|)、 与(&amp;)、 非(~) 以及异或(^) 让我们可以相对容易的操作位运算，允许我们在一个最简单的层面上一次性同时控制多个位。很明显地，在开发游戏时我们可以使用这些运算做些其它的事情，像是掩蔽精灵、整数MOD运算（使用与）或者一个不错的循环计数器。</div>
 <br>
 <label class="collapse" for="three">简单二进制算术运算</label> <input id="three" type="checkbox">
-<div class="index_list">How does a computer add? Well let's look at
-a very simple example 1+1.<br>
+<div class="index_list">计算机是怎样做加法的？那么让我们来看看一个非常简单的示例 1+1。<br>
 <br>
 
 <p class="code">00000001<br>
 00000001<br>
 00000010<br></p>
 <br>
-
-Just like normal additions, we add numbers together and then we
-overflow into the next column, but unlike a normal decimal
-addition, we can only go to 1, not 9. So adding a 1+1 means we
-overflow into 10. So let's look at a more complex example.<br>
+就像正常的加法，数字加起来然后溢出到下一列中，但是不同于普通的十进制加法，只会进到1，没有9。所以 1+1 means we overflow into 10. So let's look at a more complex example.<br>
 <br>
 
 <p class="code">01011011 = 91<br>
