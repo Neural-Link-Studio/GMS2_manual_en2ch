@@ -27,6 +27,9 @@ if (window.name != "content")
 </script><!-- !chm2web! -->
 
 
+<script type="text/JavaScript">
+ if( typeof(chmtop.helpStyle) != 'undefined' ) { var linkNodes = document.getElementsByTagName("link");  for( var i=0; i < linkNodes.length; ++i ) { var link = linkNodes[i];    if( link.href.endsWith("default.css")) {    var style = link.href.replace("default.css", chmtop.helpStyle); document.write('<link id="newstyleLink" rel="stylesheet" href=' + style + ' type="text/css">');    break; } } } 
+</script>
 <h2>配置</h2>
 
 <div class="body-scroll">
@@ -58,11 +61,7 @@ for sound resources or the texture group settings and many other
 options... Just about anything that can be configured in the IDE
 will be stored in the currently selected configuration.</p>
 
-<div class="note"><b>NOTE</b>: With the included files and
-extensions you can select a target platform for them to export to.
-That should also be set so that when you create individual
-configurations it is simply a question of un-ticking those that you
-don't need.</div>
+<div class="note"><b>注意</b>： With the included files and extensions you can select a target platform for them to export to. That should also be set so that when you create individual configurations it is simply a question of un-ticking those that you don't need.</div>
 
 <p><br>
 

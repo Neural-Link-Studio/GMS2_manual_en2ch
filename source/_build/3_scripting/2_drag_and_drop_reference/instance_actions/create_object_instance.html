@@ -27,6 +27,9 @@ if (window.name != "content")
 </script><!-- !chm2web! -->
 
 
+<script type="text/JavaScript">
+ if( typeof(chmtop.helpStyle) != 'undefined' ) { var linkNodes = document.getElementsByTagName("link");  for( var i=0; i < linkNodes.length; ++i ) { var link = linkNodes[i];    if( link.href.endsWith("default.css")) {    var style = link.href.replace("default.css", chmtop.helpStyle); document.write('<link id="newstyleLink" rel="stylesheet" href=' + style + ' type="text/css">');    break; } } } 
+</script>
 <h2><img style="vertical-align:middle" src=
 "images/i_instance_create.png">  Create Object Instance</h2>
 
@@ -53,7 +56,7 @@ the action and can be used in all subsequent actions.</p>
 <p><br>
 </p>
 
-<h3>Action Syntax:</h3>
+<h3>动作语法：</h3>
 <img class="center" src="images/a_instance_create.png" alt=
 "Create Object Instance Syntax">
 <p><br>
@@ -64,12 +67,12 @@ the action and can be used in all subsequent actions.</p>
 <blockquote>
 <table>
 <tr>
-<th>Argument</th>
+<th>参数</th>
 <th>描述</th>
 </tr>
 
 <tr>
-<td>Object</td>
+<td>物体</td>
 <td>The name of the object to create an instance of.</td>
 </tr>
 
@@ -86,7 +89,7 @@ relative to the calling instance)</td>
 </tr>
 
 <tr class="alt">
-<td>目标?</td>
+<td>目标变量</td>
 <td>The variable to target for the return value.</td>
 </tr>
 </table>
@@ -95,7 +98,7 @@ relative to the calling instance)</td>
 <p><br>
 </p>
 
-<h3>Example:</h3>
+<h3>举例：</h3>
 <img class="center" src="images/e_instance_create.png" alt=
 "Create Instance Example">
 <blockquote>The above action block code creates a new instance and

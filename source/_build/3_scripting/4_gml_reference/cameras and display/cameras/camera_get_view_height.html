@@ -26,6 +26,9 @@ if (window.name != "content")
 </script><!-- !chm2web! -->
 
 
+<script type="text/JavaScript">
+ if( typeof(chmtop.helpStyle) != 'undefined' ) { var linkNodes = document.getElementsByTagName("link");  for( var i=0; i < linkNodes.length; ++i ) { var link = linkNodes[i];    if( link.href.endsWith("default.css")) {    var style = link.href.replace("default.css", chmtop.helpStyle); document.write('<link id="newstyleLink" rel="stylesheet" href=' + style + ' type="text/css">');    break; } } } 
+</script>
 <h2>camera_get_view_height</h2>
 
 <p><br>
@@ -41,7 +44,7 @@ the given camera.</p>
 <p><br>
 </p>
 
-<h3>Syntax:</h3>
+<h3>语法：</h3>
 
 <p class="code">camera_get_view_height(camera_id)</p>
 
@@ -53,7 +56,7 @@ the given camera.</p>
 <blockquote>
 <table>
 <tr>
-<th>Argument</th>
+<th>参数</th>
 <th>描述</th>
 </tr>
 
@@ -68,19 +71,19 @@ camera</td>
 <p><br>
 </p>
 
-<h3>Returns:</h3>
+<h3>返回：</h3>
 
-<p class="code">Real</p>
+<p class="code">实数</p>
 
 <p><br>
 </p>
 
-<h3>Example:</h3>
+<h3>举例：</h3>
 
 <p class="code">var vw = camera_get_view_width(view_camera[0]) /
 2;<br>
 var vh = camera_get_view_height(view_camera[0]) / 2;<br>
-camera_set_position(view_camera[0], x - vw, y - vh);<br></p>
+camera_set_view_pos(view_camera[0], x - vw, y - vh);<br></p>
 
 <p>The above code retrieves the width and height of the camera
 assigned to view port[0] and then sets its position relative to the

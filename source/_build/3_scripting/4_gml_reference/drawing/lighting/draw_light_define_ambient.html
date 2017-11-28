@@ -26,6 +26,9 @@ if (window.name != "content")
 </script><!-- !chm2web! -->
 
 
+<script type="text/JavaScript">
+ if( typeof(chmtop.helpStyle) != 'undefined' ) { var linkNodes = document.getElementsByTagName("link");  for( var i=0; i < linkNodes.length; ++i ) { var link = linkNodes[i];    if( link.href.endsWith("default.css")) {    var style = link.href.replace("default.css", chmtop.helpStyle); document.write('<link id="newstyleLink" rel="stylesheet" href=' + style + ' type="text/css">');    break; } } } 
+</script>
 <h2>draw_light_define_ambient</h2>
 
 <p><br>
@@ -44,7 +47,7 @@ default colour is <tt>c_black</tt>.</p>
 <p><br>
 </p>
 
-<h3>Syntax:</h3>
+<h3>语法：</h3>
 
 <p class="code">draw_light_define_ambient(col)</p>
 
@@ -56,7 +59,7 @@ default colour is <tt>c_black</tt>.</p>
 <blockquote>
 <table>
 <tr>
-<th>Argument</th>
+<th>参数</th>
 <th>描述</th>
 </tr>
 
@@ -71,14 +74,14 @@ value).</td>
 <p><br>
 </p>
 
-<h3>Returns:</h3>
+<h3>返回：</h3>
 
 <p class="code">N/A</p>
 
 <p><br>
 </p>
 
-<h3>Example:</h3>
+<h3>举例：</h3>
 
 <p class="code">draw_light_define_ambient(c_white);</p>
 

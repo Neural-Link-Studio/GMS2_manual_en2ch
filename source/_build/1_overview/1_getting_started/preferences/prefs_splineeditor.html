@@ -27,6 +27,9 @@ if (window.name != "content")
 </script><!-- !chm2web! -->
 
 
+<script type="text/JavaScript">
+ if( typeof(chmtop.helpStyle) != 'undefined' ) { var linkNodes = document.getElementsByTagName("link");  for( var i=0; i < linkNodes.length; ++i ) { var link = linkNodes[i];    if( link.href.endsWith("default.css")) {    var style = link.href.replace("default.css", chmtop.helpStyle); document.write('<link id="newstyleLink" rel="stylesheet" href=' + style + ' type="text/css">');    break; } } } 
+</script>
 <h2>Preferences - Spline Editor</h2>
 
 <div class="body-scroll">
@@ -81,9 +84,7 @@ to be used to highlight any selected path segments. Default is
 (rgba) <tt>#FFFFFFFF</tt>.<br>
 <br></li>
 
-<li><b>Colour Applied To An Invalid Path</b> - The colour to be
-used to highlight a path that is not valid. Default is (rgba)
-<tt>#FF0000FF</tt>.<br>
+<li><b>Colour Applied To An Invalid Path</b> - The colour to be used to highlight a path that is not valid. 默认值为（RGBA颜色） <tt>#FF0000FF</tt>.<br>
 <br></li>
 
 <li><b>Colour Applied To Anchor Points</b> - The colour to be used
@@ -111,9 +112,7 @@ be used to draw the anchor points that are active. Default is
 (rgba) <tt>#FFFFFFFF</tt>.<br>
 <br></li>
 
-<li><b>Colour Applied To Active Invalid Anchor Points</b> - The
-colour to be used to draw the anchor points that are active but
-invalid. Default is (rgba) <tt>#FF0000FF</tt>.<br>
+<li><b>Colour Applied To Active Invalid Anchor Points</b> - The colour to be used to draw the anchor points that are active but invalid. 默认值为（RGBA颜色） <tt>#FF0000FF</tt>.<br>
 <br></li>
 
 <li><b>Mask Overlay Colour</b> - Set the overlay colour for masks
@@ -128,8 +127,8 @@ if they are enabled (see above). Default is (rgba)
 <div class="footer">
 <div class="buttons">
 <div class="clear">
-<div style="float:left">Back: <a href=
-"../7_preferences.html">Preferences Index</a></div>
+<div style="float:left">上一页：<a href=
+"../7_preferences.html">偏好设置索引</a></div>
 
 <div style="float:right">Next: <a href=
 "prefs_resourcetree.html">Resource Tree</a></div>

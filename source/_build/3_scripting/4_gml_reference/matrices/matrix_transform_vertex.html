@@ -26,6 +26,9 @@ if (window.name != "content")
 </script><!-- !chm2web! -->
 
 
+<script type="text/JavaScript">
+ if( typeof(chmtop.helpStyle) != 'undefined' ) { var linkNodes = document.getElementsByTagName("link");  for( var i=0; i < linkNodes.length; ++i ) { var link = linkNodes[i];    if( link.href.endsWith("default.css")) {    var style = link.href.replace("default.css", chmtop.helpStyle); document.write('<link id="newstyleLink" rel="stylesheet" href=' + style + ' type="text/css">');    break; } } } 
+</script>
 <h2>matrix_transform_vertex</h2>
 
 <p><br>
@@ -45,7 +48,7 @@ a 1D array of 3 elements where array[0] = x, array[1] = y, array[2]
 <p><br>
 </p>
 
-<h3>Syntax:</h3>
+<h3>语法：</h3>
 
 <p class="code">matrix_transform_vertex(matrix, x, y, z);</p>
 
@@ -57,7 +60,7 @@ a 1D array of 3 elements where array[0] = x, array[1] = y, array[2]
 <blockquote>
 <table>
 <tr>
-<th>Argument</th>
+<th>参数</th>
 <th>描述</th>
 </tr>
 
@@ -86,14 +89,14 @@ a 1D array of 3 elements where array[0] = x, array[1] = y, array[2]
 <p><br>
 </p>
 
-<h3>Returns:</h3>
+<h3>返回：</h3>
 
 <p class="code">Array (1D, 3 elements)</p>
 
 <p><br>
 </p>
 
-<h3>Example:</h3>
+<h3>举例：</h3>
 
 <p class="code">t_matrix = matrix_build(0, 0, 0, 0, 90, 0, 1, 2,
 1);<br>

@@ -26,13 +26,16 @@ if (window.name != "content")
 </script><!-- !chm2web! -->
 
 
+<script type="text/JavaScript">
+ if( typeof(chmtop.helpStyle) != 'undefined' ) { var linkNodes = document.getElementsByTagName("link");  for( var i=0; i < linkNodes.length; ++i ) { var link = linkNodes[i];    if( link.href.endsWith("default.css")) {    var style = link.href.replace("default.css", chmtop.helpStyle); document.write('<link id="newstyleLink" rel="stylesheet" href=' + style + ' type="text/css">');    break; } } } 
+</script>
 <h2>os_get_language</h2>
 
 <div class="body-scroll">
 <h2 class="studio">This function returns a different value
 depending on the browser or device language.</h2>
 
-<h3 class="studio">Syntax:</h3>
+<h3 class="studio">语法：</h3>
 
 <p class="code">os_get_language()</p>
 
@@ -152,7 +155,7 @@ returned, but the language code of the OS!</i><br>
 <p><br>
 </p>
 
-<h3 class="studio">Example:</h3>
+<h3 class="studio">举例：</h3>
 
 <p class="code">switch (os_get_language())<br>
 &nbsp;&nbsp;&nbsp;{<br>

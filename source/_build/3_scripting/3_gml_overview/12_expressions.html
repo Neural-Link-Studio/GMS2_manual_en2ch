@@ -27,6 +27,9 @@ if (window.name != "content")
 </script><!-- !chm2web! -->
 
 
+<script type="text/JavaScript">
+ if( typeof(chmtop.helpStyle) != 'undefined' ) { var linkNodes = document.getElementsByTagName("link");  for( var i=0; i < linkNodes.length; ++i ) { var link = linkNodes[i];    if( link.href.endsWith("default.css")) {    var style = link.href.replace("default.css", chmtop.helpStyle); document.write('<link id="newstyleLink" rel="stylesheet" href=' + style + ' type="text/css">');    break; } } } 
+</script>
 <h2>Expressions</h2>
 
 <div class="body-scroll">
@@ -106,10 +109,7 @@ str = a + "world";<br></p></div>
 <br>
 <label class="collapse" for="six">Increment/Decrement (++,
 --)</label> <input id="six" type="checkbox">
-<div class="index_list"><b>++, --</b> - Add or subtract <i>one</i>
-from a value. It is worth noting that placing this before or after
-the value to be added to or subtracted from will have slightly
-different results. For example:<br>
+<div class="index_list"><b>++, --</b> - Add or subtract <i>one</i> from a value. It is worth noting that placing this before or after the value to be added to or subtracted from will have slightly different results. 比如：<br>
 <br>
 
 <ul>

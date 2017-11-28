@@ -27,6 +27,9 @@ if (window.name != "content")
 </script><!-- !chm2web! -->
 
 
+<script type="text/JavaScript">
+ if( typeof(chmtop.helpStyle) != 'undefined' ) { var linkNodes = document.getElementsByTagName("link");  for( var i=0; i < linkNodes.length; ++i ) { var link = linkNodes[i];    if( link.href.endsWith("default.css")) {    var style = link.href.replace("default.css", chmtop.helpStyle); document.write('<link id="newstyleLink" rel="stylesheet" href=' + style + ' type="text/css">');    break; } } } 
+</script>
 <h2>更新IDE</h2>
 
 <div class="body-scroll">
@@ -48,7 +51,7 @@ alt="新版本窗口"></p>
 <p><br>
 </p>
 
-<p><i>GameMaker Studio 2</i>不仅有一个IDE，还有一些在幕后运作的不同的运行工具来将你的游戏生成到各种可用平台上。这些工具主要是不同平台要求的运行器和编译器，并且实际上你能同时拥有多个这些东西。而这就意味着当你发现当前的编译器和运行器对某一个目标版本或平台有问题的时候，你可以“挑选”编译器和运行器的版本。工具会在有新版本可用的时候自动更新，但你也可以在以后使用<b>运行环境引入设置</b>里选择你实际要用的版本。更多关于运行环境的更新请参阅<a href="preferences/prefs_runtime.html">偏好设置 - 运行环境引入</a></p>
+<p><i>GameMaker Studio 2</i>不仅有一个IDE，还有一些在幕后运作的不同的运行工具来将你的游戏构建到各种可用平台上。这些工具主要是不同平台要求的运行器和编译器，并且实际上你能同时拥有多个这些东西。而这就意味着当你发现当前的编译器和运行器对某一个目标版本或平台有问题的时候，你可以“挑选”编译器和运行器的版本。工具会在有新版本可用的时候自动更新，但你也可以在以后使用<b>运行环境引入设置</b>里选择你实际要用的版本。更多关于运行环境的更新请参阅<a href="preferences/prefs_runtime.html">偏好设置 - 运行环境引入</a></p>
 
 <p>请注意，下载并安装运行环境需要几分钟，但是你可以在IDE的右上角看到一个进度条： <img class="center" src=
 "images/getting_started_installing_runtimes.png" alt=

@@ -26,9 +26,12 @@ if (window.name != "content")
 </script><!-- !chm2web! -->
 
 
+<script type="text/JavaScript">
+ if( typeof(chmtop.helpStyle) != 'undefined' ) { var linkNodes = document.getElementsByTagName("link");  for( var i=0; i < linkNodes.length; ++i ) { var link = linkNodes[i];    if( link.href.endsWith("default.css")) {    var style = link.href.replace("default.css", chmtop.helpStyle); document.write('<link id="newstyleLink" rel="stylesheet" href=' + style + ' type="text/css">');    break; } } } 
+</script>
 <h1 class="studio">ds_list_find_value</h1>
 
-<h3 class="studio">Syntax:</h3>
+<h3 class="studio">语法：</h3>
 
 <p class="code">ds_list_find_value(id, pos);</p>
 
@@ -38,7 +41,7 @@ if (window.name != "content")
 <div class="param">
 <table>
 <tr>
-<th>Argument</th>
+<th>参数</th>
 <th>描述</th>
 </tr>
 
@@ -80,7 +83,7 @@ is_undefined()</tt></a> function.</i><br>
 <p><br>
 </p>
 
-<h3 class="studio">Example:</h3>
+<h3 class="studio">举例：</h3>
 
 <p class="code">val = ds_list_find_value(list, ds_list_size(list) -
 1);</p>

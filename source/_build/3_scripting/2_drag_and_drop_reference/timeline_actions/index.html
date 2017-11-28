@@ -27,6 +27,9 @@ if (window.name != "content")
 </script><!-- !chm2web! -->
 
 
+<script type="text/JavaScript">
+ if( typeof(chmtop.helpStyle) != 'undefined' ) { var linkNodes = document.getElementsByTagName("link");  for( var i=0; i < linkNodes.length; ++i ) { var link = linkNodes[i];    if( link.href.endsWith("default.css")) {    var style = link.href.replace("default.css", chmtop.helpStyle); document.write('<link id="newstyleLink" rel="stylesheet" href=' + style + ' type="text/css">');    break; } } } 
+</script>
 <h2>Timeline Library</h2>
 
 <div class="body-scroll">
@@ -53,40 +56,36 @@ start, and manipulate it through the following actions:</p>
 <tr>
 <td class="icons"><a href="set_instance_timeline.html"><img align=
 "middle" src="images/i_timelines_set_instance_timeline.png" alt=
-"Set Instance Timeline"></a>
+"设置实例的时间轴"></a>
 </td>
-<td class="text"><a href="set_instance_timeline.html">Set Instance
-Timeline</a>
+<td class="text"><a href="set_instance_timeline.html">设置实例的时间轴</a>
 </td>
 </tr>
 
 <tr>
 <td class="icons"><a href="set_timeline_moment.html"><img align=
 "middle" src="images/i_timelines_set_timeline_moment.png" alt=
-"Set Timeline Moment"></a>
+"设置时间轴的时刻"></a>
 </td>
-<td class="text"><a href="set_timeline_moment.html">Set Timeline
-Moment</a>
+<td class="text"><a href="set_timeline_moment.html">设置时间轴的时刻</a>
 </td>
 </tr>
 
 <tr>
 <td class="icons"><a href="set_timeline_speed.html"><img align=
 "middle" src="images/i_timelines_set_timeline_speed.png" alt=
-"Set Timeline Speed"></a>
+"设置时间轴速度"></a>
 </td>
-<td class="text"><a href="set_timeline_speed.html">Set Timeline
-Speed</a>
+<td class="text"><a href="set_timeline_speed.html">设置时间轴速度</a>
 </td>
 </tr>
 
 <tr>
 <td class="icons"><a href="set_timeline_state.html"><img align=
 "middle" src="images/i_timelines_set_timeline_state.png" alt=
-"Set Timeline State"></a>
+"设置时间时间轴状态"></a>
 </td>
-<td class="text"><a href="set_timeline_state.html">Set Timeline
-State</a>
+<td class="text"><a href="set_timeline_state.html">设置时间时间轴状态</a>
 </td>
 </tr>
 </table>

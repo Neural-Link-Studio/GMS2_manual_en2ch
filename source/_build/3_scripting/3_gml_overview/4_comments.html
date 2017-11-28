@@ -27,6 +27,9 @@ if (window.name != "content")
 </script><!-- !chm2web! -->
 
 
+<script type="text/JavaScript">
+ if( typeof(chmtop.helpStyle) != 'undefined' ) { var linkNodes = document.getElementsByTagName("link");  for( var i=0; i < linkNodes.length; ++i ) { var link = linkNodes[i];    if( link.href.endsWith("default.css")) {    var style = link.href.replace("default.css", chmtop.helpStyle); document.write('<link id="newstyleLink" rel="stylesheet" href=' + style + ' type="text/css">');    break; } } } 
+</script>
 <h2>Comments in Code</h2>
 
 <div class="body-scroll">
@@ -44,8 +47,7 @@ leave notes to yourself and to your colleagues, or to explain a
 particularly tricky piece of code, or even just leave a reminder
 about what something does.</p>
 
-<p>The first thing you can do is leave a short comment using
-<b><tt>//</tt></b> before the text. For example:</p>
+<p>The first thing you can do is leave a short comment using <b><tt>//</tt></b> before the text. 比如：</p>
 
 <p class="code">//initialize variables<br>
 sr = 10;<br>

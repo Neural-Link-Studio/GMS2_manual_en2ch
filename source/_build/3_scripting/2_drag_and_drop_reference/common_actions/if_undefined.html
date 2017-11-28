@@ -27,6 +27,9 @@ if (window.name != "content")
 </script><!-- !chm2web! -->
 
 
+<script type="text/JavaScript">
+ if( typeof(chmtop.helpStyle) != 'undefined' ) { var linkNodes = document.getElementsByTagName("link");  for( var i=0; i < linkNodes.length; ++i ) { var link = linkNodes[i];    if( link.href.endsWith("default.css")) {    var style = link.href.replace("default.css", chmtop.helpStyle); document.write('<link id="newstyleLink" rel="stylesheet" href=' + style + ' type="text/css">');    break; } } } 
+</script>
 <h2><img style="vertical-align:middle" src=
 "images/i_common_if_undefined.png"> 如果未定义...</h2>
 
@@ -59,7 +62,7 @@ performed after the "if" block.</p>
 <p><br>
 </p>
 
-<h3>Action Syntax:</h3>
+<h3>动作语法：</h3>
 <img class="center" src="images/a_common_if_undefined.png" alt=
 "If Undefined Syntax">
 <p><br>
@@ -70,17 +73,17 @@ performed after the "if" block.</p>
 <blockquote>
 <table>
 <tr>
-<th>Argument</th>
+<th>参数</th>
 <th>描述</th>
 </tr>
 
 <tr>
-<td>Variable</td>
+<td>变量</td>
 <td>The name of the variable to check.</td>
 </tr>
 
 <tr class="alt">
-<td>Not</td>
+<td>非</td>
 <td>Set to check if undefined does <i>not</i> evaluate to
 true.</td>
 </tr>
@@ -90,7 +93,7 @@ true.</td>
 <p><br>
 </p>
 
-<h3>Example:</h3>
+<h3>举例：</h3>
 <img class="center" src="images/e_common_if_undefined.png" alt=
 "If Undefined Example">
 <blockquote>The above action block code checks a DS list to see if

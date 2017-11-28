@@ -27,6 +27,9 @@ if (window.name != "content")
 </script><!-- !chm2web! -->
 
 
+<script type="text/JavaScript">
+ if( typeof(chmtop.helpStyle) != 'undefined' ) { var linkNodes = document.getElementsByTagName("link");  for( var i=0; i < linkNodes.length; ++i ) { var link = linkNodes[i];    if( link.href.endsWith("default.css")) {    var style = link.href.replace("default.css", chmtop.helpStyle); document.write('<link id="newstyleLink" rel="stylesheet" href=' + style + ' type="text/css">');    break; } } } 
+</script>
 <h2>工具</h2>
 
 <div class="body-scroll">
@@ -53,11 +56,10 @@ Manager</span></a><br>
 </li>
 
 <li><a href="project_image_generator.html"><span class=
-"list_link">Project Image Generator</span></a><br>
+"list_link">项目图像生成器</span></a><br>
 </li>
 
-<li><a href="debugging.html"><span class="list_link">The Debug
-Module</span></a><br>
+<li><a href="debugging.html"><span class="list_link">调试模块</span></a><br>
 </li>
 
 <li><a href="source_control.html"><span class="list_link">源码控制</span></a><br>
@@ -77,8 +79,8 @@ Marketplace</span></a><br>
 <div class="footer">
 <div class="buttons">
 <div class="clear">
-<div style="float:left">Back: <a href=
-"../../index.html">Contents</a></div>
+<div style="float:left">上一页：<a href=
+"../../index.html">目录</a></div>
 
 <div style="float:right">Next: <a href=
 "../3_settings/index.html">Settings</a></div>

@@ -26,10 +26,13 @@ if (window.name != "content")
 </script><!-- !chm2web! -->
 
 
+<script type="text/JavaScript">
+ if( typeof(chmtop.helpStyle) != 'undefined' ) { var linkNodes = document.getElementsByTagName("link");  for( var i=0; i < linkNodes.length; ++i ) { var link = linkNodes[i];    if( link.href.endsWith("default.css")) {    var style = link.href.replace("default.css", chmtop.helpStyle); document.write('<link id="newstyleLink" rel="stylesheet" href=' + style + ' type="text/css">');    break; } } } 
+</script>
 <h2>steam_ugc_get_item_install_info</h2>
 
 <div class="body-scroll">
-<h3 class="studio">Syntax:</h3>
+<h3 class="studio">语法：</h3>
 
 <p class="code">steam_ugc_get_item_install_info(published_file_id,
 info_map);</p>
@@ -40,7 +43,7 @@ info_map);</p>
 <div class="param">
 <table>
 <tr>
-<th>Argument</th>
+<th>参数</th>
 <th>描述</th>
 </tr>
 
@@ -104,7 +107,7 @@ the map will remain empty.<br>
 <p><br>
 </p>
 
-<h3 class="studio">Example:</h3>
+<h3 class="studio">举例：</h3>
 
 <p class="code">var item_map = ds_map_create();<br>
 steam_ugc_get_item_install_info(global.fileID, item_map);<br></p>

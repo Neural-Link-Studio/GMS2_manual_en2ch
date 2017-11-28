@@ -27,6 +27,9 @@ if (window.name != "content")
 </script><!-- !chm2web! -->
 
 
+<script type="text/JavaScript">
+ if( typeof(chmtop.helpStyle) != 'undefined' ) { var linkNodes = document.getElementsByTagName("link");  for( var i=0; i < linkNodes.length; ++i ) { var link = linkNodes[i];    if( link.href.endsWith("default.css")) {    var style = link.href.replace("default.css", chmtop.helpStyle); document.write('<link id="newstyleLink" rel="stylesheet" href=' + style + ' type="text/css">');    break; } } } 
+</script>
 <h2>Tile Actions Library</h2>
 
 <div class="body-scroll">
@@ -38,46 +41,116 @@ if (window.name != "content")
 </p>
 
 <p>The <b>Tile</b> action library is where you can find the actions
-required to get or set tile indices within a room:</p>
+required to get or set tile indices within a room, as well as
+change how they are shown:</p>
 
 <table class="icons">
 <tr>
 <td class="icons"><a href="set_tile_at_pixel.html"><img align=
 "middle" src="images/i_tiles_set_tile_at_pixel.png" alt=
-"Set Tile At Pixel"></a>
+"设置图块（像素）"></a>
 </td>
-<td class="text"><a href="set_tile_at_pixel.html">Set Tile At
-Pixel</a>
+<td class="text"><a href="set_tile_at_pixel.html">设置图块（像素）</a>
 </td>
 </tr>
 
 <tr>
 <td class="icons"><a href="get_tile_at_pixel.html"><img align=
 "middle" src="images/i_tiles_get_tile_at_pixel.png" alt=
-"Get Tile At Pixel"></a>
+"获取图块（像素）"></a>
 </td>
-<td class="text"><a href="get_tile_at_pixel.html">Get Tile At
-Pixel</a>
+<td class="text"><a href="get_tile_at_pixel.html">获取图块（像素）</a>
 </td>
 </tr>
 
 <tr>
 <td class="icons"><a href="set_tile_in_cell.html"><img align=
 "middle" src="images/i_tiles_set_tile_in_cell.png" alt=
-"Set Tile In Cell"></a>
+"网格单元为基准设置图块?"></a>
 </td>
-<td class="text"><a href="set_tile_in_cell.html">Set Tile In
-Cell</a>
+<td class="text"><a href="set_tile_in_cell.html">网格单元为基准设置图块?</a>
 </td>
 </tr>
 
 <tr>
 <td class="icons"><a href="get_tile_in_cell.html"><img align=
 "middle" src="images/i_tiles_get_tile_in_cell.png" alt=
-"Get Tile In Cell"></a>
+"获取图块（网格单元）"></a>
 </td>
-<td class="text"><a href="get_tile_in_cell.html">Get Tile In
-Cell</a>
+<td class="text"><a href="get_tile_in_cell.html">获取图块（网格单元）</a>
+</td>
+</tr>
+
+<tr>
+<td class="icons"><a href="set_tile_set.html"><img align="middle"
+src="images/i_tiles_set_tile_set.png" alt="设置图块集"></a>
+</td>
+<td class="text"><a href="set_tile_set.html">设置图块集</a>
+</td>
+</tr>
+
+<tr>
+<td class="icons"><a href="get_tilemap_variable.html"><img align=
+"middle" src="images/i_tiles_get_tilemap_variable.png" alt=
+"获取图块映射变量"></a>
+</td>
+<td class="text"><a href="get_tilemap_variable.html">获取图块映射变量</a>
+</td>
+</tr>
+
+<tr>
+<td class="icons"><a href="set_tile_data_at_pixel.html"><img align=
+"middle" src="images/i_tiles_set_tile_data_at_pixel.png" alt=
+"设置一个像素位置的图块数据"></a>
+</td>
+<td class="text"><a href="set_tile_data_at_pixel.html">设置一个像素位置的图块数据</a>
+</td>
+</tr>
+
+<tr>
+<td class="icons"><a href="get_tile_data_at_pixel.html"><img align=
+"middle" src="images/i_tiles_get_tile_data_at_pixel.png" alt=
+"获取一个像素位置的图块数据"></a>
+</td>
+<td class="text"><a href="get_tile_data_at_pixel.html">获取一个像素位置的图块数据</a>
+</td>
+</tr>
+
+<tr>
+<td class="icons"><a href="set_tile_data_in_cell.html"><img align=
+"middle" src="images/i_tiles_set_tile_data_in_cell.png" alt=
+"设置单元格的图块数据"></a>
+</td>
+<td class="text"><a href="set_tile_data_in_cell.html">设置单元格的图块数据</a>
+</td>
+</tr>
+
+<tr>
+<td class="icons"><a href="get_tile_data_in_cell.html"><img align=
+"middle" src="images/i_tiles_get_tile_data_in_cell.png" alt=
+"获取单元格的图块数据"></a>
+</td>
+<td class="text"><a href="get_tile_data_in_cell.html">获取单元格的图块数据</a>
+</td>
+</tr>
+
+<tr>
+<td class="icons"><a href=
+"set_tile_data_transform.html"><img align="middle" src=
+"images/i_tiles_set_tile_data_transform.png" alt=
+"设置图块数据变换"></a>
+</td>
+<td class="text"><a href="set_tile_data_transform.html">设置图块数据变换</a>
+</td>
+</tr>
+
+<tr>
+<td class="icons"><a href=
+"get_tile_data_transform.html"><img align="middle" src=
+"images/i_tiles_get_tile_data_transform.png" alt=
+"获取图块数据变换"></a>
+</td>
+<td class="text"><a href="get_tile_data_transform.html">获取图块数据变换</a>
 </td>
 </tr>
 </table>

@@ -27,12 +27,15 @@ if (window.name != "content")
 </script><!-- !chm2web! -->
 
 
+<script type="text/JavaScript">
+ if( typeof(chmtop.helpStyle) != 'undefined' ) { var linkNodes = document.getElementsByTagName("link");  for( var i=0; i < linkNodes.length; ++i ) { var link = linkNodes[i];    if( link.href.endsWith("default.css")) {    var style = link.href.replace("default.css", chmtop.helpStyle); document.write('<link id="newstyleLink" rel="stylesheet" href=' + style + ' type="text/css">');    break; } } } 
+</script>
 <h1 class="studio">physics_draw_debug</h1>
 
 <h2 class="studio">This function draws a basic schematic of the
 physics properties for the instance.</h2>
 
-<h3 class="studio">Syntax:</h3>
+<h3 class="studio">语法：</h3>
 
 <p class="code">physics_draw_debug()</p>
 
@@ -61,7 +64,7 @@ currently defined draw colour.<br>
 <p><br>
 </p>
 
-<h3 class="studio">Example:</h3>
+<h3 class="studio">举例：</h3>
 
 <p class="code">draw_set_colour(c_red);<br>
 physics_draw_debug();<br></p>

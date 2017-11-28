@@ -26,11 +26,14 @@ if (window.name != "content")
 </script><!-- !chm2web! -->
 
 
+<script type="text/JavaScript">
+ if( typeof(chmtop.helpStyle) != 'undefined' ) { var linkNodes = document.getElementsByTagName("link");  for( var i=0; i < linkNodes.length; ++i ) { var link = linkNodes[i];    if( link.href.endsWith("default.css")) {    var style = link.href.replace("default.css", chmtop.helpStyle); document.write('<link id="newstyleLink" rel="stylesheet" href=' + style + ' type="text/css">');    break; } } } 
+</script>
 <h1 class="studio">arctan</h1>
 
 <h2 class="studio">Returns the inverse tangent of x.</h2>
 
-<h3><b>Syntax:</b>
+<h3><b>语法：</b>
 </h3>
 
 <p class="code">arctan(x);</p>
@@ -41,7 +44,7 @@ if (window.name != "content")
 <div class="param">
 <table>
 <tr>
-<th>Argument</th>
+<th>参数</th>
 <th>描述</th>
 </tr>
 
@@ -55,7 +58,7 @@ if (window.name != "content")
 <p><br>
 </p>
 
-<p><b>Returns:</b> Real</p>
+<p><b>返回：</b> 实数</p>
 
 <p><br>
 </p>
@@ -71,7 +74,7 @@ than -pi/2.<br>
 <p><br>
 </p>
 
-<h3><b>Example:</b>
+<h3><b>举例：</b>
 </h3>
 
 <p class="code">val = arctan( 0 );</p>

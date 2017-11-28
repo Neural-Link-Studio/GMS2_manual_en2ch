@@ -26,12 +26,15 @@ if (window.name != "content")
 </script><!-- !chm2web! -->
 
 
+<script type="text/JavaScript">
+ if( typeof(chmtop.helpStyle) != 'undefined' ) { var linkNodes = document.getElementsByTagName("link");  for( var i=0; i < linkNodes.length; ++i ) { var link = linkNodes[i];    if( link.href.endsWith("default.css")) {    var style = link.href.replace("default.css", chmtop.helpStyle); document.write('<link id="newstyleLink" rel="stylesheet" href=' + style + ' type="text/css">');    break; } } } 
+</script>
 <h1 class="studio">gamepad_is_supported</h1>
 
 <h2 class="studio">Returns whether game pads are supported by the
 target platform.</h2>
 
-<h3 class="studio">Syntax:</h3>
+<h3 class="studio">语法：</h3>
 
 <p class="code">gamepad_is_supported();</p>
 
@@ -53,7 +56,7 @@ supports game pads (returns <tt>true</tt>) or not (returns
 <p><br>
 </p>
 
-<h3 class="studio">Example:</h3>
+<h3 class="studio">举例：</h3>
 
 <p class="code">global.GP = gamepad_is_supported();<br></p>
 

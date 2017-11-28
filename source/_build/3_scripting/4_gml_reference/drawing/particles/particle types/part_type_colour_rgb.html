@@ -26,12 +26,15 @@ if (window.name != "content")
 </script><!-- !chm2web! -->
 
 
+<script type="text/JavaScript">
+ if( typeof(chmtop.helpStyle) != 'undefined' ) { var linkNodes = document.getElementsByTagName("link");  for( var i=0; i < linkNodes.length; ++i ) { var link = linkNodes[i];    if( link.href.endsWith("default.css")) {    var style = link.href.replace("default.css", chmtop.helpStyle); document.write('<link id="newstyleLink" rel="stylesheet" href=' + style + ' type="text/css">');    break; } } } 
+</script>
 <h1 class="studio">part_type_colour_rgb</h1>
 
 <h2 class="studio">Set the particle colour from a red, green and
 blue range.</h2>
 
-<h3 class="studio">Syntax:</h3>
+<h3 class="studio">语法：</h3>
 
 <p class="code">part_type_colour_rgb(ind, rmin, rmax, gmin, gmax,
 bmin, bmax p&gt;</p>
@@ -42,7 +45,7 @@ bmin, bmax p&gt;</p>
 <div>
 <table>
 <tr>
-<th>Argument</th>
+<th>参数</th>
 <th>描述</th>
 </tr>
 
@@ -86,7 +89,7 @@ bmin, bmax p&gt;</p>
 <p><br>
 </p>
 
-<p><b>Returns:</b> N/A</p>
+<p><b>返回：</b> N/A</p>
 
 <p><br>
 </p>
@@ -104,7 +107,7 @@ given range of parameters. All values must be between 0 and
 <p><br>
 </p>
 
-<h3 class="studio">Example:</h3>
+<h3 class="studio">举例：</h3>
 
 <p class="code">part_type_rgb(global.Blood_Part, 0, 255, 0, 0, 0,
 0);</p>

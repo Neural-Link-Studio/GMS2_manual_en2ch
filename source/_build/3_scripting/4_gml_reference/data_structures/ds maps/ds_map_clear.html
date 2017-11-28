@@ -26,11 +26,14 @@ if (window.name != "content")
 </script><!-- !chm2web! -->
 
 
+<script type="text/JavaScript">
+ if( typeof(chmtop.helpStyle) != 'undefined' ) { var linkNodes = document.getElementsByTagName("link");  for( var i=0; i < linkNodes.length; ++i ) { var link = linkNodes[i];    if( link.href.endsWith("default.css")) {    var style = link.href.replace("default.css", chmtop.helpStyle); document.write('<link id="newstyleLink" rel="stylesheet" href=' + style + ' type="text/css">');    break; } } } 
+</script>
 <h1 class="studio">ds_map_clear</h1>
 
 <h2 class="studio">Clears all of the data from a given map.</h2>
 
-<h3><b>Syntax:</b>
+<h3><b>语法：</b>
 </h3>
 
 <p class="code">ds_map_clear(id);</p>
@@ -41,7 +44,7 @@ if (window.name != "content")
 <div class="param">
 <table>
 <tr>
-<th>Argument</th>
+<th>参数</th>
 <th>描述</th>
 </tr>
 
@@ -74,7 +77,7 @@ memory. For that you should use the function <a href=
 <p><br>
 </p>
 
-<h3 class="studio">Example:</h3>
+<h3 class="studio">举例：</h3>
 
 <p class="code">if global.new_game<br>
 &nbsp;&nbsp;&nbsp;{<br>

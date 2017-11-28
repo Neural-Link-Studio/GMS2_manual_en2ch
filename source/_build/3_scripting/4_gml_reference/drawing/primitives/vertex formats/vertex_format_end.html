@@ -26,18 +26,21 @@ if (window.name != "content")
 </script><!-- !chm2web! -->
 
 
+<script type="text/JavaScript">
+ if( typeof(chmtop.helpStyle) != 'undefined' ) { var linkNodes = document.getElementsByTagName("link");  for( var i=0; i < linkNodes.length; ++i ) { var link = linkNodes[i];    if( link.href.endsWith("default.css")) {    var style = link.href.replace("default.css", chmtop.helpStyle); document.write('<link id="newstyleLink" rel="stylesheet" href=' + style + ' type="text/css">');    break; } } } 
+</script>
 <h1 class="studio">vertex_format_end</h1>
 
 <h2 class="studio">Add custom values to the vertex format.</h2>
 
-<h3 class="studio">Syntax:</h3>
+<h3 class="studio">语法：</h3>
 
 <p class="code">vertex_format_end();</p>
 
 <p><br>
 </p>
 
-<p><b>Returns:</b> Real</p>
+<p><b>返回：</b> 实数</p>
 
 <p><br>
 </p>
@@ -53,7 +56,7 @@ format.<br>
 <p><br>
 </p>
 
-<h3 class="studio">Example:</h3>
+<h3 class="studio">举例：</h3>
 
 <p class="code">vertex_format_begin();<br>
 vertex_format_add_colour();<br>

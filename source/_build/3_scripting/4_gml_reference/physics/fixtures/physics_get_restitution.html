@@ -26,12 +26,15 @@ if (window.name != "content")
 </script><!-- !chm2web! -->
 
 
+<script type="text/JavaScript">
+ if( typeof(chmtop.helpStyle) != 'undefined' ) { var linkNodes = document.getElementsByTagName("link");  for( var i=0; i < linkNodes.length; ++i ) { var link = linkNodes[i];    if( link.href.endsWith("default.css")) {    var style = link.href.replace("default.css", chmtop.helpStyle); document.write('<link id="newstyleLink" rel="stylesheet" href=' + style + ' type="text/css">');    break; } } } 
+</script>
 <h1 class="studio">physics_get_restitution</h1>
 
 <h2 class="studio">This function gets the density value for a
 <b>bound</b> fixture.</h2>
 
-<h3 class="studio">Syntax:</h3>
+<h3 class="studio">语法：</h3>
 
 <p class="code">physics_get_restitution(fixture)</p>
 
@@ -41,7 +44,7 @@ if (window.name != "content")
 <div class="param">
 <table>
 <tr>
-<th>Argument</th>
+<th>参数</th>
 <th>描述</th>
 </tr>
 
@@ -55,7 +58,7 @@ if (window.name != "content")
 <p><br>
 </p>
 
-<p><b>Returns:</b> Real</p>
+<p><b>返回：</b> 实数</p>
 
 <p><br>
 </p>
@@ -73,7 +76,7 @@ function.<br>
 <p><br>
 </p>
 
-<h3 class="studio">Example:</h3>
+<h3 class="studio">举例：</h3>
 
 <p class="code">var rest = physics_get_restitution(fix_id);<br>
 physics_set_restitution(fix_id, rest * 2);<br></p>

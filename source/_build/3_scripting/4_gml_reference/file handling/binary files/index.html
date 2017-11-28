@@ -26,14 +26,16 @@ if (window.name != "content")
 </script><!-- !chm2web! -->
 
 
+<script type="text/JavaScript">
+ if( typeof(chmtop.helpStyle) != 'undefined' ) { var linkNodes = document.getElementsByTagName("link");  for( var i=0; i < linkNodes.length; ++i ) { var link = linkNodes[i];    if( link.href.endsWith("default.css")) {    var style = link.href.replace("default.css", chmtop.helpStyle); document.write('<link id="newstyleLink" rel="stylesheet" href=' + style + ' type="text/css">');    break; } } } 
+</script>
 <h2>Binary Files</h2>
 
 <div class="body-scroll">
 <p>In rare situations you might need to read data from binary
 files.</p>
 
-<div class="note"><b>NOTE</b>: These functions <b>do not</b> work
-when the target module is HTML5.</div>
+<div class="note"><b>注意</b>： These functions <b>do not</b> work when the target module is HTML5.</div>
 
 <p>The following low-level routines exist for this:</p>
 

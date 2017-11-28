@@ -26,12 +26,15 @@ if (window.name != "content")
 </script><!-- !chm2web! -->
 
 
+<script type="text/JavaScript">
+ if( typeof(chmtop.helpStyle) != 'undefined' ) { var linkNodes = document.getElementsByTagName("link");  for( var i=0; i < linkNodes.length; ++i ) { var link = linkNodes[i];    if( link.href.endsWith("default.css")) {    var style = link.href.replace("default.css", chmtop.helpStyle); document.write('<link id="newstyleLink" rel="stylesheet" href=' + style + ' type="text/css">');    break; } } } 
+</script>
 <h1 class="studio">physics_particle_create</h1>
 
 <h2 class="studio">Create a single soft body particle with the
 given parameters.</h2>
 
-<h3 class="studio">Syntax:</h3>
+<h3 class="studio">语法：</h3>
 
 <p class="code">physics_particle_create(flags, x, y, xv, yv, col,
 alpha, category)</p>
@@ -42,7 +45,7 @@ alpha, category)</p>
 <div class="param">
 <table>
 <tr>
-<th>Argument</th>
+<th>参数</th>
 <th>描述</th>
 </tr>
 
@@ -91,7 +94,7 @@ alpha, category)</p>
 <p><br>
 </p>
 
-<p><b>Returns:</b> Real</p>
+<p><b>返回：</b> 实数</p>
 
 <p><br>
 </p>
@@ -106,7 +109,7 @@ within your game room, setting certain flags and properties. The
 <div class="compat">
 <table>
 <tr>
-<th>Constant</th>
+<th>常量</th>
 <th>描述</th>
 </tr>
 
@@ -227,7 +230,7 @@ functions that reference the particle directly.<br>
 <p><br>
 </p>
 
-<h3 class="studio">Example:</h3>
+<h3 class="studio">举例：</h3>
 
 <p class="code">var flags = phy_particle_flag_water |
 phy_particle_flag_viscous | phy_particle_flag_tensile;<br>

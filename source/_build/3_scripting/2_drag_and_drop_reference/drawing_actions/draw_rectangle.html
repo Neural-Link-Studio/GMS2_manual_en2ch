@@ -27,6 +27,9 @@ if (window.name != "content")
 </script><!-- !chm2web! -->
 
 
+<script type="text/JavaScript">
+ if( typeof(chmtop.helpStyle) != 'undefined' ) { var linkNodes = document.getElementsByTagName("link");  for( var i=0; i < linkNodes.length; ++i ) { var link = linkNodes[i];    if( link.href.endsWith("default.css")) {    var style = link.href.replace("default.css", chmtop.helpStyle); document.write('<link id="newstyleLink" rel="stylesheet" href=' + style + ' type="text/css">');    break; } } } 
+</script>
 <h2><img style="vertical-align:middle" src=
 "images/i_drawing_draw_rectangle.png"> 绘制矩形</h2>
 
@@ -45,16 +48,14 @@ relative to the instance calling the action. You can also set
 whether the rectangle can be filled or outlined by checking the
 <b>fill</b> box at the bottom.</p>
 
-<div class="note"><b>NOTE</b>: This action is only for use in the
-various <a href=
-"../../../2_interface/1_editors/events/draw_events.html">Draw
-Events</a>, and will not draw anything if used elsewhere.</div>
+<div class="note"><b>注意</b>： This action is only for use in the various <a href=
+"../../../2_interface/1_editors/events/draw_events.html">Draw Events</a>, and will not draw anything if used elsewhere.</div>
 </blockquote>
 
 <p><br>
 </p>
 
-<h3>Action Syntax:</h3>
+<h3>动作语法：</h3>
 <img class="center" src="images/a_drawing_draw_rectangle.png" alt=
 "Draw Rectangle Syntax">
 <p><br>
@@ -65,27 +66,27 @@ Events</a>, and will not draw anything if used elsewhere.</div>
 <blockquote>
 <table>
 <tr>
-<th>Argument</th>
+<th>参数</th>
 <th>描述</th>
 </tr>
 
 <tr>
-<td>左键</td>
+<td>左</td>
 <td>The left position to start drawing from</td>
 </tr>
 
 <tr class="alt">
-<td>Top</td>
+<td>顶</td>
 <td>The top position to start drawing from</td>
 </tr>
 
 <tr>
-<td>右键</td>
+<td>右</td>
 <td>The right position to end drawing from</td>
 </tr>
 
 <tr class="alt">
-<td>Bottom</td>
+<td>底</td>
 <td>The bottom position to end drawing from</td>
 </tr>
 </table>
@@ -94,7 +95,7 @@ Events</a>, and will not draw anything if used elsewhere.</div>
 <p><br>
 </p>
 
-<h3>Example:</h3>
+<h3>举例：</h3>
 <img class="center" src="images/e_drawing_draw_rectangle.png" alt=
 "Draw Rectangle Example">
 <blockquote>The above action block code draws two rectangles, one

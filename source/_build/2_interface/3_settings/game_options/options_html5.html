@@ -27,6 +27,9 @@ if (window.name != "content")
 </script><!-- !chm2web! -->
 
 
+<script type="text/JavaScript">
+ if( typeof(chmtop.helpStyle) != 'undefined' ) { var linkNodes = document.getElementsByTagName("link");  for( var i=0; i < linkNodes.length; ++i ) { var link = linkNodes[i];    if( link.href.endsWith("default.css")) {    var style = link.href.replace("default.css", chmtop.helpStyle); document.write('<link id="newstyleLink" rel="stylesheet" href=' + style + ' type="text/css">');    break; } } } 
+</script>
 <h2>HTML5 Options</h2>
 
 <div class="body-scroll">
@@ -37,35 +40,8 @@ if (window.name != "content")
 that control how your HTML5 game projects will be compiled. The
 different sections are:</p>
 
-<blockquote><label class="collapse" for="b">Analytics</label>
-<input id="b" type="checkbox">
-<div class="index_list">
-<p><img class="center" src="images/html5_analytics_options.png"
-alt="HTML5 Analytics Options">
-</p>
-
-<p>This section permits you to add analytics to your game,
-permitting you to use certain third-party products to track your
-game and its sales or plays. You can specify whether to use
-<a href="http://www.flurry.com/" target="_blank">Flurry
-Analytics</a> or <a href="http://www.google.com/analytics/" target=
-"_blank">Google Analytics</a> to track your game. Due to the nature
-of these functions, you can only have one active at a time, and
-once you have flagged the <i>Enable Flurry Analytics</i> or
-<i>Enable Google Analytics</i> you should also add the unique ID
-that you have been assigned into the appropriate area.</p>
-
-<p>For more general information on analytics, please see the
-<a href=
-"http://help.yoyogames.com/forums/22239281-Ads-and-Analytics"
-target="_blank">YoYo Knowledge Base</a>, and for information on the
-functions that you can use to send analytics data, please see
-<a href=
-"../../../3_scripting/4_gml_reference/web/index.html">here</a>.</p>
-</div>
-<br>
-<label class="collapse" for="c">General</label> <input id="c" type=
-"checkbox">
+<blockquote><label class="collapse" for="c">全局</label>
+<input id="c" type="checkbox">
 <div class="index_list">
 <p><img class="center" src="images/html5_general_options.png" alt=
 "HTML5 General Options">
@@ -74,12 +50,10 @@ functions that you can use to send analytics data, please see
 <p>In this section you have some general options at the top:</p>
 
 <ul>
-<li><b>Output Debug To Console</b>: This will send all debug output
-to the JS console of your browser. This is off by default.<br>
+<li><b>Output Debug To Console</b>: This will send all debug output to the JS console of your browser. 该选项默认为关<br>
 <br></li>
 
-<li><b>Display Cursor</b>: This will disable the mouse cursor when
-it is over the game canvas. This is on by default.<br>
+<li><b>Display Cursor</b>: This will disable the mouse cursor when it is over the game canvas. 该选项默认为开<br>
 <br></li>
 
 <li><b>Display "Running Outside Server" Alert</b>: If you are
@@ -136,6 +110,33 @@ be changed to something other than the default "index.html".</li>
 </ul>
 </div>
 <br>
+<label class="collapse" for="b">Analytics</label> <input id="b"
+type="checkbox">
+<div class="index_list">
+<p><img class="center" src="images/html5_analytics_options.png"
+alt="HTML5 Analytics Options">
+</p>
+
+<p>This section permits you to add analytics to your game,
+permitting you to use certain third-party products to track your
+game and its sales or plays. You can specify whether to use
+<a href="http://www.flurry.com/" target="_blank">Flurry
+Analytics</a> or <a href="http://www.google.com/analytics/" target=
+"_blank">Google Analytics</a> to track your game. Due to the nature
+of these functions, you can only have one active at a time, and
+once you have flagged the <i>Enable Flurry Analytics</i> or
+<i>Enable Google Analytics</i> you should also add the unique ID
+that you have been assigned into the appropriate area.</p>
+
+<p>For more general information on analytics, please see the
+<a href=
+"http://help.yoyogames.com/forums/22239281-Ads-and-Analytics"
+target="_blank">YoYo Knowledge Base</a>, and for information on the
+functions that you can use to send analytics data, please see
+<a href=
+"../../../3_scripting/4_gml_reference/web/index.html">here</a>.</p>
+</div>
+<br>
 <label class="collapse" for="d">Graphics</label> <input id="d"
 type="checkbox">
 <div class="index_list">
@@ -150,16 +151,10 @@ browsers as possible to make sure that they have the desired
 effect):</p>
 
 <ul>
-<li><b>Allow switching to fullscreen</b>: Checking this will allow
-the user to toggle the game from windowed to fullscreen mode using
-<i>&lt;CTRL&gt; + &lt;CMD&gt; + &lt;F&gt;</i> on Mac and <i>F10</i>
-on Windows. This is on by default.<br>
+<li><b>Allow switching to fullscreen</b>: Checking this will allow the user to toggle the game from windowed to fullscreen mode using <i>&lt;CTRL&gt; + &lt;CMD&gt; + &lt;F&gt;</i> on Mac and <i>F10</i> on Windows. 该选项默认为开<br>
 <br></li>
 
-<li><b>Interpolate colours between pixels</b>: Turns on
-interpolation, which basically "smooths" pixels. for crisp pixel
-graphics, it should be off, but if you have nice alpha blends and
-smoothed edge graphics it is better left on. Default is off.<br>
+<li><b>Interpolate colours between pixels</b>: Turns on interpolation, which basically "smooths" pixels. for crisp pixel graphics, it should be off, but if you have nice alpha blends and smoothed edge graphics it is better left on. 默认为关<br>
 <br></li>
 
 <li><b>Center the game in the browser</b>: Checking this will
@@ -202,11 +197,10 @@ can see how they look. This can be very useful if you wish to see
 how the texture pages are structured and to prevent having texture
 pages larger (or smaller) than necessary.</p>
 
-<div class="note"><b>NOTE</b>: Be aware that the larger the size of
-the texture page, the less compatible your game will be.</div>
+<div class="note"><b>注意</b>： Be aware that the larger the size of the texture page, the less compatible your game will be.</div>
 </div>
 <br>
-<label class="collapse" for="e">Images</label> <input id="e" type=
+<label class="collapse" for="e">图片</label> <input id="e" type=
 "checkbox">
 <div class="index_list">
 <p><img class="center" src="images/html5_images_options.png" alt=
@@ -231,7 +225,7 @@ game is being compiled to. If you use this tool, you should revise
 the images created to ensure that they are what you require.</p>
 </div>
 <br>
-<label class="collapse" for="f">Social</label> <input id="f" type=
+<label class="collapse" for="f">社交（Social）</label> <input id="f" type=
 "checkbox">
 <div class="index_list">
 <p><img class="center" src="images/html5_social_options.png" alt=

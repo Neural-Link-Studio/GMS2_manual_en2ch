@@ -26,6 +26,9 @@ if (window.name != "content")
 </script><!-- !chm2web! -->
 
 
+<script type="text/JavaScript">
+ if( typeof(chmtop.helpStyle) != 'undefined' ) { var linkNodes = document.getElementsByTagName("link");  for( var i=0; i < linkNodes.length; ++i ) { var link = linkNodes[i];    if( link.href.endsWith("default.css")) {    var style = link.href.replace("default.css", chmtop.helpStyle); document.write('<link id="newstyleLink" rel="stylesheet" href=' + style + ' type="text/css">');    break; } } } 
+</script>
 <h2>Miscellaneous Functions</h2>
 
 <div class="body-scroll">
@@ -272,8 +275,8 @@ into any of the other categories in this document:</p>
 <div style="float:left">Back: <a href=
 "../index.html">Reference</a></div>
 
-<div style="float:right">Next: <a href=
-"../debugging/index.html">Debugging</a></div>
+<div style="float:right">下一页：<a href=
+"../debugging/index.html">调试</a></div>
 </div>
 </div>
 

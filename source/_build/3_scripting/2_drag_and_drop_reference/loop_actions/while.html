@@ -27,6 +27,9 @@ if (window.name != "content")
 </script><!-- !chm2web! -->
 
 
+<script type="text/JavaScript">
+ if( typeof(chmtop.helpStyle) != 'undefined' ) { var linkNodes = document.getElementsByTagName("link");  for( var i=0; i < linkNodes.length; ++i ) { var link = linkNodes[i];    if( link.href.endsWith("default.css")) {    var style = link.href.replace("default.css", chmtop.helpStyle); document.write('<link id="newstyleLink" rel="stylesheet" href=' + style + ' type="text/css">');    break; } } } 
+</script>
 <h2><img style="vertical-align:middle" src=
 "images/i_loops_while.png">  While</h2>
 
@@ -68,7 +71,7 @@ can end any loop prematurely if you call the <a href=
 <p><br>
 </p>
 
-<h3>Action Syntax:</h3>
+<h3>动作语法：</h3>
 <img class="center" src="images/a_loops_while.png" alt=
 "While Syntax">
 <p><br>
@@ -79,23 +82,23 @@ can end any loop prematurely if you call the <a href=
 <blockquote>
 <table>
 <tr>
-<th>Argument</th>
+<th>参数</th>
 <th>描述</th>
 </tr>
 
 <tr>
-<td>Variable</td>
+<td>变量</td>
 <td>The variable to use in the check</td>
 </tr>
 
 <tr>
-<td>Is</td>
+<td>是</td>
 <td>The type of evaluation to perform (less than, greater than,
 equal to, greater than or equal to and less than or equal to)</td>
 </tr>
 
 <tr>
-<td>Value</td>
+<td>值</td>
 <td>The value to check the variable against</td>
 </tr>
 </table>
@@ -104,7 +107,7 @@ equal to, greater than or equal to and less than or equal to)</td>
 <p><br>
 </p>
 
-<h3>Example:</h3>
+<h3>举例：</h3>
 <img class="center" src="images/e_loops_while.png" alt=
 "While Example">
 <blockquote>The above action block code creates a temporary local

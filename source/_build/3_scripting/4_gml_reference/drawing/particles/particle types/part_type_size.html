@@ -26,12 +26,15 @@ if (window.name != "content")
 </script><!-- !chm2web! -->
 
 
+<script type="text/JavaScript">
+ if( typeof(chmtop.helpStyle) != 'undefined' ) { var linkNodes = document.getElementsByTagName("link");  for( var i=0; i < linkNodes.length; ++i ) { var link = linkNodes[i];    if( link.href.endsWith("default.css")) {    var style = link.href.replace("default.css", chmtop.helpStyle); document.write('<link id="newstyleLink" rel="stylesheet" href=' + style + ' type="text/css">');    break; } } } 
+</script>
 <h1 class="studio">part_type_size</h1>
 
 <h2 class="studio">Sets the minimum and maximum start size of the
 particle type.</h2>
 
-<h3 class="studio">Syntax:</h3>
+<h3 class="studio">语法：</h3>
 
 <p class="code">part_type_size(ind, size_min, size_max, size_incr,
 size_wiggle);</p>
@@ -42,7 +45,7 @@ size_wiggle);</p>
 <div>
 <table>
 <tr>
-<th>Argument</th>
+<th>参数</th>
 <th>描述</th>
 </tr>
 
@@ -78,7 +81,7 @@ particles size per step.</td>
 <p><br>
 </p>
 
-<p><b>Returns:</b> N/A</p>
+<p><b>返回：</b> N/A</p>
 
 <p><br>
 </p>
@@ -114,7 +117,7 @@ maximum range being between -20 and 20.<br>
 <p><br>
 </p>
 
-<h3 class="studio">Example:</h3>
+<h3 class="studio">举例：</h3>
 
 <p class="code">part_type_shape(particle1, pt_shape_explosion);<br>
 part_type_size(particle1, 2, 2, 0.10, 0.01);<br>

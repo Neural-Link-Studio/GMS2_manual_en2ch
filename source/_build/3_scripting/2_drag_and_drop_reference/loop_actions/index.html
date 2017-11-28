@@ -27,6 +27,9 @@ if (window.name != "content")
 </script><!-- !chm2web! -->
 
 
+<script type="text/JavaScript">
+ if( typeof(chmtop.helpStyle) != 'undefined' ) { var linkNodes = document.getElementsByTagName("link");  for( var i=0; i < linkNodes.length; ++i ) { var link = linkNodes[i];    if( link.href.endsWith("default.css")) {    var style = link.href.replace("default.css", chmtop.helpStyle); document.write('<link id="newstyleLink" rel="stylesheet" href=' + style + ' type="text/css">');    break; } } } 
+</script>
 <h2>Loop Library</h2>
 
 <div class="body-scroll">
@@ -57,9 +60,9 @@ again.</p>
 
 <tr>
 <td class="icons"><a href="repeat.html"><img align="middle" src=
-"images/i_loops_repeat.png" alt="Repeat"></a>
+"images/i_loops_repeat.png" alt="重复循环（Repeat）"></a>
 </td>
-<td class="text"><a href="repeat.html">Repeat</a>
+<td class="text"><a href="repeat.html">重复循环（Repeat）</a>
 </td>
 </tr>
 

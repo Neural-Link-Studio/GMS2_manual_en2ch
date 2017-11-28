@@ -27,6 +27,9 @@ if (window.name != "content")
 </script><!-- !chm2web! -->
 
 
+<script type="text/JavaScript">
+ if( typeof(chmtop.helpStyle) != 'undefined' ) { var linkNodes = document.getElementsByTagName("link");  for( var i=0; i < linkNodes.length; ++i ) { var link = linkNodes[i];    if( link.href.endsWith("default.css")) {    var style = link.href.replace("default.css", chmtop.helpStyle); document.write('<link id="newstyleLink" rel="stylesheet" href=' + style + ' type="text/css">');    break; } } } 
+</script>
 <h2>variable_instance_exists</h2>
 
 <div class="body-scroll">
@@ -48,17 +51,14 @@ check for <i>as a string</i> (see example code below). The function
 will return <tt>true</tt> if a variable with the given name exists
 for the instance and <tt>false</tt> otherwise.</p>
 
-<div class="note"><b>NOTE</b>: This function is primarily for use
-with <a href=
-"../../../1_overview/3_additional_information/obsolete_functions.html">
-Compatibility Scripts</a> for imported projects and the converted
-code for Drag and Drop actions.</div>
+<div class="note"><b>注意</b>： 该函数基本上是用于所导入工程的<a href=
+"../../../1_overview/3_additional_information/obsolete_functions.html">兼容性脚本（Compatibility）</a>及拖拽按钮（Drag and Drop）动作转换而成的代码中的。</div>
 </blockquote>
 
 <p><br>
 </p>
 
-<h3>Syntax:</h3>
+<h3>语法：</h3>
 
 <p class="code">variable_instance_exists(instance_id, name);</p>
 
@@ -70,7 +70,7 @@ code for Drag and Drop actions.</div>
 <blockquote>
 <table>
 <tr>
-<th>Argument</th>
+<th>参数</th>
 <th>描述</th>
 </tr>
 
@@ -86,14 +86,14 @@ code for Drag and Drop actions.</div>
 </table>
 </blockquote>
 
-<h3>Returns:</h3>
+<h3>返回：</h3>
 
-<p class="code">Boolean</p>
+<p class="code">布尔值</p>
 
 <p><br>
 </p>
 
-<h3>Example:</h3>
+<h3>举例：</h3>
 
 <p class="code">if !variable_instance_exists(id, "shields"))
 shields = 0;</p>
@@ -111,11 +111,10 @@ not then it is created and initialised to 0.</p>
 <div class="footer">
 <div class="buttons">
 <div class="clear">
-<div style="float:left">Back: <a href="../6_scope.html">Variables
-And Variable Scope</a></div>
+<div style="float:left">上一页：<a href="../6_scope.html">变量及变量作用域</a></div>
 
 <div style="float:right">Next: <a href=
-"variable_instance_get.html">variable_instance_get</a></div>
+"variable_instance_get_names.html">variable_instance_get_names</a></div>
 </div>
 </div>
 

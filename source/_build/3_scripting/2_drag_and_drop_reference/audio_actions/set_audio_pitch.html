@@ -7,7 +7,7 @@
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
 
 <meta name="generator" content="chm2web Pro 2.85 (unicode)" />
-<title>Set Audio Pitch</title>
+<title>设置音频音调</title>
 <meta http-equiv="X-UA-Compatible" content="IE=9">
 
 <link rel="stylesheet" href="../../../../../files/helpindex.css"
@@ -27,8 +27,11 @@ if (window.name != "content")
 </script><!-- !chm2web! -->
 
 
+<script type="text/JavaScript">
+ if( typeof(chmtop.helpStyle) != 'undefined' ) { var linkNodes = document.getElementsByTagName("link");  for( var i=0; i < linkNodes.length; ++i ) { var link = linkNodes[i];    if( link.href.endsWith("default.css")) {    var style = link.href.replace("default.css", chmtop.helpStyle); document.write('<link id="newstyleLink" rel="stylesheet" href=' + style + ' type="text/css">');    break; } } } 
+</script>
 <h2><img style="vertical-align:middle" src=
-"images/i_audio_set_audio_pitch.png">  Set Audio Pitch</h2>
+"images/i_audio_set_audio_pitch.png"> 设置音频音调</h2>
 
 <div class="body-scroll">
 <p><br>
@@ -54,19 +57,13 @@ over 5 may not be audible anyway. It is worth noting that the total
 pitch change permitted is clamped to (1/256) - 256 octaves, so any
 value over or under this will not be registered.</p>
 
-<div class="note"><b>NOTE</b>: The clamped value given above is
-what <i>GameMaker Studio 2</i> attempts to clamp the range to, but
-this value is not guaranteed on all target platforms. iOS, for
-example, clamps to (1/256) - 8, so you may need to experiment on
-each target platform and have different versions of a sound
-resource, each one pre-shifted, should you require higher or lower
-octave values.</div>
+<div class="note"><b>注意</b>： The clamped value given above is what <i>GameMaker Studio 2</i> attempts to clamp the range to, but this value is not guaranteed on all target platforms. iOS, for example, clamps to (1/256) - 8, so you may need to experiment on each target platform and have different versions of a sound resource, each one pre-shifted, should you require higher or lower octave values.</div>
 </blockquote>
 
 <p><br>
 </p>
 
-<h3>Action Syntax:</h3>
+<h3>动作语法：</h3>
 <img class="center" src="images/a_audio_set_audio_pitch.png" alt=
 "Set Audio Pitch Syntax">
 <p><br>
@@ -77,12 +74,12 @@ octave values.</div>
 <blockquote>
 <table>
 <tr>
-<th>Argument</th>
+<th>参数</th>
 <th>描述</th>
 </tr>
 
 <tr>
-<td>Sound</td>
+<td>声音</td>
 <td>The sound resource to set the pitch of</td>
 </tr>
 
@@ -96,7 +93,7 @@ octave values.</div>
 <p><br>
 </p>
 
-<h3>Example:</h3>
+<h3>举例：</h3>
 <img class="center" src="images/e_audio_get_audio_pitch.png" alt=
 "Set Audio Pitch Example">
 <blockquote>The above action block code first gets the pitch for
@@ -114,11 +111,9 @@ before it is played.</blockquote>
 <div class="footer">
 <div class="buttons">
 <div class="clear">
-<div style="float:left">Back: <a href="index.html">Audio
-Actions</a></div>
+<div style="float:left">上一页：<a href="index.html">音频动作</a></div>
 
-<div style="float:right">next: <a href="get_audio_pitch.html">Get
-Audio Pitch</a></div>
+<div style="float:right">下一页：<a href="get_audio_pitch.html">获取音频音调（Get Audio Pitch）</a></div>
 </div>
 </div>
 

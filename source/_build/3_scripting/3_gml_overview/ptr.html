@@ -27,6 +27,9 @@ if (window.name != "content")
 </script><!-- !chm2web! -->
 
 
+<script type="text/JavaScript">
+ if( typeof(chmtop.helpStyle) != 'undefined' ) { var linkNodes = document.getElementsByTagName("link");  for( var i=0; i < linkNodes.length; ++i ) { var link = linkNodes[i];    if( link.href.endsWith("default.css")) {    var style = link.href.replace("default.css", chmtop.helpStyle); document.write('<link id="newstyleLink" rel="stylesheet" href=' + style + ' type="text/css">');    break; } } } 
+</script>
 <h2>ptr</h2>
 
 <div class="body-scroll">
@@ -43,7 +46,7 @@ cause the game to crash with an error message.</blockquote>
 <p><br>
 </p>
 
-<h3>Syntax:</h3>
+<h3>语法：</h3>
 
 <p class="code">ptr(n);</p>
 
@@ -55,7 +58,7 @@ cause the game to crash with an error message.</blockquote>
 <blockquote>
 <table>
 <tr>
-<th>Argument</th>
+<th>参数</th>
 <th>描述</th>
 </tr>
 
@@ -66,14 +69,14 @@ cause the game to crash with an error message.</blockquote>
 </table>
 </blockquote>
 
-<h3>Returns:</h3>
+<h3>返回：</h3>
 
-<p class="code">Pointer</p>
+<p class="code">指针</p>
 
 <p><br>
 </p>
 
-<h3><b>Example:</b>
+<h3><b>举例：</b>
 </h3>
 
 <p class="code">if !is_ptr(val)<br>
@@ -81,9 +84,7 @@ cause the game to crash with an error message.</blockquote>
 &nbsp;&nbsp;&nbsp;ptr(application_surface);<br>
 &nbsp;&nbsp;&nbsp;}<br></p>
 
-<blockquote>The above code checks the variable "val" to see if it
-contains a pointer and if it does not then one is assigned to
-it.</blockquote>
+<blockquote>上述代码将会检测变量“val”来观察它是否存储一个指针，如果不是则将一个指针赋予给它。</blockquote>
 
 <p><br>
 </p>
@@ -92,8 +93,7 @@ it.</blockquote>
 <div class="footer">
 <div class="buttons">
 <div class="clear">
-<div style="float:left">Back: <a href="9_data_types.html">Data
-Types</a></div>
+<div style="float:left">上一页：<a href="9_data_types.html">数据类型</a></div>
 </div>
 </div>
 

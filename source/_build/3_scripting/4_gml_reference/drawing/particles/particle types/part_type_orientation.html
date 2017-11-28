@@ -26,6 +26,9 @@ if (window.name != "content")
 </script><!-- !chm2web! -->
 
 
+<script type="text/JavaScript">
+ if( typeof(chmtop.helpStyle) != 'undefined' ) { var linkNodes = document.getElementsByTagName("link");  for( var i=0; i < linkNodes.length; ++i ) { var link = linkNodes[i];    if( link.href.endsWith("default.css")) {    var style = link.href.replace("default.css", chmtop.helpStyle); document.write('<link id="newstyleLink" rel="stylesheet" href=' + style + ' type="text/css">');    break; } } } 
+</script>
 <h1 class="studio">part_type_orientation</h1>
 
 <h2 class="studio">Sets the angle of the particle type.</h2>
@@ -33,7 +36,7 @@ if (window.name != "content")
 <p><br>
 </p>
 
-<h3 class="studio">Syntax:</h3>
+<h3 class="studio">语法：</h3>
 
 <p class="code">part_type_orientation( ind, ang_min, ang_max,
 ang_incr, ang_wiggle, ang_relative );</p>
@@ -44,7 +47,7 @@ ang_incr, ang_wiggle, ang_relative );</p>
 <div>
 <table>
 <tr>
-<th>Argument</th>
+<th>参数</th>
 <th>描述</th>
 </tr>
 
@@ -86,7 +89,7 @@ particle's motion (true) or not (false).</td>
 <p><br>
 </p>
 
-<p><b>Returns:</b> N/A</p>
+<p><b>返回：</b> N/A</p>
 
 <p><br>
 </p>
@@ -127,7 +130,7 @@ to a different angle.<br>
 <p><br>
 </p>
 
-<h3 class="studio">Example:</h3>
+<h3 class="studio">举例：</h3>
 
 <p class="code">part_type_shape(particle2, pt_shape_spark);<br>
 part_type_size(particle2, 0.10, 0.50, 0.01, 0);<br>

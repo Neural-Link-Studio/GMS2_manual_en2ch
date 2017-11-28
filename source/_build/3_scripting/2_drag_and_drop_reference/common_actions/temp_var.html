@@ -27,6 +27,9 @@ if (window.name != "content")
 </script><!-- !chm2web! -->
 
 
+<script type="text/JavaScript">
+ if( typeof(chmtop.helpStyle) != 'undefined' ) { var linkNodes = document.getElementsByTagName("link");  for( var i=0; i < linkNodes.length; ++i ) { var link = linkNodes[i];    if( link.href.endsWith("default.css")) {    var style = link.href.replace("default.css", chmtop.helpStyle); document.write('<link id="newstyleLink" rel="stylesheet" href=' + style + ' type="text/css">');    break; } } } 
+</script>
 <h2><img style="vertical-align:middle" src=
 "images/i_common_temp_var.png">  Declare Temporary Variable</h2>
 
@@ -77,7 +80,7 @@ Scope</a>.</p>
 <p><br>
 </p>
 
-<h3>Action Syntax:</h3>
+<h3>动作语法：</h3>
 <img class="center" src="images/a_common_declare_temp_var.png" alt=
 "Declare Temporary Variable Syntax">
 <p><br>
@@ -88,7 +91,7 @@ Scope</a>.</p>
 <blockquote>
 <table>
 <tr>
-<th>Argument</th>
+<th>参数</th>
 <th>描述</th>
 </tr>
 
@@ -99,7 +102,7 @@ existing variable to change.</td>
 </tr>
 
 <tr class="alt">
-<td>Value</td>
+<td>值</td>
 <td>The value that the variable should hold.</td>
 </tr>
 </table>
@@ -108,7 +111,7 @@ existing variable to change.</td>
 <p><br>
 </p>
 
-<h3>Example:</h3>
+<h3>举例：</h3>
 <img class="center" src="images/e_common_declare_temp.png" alt=
 "Declare Temporary Variable Action Example">
 <blockquote>The above action block code creates the temporary

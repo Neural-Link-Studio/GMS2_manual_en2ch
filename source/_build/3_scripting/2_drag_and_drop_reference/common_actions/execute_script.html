@@ -27,6 +27,9 @@ if (window.name != "content")
 </script><!-- !chm2web! -->
 
 
+<script type="text/JavaScript">
+ if( typeof(chmtop.helpStyle) != 'undefined' ) { var linkNodes = document.getElementsByTagName("link");  for( var i=0; i < linkNodes.length; ++i ) { var link = linkNodes[i];    if( link.href.endsWith("default.css")) {    var style = link.href.replace("default.css", chmtop.helpStyle); document.write('<link id="newstyleLink" rel="stylesheet" href=' + style + ' type="text/css">');    break; } } } 
+</script>
 <h2><img style="vertical-align:middle" src=
 "images/i_common_execute_script.png"> 执行脚本</h2>
 
@@ -54,7 +57,7 @@ required.</p>
 <p><br>
 </p>
 
-<h3>Action Syntax:</h3>
+<h3>动作语法：</h3>
 <img class="center" src="images/a_common_execute_script.png" alt=
 "Execute Script Syntax">
 <p><br>
@@ -65,12 +68,12 @@ required.</p>
 <blockquote>
 <table>
 <tr>
-<th>Argument</th>
+<th>参数</th>
 <th>描述</th>
 </tr>
 
 <tr>
-<td>Script</td>
+<td>脚本</td>
 <td>The name of the script to call.</td>
 </tr>
 
@@ -81,7 +84,7 @@ script (unused arguments can be left blank)</td>
 </tr>
 
 <tr>
-<td>目标?</td>
+<td>目标变量</td>
 <td>The name of the variable that is to be targeted for any
 returned values (can be left blank)</td>
 </tr>
@@ -91,7 +94,7 @@ returned values (can be left blank)</td>
 <p><br>
 </p>
 
-<h3>Example:</h3>
+<h3>举例：</h3>
 <img class="center" src="images/e_common_execute_script.png" alt=
 "Execute Script Example">
 <blockquote>The above action block code calls a script, passing in
@@ -108,8 +111,8 @@ the room. It does not return anything.</blockquote>
 <div style="float:left">Back: <a href="index.html">Common
 Actions</a></div>
 
-<div style="float:right">next: <a href="apply_to.html">Apply
-To...</a></div>
+<div style="float:right">next: <a href=
+"execute_function.html">Execute Function</a></div>
 </div>
 </div>
 

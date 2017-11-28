@@ -27,6 +27,9 @@ if (window.name != "content")
 </script><!-- !chm2web! -->
 
 
+<script type="text/JavaScript">
+ if( typeof(chmtop.helpStyle) != 'undefined' ) { var linkNodes = document.getElementsByTagName("link");  for( var i=0; i < linkNodes.length; ++i ) { var link = linkNodes[i];    if( link.href.endsWith("default.css")) {    var style = link.href.replace("default.css", chmtop.helpStyle); document.write('<link id="newstyleLink" rel="stylesheet" href=' + style + ' type="text/css">');    break; } } } 
+</script>
 <h2><img style="vertical-align:middle" src=
 "images/i_gamepad_get_connected.png">  Gamepad Get Connected</h2>
 
@@ -48,7 +51,7 @@ you create for this event or script).</p>
 <p><br>
 </p>
 
-<h3>Action Syntax:</h3>
+<h3>动作语法：</h3>
 <img class="center" src="images/a_gamepad_get_connected.png" alt=
 "Gamepad Get Connected Syntax">
 <p><br>
@@ -59,7 +62,7 @@ you create for this event or script).</p>
 <blockquote>
 <table>
 <tr>
-<th>Argument</th>
+<th>参数</th>
 <th>描述</th>
 </tr>
 
@@ -69,7 +72,7 @@ you create for this event or script).</p>
 </tr>
 
 <tr class="alt">
-<td>目标?</td>
+<td>目标变量</td>
 <td>The target variable to store the returned value in.</td>
 </tr>
 </table>
@@ -78,7 +81,7 @@ you create for this event or script).</p>
 <p><br>
 </p>
 
-<h3>Example:</h3>
+<h3>举例：</h3>
 <img class="center" src="images/e_gamepad_get_connected.png" alt=
 "Gamepad Get Connected Example">
 <blockquote>The above action block code runs a <tt>for</tt> loop to

@@ -27,6 +27,9 @@ if (window.name != "content")
 </script><!-- !chm2web! -->
 
 
+<script type="text/JavaScript">
+ if( typeof(chmtop.helpStyle) != 'undefined' ) { var linkNodes = document.getElementsByTagName("link");  for( var i=0; i < linkNodes.length; ++i ) { var link = linkNodes[i];    if( link.href.endsWith("default.css")) {    var style = link.href.replace("default.css", chmtop.helpStyle); document.write('<link id="newstyleLink" rel="stylesheet" href=' + style + ' type="text/css">');    break; } } } 
+</script>
 <h2>Game Library</h2>
 
 <div class="body-scroll">
@@ -43,33 +46,33 @@ the main game loop and has the following actions:</p>
 <table class="icons">
 <tr>
 <td class="icons"><a href="restart_game.html"><img align="middle"
-src="images/i_game_restart_game.png" alt="Restart Game"></a>
+src="images/i_game_restart_game.png" alt="重启游戏"></a>
 </td>
-<td class="text"><a href="restart_game.html">Restart Game</a>
+<td class="text"><a href="restart_game.html">重启游戏</a>
 </td>
 </tr>
 
 <tr>
 <td class="icons"><a href="exit_game.html"><img align="middle" src=
-"images/i_game_exit_game.png" alt="Exit Game"></a>
+"images/i_game_exit_game.png" alt="退出游戏"></a>
 </td>
-<td class="text"><a href="exit_game.html">Exit Game</a>
+<td class="text"><a href="exit_game.html">退出游戏</a>
 </td>
 </tr>
 
 <tr>
 <td class="icons"><a href="save_game.html"><img align="middle" src=
-"images/i_game_save_game.png" alt="Save Game"></a>
+"images/i_game_save_game.png" alt="保存游戏"></a>
 </td>
-<td class="text"><a href="save_game.html">Save Game</a>
+<td class="text"><a href="save_game.html">保存游戏</a>
 </td>
 </tr>
 
 <tr>
 <td class="icons"><a href="load_game.html"><img align="middle" src=
-"images/i_game_load_game.png" alt="Load Game"></a>
+"images/i_game_load_game.png" alt="载入游戏"></a>
 </td>
-<td class="text"><a href="load_game.html">Load Game</a>
+<td class="text"><a href="load_game.html">载入游戏</a>
 </td>
 </tr>
 </table>

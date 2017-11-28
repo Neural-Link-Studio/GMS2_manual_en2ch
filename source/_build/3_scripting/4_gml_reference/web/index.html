@@ -26,6 +26,9 @@ if (window.name != "content")
 </script><!-- !chm2web! -->
 
 
+<script type="text/JavaScript">
+ if( typeof(chmtop.helpStyle) != 'undefined' ) { var linkNodes = document.getElementsByTagName("link");  for( var i=0; i < linkNodes.length; ++i ) { var link = linkNodes[i];    if( link.href.endsWith("default.css")) {    var style = link.href.replace("default.css", chmtop.helpStyle); document.write('<link id="newstyleLink" rel="stylesheet" href=' + style + ' type="text/css">');    break; } } } 
+</script>
 <h2>Web</h2>
 
 <div class="body-scroll">
@@ -96,15 +99,7 @@ designed to be used by the games that target it:</p>
 </li>
 </ul>
 
-<p>Apart from these functions for the HTML5 target module, there is
-also a special JavaScript variable that can be used on those rare
-occasions when the contents of the html5game folder are stored in a
-completely different place (URL). Normally this path is hard-coded
-in the JavaScript file and is relative to the location from where
-the JavaScript is called, but you can set the variable
-<tt><b><i>g_GameMakerHTML5Dir</i></b></tt> before the call to the
-game script and the game will be run from the newly defined
-location. For example:</p>
+<p>Apart from these functions for the HTML5 target module, there is also a special JavaScript variable that can be used on those rare occasions when the contents of the html5game folder are stored in a completely different place (URL). Normally this path is hard-coded in the JavaScript file and is relative to the location from where the JavaScript is called, but you can set the variable <tt><b><i>g_GameMakerHTML5Dir</i></b></tt> before the call to the game script and the game will be run from the newly defined location. 比如：</p>
 
 <p class="code">&lt;script&gt;var g_GameMakerHTML5Dir =
 "http://mygamealternatedirectory.com/";&lt;/script&gt;<br></p>

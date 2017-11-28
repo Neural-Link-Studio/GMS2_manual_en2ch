@@ -27,6 +27,9 @@ if (window.name != "content")
 </script><!-- !chm2web! -->
 
 
+<script type="text/JavaScript">
+ if( typeof(chmtop.helpStyle) != 'undefined' ) { var linkNodes = document.getElementsByTagName("link");  for( var i=0; i < linkNodes.length; ++i ) { var link = linkNodes[i];    if( link.href.endsWith("default.css")) {    var style = link.href.replace("default.css", chmtop.helpStyle); document.write('<link id="newstyleLink" rel="stylesheet" href=' + style + ' type="text/css">');    break; } } } 
+</script>
 <h2>Path Library</h2>
 
 <div class="body-scroll">
@@ -45,20 +48,18 @@ resource made in the <a href=
 <tr>
 <td class="icons"><a href="start_following_path.html"><img align=
 "middle" src="images/i_paths_start_following_path.png" alt=
-"Start Following Path"></a>
+"开始沿行路径"></a>
 </td>
-<td class="text"><a href="start_following_path.html">Start
-Following Path</a>
+<td class="text"><a href="start_following_path.html">开始沿行路径</a>
 </td>
 </tr>
 
 <tr>
 <td class="icons"><a href="stop_following_path.html"><img align=
 "middle" src="images/i_paths_stop_following_path.png" alt=
-"Stop Following Path"></a>
+"停止沿行路径"></a>
 </td>
-<td class="text"><a href="stop_following_path.html">Stop Following
-Path</a>
+<td class="text"><a href="stop_following_path.html">停止沿行路径</a>
 </td>
 </tr>
 
@@ -66,10 +67,9 @@ Path</a>
 <td class="icons"><a href=
 "set_position_along_path.html"><img align="middle" src=
 "images/i_paths_set_position_along_path.png" alt=
-"Set Position Along Path"></a>
+"设置路径上的位置"></a>
 </td>
-<td class="text"><a href="set_position_along_path.html">Set
-Position Along Path</a>
+<td class="text"><a href="set_position_along_path.html">设置路径上的位置</a>
 </td>
 </tr>
 
@@ -77,30 +77,27 @@ Position Along Path</a>
 <td class="icons"><a href=
 "get_position_along_path.html"><img align="middle" src=
 "images/i_paths_get_position_along_path.png" alt=
-"Get Position Along Path"></a>
+"获取沿着路径上的位置"></a>
 </td>
-<td class="text"><a href="get_position_along_path.html">Get
-Position Along Path</a>
+<td class="text"><a href="get_position_along_path.html">获取沿着路径上的位置</a>
 </td>
 </tr>
 
 <tr>
 <td class="icons"><a href="set_path_follow_speed.html"><img align=
 "middle" src="images/i_paths_set_path_follow_speed.png" alt=
-"Set Path Follow Speed"></a>
+"设置路径沿行速度"></a>
 </td>
-<td class="text"><a href="set_path_follow_speed.html">Set Path
-Follow Speed</a>
+<td class="text"><a href="set_path_follow_speed.html">设置路径沿行速度</a>
 </td>
 </tr>
 
 <tr>
 <td class="icons"><a href="get_path_follow_speed.html"><img align=
 "middle" src="images/i_paths_get_path_follow_speed.png" alt=
-"Get Path Follow Speed"></a>
+"获取路径跟随的速度"></a>
 </td>
-<td class="text"><a href="get_path_follow_speed.html">Get Path
-Follow Speed</a>
+<td class="text"><a href="get_path_follow_speed.html">获取路径跟随的速度</a>
 </td>
 </tr>
 </table>

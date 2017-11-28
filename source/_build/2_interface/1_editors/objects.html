@@ -7,7 +7,7 @@
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
 
 <meta name="generator" content="chm2web Pro 2.85 (unicode)" />
-<title>The Object Editor</title>
+<title>物体编辑器</title>
 <meta http-equiv="X-UA-Compatible" content="IE=9">
 
 <link rel="stylesheet" href="../../../../files/helpindex.css" type=
@@ -27,14 +27,17 @@ if (window.name != "content")
 </script><!-- !chm2web! -->
 
 
-<h2>The Object Editor</h2>
+<script type="text/JavaScript">
+ if( typeof(chmtop.helpStyle) != 'undefined' ) { var linkNodes = document.getElementsByTagName("link");  for( var i=0; i < linkNodes.length; ++i ) { var link = linkNodes[i];    if( link.href.endsWith("default.css")) {    var style = link.href.replace("default.css", chmtop.helpStyle); document.write('<link id="newstyleLink" rel="stylesheet" href=' + style + ' type="text/css">');    break; } } } 
+</script>
+<h2>物体编辑器</h2>
 
 <div class="body-scroll">
 <p><br>
 </p>
 
 <p><img class="center" src="images/editor_objects.png" alt=
-"Object Editor">  Objects are the resource that we use to control
+"物体编辑器">  Objects are the resource that we use to control
 aspects of a game and to do specific things. Most of the time they
 have a sprite associated with them so that you see them in the game
 rooms, but sometimes they are used as a "behind the scenes"
@@ -90,7 +93,7 @@ to have one. Click with the left mouse button <img style=
 sprite box and the <b>Asset Explorer</b> will appear with a list of
 all the available sprites from the resource tree: <img class=
 "center" src="images/editor_objects_assetexplorer.png" alt=
-"Asset Explorer"></p>
+"资源浏览器（Asset Explorer）"></p>
 
 <p>You can then select the one you want to use for the object. With
 a sprite assigned to the object you can click the Edit Sprite
@@ -338,7 +341,7 @@ Events List</span></a>
 <p>The other options for an object are:</p>
 
 <blockquote><a name="object_parent" id="object_parent"></a>
-<label class="collapse" for="eight">父</label> <input id=
+<label class="collapse" for="eight">父对象</label> <input id=
 "eight" type="checkbox">
 <div class="index_list">
 <p>When working with objects in the <i>GameMaker Studio 2</i> IDE,
@@ -550,10 +553,7 @@ you are telling <i>GameMaker Studio 2</i> that these should
 ignored.<br>
 <br>
 
-<div class="note"><b>NOTE</b>: Using collision groups dramatically
-increases the processing required by the physics system and should
-be used only when absolutely necessary, and you should have as few
-groups as possible.</div></div>
+<div class="note"><b>注意</b>： Using collision groups dramatically increases the processing required by the physics system and should be used only when absolutely necessary, and you should have as few groups as possible.</div></div>
 <br>
 <a name="object_physics_linear" id="object_physics_linear"></a>
 <label class="collapse" for="thirteen">线性阻尼</label>
@@ -577,7 +577,7 @@ instances in the physics world, as, without it, any rotating
 instance would continue to rotate infinitely.</div>
 <br>
 <a name="object_physics_friction" id="object_physics_friction"></a>
-<label class="collapse" for="fifteen">摩擦力</label> <input id=
+<label class="collapse" for="fifteen">动摩擦因数</label> <input id=
 "fifteen" type="checkbox">
 <div class="index_list">Friction is the force that resists the
 relative motion of material elements sliding against each other,
@@ -594,7 +594,7 @@ following ways:</p>
 
 <blockquote><a name="object_physics_sensor" id=
 "object_physics_sensor"></a> <label class="collapse" for=
-"sixteen">传感器?</label> <input id="sixteen" type="checkbox">
+"sixteen">感应器</label> <input id="sixteen" type="checkbox">
 <div class="index_list">By checking this box, you are telling
 GameMaker Studio 2 to basically "ignore" the physical properties of
 the object, but still return a collision event with the objects
@@ -605,15 +605,10 @@ open a door, or trigger some sort of action in another place in the
 room.<br>
 <br>
 
-<div class="note"><b>NOTE</b>: A sensor fixture will fire off the
-collision event when the collision <b>first occurs only</b>,
-meaning you don't get a stream of collision events as the two
-bodies continue to overlap (which is what would traditionally
-occur). If they stop overlapping and overlap subsequently there
-will be another collision event triggered.</div></div>
+<div class="note"><b>注意</b>： A sensor fixture will fire off the collision event when the collision <b>first occurs only</b>, meaning you don't get a stream of collision events as the two bodies continue to overlap (which is what would traditionally occur). If they stop overlapping and overlap subsequently there will be another collision event triggered.</div></div>
 <br>
 <a name="object_physics_awake" id="object_physics_awake"></a>
-<label class="collapse" for="seventeen">起动唤醒?</label>
+<label class="collapse" for="seventeen">初始唤醒</label>
 <input id="seventeen" type="checkbox">
 <div class="index_list">This is checked by default and represents
 the initial "state" of the fixture at the start of the room it has
@@ -627,7 +622,7 @@ simulation unless something acts upon it.</div>
 <br>
 <a name="object_physics_kinematic" id=
 "object_physics_kinematic"></a> <label class="collapse" for=
-"eitghteen">运动?</label> <input id="eitghteen" type=
+"eitghteen">运动学</label> <input id="eitghteen" type=
 "checkbox">
 <div class="index_list">There will be certain instances in a
 physics based game which you want to move around but do not wish to
@@ -648,8 +643,7 @@ appropriate variables.</div></blockquote></div></blockquote>
 <div class="footer">
 <div class="buttons">
 <div class="clear">
-<div style="float:left">Back: <a href="index.html">Editors
-Index</a></div>
+<div style="float:left">上一页：<a href="index.html">编辑器索引</a></div>
 
 <div style="float:right">Next: <a href="rooms.html">The Room
 Editor</a></div>

@@ -26,6 +26,9 @@ if (window.name != "content")
 </script><!-- !chm2web! -->
 
 
+<script type="text/JavaScript">
+ if( typeof(chmtop.helpStyle) != 'undefined' ) { var linkNodes = document.getElementsByTagName("link");  for( var i=0; i < linkNodes.length; ++i ) { var link = linkNodes[i];    if( link.href.endsWith("default.css")) {    var style = link.href.replace("default.css", chmtop.helpStyle); document.write('<link id="newstyleLink" rel="stylesheet" href=' + style + ' type="text/css">');    break; } } } 
+</script>
 <h2>draw_light_enable</h2>
 
 <p><br>
@@ -39,15 +42,13 @@ a positional or a directional light you must assign it an index
 number which is then used by this function to switch the light on
 or off. Default is disabled (<tt>false</tt>).</p>
 
-<div class="note"><b>NOTE</b>: There are only 8 hardware lights
-available, so only 8 defined lights can be enabled at any one time
-(although more can be defined).</div>
+<div class="note"><b>注意</b>： There are only 8 hardware lights available, so only 8 defined lights can be enabled at any one time (although more can be defined).</div>
 </blockquote>
 
 <p><br>
 </p>
 
-<h3>Syntax:</h3>
+<h3>语法：</h3>
 
 <p class="code">draw_light_enable(ind, enable)</p>
 
@@ -59,7 +60,7 @@ available, so only 8 defined lights can be enabled at any one time
 <blockquote>
 <table>
 <tr>
-<th>Argument</th>
+<th>参数</th>
 <th>描述</th>
 </tr>
 
@@ -78,14 +79,14 @@ available, so only 8 defined lights can be enabled at any one time
 <p><br>
 </p>
 
-<h3>Returns:</h3>
+<h3>返回：</h3>
 
 <p class="code">N/A</p>
 
 <p><br>
 </p>
 
-<h3>Example:</h3>
+<h3>举例：</h3>
 
 <p class="code">draw_set_lighting(true);<br>
 draw_light_define_direction(1, 0, 1, 0, c_white);<br>

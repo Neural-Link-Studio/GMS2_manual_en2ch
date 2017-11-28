@@ -27,6 +27,9 @@ if (window.name != "content")
 </script><!-- !chm2web! -->
 
 
+<script type="text/JavaScript">
+ if( typeof(chmtop.helpStyle) != 'undefined' ) { var linkNodes = document.getElementsByTagName("link");  for( var i=0; i < linkNodes.length; ++i ) { var link = linkNodes[i];    if( link.href.endsWith("default.css")) {    var style = link.href.replace("default.css", chmtop.helpStyle); document.write('<link id="newstyleLink" rel="stylesheet" href=' + style + ' type="text/css">');    break; } } } 
+</script>
 <h2>The Sprite Editor</h2>
 
 <div class="body-scroll">
@@ -34,7 +37,7 @@ if (window.name != "content")
 </p>
 
 <p><img class="center" src="images/editor_sprites.png" alt=
-"Sprite Editor">
+"精灵编辑器（Sprite Editor）">
 </p>
 
 <p>The sprite editor is where you set the general properties for
@@ -49,7 +52,7 @@ existing sprite and selecting "Properties". The parts that make up
 the Sprite Editor are as follows:</p>
 
 <blockquote><a name="sprite_name" id="sprite_name"></a>
-<label class="collapse" for="one">Sprite Name</label> <input id=
+<label class="collapse" for="one">精灵名称</label> <input id=
 "one" type="checkbox">
 <div class="index_list">
 <p>Here you can name the sprite . The sprite name is what will be
@@ -98,9 +101,7 @@ resize values in either pixels or as a percentage.</li>
 <p>When you are happy with the new size, you can click <i>Apply</i>
 to apply the changes and close the Resize Properties window.</p>
 
-<div class="note"><b>NOTE</b>: This option is only available for
-bitmap sprites and will be greyed out for SWF or skeleton animation
-sprites.</div>
+<div class="note"><b>注意</b>： This option is only available for bitmap sprites and will be greyed out for SWF or skeleton animation sprites.</div>
 <br>
 
 <p>In this section you can also either open the <a href=
@@ -119,7 +120,7 @@ and each one will be added to the same sprite as separate
 </div>
 <br>
 <a name="sprite_textures" id="sprite_textures"></a> <label class=
-"collapse" for="eigth">Texture Settings</label> <input id="eigth"
+"collapse" for="eigth">纹理设定</label> <input id="eigth"
 type="checkbox">
 <div class="index_list">
 <p>This section of the sprite properties window deals with how
@@ -163,9 +164,7 @@ those grouped resources on the same texture page to reduce texture
 page swapping while your game is running on the chosen target
 platform.</p>
 
-<div class="note"><b>NOTE</b>: This may not always be necessary and
-the performance increase from this method will depend on whether
-the target device is CPU bound or GPU bound.</div>
+<div class="note"><b>注意</b>： This may not always be necessary and the performance increase from this method will depend on whether the target device is CPU bound or GPU bound.</div>
 
 <p><br>
 
@@ -178,9 +177,32 @@ for="two">碰撞遮罩</label> <input id="two" type="checkbox">
 <div class="index_list">
 <p>All sprites have a <i>collision mask</i> which corresponds to
 the area of the sprite that will be used to detect collisions when
-the sprite is assigned to an instance. There are various types of
-collision mask which you can choose from the drop down menu:<br>
+the sprite is assigned to an instance. You can first set the
+<b>Mode</b> for the collision mask, which can be one of the
+following:<br>
 <br></p>
+
+<ul>
+<li><b>Automatic</b>: <i>GameMaker Studio 2</i> will calculate the
+collision mask automatically based on the sprite alpha values (this
+will depend on the <i>Tolerance</i> setting explained below).<br>
+<br></li>
+
+<li><b>Full Image</b>: The mask will be calculated with it's bounds
+being the same as the left, right, top and bottom bounds of the
+sprite.<br>
+<br></li>
+
+<li><b>Manual</b>: Selcting this means that you wish to set the
+bounds of the collision mask using the input values for left,
+right, top and bottom.<br>
+<br></li>
+</ul>
+
+Apart from the collision mask Mode, there are also various
+<b>types</b> of collision mask which you can choose from the drop
+down menu:<br>
+<br>
 
 <ul>
 <li><b>Rectangle</b>: A simple rectangular collision mask. This is
@@ -304,7 +326,7 @@ displayed too.</p>
 </div>
 <br>
 <a name="sprite_frames" id="sprite_frames"></a> <label class=
-"collapse" for="three">帧?</label> <input id="three" type=
+"collapse" for="three">帧</label> <input id="three" type=
 "checkbox">
 <div class="index_list">
 <p>This part of the sprite editor shows each of the different
@@ -354,8 +376,7 @@ src="../../images/icon_lmb.png">.</p>
 <div class="footer">
 <div class="buttons">
 <div class="clear">
-<div style="float:left">Back: <a href="index.html">Editors
-Index</a></div>
+<div style="float:left">上一页：<a href="index.html">编辑器索引</a></div>
 
 <div style="float:right">Next: <a href="images.html">The Image
 Editor</a></div>

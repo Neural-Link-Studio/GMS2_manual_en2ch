@@ -27,6 +27,9 @@ if (window.name != "content")
 </script><!-- !chm2web! -->
 
 
+<script type="text/JavaScript">
+ if( typeof(chmtop.helpStyle) != 'undefined' ) { var linkNodes = document.getElementsByTagName("link");  for( var i=0; i < linkNodes.length; ++i ) { var link = linkNodes[i];    if( link.href.endsWith("default.css")) {    var style = link.href.replace("default.css", chmtop.helpStyle); document.write('<link id="newstyleLink" rel="stylesheet" href=' + style + ' type="text/css">');    break; } } } 
+</script>
 <h2>Variables And Variable Scope</h2>
 
 <div class="body-scroll">
@@ -40,7 +43,7 @@ instant) use, and they are given a name so that you can refer to
 them in functions and scripts. A variable in <b>GML</b> can store
 many different data types, like a real number (like 100, 2.456575,
 -56 etc...), a string (like "Hello world!"), an integer (like 1,
-556, -7), or a boolean (<tt>true</tt> or <tt>false</tt>.</p>
+556, -7), or a boolean (<tt>true</tt> or <tt>false</tt>).</p>
 
 <p>A variable is something that we use to store a value for use in
 one or more operations or functions. Think of "pi", for example...
@@ -132,6 +135,10 @@ Drag and Drop actions, but they can be used elsewhere too):</p>
 
 <li><a href=
 "variable_functions/variable_instance_set.html"><tt>variable_instance_set</tt></a>
+</li>
+
+<li><a href=
+"variable_functions/variable_instance_get_names.html"><tt>variable_instance_get_names</tt></a>
 </li>
 </ul>
 </div>
@@ -289,10 +296,7 @@ elsewhere:</p>
 </ul>
 </blockquote>
 
-<p>There are also three <b>deprecated</b> built in global variables
-which you should be aware of (these variables are only designed to
-support legacy projects from previous versions of <i>GameMaker</i>
-and should <b><i>not be used in new projects</i></b>):</p>
+<p>要注意，还有三个<b>不提倡用的</b>内置全局变量（这三个变量仅用于支持从<i>GameMaker</i>前代版本中导入的传统项目，不要再新版本的项目中使用）：</p>
 
 <blockquote>
 <ul>
@@ -461,12 +465,7 @@ there from the start, but we recommend that you create a dedicated
 script resource and define all your macros in there. It will be
 easier to organise and debug later!</p>
 
-<p>If you need the value of a macro to change at run-time then you
-should probably make it a global variable, since these can be
-changed from code during a game, unless you set the macro to be a
-<i>function</i>. By setting the macro to a function it means that
-this function will be called every time you use the macro. For
-example:</p>
+<p>If you need the value of a macro to change at run-time then you should probably make it a global variable, since these can be changed from code during a game, unless you set the macro to be a <i>function</i>. By setting the macro to a function it means that this function will be called every time you use the macro. 比如：</p>
 
 <p class="code">#macro col make_colour_hsv(irandom(255), 255,
 255)</p>

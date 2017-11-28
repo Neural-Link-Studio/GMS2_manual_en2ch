@@ -26,9 +26,12 @@ if (window.name != "content")
 </script><!-- !chm2web! -->
 
 
+<script type="text/JavaScript">
+ if( typeof(chmtop.helpStyle) != 'undefined' ) { var linkNodes = document.getElementsByTagName("link");  for( var i=0; i < linkNodes.length; ++i ) { var link = linkNodes[i];    if( link.href.endsWith("default.css")) {    var style = link.href.replace("default.css", chmtop.helpStyle); document.write('<link id="newstyleLink" rel="stylesheet" href=' + style + ' type="text/css">');    break; } } } 
+</script>
 <h1 class="studio">ds_list_empty</h1>
 
-<h3 class="studio">Syntax:</h3>
+<h3 class="studio">语法：</h3>
 
 <p class="code">ds_list_empty(id);</p>
 
@@ -38,7 +41,7 @@ if (window.name != "content")
 <div class="param">
 <table>
 <tr>
-<th>Argument</th>
+<th>参数</th>
 <th>描述</th>
 </tr>
 
@@ -67,14 +70,14 @@ is empty (returns <tt>true</tt>) or not (returns
 <p><br>
 </p>
 
-<h3 class="studio">Example:</h3>
+<h3 class="studio">举例：</h3>
 
 <p class="code">if count == 15 &amp;&amp;
 !ds_list_empty(command_list)<br>
 &nbsp;&nbsp;&nbsp;{<br>
 &nbsp;&nbsp;&nbsp;ds_list_clear(command_list);<br>
 &nbsp;&nbsp;&nbsp;alarm[0] = room_speed;<br>
-&nbsp;&nbsp;&nbsp;ai_count = 0;<br>
+&nbsp;&nbsp;&nbsp;count = 0;<br>
 &nbsp;&nbsp;&nbsp;}<br></p>
 
 <p>The above code checks a variable to see if it has reached a

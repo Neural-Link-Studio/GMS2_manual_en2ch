@@ -26,12 +26,15 @@ if (window.name != "content")
 </script><!-- !chm2web! -->
 
 
+<script type="text/JavaScript">
+ if( typeof(chmtop.helpStyle) != 'undefined' ) { var linkNodes = document.getElementsByTagName("link");  for( var i=0; i < linkNodes.length; ++i ) { var link = linkNodes[i];    if( link.href.endsWith("default.css")) {    var style = link.href.replace("default.css", chmtop.helpStyle); document.write('<link id="newstyleLink" rel="stylesheet" href=' + style + ' type="text/css">');    break; } } } 
+</script>
 <h1 class="studio">random_range</h1>
 
 <h2 class="studio">Returns a random real number between n1 and
 n2.</h2>
 
-<h3 class="studio"><b>Syntax:</b>
+<h3 class="studio"><b>语法：</b>
 </h3>
 
 <p class="code">random_range(n1, n2);</p>
@@ -42,7 +45,7 @@ n2.</h2>
 <div class="param">
 <table>
 <tr>
-<th>Argument</th>
+<th>参数</th>
 <th>描述</th>
 </tr>
 
@@ -63,7 +66,7 @@ selected.</td>
 <p><br>
 </p>
 
-<p><b>Returns:</b> Real</p>
+<p><b>返回：</b> 实数</p>
 
 <p><br>
 </p>
@@ -73,7 +76,7 @@ selected.</td>
 <p>This function returns a random number between the specified
 range, and this return value does not need to be an integer. For
 example, <tt>random_range(20,50)</tt> will return a random number
-from 20 to 49, but the value may be a real number like 38,65265.
+from 20 to 50, but the value may be a real number like 38,65265.
 Real numbers can also be used as input arguments.<br>
 <br>
 <i><b>NOTE:</b> This function will return the same value every time
@@ -87,7 +90,7 @@ game.</i><br>
 <p><br>
 </p>
 
-<h3><b>Example:</b>
+<h3><b>举例：</b>
 </h3>
 
 <p class="code">score += random_range(500, 600);</p>

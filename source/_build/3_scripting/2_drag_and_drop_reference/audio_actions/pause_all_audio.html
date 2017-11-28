@@ -28,8 +28,11 @@ if (window.name != "content")
 </script><!-- !chm2web! -->
 
 
+<script type="text/JavaScript">
+ if( typeof(chmtop.helpStyle) != 'undefined' ) { var linkNodes = document.getElementsByTagName("link");  for( var i=0; i < linkNodes.length; ++i ) { var link = linkNodes[i];    if( link.href.endsWith("default.css")) {    var style = link.href.replace("default.css", chmtop.helpStyle); document.write('<link id="newstyleLink" rel="stylesheet" href=' + style + ' type="text/css">');    break; } } } 
+</script>
 <h2><img style="vertical-align:middle" src=
-"images/i_audio_pause_all_audio.png">  Pause All Audio</h2>
+"images/i_audio_pause_all_audio.png"> 暂停所有音频</h2>
 
 <div class="body-scroll">
 <p><br>
@@ -47,13 +50,13 @@ has been called. You can start them playing again using the action
 <p><br>
 </p>
 
-<h3>Action Syntax:</h3>
+<h3>动作语法：</h3>
 <img class="center" src="images/a_audio_pause_all_audio.png" alt=
 "Pause All Audio Syntax">
 <p><br>
 </p>
 
-<h3>Example:</h3>
+<h3>举例：</h3>
 <img class="center" src="images/e_audio_pause_all_audio.png" alt=
 "Pause All Audio Example">
 <blockquote>The above action block code will check a global
@@ -67,11 +70,9 @@ paused, otherwise it is all resumed.</blockquote>
 <div class="footer">
 <div class="buttons">
 <div class="clear">
-<div style="float:left">Back: <a href="index.html">Audio
-Actions</a></div>
+<div style="float:left">上一页：<a href="index.html">音频动作</a></div>
 
-<div style="float:right">next: <a href="resume_audio.html">Resume
-Audio</a></div>
+<div style="float:right">上一页：<a href="resume_audio.html">恢复音频的播放</a></div>
 </div>
 </div>
 

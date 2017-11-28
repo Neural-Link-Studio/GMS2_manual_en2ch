@@ -26,6 +26,9 @@ if (window.name != "content")
 </script><!-- !chm2web! -->
 
 
+<script type="text/JavaScript">
+ if( typeof(chmtop.helpStyle) != 'undefined' ) { var linkNodes = document.getElementsByTagName("link");  for( var i=0; i < linkNodes.length; ++i ) { var link = linkNodes[i];    if( link.href.endsWith("default.css")) {    var style = link.href.replace("default.css", chmtop.helpStyle); document.write('<link id="newstyleLink" rel="stylesheet" href=' + style + ' type="text/css">');    break; } } } 
+</script>
 <h2>File System Functions</h2>
 
 <div class="body-scroll">
@@ -60,10 +63,7 @@ that enable you to manipulate files in different ways:</p>
 
 <p>The following functions can be used to change file names:</p>
 
-<div class="note"><b>NOTE</b>: These functions do not work on the
-actual files! They only deal with the strings related to the
-different path elements and should be used in conjunction with the
-other file functions.</div>
+<div class="note"><b>注意</b>： These functions do not work on the actual files!They only deal with the strings related to the different path elements and should be used in conjunction with the other file functions.</div>
 
 <ul>
 <li><a href="filename_name.html">filename_name</a><br>
@@ -89,8 +89,7 @@ other file functions.</div>
 that can be used for loading and saving files with file-type
 filters:</p>
 
-<div class="note"><b>NOTE</b>: These functions are <b>Windows
-ONLY</b></div>
+<div class="note"><b>注意</b>： These functions are <b>Windows ONLY</b></div>
 
 <ul>
 <li><a href="get_open_filename.html">get_open_filename</a><br>

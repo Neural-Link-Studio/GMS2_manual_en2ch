@@ -26,12 +26,15 @@ if (window.name != "content")
 </script><!-- !chm2web! -->
 
 
+<script type="text/JavaScript">
+ if( typeof(chmtop.helpStyle) != 'undefined' ) { var linkNodes = document.getElementsByTagName("link");  for( var i=0; i < linkNodes.length; ++i ) { var link = linkNodes[i];    if( link.href.endsWith("default.css")) {    var style = link.href.replace("default.css", chmtop.helpStyle); document.write('<link id="newstyleLink" rel="stylesheet" href=' + style + ' type="text/css">');    break; } } } 
+</script>
 <h1 class="studio">path_mirror</h1>
 
 <h2 class="studio">Flips the given path along the vertical axis
 with respect to its center.</h2>
 
-<h3><b>Syntax:</b>
+<h3><b>语法：</b>
 </h3>
 
 <p class="code">path_mirror(index);</p>
@@ -42,7 +45,7 @@ with respect to its center.</h2>
 <div>
 <table>
 <tr>
-<th>Argument</th>
+<th>参数</th>
 <th>描述</th>
 </tr>
 
@@ -56,7 +59,7 @@ with respect to its center.</h2>
 <p><br>
 </p>
 
-<p><b>Returns:</b> N/A</p>
+<p><b>返回：</b> N/A</p>
 
 <p><br>
 </p>
@@ -75,7 +78,7 @@ the end of the game.<br>
 <p><br>
 </p>
 
-<h3 class="studio">Example:</h3>
+<h3 class="studio">举例：</h3>
 
 <p class="code">path_mirror(mypath);</p>
 

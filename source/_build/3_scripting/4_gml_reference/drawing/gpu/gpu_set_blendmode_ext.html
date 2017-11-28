@@ -26,6 +26,9 @@ if (window.name != "content")
 </script><!-- !chm2web! -->
 
 
+<script type="text/JavaScript">
+ if( typeof(chmtop.helpStyle) != 'undefined' ) { var linkNodes = document.getElementsByTagName("link");  for( var i=0; i < linkNodes.length; ++i ) { var link = linkNodes[i];    if( link.href.endsWith("default.css")) {    var style = link.href.replace("default.css", chmtop.helpStyle); document.write('<link id="newstyleLink" rel="stylesheet" href=' + style + ' type="text/css">');    break; } } } 
+</script>
 <h2>gpu_set_blendmode_ext</h2>
 
 <p><br>
@@ -58,7 +61,7 @@ function.</p>
 <div class="compat">
 <table>
 <tr>
-<th>Constant</th>
+<th>常量</th>
 <th>Blend factor (Red, Green, Blue, Alpha)</th>
 </tr>
 
@@ -169,7 +172,7 @@ correctly:<br>
 <p><br>
 </p>
 
-<h3>Syntax:</h3>
+<h3>语法：</h3>
 
 <p class="code">gpu_set_blendmode(src, dest);</p>
 
@@ -181,7 +184,7 @@ correctly:<br>
 <blockquote>
 <table>
 <tr>
-<th>Argument</th>
+<th>参数</th>
 <th>描述</th>
 </tr>
 
@@ -200,14 +203,14 @@ correctly:<br>
 <p><br>
 </p>
 
-<h3>Returns:</h3>
+<h3>返回：</h3>
 
 <p class="code">N/A</p>
 
 <p><br>
 </p>
 
-<h3>Example:</h3>
+<h3>举例：</h3>
 
 <p class="code">gpu_set_blendmode(bm_src_alpha, bm_one);<br>
 draw_circle_colour(100, 100, 50, c_white, c_black, 0);<br>

@@ -26,13 +26,16 @@ if (window.name != "content")
 </script><!-- !chm2web! -->
 
 
+<script type="text/JavaScript">
+ if( typeof(chmtop.helpStyle) != 'undefined' ) { var linkNodes = document.getElementsByTagName("link");  for( var i=0; i < linkNodes.length; ++i ) { var link = linkNodes[i];    if( link.href.endsWith("default.css")) {    var style = link.href.replace("default.css", chmtop.helpStyle); document.write('<link id="newstyleLink" rel="stylesheet" href=' + style + ' type="text/css">');    break; } } } 
+</script>
 <h2>clickable_add</h2>
 
 <div class="body-scroll">
 <p><br>
 </p>
 
-<h3>Syntax:</h3>
+<h3>语法：</h3>
 
 <p class="code">clickable_add(x, y, tpe, url, target, params);</p>
 
@@ -42,7 +45,7 @@ if (window.name != "content")
 <div class="param">
 <table>
 <tr>
-<th>Argument</th>
+<th>参数</th>
 <th>描述</th>
 </tr>
 
@@ -84,7 +87,7 @@ description).</td>
 <p><br>
 </p>
 
-<p><b>Returns:</b> Real</p>
+<p><b>返回：</b> 实数</p>
 
 <p><br>
 </p>
@@ -121,7 +124,7 @@ Valid targets are:</p>
 <div class="compat">
 <table>
 <tr>
-<th>目标?</th>
+<th>目标变量</th>
 <th>描述</th>
 </tr>
 
@@ -230,7 +233,7 @@ names are <i>not</i> obfuscated if they begin with
 <p><br>
 </p>
 
-<h3>Example:</h3>
+<h3>举例：</h3>
 
 <p class="code">home_but = clickable_add(32, 32,
 sprite_get_tpe(spr_MS_Home, 0), "http://macsweeney_games.com",

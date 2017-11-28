@@ -26,6 +26,9 @@ if (window.name != "content")
 </script><!-- !chm2web! -->
 
 
+<script type="text/JavaScript">
+ if( typeof(chmtop.helpStyle) != 'undefined' ) { var linkNodes = document.getElementsByTagName("link");  for( var i=0; i < linkNodes.length; ++i ) { var link = linkNodes[i];    if( link.href.endsWith("default.css")) {    var style = link.href.replace("default.css", chmtop.helpStyle); document.write('<link id="newstyleLink" rel="stylesheet" href=' + style + ' type="text/css">');    break; } } } 
+</script>
 <h2>draw_light_define_point</h2>
 
 <p><br>
@@ -41,15 +44,13 @@ light as certain colours appear "darker" than others). You must
 also give the light an index number which what will be used in
 other functions to reference it.</p>
 
-<div class="note"><b>NOTE</b>: There are only 8 hardware lights
-available, so only 8 defined lights can be enabled at any one time
-(although more can be defined).</div>
+<div class="note"><b>注意</b>： There are only 8 hardware lights available, so only 8 defined lights can be enabled at any one time (although more can be defined).</div>
 </blockquote>
 
 <p><br>
 </p>
 
-<h3>Syntax:</h3>
+<h3>语法：</h3>
 
 <p class="code">draw_light_define_point(ind, x, y, z, range,
 col)</p>
@@ -62,7 +63,7 @@ col)</p>
 <blockquote>
 <table>
 <tr>
-<th>Argument</th>
+<th>参数</th>
 <th>描述</th>
 </tr>
 
@@ -102,14 +103,14 @@ hex value).</td>
 <p><br>
 </p>
 
-<h3>Returns:</h3>
+<h3>返回：</h3>
 
 <p class="code">N/A</p>
 
 <p><br>
 </p>
 
-<h3>Example:</h3>
+<h3>举例：</h3>
 
 <p class="code">draw_set_lighting(true);<br>
 draw_light_define_point(1, 200, 123, 50, 2000, c_white);<br>

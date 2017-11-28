@@ -26,12 +26,15 @@ if (window.name != "content")
 </script><!-- !chm2web! -->
 
 
+<script type="text/JavaScript">
+ if( typeof(chmtop.helpStyle) != 'undefined' ) { var linkNodes = document.getElementsByTagName("link");  for( var i=0; i < linkNodes.length; ++i ) { var link = linkNodes[i];    if( link.href.endsWith("default.css")) {    var style = link.href.replace("default.css", chmtop.helpStyle); document.write('<link id="newstyleLink" rel="stylesheet" href=' + style + ' type="text/css">');    break; } } } 
+</script>
 <h1 class="studio">part_emitter_region</h1>
 
 <h2 class="studio">Sets the region and distribution settings for
 the given emitter.</h2>
 
-<h3 class="studio">Syntax:</h3>
+<h3 class="studio">语法：</h3>
 
 <p class="code">part_emitter_region(ps, ind, xmin, xmax, ymin,
 ymax, shape, distribution);</p>
@@ -42,7 +45,7 @@ ymax, shape, distribution);</p>
 <div>
 <table>
 <tr>
-<th>Argument</th>
+<th>参数</th>
 <th>描述</th>
 </tr>
 
@@ -91,7 +94,7 @@ ymax, shape, distribution);</p>
 <p><br>
 </p>
 
-<p><b>Returns:</b> N/A</p>
+<p><b>返回：</b> N/A</p>
 
 <p><br>
 </p>
@@ -108,7 +111,7 @@ available constants for distribution shapes are listed below:</p>
 <div class="compat">
 <table>
 <tr>
-<th>Constant</th>
+<th>常量</th>
 <th>描述</th>
 </tr>
 
@@ -147,7 +150,7 @@ available constants for distribution curves are listed below:</p>
 <div class="compat">
 <table>
 <tr>
-<th>Constant</th>
+<th>常量</th>
 <th>描述</th>
 </tr>
 
@@ -175,18 +178,13 @@ generated at the edges than center.</td>
 "Emitter Distribution">
 </p>
 
-<div class="note"><b>NOTE</b>: If you need the emitter to move with
-an instance, you will have to use this function in the step event
-and update the emitter position that way. It is also worth noting
-that for point emissions where you do not need to create particles
-over an area or with a specific distribution, it is often easier to
-use <a href=
+<div class="note"><b>注意</b>： If you need the emitter to move with an instance, you will have to use this function in the step event and update the emitter position that way. It is also worth noting that for point emissions where you do not need to create particles over an area or with a specific distribution, it is often easier to use <a href=
 "../particle%20systems/part_particles_create.html"><tt>part_particles_create</tt></a>.</div>
 
 <p><br>
 </p>
 
-<h3 class="studio">Example:</h3>
+<h3 class="studio">举例：</h3>
 
 <p class="code">part_emitter_region(global.Sname , emit_1, x - 50,
 x + 50, y - 50, y + 50, ps_shape_ellipse, ps_distr_linear)</p>

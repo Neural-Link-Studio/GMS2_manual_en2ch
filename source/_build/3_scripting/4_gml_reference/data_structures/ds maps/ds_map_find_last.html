@@ -26,12 +26,15 @@ if (window.name != "content")
 </script><!-- !chm2web! -->
 
 
+<script type="text/JavaScript">
+ if( typeof(chmtop.helpStyle) != 'undefined' ) { var linkNodes = document.getElementsByTagName("link");  for( var i=0; i < linkNodes.length; ++i ) { var link = linkNodes[i];    if( link.href.endsWith("default.css")) {    var style = link.href.replace("default.css", chmtop.helpStyle); document.write('<link id="newstyleLink" rel="stylesheet" href=' + style + ' type="text/css">');    break; } } } 
+</script>
 <h1 class="studio">ds_map_find_last</h1>
 
 <h2 class="studio">Finds and returns the last key, as stored by the
 computer, in the ds_map.</h2>
 
-<h3 class="studio">Syntax:</h3>
+<h3 class="studio">语法：</h3>
 
 <p class="code">ds_map_find_last(id);</p>
 
@@ -41,7 +44,7 @@ computer, in the ds_map.</h2>
 <div class="param">
 <table>
 <tr>
-<th>Argument</th>
+<th>参数</th>
 <th>描述</th>
 </tr>
 
@@ -73,15 +76,15 @@ slow.<br></p>
 <p><br>
 </p>
 
-<h3 class="studio">Example:</h3>
+<h3 class="studio">举例：</h3>
 
 <p class="code">var size, key, i;<br>
 size = ds_map_size(inventory);<br>
-key = ds_map_find_first(inventory);<br>
+key = ds_map_find_last(inventory);<br>
 for (i = size; i &gt; 0; i--;)<br>
 &nbsp;&nbsp;&nbsp;{<br>
-&nbsp;&nbsp;&nbsp;if first != "gold" first =
-ds_map_find_previous(inventory, first) else break;<br>
+&nbsp;&nbsp;&nbsp;if key != "gold" key =
+ds_map_find_previous(inventory, key) else break;<br>
 &nbsp;&nbsp;&nbsp;}<br></p>
 
 <p>The above code creates some temporary variables and then gets

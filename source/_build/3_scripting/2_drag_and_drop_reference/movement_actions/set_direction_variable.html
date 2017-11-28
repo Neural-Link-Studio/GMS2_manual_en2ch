@@ -27,6 +27,9 @@ if (window.name != "content")
 </script><!-- !chm2web! -->
 
 
+<script type="text/JavaScript">
+ if( typeof(chmtop.helpStyle) != 'undefined' ) { var linkNodes = document.getElementsByTagName("link");  for( var i=0; i < linkNodes.length; ++i ) { var link = linkNodes[i];    if( link.href.endsWith("default.css")) {    var style = link.href.replace("default.css", chmtop.helpStyle); document.write('<link id="newstyleLink" rel="stylesheet" href=' + style + ' type="text/css">');    break; } } } 
+</script>
 <h2><img style="vertical-align:middle" src=
 "images/i_movement_set_direction_variable.png"> 设置方向变量</h2>
 
@@ -47,7 +50,7 @@ add/subtract the value you give to the current direction.</p>
 <p><br>
 </p>
 
-<h3>Action Syntax:</h3>
+<h3>动作语法：</h3>
 <img class="center" src=
 "images/a_movement_set_direction_variable.png" alt=
 "Set Direction Variable Syntax">
@@ -59,12 +62,12 @@ add/subtract the value you give to the current direction.</p>
 <blockquote>
 <table>
 <tr>
-<th>Argument</th>
+<th>参数</th>
 <th>描述</th>
 </tr>
 
 <tr>
-<td>Direction</td>
+<td>方向</td>
 <td>Direction from 0° to 360° (values outside of the range will be
 wrapped).</td>
 </tr>
@@ -74,7 +77,7 @@ wrapped).</td>
 <p><br>
 </p>
 
-<h3>Example:</h3>
+<h3>举例：</h3>
 <img class="center" src=
 "images/e_movement_set_direction_variable.png" alt=
 "Set Direction Variable Example">

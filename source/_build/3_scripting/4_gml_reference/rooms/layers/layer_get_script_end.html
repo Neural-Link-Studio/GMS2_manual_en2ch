@@ -27,6 +27,9 @@ if (window.name != "content")
 </script><!-- !chm2web! -->
 
 
+<script type="text/JavaScript">
+ if( typeof(chmtop.helpStyle) != 'undefined' ) { var linkNodes = document.getElementsByTagName("link");  for( var i=0; i < linkNodes.length; ++i ) { var link = linkNodes[i];    if( link.href.endsWith("default.css")) {    var style = link.href.replace("default.css", chmtop.helpStyle); document.write('<link id="newstyleLink" rel="stylesheet" href=' + style + ' type="text/css">');    break; } } } 
+</script>
 <h2>layer_get_script_end</h2>
 
 <p><br>
@@ -44,7 +47,7 @@ you get when you create the layer using <a href=
 <p><br>
 </p>
 
-<h3>Syntax:</h3>
+<h3>语法：</h3>
 
 <p class="code">layer_get_script_end(layer_id);</p>
 
@@ -56,7 +59,7 @@ you get when you create the layer using <a href=
 <blockquote>
 <table>
 <tr>
-<th>Argument</th>
+<th>参数</th>
 <th>描述</th>
 </tr>
 
@@ -71,7 +74,7 @@ as a string)</td>
 <p><br>
 </p>
 
-<h3>Returns:</h3>
+<h3>返回：</h3>
 
 <p class="code">Script Index (Real) or -1 if no script is
 assigned</p>
@@ -79,7 +82,7 @@ assigned</p>
 <p><br>
 </p>
 
-<h3>Example:</h3>
+<h3>举例：</h3>
 
 <p class="code">if layer_get_script_end(layer) == -1<br>
 &nbsp;&nbsp;&nbsp;{<br>

@@ -27,6 +27,9 @@ if (window.name != "content")
 </script><!-- !chm2web! -->
 
 
+<script type="text/JavaScript">
+ if( typeof(chmtop.helpStyle) != 'undefined' ) { var linkNodes = document.getElementsByTagName("link");  for( var i=0; i < linkNodes.length; ++i ) { var link = linkNodes[i];    if( link.href.endsWith("default.css")) {    var style = link.href.replace("default.css", chmtop.helpStyle); document.write('<link id="newstyleLink" rel="stylesheet" href=' + style + ' type="text/css">');    break; } } } 
+</script>
 <h2>Types Library</h2>
 
 <div class="body-scroll">
@@ -43,8 +46,7 @@ converted to others. This section of the manual shows the different
 actions available for dealing with and converting different data
 types.</p>
 
-<div class="note"><b>NOTE</b>: you can find out more about the
-different data types <a href=
+<div class="note"><b>注意</b>： you can find out more about the different data types <a href=
 "../../3_gml_overview/9_data_types.html">here</a>.</div>
 <br>
 
@@ -54,30 +56,27 @@ different data types <a href=
 <tr>
 <td class="icons"><a href="decimal_to_integer.html"><img align=
 "middle" src="images/i_types_decimal_to_integer.png" alt=
-"Decimal To Integer"></a>
+"小数值转整数"></a>
 </td>
-<td class="text"><a href="decimal_to_integer.html">Decimal To
-Integer</a>
+<td class="text"><a href="decimal_to_integer.html">小数值转整数</a>
 </td>
 </tr>
 
 <tr>
 <td class="icons"><a href="string_to_number.html"><img align=
 "middle" src="images/i_types_string_to_number.png" alt=
-"String To Number"></a>
+"字符串转数字"></a>
 </td>
-<td class="text"><a href="string_to_number.html">String To
-Number</a>
+<td class="text"><a href="string_to_number.html">字符串转数字</a>
 </td>
 </tr>
 
 <tr>
 <td class="icons"><a href="number_to_string.html"><img align=
 "middle" src="images/i_types_number_to_string.png" alt=
-"Number To String"></a>
+"数字转字符串"></a>
 </td>
-<td class="text"><a href="number_to_string.html">Number To
-String</a>
+<td class="text"><a href="number_to_string.html">数字转字符串</a>
 </td>
 </tr>
 </table>

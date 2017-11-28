@@ -26,11 +26,14 @@ if (window.name != "content")
 </script><!-- !chm2web! -->
 
 
+<script type="text/JavaScript">
+ if( typeof(chmtop.helpStyle) != 'undefined' ) { var linkNodes = document.getElementsByTagName("link");  for( var i=0; i < linkNodes.length; ++i ) { var link = linkNodes[i];    if( link.href.endsWith("default.css")) {    var style = link.href.replace("default.css", chmtop.helpStyle); document.write('<link id="newstyleLink" rel="stylesheet" href=' + style + ' type="text/css">');    break; } } } 
+</script>
 <h1 class="studio">physics_joint_delete</h1>
 
-<h2 class="studio">Delete a joint from the physics world.</h2>
+<h2 class="studio">从物理世界中删除关节</h2>
 
-<h3 class="studio">Syntax:</h3>
+<h3 class="studio">语法：</h3>
 
 <p class="code">physics_joint_delete(joint)</p>
 
@@ -40,13 +43,13 @@ if (window.name != "content")
 <div class="param">
 <table>
 <tr>
-<th>Argument</th>
+<th>参数</th>
 <th>描述</th>
 </tr>
 
 <tr>
 <td>joint</td>
-<td>The index of the joint that you wish to delete</td>
+<td>你要删除的关节索引</td>
 </tr>
 </table>
 </div>
@@ -54,7 +57,7 @@ if (window.name != "content")
 <p><br>
 </p>
 
-<p><b>Returns:</b> N/A</p>
+<p><b>返回：</b> N/A</p>
 
 <p><br>
 </p>
@@ -79,7 +82,7 @@ example in the destroy event of the instance.<br>
 <p><br>
 </p>
 
-<h3 class="studio">Example:</h3>
+<h3 class="studio">举例：</h3>
 
 <p class="code">var reactionForceX, reactionForceY,
 reactionForce;<br>
@@ -99,18 +102,15 @@ reactionForceX) + (reactionForceY + reactionForceY));<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
 &nbsp;&nbsp;&nbsp;}<br></p>
 
-<p>The above code checks to see if the variable "shipJoint" holds a
-joint index and if it does, it then calculates the force being
-applied to that joint using the two constants. Finally, if the
-total force is greater than 2, the joint is deleted.</p>
+<p>The above code checks to see if the variable "shipJoint" holds a joint index and if it does, it then calculates the force being applied to that joint using the two constants. 最后，如果关节合力大于2，则该关节会删除失效。</p>
 
 <p><br>
 </p>
 
 <div class="clear">
-<div style="float:left">Back: <a href="index.html">Joints</a></div>
+<div style="float:left">上一页：<a href="index.html">关节</a></div>
 
-<div style="float:right">Next: <a href=
+<div style="float:right">下一页：<a href=
 "physics_joint_enable_motor.html">physics_joint_enable_motor</a></div>
 </div>
 

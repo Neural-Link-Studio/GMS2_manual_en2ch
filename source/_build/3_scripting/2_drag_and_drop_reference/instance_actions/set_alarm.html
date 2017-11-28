@@ -27,6 +27,9 @@ if (window.name != "content")
 </script><!-- !chm2web! -->
 
 
+<script type="text/JavaScript">
+ if( typeof(chmtop.helpStyle) != 'undefined' ) { var linkNodes = document.getElementsByTagName("link");  for( var i=0; i < linkNodes.length; ++i ) { var link = linkNodes[i];    if( link.href.endsWith("default.css")) {    var style = link.href.replace("default.css", chmtop.helpStyle); document.write('<link id="newstyleLink" rel="stylesheet" href=' + style + ' type="text/css">');    break; } } } 
+</script>
 <h2><img style="vertical-align:middle" src=
 "images/i_instance_set_alarm.png"> 设置计时器的倒计时</h2>
 
@@ -56,7 +59,7 @@ alarm immediately it should be set to 1.</p>
 <p><br>
 </p>
 
-<h3>Action Syntax:</h3>
+<h3>动作语法：</h3>
 <img class="center" src="images/a_instance_set_alarm.png" alt=
 "Set Alarm Syntax">
 <p><br>
@@ -67,7 +70,7 @@ alarm immediately it should be set to 1.</p>
 <blockquote>
 <table>
 <tr>
-<th>Argument</th>
+<th>参数</th>
 <th>描述</th>
 </tr>
 
@@ -78,7 +81,7 @@ triggered when it reaches 0).</td>
 </tr>
 
 <tr class="alt">
-<td>Countdown</td>
+<td>倒计时</td>
 <td>The count down value in game steps.</td>
 </tr>
 </table>
@@ -87,7 +90,7 @@ triggered when it reaches 0).</td>
 <p><br>
 </p>
 
-<h3>Example:</h3>
+<h3>举例：</h3>
 <img class="center" src="images/e_instance_get_alarm.png" alt=
 "Set Alarm Example">
 <blockquote>The above action block code creates a local (temporary)

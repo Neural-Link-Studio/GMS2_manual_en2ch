@@ -27,6 +27,9 @@ if (window.name != "content")
 </script><!-- !chm2web! -->
 
 
+<script type="text/JavaScript">
+ if( typeof(chmtop.helpStyle) != 'undefined' ) { var linkNodes = document.getElementsByTagName("link");  for( var i=0; i < linkNodes.length; ++i ) { var link = linkNodes[i];    if( link.href.endsWith("default.css")) {    var style = link.href.replace("default.css", chmtop.helpStyle); document.write('<link id="newstyleLink" rel="stylesheet" href=' + style + ' type="text/css">');    break; } } } 
+</script>
 <h2>源码控制</h2>
 
 <div class="body-scroll">
@@ -79,11 +82,7 @@ well as an email address.  <img class="center" src=
 Git Hub, Bit Bucket, etc.. ) when handling clone, push and pull
 requests.</p>
 
-<div class="note"><b>NOTE</b>: If you are using an external
-repository, then you should be using the username and password
-associated with the account set up for that repository, but if you
-are wanting to use a local repository then you can use any username
-and password.</div>
+<div class="note"><b>注意</b>： If you are using an external repository, then you should be using the username and password associated with the account set up for that repository, but if you are wanting to use a local repository then you can use any username and password.</div>
 
 <p><br>
 
@@ -92,7 +91,7 @@ Now, in your project, open up <a href=
 the <i>Enable Source Control</i> option to activate SCM for the
 current project.  <img class="center" src=
 "images/scm_enablesourcecontrol.png" alt=
-"启用源控制?"></p>
+"启用源代码控制"></p>
 
 <p>Once you have enabled source control (and applied it or closed
 the Game Options) a new context menu will appear at the top of the
@@ -393,10 +392,7 @@ You need to know how to handle these conflicts so we're going to
 deliberately create one now and then show you how to deal with
 it.</p>
 
-<div class="note"><b>NOTE</b>: Sharing a local project repository
-(even through a file synchronization service like Dropbox) isn't
-recommended, as commits are generally written directly to it, and
-thus you have very little conflict protection.</div>
+<div class="note"><b>注意</b>： Sharing a local project repository (even through a file synchronization service like Dropbox) isn't recommended, as commits are generally written directly to it, and thus you have very little conflict protection.</div>
 
 <p><br>
 
@@ -732,8 +728,8 @@ IDE or using a specific <b>Merge Tool</b>.</li>
 <div class="clear">
 <div style="float:left">Back: <a href="index.html">Tools</a></div>
 
-<div style="float:right">Next: <a href=
-"marketplace.html">Marketplace</a></div>
+<div style="float:right">下一页：<a href=
+"marketplace.html">市场</a></div>
 </div>
 </div>
 

@@ -26,6 +26,9 @@ if (window.name != "content")
 </script><!-- !chm2web! -->
 
 
+<script type="text/JavaScript">
+ if( typeof(chmtop.helpStyle) != 'undefined' ) { var linkNodes = document.getElementsByTagName("link");  for( var i=0; i < linkNodes.length; ++i ) { var link = linkNodes[i];    if( link.href.endsWith("default.css")) {    var style = link.href.replace("default.css", chmtop.helpStyle); document.write('<link id="newstyleLink" rel="stylesheet" href=' + style + ' type="text/css">');    break; } } } 
+</script>
 <h2>Maths And Numbers</h2>
 
 <p><i>GameMaker Studio 2</i> contains a large number functions to
@@ -57,8 +60,8 @@ constant rather than the value):</p>
 <div class="compat">
 <table>
 <tr>
-<th>Constant</th>
-<th>Value</th>
+<th>常量</th>
+<th>值</th>
 </tr>
 
 <tr>
@@ -87,8 +90,7 @@ various factors like platform being built for)</td>
 </p>
 
 <div class="clear">
-<div style="float:left">Back: <a href="../index.html"><i>GameMaker
-Studio 2</i> Language Reference</a></div>
+<div style="float:left">上一页<a href="../index.html"><i>GameMaker Studio 2</i>语言参考</a></div>
 
 <div style="float:right">Next: <a href=
 "../physics/index.html">Physics</a></div>

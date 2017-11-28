@@ -27,6 +27,9 @@ if (window.name != "content")
 </script><!-- !chm2web! -->
 
 
+<script type="text/JavaScript">
+ if( typeof(chmtop.helpStyle) != 'undefined' ) { var linkNodes = document.getElementsByTagName("link");  for( var i=0; i < linkNodes.length; ++i ) { var link = linkNodes[i];    if( link.href.endsWith("default.css")) {    var style = link.href.replace("default.css", chmtop.helpStyle); document.write('<link id="newstyleLink" rel="stylesheet" href=' + style + ' type="text/css">');    break; } } } 
+</script>
 <h2>array_copy</h2>
 
 <div class="body-scroll">
@@ -50,7 +53,7 @@ extended to accept the data.</p>
 <p><br>
 </p>
 
-<h3>Syntax:</h3>
+<h3>语法：</h3>
 
 <p class="code">array_copy(dest, dest_index, src, src_index,
 length);</p>
@@ -63,45 +66,45 @@ length);</p>
 <blockquote>
 <table>
 <tr>
-<th>Argument</th>
+<th>参数</th>
 <th>描述</th>
 </tr>
 
 <tr>
 <td>dest</td>
-<td>The index of the array to check.</td>
+<td>待检测的数组索引。</td>
 </tr>
 
 <tr class="alt">
 <td>dest_index</td>
-<td>The index of the array to check.</td>
+<td>待检测的数组索引。</td>
 </tr>
 
 <tr>
 <td>src</td>
-<td>The index of the array to check.</td>
+<td>待检测的数组索引。</td>
 </tr>
 
 <tr class="alt">
 <td>src_index</td>
-<td>The index of the array to check.</td>
+<td>待检测的数组索引。</td>
 </tr>
 
 <tr>
 <td>length</td>
-<td>The length (number of array indices) to copy.</td>
+<td>待拷贝的长度（数组索引个数）。</td>
 </tr>
 </table>
 </blockquote>
 
-<h3>Returns:</h3>
+<h3>返回：</h3>
 
 <p class="code">N/A</p>
 
 <p><br>
 </p>
 
-<h3>Example:</h3>
+<h3>举例：</h3>
 
 <p class="code">if !array_equals(inventory_array, item_array)<br>
 &nbsp;&nbsp;&nbsp;{<br>
@@ -111,10 +114,7 @@ len);<br>
 &nbsp;&nbsp;&nbsp;}<br></p>
 
 <blockquote>
-<p>The above code will check two arrays to see if they hold
-equivalent values, and if they do not then the code will copy the
-entire contents of the array "inventory_array" to the array
-"item_array".</p>
+<p>上述代码将会检测两个数组来查看它们是否承载了相等的值，如果不是，这段代码将会拷贝数组"inventory_array"的全部内容给数组"item_array"。</p>
 </blockquote>
 
 <p><br>
@@ -124,10 +124,10 @@ entire contents of the array "inventory_array" to the array
 <div class="footer">
 <div class="buttons">
 <div class="clear">
-<div style="float:left">Back: <a href=
-"../10_arrays.html">Arrays</a></div>
+<div style="float:left">上一页：<a href=
+"../10_arrays.html">数组</a></div>
 
-<div style="float:right">Next: <a href=
+<div style="float:right">下一页：<a href=
 "array_equals.html">array_equals</a></div>
 </div>
 </div>

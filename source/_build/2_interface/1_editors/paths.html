@@ -27,6 +27,9 @@ if (window.name != "content")
 </script><!-- !chm2web! -->
 
 
+<script type="text/JavaScript">
+ if( typeof(chmtop.helpStyle) != 'undefined' ) { var linkNodes = document.getElementsByTagName("link");  for( var i=0; i < linkNodes.length; ++i ) { var link = linkNodes[i];    if( link.href.endsWith("default.css")) {    var style = link.href.replace("default.css", chmtop.helpStyle); document.write('<link id="newstyleLink" rel="stylesheet" href=' + style + ' type="text/css">');    break; } } } 
+</script>
 <h2>The Path Editor</h2>
 
 <div class="body-scroll">
@@ -34,7 +37,7 @@ if (window.name != "content")
 </p>
 
 <p><img class="center" src="images/editor_paths.png" alt=
-"Path Editor">  At some point while creating your games you may need
+"路径编辑器">  At some point while creating your games you may need
 one of your instances to follow a path through a level. Now, this
 can be done in code by simply creating an array of positions within
 the room and then having an instance move between them, but that
@@ -137,7 +140,7 @@ points.</li>
 </div>
 <br>
 <a name="path_toolbox" id="path_toolbox"></a> <label class=
-"collapse" for="three">工具栏</label> <input id="three" type=
+"collapse" for="three">工具箱</label> <input id="three" type=
 "checkbox">
 <div class="index_list">
 <p>The tool box buttons at the top are where you can control how
@@ -198,8 +201,7 @@ mouse button menu on the choose path point(s):</p>
 <div class="footer">
 <div class="buttons">
 <div class="clear">
-<div style="float:left">Back: <a href="index.html">Editors
-Index</a></div>
+<div style="float:left">上一页：<a href="index.html">编辑器索引</a></div>
 
 <div style="float:right">Next: <a href="scripts.html">The Script
 Editor</a></div>

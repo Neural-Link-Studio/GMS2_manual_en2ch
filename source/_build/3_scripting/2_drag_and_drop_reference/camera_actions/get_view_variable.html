@@ -7,7 +7,7 @@
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
 
 <meta name="generator" content="chm2web Pro 2.85 (unicode)" />
-<title>Get View Variable</title>
+<title>获取视野变量</title>
 <meta http-equiv="X-UA-Compatible" content="IE=9">
 
 <link rel="stylesheet" href="../../../../../files/helpindex.css"
@@ -27,8 +27,11 @@ if (window.name != "content")
 </script><!-- !chm2web! -->
 
 
+<script type="text/JavaScript">
+ if( typeof(chmtop.helpStyle) != 'undefined' ) { var linkNodes = document.getElementsByTagName("link");  for( var i=0; i < linkNodes.length; ++i ) { var link = linkNodes[i];    if( link.href.endsWith("default.css")) {    var style = link.href.replace("default.css", chmtop.helpStyle); document.write('<link id="newstyleLink" rel="stylesheet" href=' + style + ' type="text/css">');    break; } } } 
+</script>
 <h2><img style="vertical-align:middle" src=
-"images/i_cameras_get_view_variable.png">  Get View Variable</h2>
+"images/i_cameras_get_view_variable.png"> 获取视野变量</h2>
 
 <div class="body-scroll">
 <p><br>
@@ -50,12 +53,12 @@ table below:</p>
 <div class="compat">
 <table>
 <tr>
-<th>Variable</th>
+<th>变量</th>
 <th>描述</th>
 </tr>
 
 <tr>
-<td>Camera</td>
+<td>摄像机</td>
 <td>The value returned will be the unique ID value of the camera to
 assigned to the port (see <a href=
 "../../4_gml_reference/cameras%20and%20display/cameras/index.html">here</a>
@@ -63,7 +66,7 @@ for more information).</td>
 </tr>
 
 <tr class="alt">
-<td>Visibility</td>
+<td>可见性</td>
 <td>This will return a value of <tt>true</tt> or <tt>false</tt>
 where <tt>true</tt> is that the view port is visible (ie: it being
 drawn to the screen), and <tt>false</tt> meaning that nothing is
@@ -104,7 +107,7 @@ to the view port or -1 if no surface has been assigned.</td>
 <p><br>
 </p>
 
-<h3>Action Syntax:</h3>
+<h3>动作语法：</h3>
 <img class="center" src="images/a_cameras_get_view_variable.png"
 alt="Get View Variable Syntax">
 <p><br>
@@ -115,12 +118,12 @@ alt="Get View Variable Syntax">
 <blockquote>
 <table>
 <tr>
-<th>Argument</th>
+<th>参数</th>
 <th>描述</th>
 </tr>
 
 <tr>
-<td>Variable</td>
+<td>变量</td>
 <td>The built in view variable to get</td>
 </tr>
 
@@ -130,7 +133,7 @@ alt="Get View Variable Syntax">
 </tr>
 
 <tr>
-<td>目标?</td>
+<td>目标变量</td>
 <td>The target variable to hold the returned value (can be flagged
 as a temporary local variable)</td>
 </tr>
@@ -140,7 +143,7 @@ as a temporary local variable)</td>
 <p><br>
 </p>
 
-<h3>Example:</h3>
+<h3>举例：</h3>
 <img class="center" src="images/e_cameras_get_view_variable.png"
 alt="Get View Variable Example">
 <blockquote>The above action block code gets the current camera ID

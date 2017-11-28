@@ -27,6 +27,9 @@ if (window.name != "content")
 </script><!-- !chm2web! -->
 
 
+<script type="text/JavaScript">
+ if( typeof(chmtop.helpStyle) != 'undefined' ) { var linkNodes = document.getElementsByTagName("link");  for( var i=0; i < linkNodes.length; ++i ) { var link = linkNodes[i];    if( link.href.endsWith("default.css")) {    var style = link.href.replace("default.css", chmtop.helpStyle); document.write('<link id="newstyleLink" rel="stylesheet" href=' + style + ' type="text/css">');    break; } } } 
+</script>
 <h2><img style="vertical-align:middle" src=
 "images/i_keyboardmouse_keydown.png"> 如果一个键按住...</h2>
 
@@ -55,7 +58,7 @@ after the "if" block.</p>
 <p><br>
 </p>
 
-<h3>Action Syntax:</h3>
+<h3>动作语法：</h3>
 <img class="center" src="images/a_keyboardmouse_keydown.png" alt=
 "Key Down Syntax">
 <p><br>
@@ -66,17 +69,17 @@ after the "if" block.</p>
 <blockquote>
 <table>
 <tr>
-<th>Argument</th>
+<th>参数</th>
 <th>描述</th>
 </tr>
 
 <tr>
-<td>Key</td>
+<td>键</td>
 <td>The name of the keyboard key to check.</td>
 </tr>
 
 <tr class="alt">
-<td>Not</td>
+<td>非</td>
 <td>Negate the check (true becomes false and vice versa)</td>
 </tr>
 </table>
@@ -85,7 +88,7 @@ after the "if" block.</p>
 <p><br>
 </p>
 
-<h3>Example:</h3>
+<h3>举例：</h3>
 <img class="center" src="images/e_keyboardmouse_keydown.png" alt=
 "Key Pressed Example">
 <blockquote>The above action block code polls the keyboard state

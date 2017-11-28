@@ -26,6 +26,9 @@ if (window.name != "content")
 </script><!-- !chm2web! -->
 
 
+<script type="text/JavaScript">
+ if( typeof(chmtop.helpStyle) != 'undefined' ) { var linkNodes = document.getElementsByTagName("link");  for( var i=0; i < linkNodes.length; ++i ) { var link = linkNodes[i];    if( link.href.endsWith("default.css")) {    var style = link.href.replace("default.css", chmtop.helpStyle); document.write('<link id="newstyleLink" rel="stylesheet" href=' + style + ' type="text/css">');    break; } } } 
+</script>
 <h2>instance_destroy</h2>
 
 <div class="body-scroll">
@@ -35,15 +38,7 @@ if (window.name != "content")
 <h3>描述</h3>
 
 <blockquote>
-<p>You call this function whenever you wish to "destroy" an
-instance, normally triggering a Destroy Event and also a Clean Up
-event. This will remove it from the room until the room is
-restarted (unless the room is persistent). Calling the function
-with no arguments will simply destroy the instance that is
-currently in scope and running the code, but you can provide an
-optional "id" argument and target a specific instance by using the
-instance ID value, or you can target all instances of a particular
-object by using an <tt>object_index</tt>. For example:</p>
+<p>You call this function whenever you wish to "destroy" an instance, normally triggering a Destroy Event and also a Clean Up event. This will remove it from the room until the room is restarted (unless the room is persistent). Calling the function with no arguments will simply destroy the instance that is currently in scope and running the code, but you can provide an optional "id" argument and target a specific instance by using the instance ID value, or you can target all instances of a particular object by using an <tt>object_index</tt>. 比如：</p>
 
 <p class="code">instance_destroy(other); // destroy the other
 instance in a Collision Event<br>
@@ -88,7 +83,7 @@ destroy event removed it from the game.</p>
 <p><br>
 </p>
 
-<h3>Syntax:</h3>
+<h3>语法：</h3>
 
 <p class="code">instance_destroy([id, execute_event_flag]);</p>
 
@@ -100,7 +95,7 @@ destroy event removed it from the game.</p>
 <blockquote>
 <table>
 <tr>
-<th>Argument</th>
+<th>参数</th>
 <th>描述</th>
 </tr>
 
@@ -121,14 +116,14 @@ event or not (optional, default is <tt>true</tt>)</td>
 <p><br>
 </p>
 
-<h3>Returns:</h3>
+<h3>返回：</h3>
 
 <p class="code">N/A</p>
 
 <p><br>
 </p>
 
-<h3>Example:</h3>
+<h3>举例：</h3>
 
 <p class="code">if bbox_right &lt; 0 || bbox_left &gt; room_width
 || bbox_bottom &amp;let; 0 || bbox_top &gt; room_height<br>

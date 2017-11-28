@@ -7,7 +7,7 @@
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
 
 <meta name="generator" content="chm2web Pro 2.85 (unicode)" />
-<title>Object Events</title>
+<title>物体事件</title>
 <meta http-equiv="X-UA-Compatible" content="IE=9">
 
 <link rel="stylesheet" href="../../../../../files/helpindex.css"
@@ -27,7 +27,10 @@ if (window.name != "content")
 </script><!-- !chm2web! -->
 
 
-<h2>Object Events</h2>
+<script type="text/JavaScript">
+ if( typeof(chmtop.helpStyle) != 'undefined' ) { var linkNodes = document.getElementsByTagName("link");  for( var i=0; i < linkNodes.length; ++i ) { var link = linkNodes[i];    if( link.href.endsWith("default.css")) {    var style = link.href.replace("default.css", chmtop.helpStyle); document.write('<link id="newstyleLink" rel="stylesheet" href=' + style + ' type="text/css">');    break; } } } 
+</script>
+<h2>物体事件</h2>
 
 <div class="body-scroll">
 <p>Each object you create has its own discreet list of events which
@@ -336,12 +339,38 @@ finger tab on a touch screen, and the right mouse button
 screen (this behaviour can be changed using code).</p>
 </div>
 <br>
+<a name="object_event_gesture" id="object_event_gesture"></a>
+<div style="float:left"><img style=
+"vertical-align:middle;padding-top:5px;padding-left:10px;" src=
+"images/icon_gesture.png">
+</div>
+<label class="collapse" for="thirteen">手势</label> <input id=
+"thirteen" type="checkbox">
+<div class="index_list">
+<p>This event is the one that governs what you see on the screen
+when you run your game, and is split into various separate
+"sub-events":  <img class="center" src=
+"images/editor_objects_gesture.png" alt=
+"物体编辑器的手势事件"></p>
+
+<p>Note that the above is simply an overview of how the Gesture
+Events work, but for full details on all the available sub-events,
+please see the following section:</p>
+
+<blockquote>
+<ol>
+<li><a href="gesture_events.html">Gesture Events List</a>
+</li>
+</ol>
+</blockquote>
+</div>
+<br>
 <a name="object_event_other" id="object_event_other"></a>
 <div style="float:left"><img style=
 "vertical-align:middle;padding-top:5px;padding-left:10px;" src=
 "images/icon_other.png">
 </div>
-<label class="collapse" for="eight">其它</label> <input id="eight"
+<label class="collapse" for="eight">对方</label> <input id="eight"
 type="checkbox">
 <div class="index_list">
 <p>There are a number of special events for use when making games
@@ -351,7 +380,7 @@ menu of sub events that comes up when you select this. Here is an
 image of all these other events:  <img class="center" src=
 "images/editor_objects_otherevents.png" alt=
 "Object Editor Other Events"></p>
-<label class="collapse" for="h">房间外面</label> <input id="h"
+<label class="collapse" for="h">离开房间</label> <input id="h"
 type="checkbox">
 <div class="index_list">
 <p>This event is triggered when an instance goes outside the room,
@@ -368,7 +397,7 @@ and causing your game to slow down. Note that this event is only
 triggered once when the instance leaves the room initially.</p>
 </div>
 <br>
-<label class="collapse" for="fourteen">交叉边界</label>
+<label class="collapse" for="fourteen">接触边界</label>
 <input id="fourteen" type="checkbox">
 <div class="index_list">
 <p>This event is triggered when an instance "touches" the inside
@@ -483,9 +512,37 @@ using the appropriate functions.</p>
 <div class="index_list">
 <p>This event is designed only for use with the <a href=
 "../../../3_scripting/4_gml_reference/sprites/skeletal%20animations/index.html">
-Skeletal Animation Functions</a>. It is a special event that is
-triggered by incoming Spine events that have been attached to the
-animation. For example,</p>
+Skeletal Animation Functions</a>. This event is triggered in an
+object which has a skeletal animation sprite assigned to it, and
+where the object is using the <i>default</i> draw for the assigned
+sprite, or the sprite is being drawn via <tt>draw_self()</tt>.
+<i>It currently won’t trigger on skeleton animation sprites drawn
+any other way</i>. The event is designed to capture and transmit
+data that has been assigned to particular events in the sprite
+animation as defined in the editor used to make them.</p>
+
+<p>When the Animation Event is triggered, a special <tt>ds_map</tt>
+will be created called the <tt><b>event_data</b></tt> map (much the
+same as we have the <tt>async_load</tt> map for an async event).
+This map will have all of the following key/value pairs that you
+can parse to get information about the event:</p>
+
+<ul>
+<li>"name": the name of the event (as defined in the animation
+program)</li>
+
+<li>"track": the index of the track the animation is playing on
+(default is 0)</li>
+
+<li>"integer": an integer value associated with the event (as
+defined in the animation program, default is 0)</li>
+
+<li>"float": a float value associated with the event (as defined in
+the animation program, default is 0.0)</li>
+
+<li>"string": a string value associated with the event (as defined
+in the animation program, default is an empty string "")</li>
+</ul>
 </div>
 <br>
 <label class="collapse" for="d">路径结束</label> <input id="d"
@@ -548,24 +605,20 @@ drawn beneath that of the <b>Draw GUI</b> event, regardless of the
 layer (ie: anything drawn in the <b>Draw GUI</b> event will
 <i>always</i> be drawn over anything drawn in the normal draw
 event, regardless of layer order).</p>
-</div>
-<br>
 
-<p>Note that the section on the Draw Events above simply gives an
-overview of how they work, but for full details on all the
-available sub-events, please see the following section:</p>
+<p>Note that the above is simply an overview of how the Draw Events
+work, but for full details on all the available sub-events, please
+see the following section:</p>
 
 <blockquote>
 <ol>
-<li><a href="draw_events.html"><span class="list_link">Draw Events
-List</span></a>
+<li><a href="draw_events.html">Draw Events List</a>
 </li>
 </ol>
 </blockquote>
-
-<p><a name="object_event_async" id="object_event_async"></a>
-</p>
-
+</div>
+<br>
+<a name="object_event_async" id="object_event_async"></a>
 <div style="float:left"><img style=
 "vertical-align:middle;padding-top:5px;padding-left:10px;" src=
 "images/icon_async.png">
@@ -587,19 +640,18 @@ while waiting, polling the appropriate asynchronous event until the
 callback that tells <i>GameMaker Studio 2</i> the file has loaded.
 You can then use the data returned in this event to do other
 things, like change room, or purchase an item.</p>
-</div>
 
-<p>Note that the section on the Asynchronous Events above simply
-gives an overview of how they work, but for full details on all the
-available sub-events, please see the following section:</p>
+<p>Note that the above is simply an overview of how the
+Asynchronous Event works, but for full details on all the available
+sub-events, please see the following section:</p>
 
 <blockquote>
 <ol>
-<li><a href="async_events.html"><span class=
-"list_link">Asynchronous Events List</span></a>
+<li><a href="async_events.html">Asynchronous Events List</a>
 </li>
 </ol>
-</blockquote></blockquote>
+</blockquote>
+</div></blockquote>
 
 <p>It is worth noting that you can <b>name events</b>, or at least
 give them a short descriptive text that will be shown beside them
@@ -698,7 +750,7 @@ triggered differently):</p>
 <br></b>
 </li>
 
-<li><b>Draw Event<br>
+<li><b>绘制事件<br>
 <br></b>
 </li>
 
@@ -730,11 +782,9 @@ triggered differently):</p>
 <div class="footer">
 <div class="buttons">
 <div class="clear">
-<div style="float:left">Back: <a href="../objects.html">The Object
-Editor</a></div>
+<div style="float:left">上一页：<a href="../objects.html">物体编辑器</a></div>
 
-<div style="float:right">Next: <a href="draw_events.html">Draw
-Events</a></div>
+<div style="float:right">下一页：<a href="draw_events.html">绘制事件</a></div>
 </div>
 </div>
 

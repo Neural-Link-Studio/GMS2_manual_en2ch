@@ -27,6 +27,9 @@ if (window.name != "content")
 </script><!-- !chm2web! -->
 
 
+<script type="text/JavaScript">
+ if( typeof(chmtop.helpStyle) != 'undefined' ) { var linkNodes = document.getElementsByTagName("link");  for( var i=0; i < linkNodes.length; ++i ) { var link = linkNodes[i];    if( link.href.endsWith("default.css")) {    var style = link.href.replace("default.css", chmtop.helpStyle); document.write('<link id="newstyleLink" rel="stylesheet" href=' + style + ' type="text/css">');    break; } } } 
+</script>
 <h2>Gamepad Actions Library</h2>
 
 <div class="body-scroll">
@@ -102,7 +105,7 @@ Connected</a>
 <td class="icons"><a href=
 "gamepad_set_axis_deadzone.html"><img align="middle" src=
 "images/i_gamepad_set_axis_deadzone.png" alt=
-"设置游戏手柄的轴死区"></a>
+"设置游戏手柄的轴盲区"></a>
 </td>
 <td class="text"><a href="gamepad_set_axis_deadzone.html">Gamepad
 Set Axis Deadzone</a>
@@ -133,7 +136,7 @@ Set Axis Deadzone</a>
 "images/i_gamepad_if_button_released.png" alt=
 "Detect Button Release"></a>
 </td>
-<td class="text"><a href="if_gamepad_button_released.html">如果手柄按钮释放...</a>
+<td class="text"><a href="if_gamepad_button_released.html">如果手柄按钮放开...</a>
 </td>
 </tr>
 </table>

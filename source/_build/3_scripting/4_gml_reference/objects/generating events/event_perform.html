@@ -26,12 +26,15 @@ if (window.name != "content")
 </script><!-- !chm2web! -->
 
 
+<script type="text/JavaScript">
+ if( typeof(chmtop.helpStyle) != 'undefined' ) { var linkNodes = document.getElementsByTagName("link");  for( var i=0; i < linkNodes.length; ++i ) { var link = linkNodes[i];    if( link.href.endsWith("default.css")) {    var style = link.href.replace("default.css", chmtop.helpStyle); document.write('<link id="newstyleLink" rel="stylesheet" href=' + style + ' type="text/css">');    break; } } } 
+</script>
 <h1 class="studio">event_perform</h1>
 
 <h2 class="studio">Performs a given event of the calling
 instance.</h2>
 
-<h3 class="studio"><b>Syntax:</b>
+<h3 class="studio"><b>语法：</b>
 </h3>
 
 <p class="code">event_perform(type, numb);</p>
@@ -42,7 +45,7 @@ instance.</h2>
 <div>
 <table>
 <tr>
-<th>Argument</th>
+<th>参数</th>
 <th>描述</th>
 </tr>
 
@@ -62,7 +65,7 @@ instance.</h2>
 <p><br>
 </p>
 
-<p><b>Returns:</b> N/A</p>
+<p><b>返回：</b> N/A</p>
 
 <p><br>
 </p>
@@ -454,7 +457,7 @@ identifying the event when performed in these cases.</i></td>
 <h3><b>Extended Example</b>
 </h3>
 
-<p>To help understand how this funcction can be use, please look at
+<p>To help understand how this function can be use, please look at
 the following few examples:</p>
 
 <p class="code">event_perform(ev_keypress, ord("W"));</p>

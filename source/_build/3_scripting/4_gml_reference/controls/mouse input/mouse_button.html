@@ -26,6 +26,9 @@ if (window.name != "content")
 </script><!-- !chm2web! -->
 
 
+<script type="text/JavaScript">
+ if( typeof(chmtop.helpStyle) != 'undefined' ) { var linkNodes = document.getElementsByTagName("link");  for( var i=0; i < linkNodes.length; ++i ) { var link = linkNodes[i];    if( link.href.endsWith("default.css")) {    var style = link.href.replace("default.css", chmtop.helpStyle); document.write('<link id="newstyleLink" rel="stylesheet" href=' + style + ' type="text/css">');    break; } } } 
+</script>
 <h2>mouse_button</h2>
 
 <div class="body-scroll">
@@ -44,14 +47,14 @@ return any of the special mouse constants except
 <p><br>
 </p>
 
-<h3>Syntax:</h3>
+<h3>语法：</h3>
 
 <p class="code">mouse_button;</p>
 
 <p><br>
 </p>
 
-<h3>Returns:</h3>
+<h3>返回：</h3>
 
 <p class="code">Constant (<tt>mb_left</tt>, <tt>mb_middle</tt>,
 <tt>mb_right</tt>, <tt>my_none</tt>)</p>
@@ -59,7 +62,7 @@ return any of the special mouse constants except
 <p><br>
 </p>
 
-<h3><b>Example:</b>
+<h3><b>举例：</b>
 </h3>
 
 <p class="code">if mouse_button = mb_left<br>

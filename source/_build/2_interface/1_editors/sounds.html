@@ -27,6 +27,9 @@ if (window.name != "content")
 </script><!-- !chm2web! -->
 
 
+<script type="text/JavaScript">
+ if( typeof(chmtop.helpStyle) != 'undefined' ) { var linkNodes = document.getElementsByTagName("link");  for( var i=0; i < linkNodes.length; ++i ) { var link = linkNodes[i];    if( link.href.endsWith("default.css")) {    var style = link.href.replace("default.css", chmtop.helpStyle); document.write('<link id="newstyleLink" rel="stylesheet" href=' + style + ' type="text/css">');    break; } } } 
+</script>
 <h2>The Sound Editor</h2>
 
 <div class="body-scroll">
@@ -108,7 +111,7 @@ simple sound effects where the hit on the CPU is much less.</p>
 </div>
 <br>
 <a name="sound_volume" id="sound_volume"></a> <label class=
-"collapse" for="three">Volume</label> <input id="three" type=
+"collapse" for="three">音量</label> <input id="three" type=
 "checkbox">
 <div class="index_list">
 <p>Here you can set the playback volume for the given sound. This
@@ -179,8 +182,7 @@ can also preview and mix sounds using the dedicated <a href=
 <div class="footer">
 <div class="buttons">
 <div class="clear">
-<div style="float:left">Back: <a href="index.html">Editors
-Index</a></div>
+<div style="float:left">上一页：<a href="index.html">编辑器索引</a></div>
 
 <div style="float:right">Next: <a href="paths.html">The Path
 Editor</a></div>

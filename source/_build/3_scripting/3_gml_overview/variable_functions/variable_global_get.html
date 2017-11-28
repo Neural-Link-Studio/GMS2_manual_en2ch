@@ -27,6 +27,9 @@ if (window.name != "content")
 </script><!-- !chm2web! -->
 
 
+<script type="text/JavaScript">
+ if( typeof(chmtop.helpStyle) != 'undefined' ) { var linkNodes = document.getElementsByTagName("link");  for( var i=0; i < linkNodes.length; ++i ) { var link = linkNodes[i];    if( link.href.endsWith("default.css")) {    var style = link.href.replace("default.css", chmtop.helpStyle); document.write('<link id="newstyleLink" rel="stylesheet" href=' + style + ' type="text/css">');    break; } } } 
+</script>
 <h2>variable_global_get</h2>
 
 <div class="body-scroll">
@@ -36,30 +39,20 @@ if (window.name != "content")
 <h3>描述</h3>
 
 <blockquote>
-<p>With this function you can get the value from a given named
-global variable. You supply the name of the global variable to get
-the value of <i>as a string</i> (see example code below) and the
-function will return the value held by the global variable.</p>
+<p>使用该函数你可以从所给定全局变量名的变量中的值。你需要提供待取得值的全局变量的<i>字符串形式的</i>名称（见下方代码），然后这个函数就会返回该全局变量所承载的值。</p>
 
-<div class="note"><b>NOTE</b>: This function is primarily for use
-with <a href=
-"../../../1_overview/3_additional_information/obsolete_functions.html">
-Compatibility Scripts</a> for imported projects and the converted
-code for Drag and Drop actions.<br>
+<div class="note"><b>注意</b>： 该函数基本上是用于所导入工程的<a href=
+"../../../1_overview/3_additional_information/obsolete_functions.html">兼容性脚本（Compatibility）</a>及拖拽按钮（Drag and Drop）动作转换而成的代码中的。<br>
 <br></div>
 
-<div class="note"><b>IMPORTANT!</b> If the global variable you are
-getting does not exist then the function will return the keyword
-<tt>undefined</tt> and you may get errors that will stop the game
-from functioning, so if in doubt use the function <a href=
-"variable_global_exists.html"><tt>variable_global_exists</tt></a>
-first.</div>
+<div class="note"><b>重要！</b>如果你要取得的全局变量并不存在，那么该函数将会返回关键字<tt>undefined</tt>并且你可能会得到错误，阻止游戏的运转，因此如果你不够确定的话请先使用<a href=
+"variable_global_exists.html"><tt>variable_global_exists</tt></a>函数。</div>
 </blockquote>
 
 <p><br>
 </p>
 
-<h3>Syntax:</h3>
+<h3>语法：</h3>
 
 <p class="code">variable_global_get(name);</p>
 
@@ -71,35 +64,30 @@ first.</div>
 <blockquote>
 <table>
 <tr>
-<th>Argument</th>
+<th>参数</th>
 <th>描述</th>
 </tr>
 
 <tr>
 <td>name</td>
-<td>The name of the global variable to get (as a string)</td>
+<td>待取得的全局变量名称（字符串形式）</td>
 </tr>
 </table>
 </blockquote>
 
-<h3>Returns:</h3>
+<h3>返回：</h3>
 
-<p class="code">Value (any data type) or <tt>undefined</tt> (if the
-named variable does not exist)</p>
+<p class="code">值（任意数据类型）或<tt>undefined</tt>（如果该名称的变量不存在）</p>
 
 <p><br>
 </p>
 
-<h3>Example:</h3>
+<h3>举例：</h3>
 
-<p class="code">if variable_global_exists("enemy_num")<br>
-&nbsp;&nbsp;&nbsp;{<br>
-&nbsp;&nbsp;&nbsp;global.enemy_num -= 1<br>
-&nbsp;&nbsp;&nbsp;}<br></p>
+<p class="code">if variable_global_exists("enemy_num")<br>&nbsp;&nbsp;&nbsp;{<br>&nbsp;&nbsp;&nbsp;show_debug_message("enemy_num = " + string(variable_global_get("enemy_num")));<br>&nbsp;&nbsp;&nbsp;}<br></p>
 
 <blockquote>
-<p>The above code will check to see if a global variable exists and
-if it does then it is set to a different value.</p>
+<p>上述代码会检测一个全局变量是否存在，若存在将其输出到控制台上。</p>
 </blockquote>
 
 <p><br>
@@ -109,10 +97,9 @@ if it does then it is set to a different value.</p>
 <div class="footer">
 <div class="buttons">
 <div class="clear">
-<div style="float:left">Back: <a href="../6_scope.html">Variables
-And Variable Scope</a></div>
+<div style="float:left">上一页：<a href="../6_scope.html">变量及变量作用域</a></div>
 
-<div style="float:right">Next: <a href=
+<div style="float:right">下一页：<a href=
 "variable_global_set.html">variable_global_set</a></div>
 </div>
 </div>

@@ -26,6 +26,9 @@ if (window.name != "content")
 </script><!-- !chm2web! -->
 
 
+<script type="text/JavaScript">
+ if( typeof(chmtop.helpStyle) != 'undefined' ) { var linkNodes = document.getElementsByTagName("link");  for( var i=0; i < linkNodes.length; ++i ) { var link = linkNodes[i];    if( link.href.endsWith("default.css")) {    var style = link.href.replace("default.css", chmtop.helpStyle); document.write('<link id="newstyleLink" rel="stylesheet" href=' + style + ' type="text/css">');    break; } } } 
+</script>
 <h2>matrix_multiply</h2>
 
 <p><br>
@@ -39,20 +42,14 @@ to create a new transform matrix. The function will return the new
 matrix index which should be stored in a variable for future
 use.</p>
 
-<div class="note"><b>NOTE</b>: You can't use a matrix constant as
-an argument with this function, so if you wish to multiply the (for
-example) view matrix with a custom matrix that you have built, you
-must first call <a href=
-"matrix_get.html"><tt>matrix_get(type)</tt></a> and assign the view
-matrix values to an array variable, then multiply it by your custom
-matrix, and then set the chosen matrix (view, projection or
-world).</div>
+<div class="note"><b>注意</b>： You can't use a matrix constant as an argument with this function, so if you wish to multiply the (for example) view matrix with a custom matrix that you have built, you must first call <a href=
+"matrix_get.html"><tt>matrix_get(type)</tt></a> and assign the view matrix values to an array variable, then multiply it by your custom matrix, and then set the chosen matrix (view, projection or world).</div>
 </blockquote>
 
 <p><br>
 </p>
 
-<h3>Syntax:</h3>
+<h3>语法：</h3>
 
 <p class="code">matrix_multiply(matrix1, matrix2);</p>
 
@@ -64,7 +61,7 @@ world).</div>
 <blockquote>
 <table>
 <tr>
-<th>Argument</th>
+<th>参数</th>
 <th>描述</th>
 </tr>
 
@@ -83,14 +80,14 @@ world).</div>
 <p><br>
 </p>
 
-<h3>Returns:</h3>
+<h3>返回：</h3>
 
 <p class="code">4x4 Matrix</p>
 
 <p><br>
 </p>
 
-<h3>Example:</h3>
+<h3>举例：</h3>
 
 <p class="code">var v_matrix = matrix_get(matrix_view);<br>
 var new_matrix = matrix_multiply(v_matrix, my_matrix);<br>

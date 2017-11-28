@@ -27,6 +27,9 @@ if (window.name != "content")
 </script><!-- !chm2web! -->
 
 
+<script type="text/JavaScript">
+ if( typeof(chmtop.helpStyle) != 'undefined' ) { var linkNodes = document.getElementsByTagName("link");  for( var i=0; i < linkNodes.length; ++i ) { var link = linkNodes[i];    if( link.href.endsWith("default.css")) {    var style = link.href.replace("default.css", chmtop.helpStyle); document.write('<link id="newstyleLink" rel="stylesheet" href=' + style + ' type="text/css">');    break; } } } 
+</script>
 <h2><img style="vertical-align:middle" src=
 "images/i_collision_shape.png"> 如果物体在...</h2>
 
@@ -79,7 +82,7 @@ below:  <img class="center" src="images/if_collision_shape.png" alt=
 <p><br>
 </p>
 
-<h3>Action Syntax:</h3>
+<h3>动作语法：</h3>
 <img class="center" src="images/a_collision_shape.png" alt=
 "If Collision Shape At Syntax">
 <p><br>
@@ -90,17 +93,17 @@ below:  <img class="center" src="images/if_collision_shape.png" alt=
 <blockquote>
 <table>
 <tr>
-<th>Argument</th>
+<th>参数</th>
 <th>描述</th>
 </tr>
 
 <tr>
-<td>Shape</td>
+<td>形状</td>
 <td>The shape to use</td>
 </tr>
 
 <tr class="alt">
-<td>Object</td>
+<td>物体</td>
 <td>The object to check for instances of</td>
 </tr>
 
@@ -125,7 +128,7 @@ below:  <img class="center" src="images/if_collision_shape.png" alt=
 </tr>
 
 <tr>
-<td>目标?</td>
+<td>目标变量</td>
 <td>The variable to target for the return value of the action</td>
 </tr>
 </table>
@@ -134,7 +137,7 @@ below:  <img class="center" src="images/if_collision_shape.png" alt=
 <p><br>
 </p>
 
-<h3>Example:</h3>
+<h3>举例：</h3>
 <img class="center" src="images/e_collision_shape.png" alt=
 "If Collision Shape Example">
 <blockquote>The above action block code checks for a collision with

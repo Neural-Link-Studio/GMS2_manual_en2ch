@@ -27,6 +27,9 @@ if (window.name != "content")
 </script><!-- !chm2web! -->
 
 
+<script type="text/JavaScript">
+ if( typeof(chmtop.helpStyle) != 'undefined' ) { var linkNodes = document.getElementsByTagName("link");  for( var i=0; i < linkNodes.length; ++i ) { var link = linkNodes[i];    if( link.href.endsWith("default.css")) {    var style = link.href.replace("default.css", chmtop.helpStyle); document.write('<link id="newstyleLink" rel="stylesheet" href=' + style + ' type="text/css">');    break; } } } 
+</script>
 <h2><img style="vertical-align:middle" src=
 "images/i_instance_set_speed.png"> 设置实例缩放</h2>
 
@@ -65,7 +68,7 @@ action.  <img class="center" src="images/sprite_scale.png" alt=
 <p><br>
 </p>
 
-<h3>Action Syntax:</h3>
+<h3>动作语法：</h3>
 <img class="center" src="images/a_instance_set_scale.png" alt=
 "Set Instance Scale Syntax">
 <p><br>
@@ -76,17 +79,17 @@ action.  <img class="center" src="images/sprite_scale.png" alt=
 <blockquote>
 <table>
 <tr>
-<th>Argument</th>
+<th>参数</th>
 <th>描述</th>
 </tr>
 
 <tr>
-<td>Horizontal</td>
+<td>水平</td>
 <td>The vertical scaling factor to use (default is 1).</td>
 </tr>
 
 <tr class="alt">
-<td>Vertical</td>
+<td>垂直</td>
 <td>The horizontal scaling factor to use (default is 1).</td>
 </tr>
 </table>
@@ -95,7 +98,7 @@ action.  <img class="center" src="images/sprite_scale.png" alt=
 <p><br>
 </p>
 
-<h3>Example:</h3>
+<h3>举例：</h3>
 <img class="center" src="images/e_instance_set_sprite.png" alt=
 "Set Sprite Scale Example">
 <blockquote>The above action block code sets a new sprite as well

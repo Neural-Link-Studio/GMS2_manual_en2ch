@@ -27,6 +27,9 @@ if (window.name != "content")
 </script><!-- !chm2web! -->
 
 
+<script type="text/JavaScript">
+ if( typeof(chmtop.helpStyle) != 'undefined' ) { var linkNodes = document.getElementsByTagName("link");  for( var i=0; i < linkNodes.length; ++i ) { var link = linkNodes[i];    if( link.href.endsWith("default.css")) {    var style = link.href.replace("default.css", chmtop.helpStyle); document.write('<link id="newstyleLink" rel="stylesheet" href=' + style + ' type="text/css">');    break; } } } 
+</script>
 <h2>room_restart</h2>
 
 <p><br>
@@ -34,29 +37,26 @@ if (window.name != "content")
 
 <h3>描述</h3>
 
-<blockquote>This <b>read-only</b> variable returns the number of
-"arguments" that are passed through to a script. Normally used in
-conjunction with an argument array (<tt>argument[0...15]</tt>) to
-permit varying input arguments for a given script.</blockquote>
+<blockquote>该<b>只读</b>变量返回传递给脚本的参数个数。一般和参数数组（<tt>argument[0...15]</tt>）同用以允许对给定脚本输入数量可变的参数。</blockquote>
 
 <p><br>
 </p>
 
-<h3>Syntax:</h3>
+<h3>语法：</h3>
 
 <p class="code">room_restart();</p>
 
 <p><br>
 </p>
 
-<h3>Returns:</h3>
+<h3>返回：</h3>
 
 <p class="code">N/A</p>
 
 <p><br>
 </p>
 
-<h3>Example:</h3>
+<h3>举例：</h3>
 
 <p class="code">if lives &lt; 1 room_restart();</p>
 

@@ -26,6 +26,9 @@ if (window.name != "content")
 </script><!-- !chm2web! -->
 
 
+<script type="text/JavaScript">
+ if( typeof(chmtop.helpStyle) != 'undefined' ) { var linkNodes = document.getElementsByTagName("link");  for( var i=0; i < linkNodes.length; ++i ) { var link = linkNodes[i];    if( link.href.endsWith("default.css")) {    var style = link.href.replace("default.css", chmtop.helpStyle); document.write('<link id="newstyleLink" rel="stylesheet" href=' + style + ' type="text/css">');    break; } } } 
+</script>
 <h2>matrix_build</h2>
 
 <p><br>
@@ -41,14 +44,13 @@ itself is created as 16 value 1D array where the first 4 elements
 are row 1, the second 4 elements are row 2 etc... of a 4x4
 matrix.</p>
 
-<div class="note"><b>NOTE</b>: When you build a new matrix in this
-way the order of operation is YXZ.</div>
+<div class="note"><b>注意</b>： When you build a new matrix in this way the order of operation is YXZ.</div>
 </blockquote>
 
 <p><br>
 </p>
 
-<h3>Syntax:</h3>
+<h3>语法：</h3>
 
 <p class="code">matrix_build(x, y, z, xrotation, yrotation,
 zrotation, xscale, yscale, zscale);</p>
@@ -61,7 +63,7 @@ zrotation, xscale, yscale, zscale);</p>
 <blockquote>
 <table>
 <tr>
-<th>Argument</th>
+<th>参数</th>
 <th>描述</th>
 </tr>
 
@@ -115,14 +117,14 @@ zrotation, xscale, yscale, zscale);</p>
 <p><br>
 </p>
 
-<h3>Returns:</h3>
+<h3>返回：</h3>
 
 <p class="code">4x4 Matrix</p>
 
 <p><br>
 </p>
 
-<h3>Example:</h3>
+<h3>举例：</h3>
 
 <p class="code">t_matrix = matrix_build(x, y, 0, 0, 90, 0, 1, 2,
 1);</p>

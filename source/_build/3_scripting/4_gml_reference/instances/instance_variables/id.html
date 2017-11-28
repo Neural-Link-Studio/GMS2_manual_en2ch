@@ -27,6 +27,9 @@ if (window.name != "content")
 </script><!-- !chm2web! -->
 
 
+<script type="text/JavaScript">
+ if( typeof(chmtop.helpStyle) != 'undefined' ) { var linkNodes = document.getElementsByTagName("link");  for( var i=0; i < linkNodes.length; ++i ) { var link = linkNodes[i];    if( link.href.endsWith("default.css")) {    var style = link.href.replace("default.css", chmtop.helpStyle); document.write('<link id="newstyleLink" rel="stylesheet" href=' + style + ' type="text/css">');    break; } } } 
+</script>
 <h2>id</h2>
 
 <div class="body-scroll">
@@ -45,31 +48,27 @@ created using <a href=
 
 
 
-<div class="note"><b>NOTE</b>: The value of this variable is
-<i>not</i> the same as the identifier that the instance is given in
-the room editor and is also different to the <a href=
-"../instance_id.html"><tt>instance_id</tt></a> array which contains
-all the ids of all the currently active
-instances.</div></blockquote>
+<div class="note"><b>注意</b>： The value of this variable is <i>not</i> the same as the identifier that the instance is given in the room editor and is also different to the <a href=
+"../instance_id.html"><tt>instance_id</tt></a> array which contains all the ids of all the currently active instances.</div></blockquote>
 
 <p><br>
 </p>
 
-<h3>Syntax:</h3>
+<h3>语法：</h3>
 
 <p class="code">id;</p>
 
 <p><br>
 </p>
 
-<h3>Returns:</h3>
+<h3>返回：</h3>
 
 <p class="code">Real (instance ID value)</p>
 
 <p><br>
 </p>
 
-<h3>Example:</h3>
+<h3>举例：</h3>
 
 <p class="code">for(var i = 0; i &lt; instance_count; i++;)<br>
 &nbsp;&nbsp;&nbsp;{<br>

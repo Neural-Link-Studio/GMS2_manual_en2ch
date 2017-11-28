@@ -27,6 +27,9 @@ if (window.name != "content")
 </script><!-- !chm2web! -->
 
 
+<script type="text/JavaScript">
+ if( typeof(chmtop.helpStyle) != 'undefined' ) { var linkNodes = document.getElementsByTagName("link");  for( var i=0; i < linkNodes.length; ++i ) { var link = linkNodes[i];    if( link.href.endsWith("default.css")) {    var style = link.href.replace("default.css", chmtop.helpStyle); document.write('<link id="newstyleLink" rel="stylesheet" href=' + style + ' type="text/css">');    break; } } } 
+</script>
 <h2>layer_get_id</h2>
 
 <p><br>
@@ -49,7 +52,7 @@ and the project will crash.</blockquote>
 <p><br>
 </p>
 
-<h3>Syntax:</h3>
+<h3>语法：</h3>
 
 <p class="code">layer_get_id(layer_name)</p>
 
@@ -61,7 +64,7 @@ and the project will crash.</blockquote>
 <blockquote>
 <table>
 <tr>
-<th>Argument</th>
+<th>参数</th>
 <th>描述</th>
 </tr>
 
@@ -75,7 +78,7 @@ and the project will crash.</blockquote>
 <p><br>
 </p>
 
-<h3>Returns:</h3>
+<h3>返回：</h3>
 
 <p class="code">Layer ID Value (Real), or -1 if the layer specified
 doesn't exist</p>
@@ -83,7 +86,7 @@ doesn't exist</p>
 <p><br>
 </p>
 
-<h3>Example:</h3>
+<h3>举例：</h3>
 
 <p class="code">var near = instance_nearest(x, y, obj_Tree);<br>
 var layer_id = layer_get_id("Instances Front");<br>

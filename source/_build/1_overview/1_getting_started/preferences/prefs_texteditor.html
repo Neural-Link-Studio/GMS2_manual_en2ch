@@ -27,6 +27,9 @@ if (window.name != "content")
 </script><!-- !chm2web! -->
 
 
+<script type="text/JavaScript">
+ if( typeof(chmtop.helpStyle) != 'undefined' ) { var linkNodes = document.getElementsByTagName("link");  for( var i=0; i < linkNodes.length; ++i ) { var link = linkNodes[i];    if( link.href.endsWith("default.css")) {    var style = link.href.replace("default.css", chmtop.helpStyle); document.write('<link id="newstyleLink" rel="stylesheet" href=' + style + ' type="text/css">');    break; } } } 
+</script>
 <h2>Preferences - Text Editors</h2>
 
 <div class="body-scroll">
@@ -97,8 +100,7 @@ for the code and dialog editor preferences (shown together below as
 the preferences are exactly the same for both):</p>
 
 <blockquote><a name="prefs_code_options" id=
-"prefs_code_options"></a> <label class="collapse" for="three">Code
-Editor</label> <input id="three" type="checkbox">
+"prefs_code_options"></a> <label class="collapse" for="three">代码编辑器</label> <input id="three" type="checkbox">
 <div class="index_list"><img class="center" src=
 "images/text_editor_colour_prefs.png" alt=
 "The Text Editor Colour Preferences">
@@ -118,25 +120,21 @@ styling for things like line selection of code brackets, etc...
 the code/script editor, with the following options available:</p>
 
 <ul>
-<li><b>Keep tabs</b>: If checked, this will keep tab key presses as
-tab characters - '\t' - in the editor, while unchecked means that
-tabs are converted into spaces. Default is off.<br>
+<li><b>Keep tabs</b>: If checked, this will keep tab key presses as tab characters - '\t' - in the editor, while unchecked means that tabs are converted into spaces. 默认为关<br>
 <br></li>
 
 <li><b>Tab size</b>: The number of character spaces that pressing
 "Tab" should indent the code. Default is 4.<br>
 <br></li>
 
-<li><b>Show Whitespace</b>: Display "." to show whitespace (see
-image below). Default is off.<br>
+<li><b>Show Whitespace</b>: Display "." to show whitespace (see image below). 默认为关<br>
 <br></li>
 
 <li><b>Show line numbers</b>: Whether to show the line numbers down
 the left or not. Default is on.<br>
 <br></li>
 
-<li><b>Show tab lines</b>: Display "...." to show tabbed space.
-Default is off.<br>
+<li><b>Show tab lines</b>: Display "...." to show tabbed space. 默认为关<br>
 <br></li>
 
 <li><b>Enable colour coding</b>: Enable or disable colour coding
@@ -207,8 +205,8 @@ is on.<br>
 <div class="footer">
 <div class="buttons">
 <div class="clear">
-<div style="float:left">Back: <a href=
-"../7_preferences.html">Preferences Index</a></div>
+<div style="float:left">上一页：<a href=
+"../7_preferences.html">偏好设置索引</a></div>
 
 <div style="float:right">Next: <a href=
 "prefs_extensioneditor.html">Extension Editor</a></div>

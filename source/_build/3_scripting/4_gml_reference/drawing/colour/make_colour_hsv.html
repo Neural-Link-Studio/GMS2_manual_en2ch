@@ -26,12 +26,15 @@ if (window.name != "content")
 </script><!-- !chm2web! -->
 
 
+<script type="text/JavaScript">
+ if( typeof(chmtop.helpStyle) != 'undefined' ) { var linkNodes = document.getElementsByTagName("link");  for( var i=0; i < linkNodes.length; ++i ) { var link = linkNodes[i];    if( link.href.endsWith("default.css")) {    var style = link.href.replace("default.css", chmtop.helpStyle); document.write('<link id="newstyleLink" rel="stylesheet" href=' + style + ' type="text/css">');    break; } } } 
+</script>
 <h1 class="studio">make_colour_hsv</h1>
 
 <h2 class="studio">Returns a colour based on hue, saturation and
 value.</h2>
 
-<p><b>Syntax:</b>
+<p><b>语法：</b>
 </p>
 
 <p class="code">make_colour_hsv(hue, sat, val);</p>
@@ -42,7 +45,7 @@ value.</h2>
 <div>
 <table>
 <tr>
-<th>Argument</th>
+<th>参数</th>
 <th>描述</th>
 </tr>
 
@@ -90,7 +93,7 @@ settings, with saturation making the colour tone go from grey (0)
 to a pure tone (255), and with the value making it go from darker
 (0) to lighter (255).<br></p>
 
-<h3 class="studio">Example:</h3>
+<h3 class="studio">举例：</h3>
 
 <p class="code">col = make_colour_hsv(100, 145, 255);</p>
 

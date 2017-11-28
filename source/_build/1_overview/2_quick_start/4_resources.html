@@ -27,29 +27,19 @@ if (window.name != "content")
 </script><!-- !chm2web! -->
 
 
+<script type="text/JavaScript">
+ if( typeof(chmtop.helpStyle) != 'undefined' ) { var linkNodes = document.getElementsByTagName("link");  for( var i=0; i < linkNodes.length; ++i ) { var link = linkNodes[i];    if( link.href.endsWith("default.css")) {    var style = link.href.replace("default.css", chmtop.helpStyle); document.write('<link id="newstyleLink" rel="stylesheet" href=' + style + ' type="text/css">');    break; } } } 
+</script>
 <h2>资源</h2>
 
 <div class="body-scroll">
 <p><br>
 </p>
 
-<p>The core of your game will be created from assets added to the
-<b>resource tree</b>. This is where you can add everything that
-your game requires to run, including a game room, sprites, objects,
-paths and a number of other things. A basic game in <i>GameMaker
-Studio 2</i> will require a room to run in, and usually at least
-one object and a sprite, although you'll likely use a lot more!
-<img class="center" src="images/qs_resources.png" alt=
-"资源树"> You can add a resource to the resource tree by
-right clicking <img style="vertical-align:middle" src=
-"../../images/icon_rmb.png"> on it and selecting the <b>Create</b>
-option from the pop-up menu (for full details on this pop-up menu,
-see below). This is the same for all available resources, but each
-one has its own unique editor which will open when you do this.
-Note that tat the top left of the Resource Tree you have the
-<b>Collapse All</b> button <img style="vertical-align:middle" src=
-"images/icon_collapseresources.png"> which can be used to close all
-open resource folders.</p>
+<p>游戏的核心将通过资源创建并被添加到<b>资源树</b>中。This is where you can add everything that your game requires to run, including a game room, sprites, objects, paths and a number of other things. A basic game in <i>GameMaker Studio 2</i> will require a room to run in, and usually at least one object and a sprite, although you'll likely use a lot more!<img class="center" src="images/qs_resources.png" alt=
+"资源树（Resource Tree）"> You can add a resource to the resource tree by right clicking <img style="vertical-align:middle" src=
+"../../images/icon_rmb.png"> on it and selecting the <b>Create</b> option from the pop-up menu (for full details on this pop-up menu, see below). This is the same for all available resources, but each one has its own unique editor which will open when you do this. Note that tat the top left of the Resource Tree you have the <b>Collapse All</b> button <img style="vertical-align:middle" src=
+"images/icon_collapseresources.png"> which can be used to close all open resource folders.</p>
 
 <p>You can see a brief overview of each of the available resources
 from the resource tree by clicking any of the buttons below:
@@ -71,12 +61,12 @@ single animated sprite. For example, the following 10 images form a
 sprite for a character who is waving his arms while skydiving.<br>
 <br>
 <img class="center" src="images/qs_spritestrip.png" alt=
-"Sprite Strip"><br>
+"精灵长带图"><br>
 And the actual finished animation would look like this when placed
 in a game:<br>
 <br>
 <img class="center" src="images/qs_spriteanim.gif" alt=
-"Sprite Animation"><br>
+"精灵动画"><br>
 A sprite like this is usually a <tt>PNG</tt> format file, but
 <i>GameMaker Studio 2</i> will also accept vector sprites in
 <tt>SWF</tt> format, and <b>Spine</b> sprites in <tt>JSON</tt>
@@ -89,8 +79,7 @@ Editor</a>.</div>
 <a name="tilesets" id="tilesets"></a> <label class="collapse" for=
 "one"><img style=
 "vertical-align:middle; position: relative; left:-26px;" src=
-"../../2_interface/1_editors/images/icon_tileset.png">Tile
-sets</label> <input id="one" type="checkbox">
+"../../2_interface/1_editors/images/icon_tileset.png">图块集</label> <input id="one" type="checkbox">
 <div class="index_list">Tile sets are taken from the sprite
 resources, but are classified as a separate resource since
 <i>GameMaker Studio 2</i> will handle them differently when
@@ -102,15 +91,13 @@ a tile map in your room. They are great for designing any static
 items in your room, like terrain, walls, backdrops, etc... as they
 don't have the same overhead that objects have.<br>
 <br>
-<img class="center" src="images/qs_tileset.png" alt="Tile set"><br>
+<img class="center" src="images/qs_tileset.png" alt="图块集"><br>
 Above is an example sprite that would be used as a tile set to
 create walls. As you can see, it can be "split" into 64x64pixel
 chunks, which would then placed into the room editor.<br>
 <br>
 
-<div class="note"><b>NOTE</b>: Tiles are <b>always square</b>, so
-if you need anything other than that, you should be using an
-instance with a sprite or an asset layer in the room editor.</div>
+<div class="note"><b>注意</b>： Tiles are <b>always square</b>, so if you need anything other than that, you should be using an instance with a sprite or an asset layer in the room editor.</div>
 <br>
 <br>
 
@@ -170,7 +157,7 @@ Editor</a>.</div>
 <a name="scripts" id="scripts"></a> <label class="collapse" for=
 "four"><img style=
 "vertical-align:middle; position: relative; left:-26px;" src=
-"../../2_interface/1_editors/images/icon_script.png">脚本</label>
+"../../2_interface/1_editors/images/icon_script.png">脚本（Scripts）</label>
 <input id="four" type="checkbox">
 <div class="index_list">A script resource is a collection of codes
 you have written to create your own function. For example, say you
@@ -193,7 +180,7 @@ Editor</a>.</div>
 <a name="shaders" id="shaders"></a> <label class="collapse" for=
 "five"><img style=
 "vertical-align:middle; position: relative; left:-26px;" src=
-"../../2_interface/1_editors/images/icon_shader.png">着色器</label>
+"../../2_interface/1_editors/images/icon_shader.png">着色器（Shaders）</label>
 <input id="five" type="checkbox">
 <div class="index_list">Shaders are a very powerful tool that can
 be used to manipulate the graphics that your game renders to the
@@ -217,28 +204,28 @@ buffer.<br>
 <div class="compat">
 <table>
 <tr>
-<th>Shader Language</th>
-<th>Target Platform</th>
+<th>着色器语言</th>
+<th>目标平台</th>
 </tr>
 
 <tr>
 <td>GLSL ES</td>
-<td>All target platforms except Windows 8 (JS)</td>
+<td>除Windows 8 (JS)以外的所有目标平台</td>
 </tr>
 
 <tr>
 <td>HLSL9</td>
-<td>Windows 32 only</td>
+<td>仅用于32位的Windows系统</td>
 </tr>
 
 <tr>
 <td>HLSL11</td>
-<td>Windows 8 (Native only), Windows 10 and Windows Phone</td>
+<td>Windows 8 (仅Native)，Windows 10 及 Windows Phone</td>
 </tr>
 
 <tr>
 <td>GLSL</td>
-<td>Mac and Ubuntu (Linux)</td>
+<td>Mac和Ubuntu (Linux)</td>
 </tr>
 </table>
 </div>
@@ -252,7 +239,7 @@ Editor</a>.</div>
 <a name="fonts" id="fonts"></a> <label class="collapse" for=
 "six"><img style=
 "vertical-align:middle; position: relative; left:-26px;" src=
-"../../2_interface/1_editors/images/icon_font.png">字体</label>
+"../../2_interface/1_editors/images/icon_font.png">字体（Fonts）</label>
 <input id="six" type="checkbox">
 <div class="index_list">When you want to draw text in your game
 this text will be drawn in a standard Arial 12 points font by
@@ -265,9 +252,7 @@ style. Once imported and added as a resource, you can then set it
 for drawing using the appropriate code or actions.<br>
 <br>
 
-<div class="note"><b>NOTE</b>: If you are adding fonts to your
-game, make sure you have the licence necessary to re-distribute it,
-unless it is public domain or copyright free.</div>
+<div class="note"><b>注意</b>： If you are adding fonts to your game, make sure you have the licence necessary to re-distribute it, unless it is public domain or copyright free.</div>
 <br>
 <br>
 
@@ -278,7 +263,7 @@ Editor</a>.</div>
 <a name="timelines" id="timelines"></a> <label class="collapse"
 for="seven"><img style=
 "vertical-align:middle; position: relative; left:-26px;" src=
-"../../2_interface/1_editors/images/icon_timeline.png">时间线</label>
+"../../2_interface/1_editors/images/icon_timeline.png">时间轴（Timelines）</label>
 <input id="seven" type="checkbox">
 <div class="index_list">In most games you will want certain things
 to happen at certain moments in time. Now, you can try to achieve
@@ -300,7 +285,7 @@ Editor</a>.</div>
 <a name="objects" id="objects"></a> <label class="collapse" for=
 "eight"><img style=
 "vertical-align:middle; position: relative; left:-26px;" src=
-"../../2_interface/1_editors/images/icon_object.png">物体</label>
+"../../2_interface/1_editors/images/icon_object.png">物体（Objects）</label>
 <input id="eight" type="checkbox">
 <div class="index_list">Objects are a special resource that we use
 to control aspects of a game and to do specific things. Most of the
@@ -366,7 +351,7 @@ Editor</a>.</div>
 <a name="Notes" id="Notes"></a> <label class="collapse" for=
 "thirteen"><img style=
 "vertical-align:middle; position: relative; left:-26px;" src=
-"../../2_interface/1_editors/images/icon_notes.png">笔记</label>
+"../../2_interface/1_editors/images/icon_notes.png">便签</label>
 <input id="thirteen" type="checkbox">
 <div class="index_list">Notes are simply code editor windows which
 permit you to write anything. They are designed as a place to keep
@@ -380,7 +365,7 @@ Editor</a>.</div>
 <a name="included_files" id="included_files"></a> <label class=
 "collapse" for="ten"><img style=
 "vertical-align:middle; position: relative; left:-26px;" src=
-"../../2_interface/1_editors/images/icon_included.png">包含文件</label> <input id="ten" type="checkbox">
+"../../2_interface/1_editors/images/icon_included.png">内含文件</label> <input id="ten" type="checkbox">
 <div class="index_list">Included files are, as the name suggests,
 any file that you wish to be included with the game bundle when you
 export the game to the target platform. These files can be anything
@@ -619,11 +604,10 @@ and starting out on a new project.</p>
 <div class="footer">
 <div class="buttons">
 <div class="clear">
-<div style="float:left">Back: <a href="index.html">Quick Start
-Index</a></div>
+<div style="float:left">上一页： <a href="index.html">快速入门指南</a></div>
 
-<div style="float:right">Next: <a href=
-"5_workflow.html">Workflow</a></div>
+<div style="float:right">下一页：<a href=
+"5_workflow.html">工作流程</a></div>
 </div>
 </div>
 

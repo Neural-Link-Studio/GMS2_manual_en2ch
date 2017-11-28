@@ -7,7 +7,7 @@
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
 
 <meta name="generator" content="chm2web Pro 2.85 (unicode)" />
-<title>Preferences - Room Editor</title>
+<title>偏好设置 - 房间编辑器</title>
 <meta http-equiv="X-UA-Compatible" content="IE=9">
 
 <link rel="stylesheet" href="../../../../../files/helpindex.css"
@@ -27,112 +27,69 @@ if (window.name != "content")
 </script><!-- !chm2web! -->
 
 
-<h2>Preferences - Room Editor</h2>
+<script type="text/JavaScript">
+ if( typeof(chmtop.helpStyle) != 'undefined' ) { var linkNodes = document.getElementsByTagName("link");  for( var i=0; i < linkNodes.length; ++i ) { var link = linkNodes[i];    if( link.href.endsWith("default.css")) {    var style = link.href.replace("default.css", chmtop.helpStyle); document.write('<link id="newstyleLink" rel="stylesheet" href=' + style + ' type="text/css">');    break; } } } 
+</script>
+<h2>偏好设置 - 房间编辑器</h2>
 
 <div class="body-scroll">
 <p><br>
 </p>
 
 <p><img class="center" src="images/room_editor_prefs.png" alt=
-"The Room Editor Preferences">
+"房间编辑器偏好设置">
 </p>
 
-<p>The <b>Room Editor Preferences</b> are used to define how the
-<a href="../../../2_interface/1_editors/rooms.html">room editor</a>
-will look and behave. The general settings are as follows:</p>
+<p><b>房间编辑器偏好设置</b>用于定义<a href="../../../2_interface/1_editors/rooms.html">房间编辑器</a>的外观和感受。基本设置如下：</p>
 
 <ul>
-<li><b>The distance in pixels that the chain alpha begins to fade
-out</b>: Sets the distance from the parent window for the chain
-link to fade out from. Default is 10px.<br>
+<li><b>链条透明度开始淡出的像素距离（The distance in pixels that the chain alpha begins to fade out）</b>：设置链条开始淡出的与父窗口的距离。默认值为10像素。<br>
 <br></li>
 
-<li><b>The distance in pixels that the chain alpha stops fading
-out</b>: Sets the distance from the parent window for the chain
-link to end fading out to. Default is 100px.<br>
+<li><b>链条透明度停止淡出的像素距离（The distance in pixels that the chain alpha stops fading out）</b>：设置链条连接结束淡出的与父窗口的距离。默认100像素。<br>
 <br></li>
 
-<li><b>The chain alpha at the falloff stop distance</b>: Sets the
-final alpha value after the fade out falloff point for the chain
-alpha. Default is 0.3.<br>
+<li><b>衰减停止距离的链条透明度（The chain alpha at the falloff stop distance）</b>：设置链条透明度淡出衰减点的最终透明度的值。默认是0.3。<br>
 <br></li>
 
-<li><b>The amount of spacing for depth between layers</b>: When you
-create multiple layers in the room editor they are automatically
-assigned a depth based on their position within the layer list.
-This depth is incremented by the amount given here. The default
-value is 100, so each layer will be previous layer + 100 in
-depth.<br>
+<li><b>层之间深度的间距（The amount of spacing for depth between layers）</b>：房间编辑器创建多个层时，将会基于层列表的位置自动绑定一个深度。深度的增加量根据上面给定的的值来确定。默认值是100，所以每一层的深度将是前一层的深度加100。<br>
 <br></li>
 
-<li><b>Default width of a new room</b>: Sets the initial width that
-will be selected as the default for a new room. Default is
-1024px.<br>
+<li><b>新房间的默认宽度（Default width of a new room）</b>：设置初始的宽度作为新房间默认宽度。默认是1024像素。<br>
 <br></li>
 
-<li><b>Default height of a new room</b>: Sets the initial height
-that will be selected as the default for a new room. Default is
-768px.<br>
+<li><b>新房间的默认高度（Default height of a new room）</b>：设置初始高度也将作为新创建房间的默认高度。默认是768像素。<br>
 <br></li>
 
-<li><b>Add default layers when creating a new room</b> - When you
-create any new room resource, <i>GameMaker Studio 2</i> will
-generate a couple of "base" layers for you - a background layer and
-an instance layer. You can switch that behaviour off here so that
-new rooms will have no pre-made layers. This is on by default.<br>
+<li><b>创建新房间时添加默认的层（Add default layers when creating a new room）</b> - 当你创建任意一个房间资源，<i>GameMaker Studio 2</i>将为你生成两个“基础”的层， - 一个背景层和一个实例层。你可以切换这个行为，让新房间不会产生预制的层。该选项默认为“开”。<br>
 <br></li>
 
-<li><b>The initial setting for the Show Views button on opening a
-room</b>: If you have views active within a room, this is shown by
-an outline where the view boundaries would be within the room, and
-the visibility of this area can be toggled using the dedicated
-button in the editor itself. However you can choose to have view
-boundaries invisible when you open a room by un-checking this
-option (the button can still be used to show them again). The
-default value is on, making view boundaries visible when you open a
-room.<br>
+<li><b>打开的房间显示视野按钮的初始化设置（The initial setting for the Show Views button on opening a room）</b>：如果一个房间里有激活的视野，这个可以通过房间里视野边界框可以看出来，这个区域是否可见可以通过专用的按钮进行切换。但是你也可以选择在打开房间的时候通过取消选中此选项让视野边界不可见（仍可用此按钮再次显示它们）。默认值是打开，使打开房间时视野边界可见。<br>
 <br></li>
 
-<li><b>The colour for the default background layer added to new
-rooms</b>: Sets the initial colour that will be selected as the
-default for a new background layer. Default is (rgba)
-<tt>#00000000</tt>.<br>
+<li><b>添加到新房间的默认背景层颜色（The colour for the default background layer added to new rooms）</b>：设置初始的颜色，选择作为默认新的背景层的颜色。默认是（rgba）<tt>#00000000</tt>。<br>
 <br></li>
 
-<li><b>Highlight Colour For Inherited Tiles</b>: Sets the highlight
-colour for a tile that has been inherited from a parent room.
-Default is (rgba) <tt>#FF000050</tt>.<br>
+<li><b>继承图块的高亮颜色（Highlight Colour For Inherited Tiles）</b>：对于已经继承自一个父房间的图块，设置它的高亮颜色。默认是（rgba）<tt>#FF000050</tt>。<br>
 <br></li>
 
-<li><b>Selection frame colour for locked items in the room</b>:
-Sets the colour of the frame that surrounds a selection for assets
-that have been locked. Default is (rgba) <tt>##AAFFFFFF</tt>.<br>
+<li><b>房间内锁定的项目的选择框颜色（Selection frame colour for locked items in the room）</b>：设置环绕被锁定的资源的选择框的颜色。默认是（rgba）<tt>##AAFFFFFF</tt>。<br>
 <br></li>
 
-<li><b>The properties frame colour for unlocked items in the
-room</b>: Sets the colour of the frame that surrounds the asset
-properties in the room editor that have not been locked. Default is
-(rgba) <tt>##AAFF3333</tt>.<br>
+<li><b>房间内未锁定项目的选择框的颜色（The properties frame colour for unlocked items in the room）</b>：设置房间编辑器中环绕未锁定的资源的选择框的颜色。默认颜色是（rgba）<tt>##AAFF3333</tt>。<br>
 <br></li>
 
-<li><b>The properties frame colour for locked items in the
-room</b>: Sets the colour of the frame that surrounds the asset
-properties that have been locked. Default is (rgba)
-<tt>##AAFFFFFF</tt>.</li>
+<li><b>房间里锁定项目的属性框的颜色（The properties frame colour for locked items in the room）</b>： 设置环绕被锁定的资源的属性框的颜色。默认是（rgba）<tt>##AAFFFFFF</tt>。</li>
 </ul>
 
-<p>Further options are available for editing from the
-sub-categories listed below:</p>
+<p>下面列出的子目录中有更多可用于编辑的选项：</p>
 
 <blockquote><a name="prefs_room_confirm" id=
-"prefs_room_confirm"></a> <label class="collapse" for="one">Confirm
-Dialogs</label> <input id="one" type="checkbox">
+"prefs_room_confirm"></a> <label class="collapse" for="one">确认对话框</label> <input id="one" type="checkbox">
 <div class="index_list"><img class="center" src=
 "images/room_editor_confirm_prefs.png" alt=
-"The Room Editor Confirm Dialogs Preferences">
-<p>The <b>Confirm Dialogs</b> preferences are used to change the
-messages that are shown in the room editor when you perform certain
-actions. The messages you can change are:</p>
+"房间编辑器确认对话框偏好设置">
+<p><b>确认对话框</b>偏好设置用于更改房间编辑器执行某些操作时消息框设置。你可以更改的消息包括：</p>
 
 <ul>
 <li><b>Default for automatically updating layer depths</b> - When
@@ -258,8 +215,8 @@ value is (rgba) <tt>#FFFFFF30</tt>.</li>
 <div class="footer">
 <div class="buttons">
 <div class="clear">
-<div style="float:left">Back: <a href=
-"../7_preferences.html">Preferences Index</a></div>
+<div style="float:left">上一页：<a href=
+"../7_preferences.html">偏好设置索引</a></div>
 
 <div style="float:right">Next: <a href=
 "prefs_splineeditor.html">Spline Editor</a></div>

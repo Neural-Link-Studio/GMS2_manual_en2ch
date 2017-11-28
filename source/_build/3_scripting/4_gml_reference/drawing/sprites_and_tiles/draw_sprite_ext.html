@@ -26,12 +26,15 @@ if (window.name != "content")
 </script><!-- !chm2web! -->
 
 
+<script type="text/JavaScript">
+ if( typeof(chmtop.helpStyle) != 'undefined' ) { var linkNodes = document.getElementsByTagName("link");  for( var i=0; i < linkNodes.length; ++i ) { var link = linkNodes[i];    if( link.href.endsWith("default.css")) {    var style = link.href.replace("default.css", chmtop.helpStyle); document.write('<link id="newstyleLink" rel="stylesheet" href=' + style + ' type="text/css">');    break; } } } 
+</script>
 <h1 class="studio">draw_sprite_ext</h1>
 
 <h2 class="studio">Draws a sprite at a given position, with
 customizable scaling, rotation, blend and alpha.</h2>
 
-<h3 class="studio">Syntax:</h3>
+<h3 class="studio">语法：</h3>
 
 <p class="code">draw_sprite_ext( sprite, subimg, x, y, xscale,
 yscale, rot, colour, alpha );</p>
@@ -42,7 +45,7 @@ yscale, rot, colour, alpha );</p>
 <div>
 <table>
 <tr>
-<th>Argument</th>
+<th>参数</th>
 <th>描述</th>
 </tr>
 
@@ -102,7 +105,7 @@ to display it normally.</td>
 <p><br>
 </p>
 
-<p><b>Returns:</b> N/A</p>
+<p><b>返回：</b> N/A</p>
 
 <p><br>
 </p>
@@ -136,7 +139,7 @@ using the function <a href=
 <p><br>
 </p>
 
-<h3 class="studio">Example:</h3>
+<h3 class="studio">举例：</h3>
 
 <p class="code">draw_sprite_ext(sprite_index, image_index, x, y,
 image_xscale, image_yscale, image_angle, image_blend,

@@ -27,17 +27,16 @@ if (window.name != "content")
 </script><!-- !chm2web! -->
 
 
+<script type="text/JavaScript">
+ if( typeof(chmtop.helpStyle) != 'undefined' ) { var linkNodes = document.getElementsByTagName("link");  for( var i=0; i < linkNodes.length; ++i ) { var link = linkNodes[i];    if( link.href.endsWith("default.css")) {    var style = link.href.replace("default.css", chmtop.helpStyle); document.write('<link id="newstyleLink" rel="stylesheet" href=' + style + ' type="text/css">');    break; } } } 
+</script>
 <h2>部署</h2>
 
 <div class="body-scroll">
 <p><br>
 </p>
 
-<p>The sections listed below are all related to setting up
-<i>GameMaker Studio 2</i> , including updating the IDE and
-Runtimes, the required SDKs for specific target modules, and the
-General Preferences to adapt how <i>GameMaker Studio 2</i> works to
-suit your own style of doing things.</p>
+<p>本章节在下面列举了所有关于安装部署<i>GameMaker Studio 2</i>的内容，包括更新IDE和运行环境，对于特定目标平台模块所必需的SDK以及常规的偏好设置来让<i>GameMaker Studio 2</i>的工作方式适配你自己的风格。</p>
 
 <blockquote><a name="setup" id="setup"></a>
 <div class="index_list">
@@ -53,7 +52,7 @@ suit your own style of doing things.</p>
 "list_link">更新</span></a><br>
 </li>
 
-<li><a href="4_release_notes.html"><span class="list_link">发行信息</span></a><br>
+<li><a href="4_release_notes.html"><span class="list_link">版本信息</span></a><br>
 </li>
 
 <li><a href="5_required_sdks.html"><span class="list_link">必需的SDK</span></a><br>

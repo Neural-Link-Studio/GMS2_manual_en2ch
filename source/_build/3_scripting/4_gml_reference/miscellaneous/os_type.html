@@ -26,6 +26,9 @@ if (window.name != "content")
 </script><!-- !chm2web! -->
 
 
+<script type="text/JavaScript">
+ if( typeof(chmtop.helpStyle) != 'undefined' ) { var linkNodes = document.getElementsByTagName("link");  for( var i=0; i < linkNodes.length; ++i ) { var link = linkNodes[i];    if( link.href.endsWith("default.css")) {    var style = link.href.replace("default.css", chmtop.helpStyle); document.write('<link id="newstyleLink" rel="stylesheet" href=' + style + ' type="text/css">');    break; } } } 
+</script>
 <h2>os_type</h2>
 
 <div class="body-scroll">
@@ -33,7 +36,7 @@ if (window.name != "content")
 depending on the operating system the game is currently being run
 with.</h2>
 
-<h3 class="studio">Syntax:</h3>
+<h3 class="studio">语法：</h3>
 
 <p class="code">os_type;</p>
 
@@ -60,7 +63,7 @@ The following constants can be returned:</p>
 <div class="compat">
 <table>
 <tr>
-<th>Constant</th>
+<th>常量</th>
 <th>描述</th>
 </tr>
 
@@ -91,7 +94,7 @@ The following constants can be returned:</p>
 
 <tr class="alt">
 <td>os_android</td>
-<td>安卓</td>
+<td>Android</td>
 </tr>
 
 <tr>
@@ -114,7 +117,7 @@ The following constants can be returned:</p>
 <p><br>
 </p>
 
-<h3 class="studio">Example:</h3>
+<h3 class="studio">举例：</h3>
 
 <p class="code">switch (os_type)<br>
 &nbsp;&nbsp;&nbsp;{<br>

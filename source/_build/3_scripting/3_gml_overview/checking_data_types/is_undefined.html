@@ -26,6 +26,9 @@ if (window.name != "content")
 </script><!-- !chm2web! -->
 
 
+<script type="text/JavaScript">
+ if( typeof(chmtop.helpStyle) != 'undefined' ) { var linkNodes = document.getElementsByTagName("link");  for( var i=0; i < linkNodes.length; ++i ) { var link = linkNodes[i];    if( link.href.endsWith("default.css")) {    var style = link.href.replace("default.css", chmtop.helpStyle); document.write('<link id="newstyleLink" rel="stylesheet" href=' + style + ' type="text/css">');    break; } } } 
+</script>
 <h2>is_undefined</h2>
 
 <div class="body-scroll">
@@ -47,7 +50,7 @@ information on data types see <a href=
 <p><br>
 </p>
 
-<h3>Syntax:</h3>
+<h3>语法：</h3>
 
 <p class="code">is_undefined(n);</p>
 
@@ -59,7 +62,7 @@ information on data types see <a href=
 <blockquote>
 <table>
 <tr>
-<th>Argument</th>
+<th>参数</th>
 <th>描述</th>
 </tr>
 
@@ -73,14 +76,14 @@ information on data types see <a href=
 <p><br>
 </p>
 
-<h3>Returns:</h3>
+<h3>返回：</h3>
 
-<p class="code">Boolean</p>
+<p class="code">布尔值</p>
 
 <p><br>
 </p>
 
-<h3><b>Example:</b>
+<h3><b>举例：</b>
 </h3>
 
 <p class="code">var val = ds_map_find_value(map, 13);<br>
@@ -100,8 +103,7 @@ undefined or not and shows a debug message if it is.</p>
 <div class="footer">
 <div class="buttons">
 <div class="clear">
-<div style="float:left">Back: <a href="index.html">Data
-Types</a></div>
+<div style="float:left">上一页：<a href="index.html">数据类型</a></div>
 
 <div style="float:right">Next: <a href=
 "typeof.html">typeof</a></div>

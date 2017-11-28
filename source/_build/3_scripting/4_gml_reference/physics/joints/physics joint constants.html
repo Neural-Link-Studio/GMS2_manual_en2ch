@@ -7,7 +7,7 @@
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
 
 <meta name="generator" content="chm2web Pro 2.85 (unicode)" />
-<title>Physics Joint Constants</title>
+<title>物理关节常量</title>
 <meta http-equiv="X-UA-Compatible" content="IE=9">
 <link rel="stylesheet" href="../../../../../../files/helpindex.css"
 type="text/css">
@@ -26,7 +26,10 @@ if (window.name != "content")
 </script><!-- !chm2web! -->
 
 
-<h2>Physics Joint Constants</h2>
+<script type="text/JavaScript">
+ if( typeof(chmtop.helpStyle) != 'undefined' ) { var linkNodes = document.getElementsByTagName("link");  for( var i=0; i < linkNodes.length; ++i ) { var link = linkNodes[i];    if( link.href.endsWith("default.css")) {    var style = link.href.replace("default.css", chmtop.helpStyle); document.write('<link id="newstyleLink" rel="stylesheet" href=' + style + ' type="text/css">');    break; } } } 
+</script>
+<h2>物理关节常量</h2>
 
 <p>There are a great number of constants included within the
 <i>GameMaker Studio 2</i> GML that are specific to <i>joints</i>
@@ -40,7 +43,7 @@ type of joint</i>. Also note that while you can get all these
 values with the appropriate function, you can only set those that
 are marked as not being read-only.</p>
 
-<blockquote><label class="collapse" for="one">General</label>
+<blockquote><label class="collapse" for="one">全局</label>
 <input id="one" type="checkbox">
 <div class="index_list">
 <p>The following constants can be applied to any of the available
@@ -49,9 +52,9 @@ joint types:</p>
 <div class="compat">
 <table>
 <tr>
-<th>Constant</th>
+<th>常量</th>
 <th>描述</th>
-<th>Read Only</th>
+<th>只读</th>
 </tr>
 
 <tr>
@@ -106,7 +109,7 @@ joint at the anchor position</td>
 </div>
 </div>
 <br>
-<label class="collapse" for="two">Motors</label> <input id="two"
+<label class="collapse" for="two">动力</label> <input id="two"
 type="checkbox">
 <div class="index_list">
 <p>These constants are for those joints that have a <i>motor</i>
@@ -115,9 +118,9 @@ attached to them (revolute, prismatic, wheel):</p>
 <div class="compat">
 <table>
 <tr>
-<th>Constant</th>
+<th>常量</th>
 <th>描述</th>
-<th>Read Only</th>
+<th>只读</th>
 </tr>
 
 <tr>
@@ -155,7 +158,7 @@ motor torque</td>
 </div>
 </div>
 <br>
-<label class="collapse" for="three">Revolute Joints</label>
+<label class="collapse" for="three">转动关节</label>
 <input id="three" type="checkbox">
 <div class="index_list">
 <p>For a revolute joint you can use the following constant (as well
@@ -164,9 +167,9 @@ as the <i>motor</i> constants if one has been added):</p>
 <div class="compat">
 <table>
 <tr>
-<th>Constant</th>
+<th>常量</th>
 <th>描述</th>
-<th>Read Only</th>
+<th>只读</th>
 </tr>
 
 <tr>
@@ -201,7 +204,7 @@ to <tt>true</tt> to enable or <tt>false</tt> to disable.</td>
 </div>
 </div>
 <br>
-<label class="collapse" for="four">Prismatic Joints</label>
+<label class="collapse" for="four">棱柱关节</label>
 <input id="four" type="checkbox">
 <div class="index_list">
 <p>For a prismatic joint you can use the following constant:</p>
@@ -209,9 +212,9 @@ to <tt>true</tt> to enable or <tt>false</tt> to disable.</td>
 <div class="compat">
 <table>
 <tr>
-<th>Constant</th>
+<th>常量</th>
 <th>描述</th>
-<th>Read Only</th>
+<th>只读</th>
 </tr>
 
 <tr>
@@ -230,7 +233,7 @@ local x/y coordinates.</td>
 </div>
 </div>
 <br>
-<label class="collapse" for="five">Pulley Joints</label> <input id=
+<label class="collapse" for="five">滑轮关节</label> <input id=
 "five" type="checkbox">
 <div class="index_list">
 <p>For a pulley joint you can use the following constants (as well
@@ -239,9 +242,9 @@ as those for distance joints):</p>
 <div class="compat">
 <table>
 <tr>
-<th>Constant</th>
+<th>常量</th>
 <th>描述</th>
-<th>Read Only</th>
+<th>只读</th>
 </tr>
 
 <tr>
@@ -261,8 +264,7 @@ x/y coordinates to the second anchor x/y coordinates</td>
 </div>
 </div>
 <br>
-<label class="collapse" for="six">Distance Joints, Weld Joints and
-Wheel Joints</label> <input id="six" type="checkbox">
+<label class="collapse" for="six">距离关节、焊接关节与车轮关节</label> <input id="six" type="checkbox">
 <div class="index_list">
 <p>For a distance, weld, and wheel joints you can use the following
 constants (as well as those for pulley joints):</p>
@@ -270,9 +272,9 @@ constants (as well as those for pulley joints):</p>
 <div class="compat">
 <table>
 <tr>
-<th>Constant</th>
+<th>常量</th>
 <th>描述</th>
-<th>Read Only</th>
+<th>只读</th>
 </tr>
 
 <tr>
@@ -297,7 +299,7 @@ physics_world_update_speed</tt></a>.</td>
 </div>
 </div>
 <br>
-<label class="collapse" for="seven">Friction Joints</label>
+<label class="collapse" for="seven">阻力关节</label>
 <input id="seven" type="checkbox">
 <div class="index_list">
 <p>For a friction joint you can use the following constants:</p>
@@ -305,9 +307,9 @@ physics_world_update_speed</tt></a>.</td>
 <div class="compat">
 <table>
 <tr>
-<th>Constant</th>
+<th>常量</th>
 <th>描述</th>
-<th>Read Only</th>
+<th>只读</th>
 </tr>
 
 <tr>
@@ -325,7 +327,7 @@ physics_world_update_speed</tt></a>.</td>
 </div>
 </div>
 <br>
-<label class="collapse" for="eight">Rope Joints</label> <input id=
+<label class="collapse" for="eight">绳索关节</label> <input id=
 "eight" type="checkbox">
 <div class="index_list">
 <p>For a rope joint you can use the following constant:</p>
@@ -333,9 +335,9 @@ physics_world_update_speed</tt></a>.</td>
 <div class="compat">
 <table>
 <tr>
-<th>Constant</th>
+<th>常量</th>
 <th>描述</th>
-<th>Read Only</th>
+<th>只读</th>
 </tr>
 
 <tr>
@@ -352,7 +354,7 @@ points.</td>
 </p>
 
 <div class="clear">
-<div style="float:left">Back: <a href="index.html">Joints</a></div>
+<div style="float:left">上一页：<a href="index.html">关节</a></div>
 </div>
 
 <h5>© Copyright YoYo Games Ltd. 2016 All Rights Reserved</h5>
