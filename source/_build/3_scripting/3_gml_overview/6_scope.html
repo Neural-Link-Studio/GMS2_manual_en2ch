@@ -7,7 +7,7 @@
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
 
 <meta name="generator" content="chm2web Pro 2.85 (unicode)" />
-<title>Variables And Variable Scope</title>
+<title>变量和变量的作用域</title>
 <meta http-equiv="X-UA-Compatible" content="IE=9">
 
 <link rel="stylesheet" href="../../../../files/helpindex.css" type=
@@ -30,7 +30,7 @@ if (window.name != "content")
 <script type="text/JavaScript">
  if( typeof(chmtop.helpStyle) != 'undefined' ) { var linkNodes = document.getElementsByTagName("link");  for( var i=0; i < linkNodes.length; ++i ) { var link = linkNodes[i];    if( link.href.endsWith("default.css")) {    var style = link.href.replace("default.css", chmtop.helpStyle); document.write('<link id="newstyleLink" rel="stylesheet" href=' + style + ' type="text/css">');    break; } } } 
 </script>
-<h2>Variables And Variable Scope</h2>
+<h2>变量和变量的作用域</h2>
 
 <div class="body-scroll">
 <p><br>
@@ -45,20 +45,7 @@ many different data types, like a real number (like 100, 2.456575,
 -56 etc...), a string (like "Hello world!"), an integer (like 1,
 556, -7), or a boolean (<tt>true</tt> or <tt>false</tt>).</p>
 
-<p>A variable is something that we use to store a value for use in
-one or more operations or functions. Think of "pi", for example...
-it is a real world variable that holds the value
-3.14159265(etc...). Why? Well, it's much easier to say to someone
-"pi" than "three point one four one five nine two six five"! So,
-naming things makes life a lot simpler and it also means that
-should the value of that variable ever change, we don't have to
-change the number everywhere as the variable <i>name</i> is still
-the same. In <b>GML</b> a variable has a name that must start with
-a letter and can contain only letters, numbers, and the underscore
-symbol '_' with a maximum length of 64 symbols. So, valid variables
-are things like <tt>fish</tt>, <tt>foo_bar</tt>, <tt>num1</tt>, and
-invalid variables would be <tt>6fish</tt>, <tt>foo bar</tt>, or
-<tt>*num</tt>.</p>
+<p>A variable is something that we use to store a value for use in one or more operations or functions. Think of "pi", for example... it is a real world variable that holds the value 3.14159265(etc...). 为什么？Well, it's much easier to say to someone "pi" than "three point one four one five nine two six five"!So, naming things makes life a lot simpler and it also means that should the value of that variable ever change, we don't have to change the number everywhere as the variable <i>name</i> is still the same. In <b>GML</b> a variable has a name that must start with a letter and can contain only letters, numbers, and the underscore symbol '_' with a maximum length of 64 symbols. So, valid variables are things like <tt>fish</tt>, <tt>foo_bar</tt>, <tt>num1</tt>, and invalid variables would be <tt>6fish</tt>, <tt>foo bar</tt>, or <tt>*num</tt>.</p>
 
 <p>Now, In many programming languages you need to "declare" a
 variable before you can use it. This basically means that you tell
@@ -195,7 +182,7 @@ example:</p>
 <p class="code">var xx,yy;<br>
 xx = x - 32 +irandom(64);<br>
 yy = y - 32 +irandom(64);<br>
-instance_create(xx, yy, obj_blood);<br></p>
+instance_create_layer(xx, yy, "Effects", obj_blood);<br></p>
 
 <p>Here we have used the local variables to store some random
 coordinates that we then use to create an instance. In this example
@@ -204,8 +191,8 @@ variables but for the sake of readability and ease of use, we do.
 It is MUCH clearer and obvious what we are doing there than if we
 used this code:</p>
 
-<p class="code">instance_create(x - 32 + irandom(64), y - 32 +
-irandom(64), obj_guts);</p>
+<p class="code">instance_create_layer(x - 32 + irandom(64), y - 32
++ irandom(64), "Effects", obj_guts);</p>
 
 <p>One other thing about <tt>var</tt> declared variables should be
 noted... As they are unique to the event that runs them, they can
@@ -485,16 +472,14 @@ every time the macro is used.</p>
 <div class="footer">
 <div class="buttons">
 <div class="clear">
-<div style="float:left">Back: <a href="index.html">GML
-Overview</a></div>
+<div style="float:left">上一页：<a href="index.html">GML概述</a></div>
 
-<div style="float:right">Next: <a href=
-"7_addressing_variables.html">Addressing Variables in Other
-Instances</a></div>
+<div style="float:right">下一页：<a href=
+"7_addressing_variables.html">访问其它实例的变量</a></div>
 </div>
 </div>
 
-<h5>© Copyright YoYo Games Ltd. 2016 All Rights Reserved</h5>
+<h5>© Copyright YoYo Games Ltd. 2017 All Rights Reserved</h5>
 <script type="text/javascript">
    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)   })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');   ga('create', 'UA-2711665-14', 'auto');   ga('send', 'pageview'); 
 </script>

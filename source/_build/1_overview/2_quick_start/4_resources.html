@@ -193,7 +193,7 @@ your game code. The full shader is comprised of a vertex shader
 program, and a fragment shader program (also known as a pixel
 shader). Both of these tiny programs work together in order to
 manipulate what the graphics card renders to the screen. This then
-permits you to manipulate in real time, the position, colour and
+permits you to manipulate in real time the position, colour, and
 alpha values that are actually rendered into the display
 buffer.<br>
 <br>
@@ -210,22 +210,22 @@ buffer.<br>
 
 <tr>
 <td>GLSL ES</td>
-<td>除Windows 8 (JS)以外的所有目标平台</td>
-</tr>
-
-<tr>
-<td>HLSL9</td>
-<td>仅用于32位的Windows系统</td>
-</tr>
-
-<tr>
-<td>HLSL11</td>
-<td>Windows 8 (仅Native)，Windows 10 及 Windows Phone</td>
+<td>All target platforms</td>
 </tr>
 
 <tr>
 <td>GLSL</td>
 <td>Mac和Ubuntu (Linux)</td>
+</tr>
+
+<tr>
+<td>HLSL11</td>
+<td>Windows, UWP, XboxOne</td>
+</tr>
+
+<tr>
+<td>PSSL</td>
+<td>Playstation 4</td>
 </tr>
 </table>
 </div>
@@ -287,41 +287,7 @@ Editor</a>.</div>
 "vertical-align:middle; position: relative; left:-26px;" src=
 "../../2_interface/1_editors/images/icon_object.png">物体（Objects）</label>
 <input id="eight" type="checkbox">
-<div class="index_list">Objects are a special resource that we use
-to control aspects of a game and to do specific things. Most of the
-time they have a sprite associated with them so that you see them
-in the game room, but sometimes they are used as a "behind the
-scenes" controller to do things related to the user or for timing,
-etc... They can be given behaviours and they can react to certain
-events as well as to each other, and most of the things you see in
-a game are based on objects and their interactions. Note that we
-say "based on" because you don't actually place objects directly
-into the game room, but rather you place <b>instances</b> of these
-objects, which are basically copies (or clones if you prefer) of
-the object resource. This is a very important thing to remember as
-instances and objects are not the same thing and each have their
-own set of functions that can affect them.<br>
-<br>
-All objects have a set of properties which you can specify in the
-object editor, like the sprite, whether it uses physics or not, or
-whether it is a "child" object of another one. They also have a
-series of built-in variables that can then be used in actions,
-scripts and code. These built-in variables are used to define the
-position of the instance when placed in the game room, the
-animation speed, the direction of movement and a whole host of
-other things. To control how the object behaves over time, each
-game frame is split into a series of <b>events</b>, so you can add
-code or actions into a specific event and it will only run when the
-event is triggered, and events can be triggered by things like
-mouse button presses or collisions with other instances.<br>
-<br>
-Objects are in a very real sense the building blocks of your game,
-and together with rooms will form the core of any project that you
-create.<br>
-<br>
-You can find out more about adding objects from the section on the
-<a href="../../2_interface/1_editors/objects.html">Object
-Editor</a>.</div>
+<div class="index_list">Objects are a special resource that we use to control aspects of a game and to do specific things. Most of the time they have a sprite associated with them so that you see them in the game room, but sometimes they are used as a "behind the scenes" controller to do things related to the user or for timing, etc... 他们可以给予行为和对某些事件做出反应以及彼此,和你在游戏看到的大多数事情都是基于对象和他们的相互作用。Note that we say "based on" because you don't actually place objects directly into the game room, but rather you place <b>instances</b> of these objects, which are basically copies (or clones if you prefer) of the object resource. This is a very important thing to remember as instances and objects are not the same thing and each have their own set of functions that can affect them.<br><br>All objects have a set of properties which you can specify in the object editor, like the sprite, whether it uses physics or not, or whether it is a "child" object of another one. They also have a series of built-in variables that can then be used in actions, scripts and code. These built-in variables are used to define the position of the instance when placed in the game room, the animation speed, the direction of movement and a whole host of other things. To control how the object behaves over time, each game frame is split into a series of <b>events</b>, so you can add code or actions into a specific event and it will only run when the event is triggered, and events can be triggered by things like mouse button presses or collisions with other instances.<br><br>Objects are in a very real sense the building blocks of your game, and together with rooms will form the core of any project that you create.<br><br>You can find out more about adding objects from the section on the <a href="../../2_interface/1_editors/objects.html">Object Editor</a>.</div>
 <br>
 <a name="rooms" id="rooms"></a> <label class="collapse" for=
 "nine"><img style=
@@ -388,7 +354,7 @@ for="eleven"><img style=
 <div class="index_list">Extensions are additional files and code
 that you can add to extend the <i>GameMaker Studio 2</i>
 functionality as well as add assets to your game from the <a href=
-"../../2_interface/2_tools/marketplace.html">Marketplace</a>. The
+"../../2_interface/2_extras/marketplace.html">Marketplace</a>. The
 format for an extension will vary depending on the final target
 platform, although in general they are written in C++, C# or
 JavaScript, which is then parsed using <a href=
@@ -611,7 +577,7 @@ and starting out on a new project.</p>
 </div>
 </div>
 
-<h5>© Copyright YoYo Games Ltd. 2016 All Rights Reserved</h5>
+<h5>© Copyright YoYo Games Ltd. 2017 All Rights Reserved</h5>
 <script type="text/javascript">
    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)   })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');   ga('create', 'UA-2711665-14', 'auto');   ga('send', 'pageview'); 
 </script>
