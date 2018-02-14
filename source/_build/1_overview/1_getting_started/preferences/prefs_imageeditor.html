@@ -45,19 +45,19 @@ if (window.name != "content")
 
 <blockquote>
 <ul>
-<li><b>编辑器的背景色（Background colour in editor）</b>：当编辑精灵帧的时候，图像可能会被放大或缩小，并且可能不会适应窗口中的整个绘制区域，在这种情况下，就会显示你所设置的背景色。默认值为<tt>#282828FF</tt>.<br>
-<br></li>
-
 <li><b>默认循环模式（Default Loop Mode）</b>：图像编辑器中的循环按钮可以设置#?两种#?功能模式：一种是单次播放（Play Once），这种情况下动画会在到达最后一帧时停止；另一个是从起点开始循环（Loop from the start），这种情况下动画会在结束后回到起点并继续播放；还有一个是往返播放（Ping pong），这种情况下动画会从头播放到尾再倒过来播放一遍回到开始。此处默认值为“循环”（Loop）<br>
 <br></li>
 
 <li><b>绘制细的选区边框（Draw thin selection outline）</b>：如果你勾选此项，则选区的边框将会是无视图像缩放的绝对的1像素宽，而解除此选项则使得边框为相对于图像缩放的1像素宽。该选项默认勾选。<br>
 <br></li>
 
-<li><b>选区边框颜色 1（Selection outline colour 1）</b>：选区边框是一条两种颜色交替出现的虚线。该选项允许你选择这两种所用颜色的第一种颜色（包括透明度），默认值为<tt>#FFFFFD0</tt>。<br>
+<li><b>Selection outline primary colour</b>: The section outline is a dashed line that alternates between two colours. 该选项允许你选择这两种所用颜色的第一种颜色（包括透明度），默认值为<tt>#FFFFFD0</tt>。<br>
 <br></li>
 
-<li><b>选区边框颜色 2（Selection outline colour 2）</b>：选区边框是一条两种颜色交替出现的虚线。该选项允许你选择这两种所用颜色的第二种颜色（包括透明度），默认值为<tt>#0000D0</tt>。</li>
+<li><b>Selection outline secondary colour</b>: The section outline is a dashed line that alternates between two colours. 该选项允许你选择这两种所用颜色的第二种颜色（包括透明度），默认值为<tt>#0000D0</tt>。</li>
+
+<li><b>Editor background colour</b>: While editing a sprite frame the image may be scaled in or out or may not fit the whole drawing in window, in which case a background colour will be shown which you can set here. 默认值为<tt>#282828FF</tt>.<br>
+<br></li>
 </ul>
 </blockquote>
 图像编辑器偏好设置中还有如下的子目录：
@@ -72,16 +72,16 @@ if (window.name != "content")
 <br></p>
 
 <ul>
-<li><b>透明背景样式（Transparent background style）</b> - 这里你可以设置透明背景的显示“样式”，可以为<i>方块图案（Block Pattern）</i>，也可以为<i>单色模式（Single Colour）</i>。单色模式会单纯地把背景设置为你所选的颜色（使用<b>颜色 1（Colour 1）</b>设定，下文会提到），而默认选项是方块图案（它还可以通过下文所示的其余对话框选项进行修改）。默认选项是“方块图案”<br>
+<li><b>Canvas style</b> - Here you set the "style" for the background, which can either be "<i>Block Pattern</i>" or "<i>Single Colour</i>". 单色模式会单纯地把背景设置为你所选的颜色（使用<b>颜色 1（Colour 1）</b>设定，下文会提到），而默认选项是方块图案（它还可以通过下文所示的其余对话框选项进行修改）。默认选项是“方块图案”<br>
 <br></li>
 
-<li><b>透明背景块大小（Transparent background block size）</b> - 当你选择方块图案作为背景时，你可以在这里设置每个方块的尺寸。默认为16像素，并允许最小值为2像素，最大值为256像素。<br>
+<li><b>Canvas block size</b> - When you have selected Block Pattern for the background, you can set the size of the individual block here. 默认为16像素，并允许最小值为2像素，最大值为256像素。<br>
 <br></li>
 
-<li><b>透明背景色 1（Transparent background colour 1）</b> - 如果你为背景选择了单色模式，那么就会使用这个颜色。你可以点击颜色卡来打开颜色编辑器去改变它。当使用方块图案选项时，该颜色被设置为交替方块的第一种颜色。默认值为(RGBA颜色) #c3c3c3ff。<br>
+<li><b>Canvas primary colour</b> - If you have Single Colour chosen for the background, then the colour used is this one. 你可以点击颜色卡来打开颜色编辑器去改变它。当使用方块图案选项时，该颜色被设置为交替方块的第一种颜色。默认值为(RGBA颜色) #c3c3c3ff。<br>
 <br></li>
 
-<li><b>透明背景色 2（Transparent background colour 2）</b> - 如果你选择了方块图案作为背景，那么这个颜色就是与颜色 1（上文所述）相交替搭配的另一个颜色。你可以点击颜色卡来打开颜色编辑器去改变它。默认值为(RGBA颜色) #808080ff。</li>
+<li><b>Canvas secondary colour (block pattern style)</b> - If you have Block Pattern chosen for the background, then the colour used to alternate with colour 1 (above) is this one. 你可以点击颜色卡来打开颜色编辑器去改变它。默认值为(RGBA颜色) #808080ff。</li>
 </ul>
 </div>
 <br>
@@ -95,19 +95,20 @@ if (window.name != "content")
 <br></p>
 
 <ul>
-<li><b>删除帧时默认处理（Default for deleting frames）</b> - 当你删除一个帧的时候，会默认地显示一个消息询问你是否确定要做这件事。设置此项为“是”（OK），你就可以去掉这些消息并且在接下来没有任何消息显示的情况下就可以删除帧。默认选项为“显示消息”（Show message）。<br>
+<li><b>Automatic response to deleting frames</b> - When you delete a frame by default a message shows to ask if you are sure you want to do this. 设置此项为“是”（OK），你就可以去掉这些消息并且在接下来没有任何消息显示的情况下就可以删除帧。默认选项为“显示消息”（Show message）。<br>
 <br></li>
 
-<li><b>工具更改时提交修改的默认处理（Default for committing changes on tool change）</b> - 当你在（使用样条工具等）编辑一帧之后更改绘制工具，默认地会显示一个消息去询问你是否要提交当前的变动。设置此项为“是”（OK），你就可以去掉这些消息并且在接下来当你改变工具的时候没有任何消息显示的情况下就提交修改。如果你选“否”（No），则帧编辑器会在你改变工具时静默地取消修改。默认选项为“显示消息”（Show message）。<br>
+<li><b>Automatic response to replacing images during strip import</b> - When you select <i>Import Strip</i> from the <i>Image</i> drop down menu, you will get a message warning you that you will be overwriting any images already in the sprite resource, with the option to continue or not. 你可以在此处设置是否显示这个消息，还是让IDE直接选择“是”（Yes）或“否”（No）的选项。默认值为“显示消息”。<br>
 <br></li>
 
-<li><b>忽略图层锁定警告（Dismiss layer is locked warning）</b> - 如果你在尝试去编辑一个锁定的图层，那么你会默认地得到一个消息告诉你你无法这样做。如果设置此项为“是”（OK），则不会显示该消息，并且无法做这样的编辑。<br>
+<li><b>Automatic response to committing changes on tool change</b> - When you change draw tools after editing a frame, by default a message shows to ask if you want to commit the changes made. 设置此项为“是”（OK），你就可以去掉这些消息并且在接下来当你改变工具的时候没有任何消息显示的情况下就提交修改。如果你选“否”（No），则帧编辑器会在你改变工具时静默地取消修改。默认选项为“显示消息”（Show message）。<br>
 <br></li>
 
-<li><b>忽略选定组警告（Dismiss group selected warning）</b> - 当你在图层编辑器中选择多个涂层并开始绘制或编辑的时候，编辑器会弹出一个消息告诉你这样不可以。你可以在此处选择“是”来去掉这个消息并无法一起编辑多个图像，此时只有在选择单个图层的时候才可以正常编辑。默认选项为“显示消息”（Show message）。<br>
+<li><b>Automatic response to locked layer warning</b> - If you try to edit a locked layer you'll get a message by default informing you that you can't do this. 如果设置此项为“是”（OK），则不会显示该消息，并且无法做这样的编辑。<br>
 <br></li>
 
-<li><b>在导入长带图时候替换图像的默认处理（Default for replacing images on strip import）</b> - 当你在<i>图像（Image）</i>下拉菜单中选择<i>导入长带图（Import Strip）</i>时，你会得到一个消息警告你这样会覆盖精灵资源中现存的所有图像，并提供给你两个选项选择继续进行还是不继续。你可以在此处设置是否显示这个消息，还是让IDE直接选择“是”（Yes）或“否”（No）的选项。默认值为“显示消息”。</li>
+<li><b>Automatic response to group selected warning</b> - If you select multiple layers in the layer editor and then try to draw or edit then you will be shown a message by default to inform you that it is not possible. 你可以在此处选择“是”来去掉这个消息并无法一起编辑多个图像，此时只有在选择单个图层的时候才可以正常编辑。默认选项为“显示消息”（Show message）。<br>
+<br></li>
 </ul>
 </div>
 <br>
@@ -121,19 +122,19 @@ if (window.name != "content")
 <br></p>
 
 <ul>
-<li><b>水平像素间隔（Horizontal Pixel Spacing）</b> - 该值设置图像编辑器网格的水平线间距。默认值为1像素。<br>
+<li><b>Grid horizontal spacing (px)</b> - This value sets the spacing for the horizontal lines of the image grid. 默认值为1像素。<br>
 <br></li>
 
-<li><b>垂直像素间隔（Vertical Pixel Spacing）</b> - 该值设置图像编辑器网格的垂直线间距。默认值为1像素。<br>
+<li><b>Grid vertical spacing (px)</b> - This value sets the spacing for the vertical lines of the image grid. 默认值为1像素。<br>
 <br></li>
 
-<li><b>显示网格（Display Grid）</b> - 勾选此项则图像编辑器会自动带上网格地打开图像。默认为关<br>
+<li><b>显示网格（Display Grid）</b> - 勾选此项则图像编辑器会自动带上网格地打开图像。默认为关。<br>
 <br></li>
 
-<li><b>吸附到网格（Snap To Grid）</b> - 如果勾选此项，图像编辑器就会自动地将某些工具吸附到网格上。默认为关<br>
+<li><b>吸附到网格（Snap To Grid）</b> - 如果勾选此项，图像编辑器就会自动地将某些工具吸附到网格上。默认为关。<br>
 <br></li>
 
-<li><b>网格线颜色（Line Colour）</b> - 在此处你可以设置图像网格的颜色（包括透明度值）。默认值为<tt>#000000FF</tt>.</li>
+<li><b>Grid line Colour</b> - Here you can set the colour (including alpha value) for the image grid. 默认值为<tt>#000000FF</tt>.</li>
 </ul>
 </div>
 <br>
@@ -150,19 +151,19 @@ src="images/prefs_arctool_icon.png">那么你可以在这里设置用于绘制�
 <br></p>
 
 <ul>
-<li><b>节点颜色（Colour of nodes）</b> - 设置样条/弧线上各个路径节点的颜色。默认值为（RGBA颜色） <tt>#FF0000FF</tt>.<br>
+<li><b>Anchor point colour</b> - Set the colour for the different anchor points on the spline/arc. 默认值为（RGBA颜色） <tt>#FF0000FF</tt>。<br>
 <br></li>
 
-<li><b>控制点颜色（Colour of control points）</b> - 设置一个样条曲线上的“手柄调控点”颜色。默认值为（RGBA颜色） <tt>#FF0000FF</tt>.<br>
+<li><b>Control point colour</b> - Set the colour for each of the control point "handles" on an anchor point. 默认值为（RGBA颜色） <tt>#FF0000FF</tt>。<br>
 <br></li>
 
-<li><b>控制线颜色（Colour of control lines）</b> - 设置控制点与节点的连接线颜色。默认值为（RGBA颜色） <tt>#00FFFFFF</tt>.<br>
+<li><b>Tangent line colour</b> - Set the colour for the lines linking the control points to the anchors. 默认值为（RGBA颜色） <tt>#00FFFFFF</tt>.<br>
 <br></li>
 
-<li><b>选中的节点颜色（Colour of selected nodes）</b> - 设置样条/弧线上所有被选中的节点的颜色。默认值为（RGBA颜色） <tt>#00FF00FF</tt>.<br>
+<li><b>Selected point colour</b> - Set the colour to be used for any selected anchor points on the spline/arc. 默认值为（RGBA颜色） <tt>#00FF00FF</tt>.<br>
 <br></li>
 
-<li><b>点大小（Size of points）</b> - 设置各个节点与控制点的大小。默认值为10像素。</li>
+<li><b>Point size</b> - Set the size of the different anchor points and control points to be used. 默认值为10像素。</li>
 </ul>
 </div>
 <br></blockquote>
@@ -181,7 +182,7 @@ src="images/prefs_arctool_icon.png">那么你可以在这里设置用于绘制�
 </div>
 </div>
 
-<h5>© Copyright YoYo Games Ltd. 2016 All Rights Reserved</h5>
+<h5>© Copyright YoYo Games Ltd. 2017 All Rights Reserved</h5>
 <script type="text/javascript">
    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)   })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');   ga('create', 'UA-2711665-14', 'auto');   ga('send', 'pageview'); 
 </script>

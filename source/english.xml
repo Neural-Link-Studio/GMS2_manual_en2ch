@@ -9,9 +9,9 @@
   <AllowPNG/>
  </OfficeDocumentSettings>
  <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
-  <WindowHeight>8025</WindowHeight>
+  <WindowHeight>9510</WindowHeight>
   <WindowWidth>19560</WindowWidth>
-  <WindowTopX>0</WindowTopX>
+  <WindowTopX>930</WindowTopX>
   <WindowTopY>0</WindowTopY>
   <ProtectStructure>False</ProtectStructure>
   <ProtectWindows>False</ProtectWindows>
@@ -28,11 +28,15 @@
   <Style ss:ID="s62">
    <NumberFormat ss:Format="Short Time"/>
   </Style>
+  <Style ss:ID="s63">
+   <Font ss:FontName="等线" x:CharSet="134" ss:Size="11" ss:Color="#000000"/>
+  </Style>
  </Styles>
  <Worksheet ss:Name="english">
-  <Table ss:ExpandedColumnCount="1" ss:ExpandedRowCount="4029" x:FullColumns="1" x:FullRows="1" ss:DefaultColumnWidth="54" ss:DefaultRowHeight="14.25">
+  <Table ss:ExpandedColumnCount="1" ss:ExpandedRowCount="4190" x:FullColumns="1" x:FullRows="1" ss:StyleID="s63" ss:DefaultColumnWidth="54" ss:DefaultRowHeight="14.25">
+   <Column/>
    <Row ss:AutoFitHeight="0">
-    <Cell><Data ss:Type="String">English</Data></Cell>
+    <Cell><Data ss:Type="String">Translation</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="Number">0</Data></Cell>
@@ -51,6 +55,18 @@
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">GameMaker Studio 2</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">在资源管理器中打开</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">在资源管理器中打开项目</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">在Finder中显示</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">在 Finder中显示项目</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">登录</Data></Cell>
@@ -255,6 +271,9 @@
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">转到物体</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">添加/打开事件</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">编译错误</Data></Cell>
@@ -851,7 +870,7 @@
     <Cell><Data ss:Type="String">Home键</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell><Data ss:Type="String">插入（Insert）</Data></Cell>
+    <Cell><Data ss:Type="String">插入键（Insert）</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">小键盘</Data></Cell>
@@ -1019,13 +1038,13 @@
     <Cell><Data ss:Type="String">右键按住</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell><Data ss:Type="String">右键单击</Data></Cell>
+    <Cell><Data ss:Type="String">右键按下</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell><Data ss:Type="String">右键释放</Data></Cell>
+    <Cell><Data ss:Type="String">右键放开</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell><Data ss:Type="String">其它</Data></Cell>
+    <Cell><Data ss:Type="String">其他</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">动画结束</Data></Cell>
@@ -1049,7 +1068,7 @@
     <Cell><Data ss:Type="String">接触边界</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell><Data ss:Type="String">房间外面</Data></Cell>
+    <Cell><Data ss:Type="String">离开房间</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">房间结束事件</Data></Cell>
@@ -1076,7 +1095,7 @@
     <Cell><Data ss:Type="String">接触边界</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell><Data ss:Type="String">视野之外</Data></Cell>
+    <Cell><Data ss:Type="String">离开视野</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">步事件</Data></Cell>
@@ -1147,7 +1166,7 @@
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">导入资源中...</Data></Cell>
    </Row>
-   <Row ss:Index="374" ss:AutoFitHeight="0">
+   <Row ss:Index="379" ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">增加的资源：</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
@@ -1190,7 +1209,7 @@
     <Cell><Data ss:Type="String">导入项目</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell><Data ss:Type="String">新的项目</Data></Cell>
+    <Cell><Data ss:Type="String">新建项目</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">打开项目</Data></Cell>
@@ -1241,7 +1260,7 @@
     <Cell><Data ss:Type="String">选择字体</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell><Data ss:Type="String">或者</Data></Cell>
+    <Cell><Data ss:Type="String">或</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">开</Data></Cell>
@@ -1341,6 +1360,12 @@
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">直到</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">无</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">一切</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">按钮</Data></Cell>
@@ -1664,6 +1689,9 @@
     <Cell><Data ss:Type="String">GameMaker 社区</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Mac Closed beta forums</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">必需的SDK</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
@@ -1694,7 +1722,7 @@
     <Cell><Data ss:Type="String">许可证</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell><Data ss:Type="String">在资源管理器中打开项目</Data></Cell>
+    <Cell><Data ss:Type="String">${OpenProjectInExplorer}</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">市场</Data></Cell>
@@ -1724,16 +1752,16 @@
     <Cell><Data ss:Type="String">起始页</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell><Data ss:Type="String">新的项目 (CTRL + N)</Data></Cell>
+    <Cell><Data ss:Type="String">新项目 (${show_new_projects_page})</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell><Data ss:Type="String">打开项目 (CTRL + O)</Data></Cell>
+    <Cell><Data ss:Type="String">打开项目 (${load_project_dialog})</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell><Data ss:Type="String">保存项目 (CTRL + S)</Data></Cell>
+    <Cell><Data ss:Type="String">保存项目 (${menu_save_project_incremental})</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell><Data ss:Type="String">创建可执行文件 (CTRL + F8)</Data></Cell>
+    <Cell><Data ss:Type="String">创建可执行文件 (${package_program})</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">调试 (F6)</Data></Cell>
@@ -1745,7 +1773,7 @@
     <Cell><Data ss:Type="String">停止</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell><Data ss:Type="String">清理 (CTRL + F7)</Data></Cell>
+    <Cell><Data ss:Type="String">清理 (${clean_program})</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">游戏选项</Data></Cell>
@@ -1760,13 +1788,13 @@
     <Cell><Data ss:Type="String">通知</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell><Data ss:Type="String">放大 (CTRL +)</Data></Cell>
+    <Cell><Data ss:Type="String">放大 (${zoom_in_workspace})</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell><Data ss:Type="String">缩小 (CTRL -)</Data></Cell>
+    <Cell><Data ss:Type="String">缩小 (${zoom_out_workspace})</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell><Data ss:Type="String">复位 (CTRL + Enter)</Data></Cell>
+    <Cell><Data ss:Type="String">复位 (${reset_workspace_zoom})</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">折叠/展开停靠栏面板 (F12)</Data></Cell>
@@ -1835,6 +1863,12 @@
     <Cell><Data ss:Type="String">将所有帧裁剪到选区</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">自动裁切所有帧</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">帧逆序</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">剪切</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
@@ -1886,7 +1920,7 @@
     <Cell><Data ss:Type="String">取消</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell><Data ss:Type="String">滤镜</Data></Cell>
+    <Cell><Data ss:Type="String">效果</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">翻转</Data></Cell>
@@ -2102,6 +2136,9 @@
     <Cell><Data ss:Type="String">颜色替换工具</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">颜色删除工具</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">翻转笔刷工具</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
@@ -2150,7 +2187,7 @@
     <Cell><Data ss:Type="String">文本工具</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell><Data ss:Type="String">工具栏</Data></Cell>
+    <Cell><Data ss:Type="String">工具箱</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">动画</Data></Cell>
@@ -2204,10 +2241,13 @@
     <Cell><Data ss:Type="String">点击交换颜色 (按住Alt会同时替换透明度)</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">单击删除一个颜色</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">点击拖拽绘制一条直线(按住Shift为特殊角度)</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell><Data ss:Type="String">点击以替换选区(按住Ctrl添加到选区，按住Shift从选区减去)</Data></Cell>
+    <Cell><Data ss:Type="String">点击替换选区(Ctrl添加选区，Alt减去选区)</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">点击绘制(按住Shift绘制直线，按住Ctrl选取颜色)</Data></Cell>
@@ -2228,10 +2268,10 @@
     <Cell><Data ss:Type="String">点击拖拽以旋转当前画笔</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell><Data ss:Type="String">点击拖拽以替换选区(Ctrl添加到选区， Shift从选区减去)</Data></Cell>
+    <Cell><Data ss:Type="String">点击并拖拽替换选区(Ctrl添加到选区， Alt减去选区)</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell><Data ss:Type="String">点击拖拽以替换选区(Ctrl添加到选区， Shift从选区减去)</Data></Cell>
+    <Cell><Data ss:Type="String">点击并拖拽替换选区(Ctrl添加到选区， Alt减去选区)</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">点击插入文本</Data></Cell>
@@ -2279,7 +2319,7 @@
     <Cell><Data ss:Type="String">两者</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell><Data ss:Type="String">将颜色复制到精灵中：</Data></Cell>
+    <Cell><Data ss:Type="String">复制颜色到精灵中?：</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">从精灵中导入颜色：</Data></Cell>
@@ -2316,6 +2356,33 @@
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">无法删除图层 - 显示图像至少需要一个图层</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">左右颜色互换</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">灰阶</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">模糊</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">模糊类型：</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">水平</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">垂直</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">两者</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">方形</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">高斯</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">网格颜色：</Data></Cell>
@@ -2735,9 +2802,6 @@
     <Cell><Data ss:Type="String">保存用户名/密码</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell><Data ss:Type="String">更新可用！</Data></Cell>
-   </Row>
-   <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">用户名</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
@@ -2801,10 +2865,10 @@
     <Cell><Data ss:Type="String">移除</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell><Data ss:Type="String">证书文件尚未被设定 -\n请检查市场证书设定</Data></Cell>
+    <Cell><Data ss:Type="String">没有设置证书文件 - 请检查市场证书设置</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell><Data ss:Type="String">找不到证书文件'{0}' -\n请检查市场证书设置</Data></Cell>
+    <Cell><Data ss:Type="String">没有找到证书文件 '{0}' - 请检查市场证书设置</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">在创建和发布程序包之前，你将需要设置一个签名证书。</Data></Cell>
@@ -2930,16 +2994,16 @@
     <Cell><Data ss:Type="String">程序包类型：</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell><Data ss:Type="String">重要：上传时资源目录将被设定为“演示”</Data></Cell>
+    <Cell><Data ss:Type="String">重要：上传时物品类别将设置为“Demo”</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell><Data ss:Type="String">重要：上传时资源目录将被设定为“教程”</Data></Cell>
+    <Cell><Data ss:Type="String">重要：上传时物品类别将设置为“教程”</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell><Data ss:Type="String">重要：一旦你的物品创建了程序包的ID便不能更改。上传时资源类别将设置为“Demo”</Data></Cell>
+    <Cell><Data ss:Type="String">重要：一旦你的物品创建了程序包的ID便不能更改。上传时物品类别将设置为“Demo”</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell><Data ss:Type="String">重要：一旦你的物品创建了程序包的ID便不能更改。上传时资源类别将设置为“教程”</Data></Cell>
+    <Cell><Data ss:Type="String">重要：一旦你的物品创建了程序包的ID便不能更改。上传时物品类别将设置为“教程”</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">添加菜单栏项目</Data></Cell>
@@ -3146,9 +3210,6 @@
     <Cell><Data ss:Type="String">物理属性</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell><Data ss:Type="String">吸附：</Data></Cell>
-   </Row>
-   <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">物理碰撞盒形状</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
@@ -3203,7 +3264,7 @@
     <Cell><Data ss:Type="String">水平偏移：</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell><Data ss:Type="String">插入（Insert）</Data></Cell>
+    <Cell><Data ss:Type="String">插入键（Insert）</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">速度：</Data></Cell>
@@ -3239,7 +3300,10 @@
     <Cell><Data ss:Type="String">平滑曲线</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell><Data ss:Type="String">吸附：</Data></Cell>
+    <Cell><Data ss:Type="String">对齐 X</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">对齐 Y</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">速度</Data></Cell>
@@ -3374,7 +3438,7 @@
     <Cell><Data ss:Type="String">从外部打开发生错误</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell><Data ss:Type="String">在资源管理器中打开</Data></Cell>
+    <Cell><Data ss:Type="String">${OpenInExplorer}</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">打开全部</Data></Cell>
@@ -3384,6 +3448,9 @@
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">在混音器中打开</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">打开所有事件脚本</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">重命名</Data></Cell>
@@ -3734,7 +3801,7 @@
     <Cell><Data ss:Type="String">笔(D)</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell><Data ss:Type="String">旋转 (Z)</Data></Cell>
+    <Cell><Data ss:Type="String">旋转图块(Z)</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">填充(F)</Data></Cell>
@@ -3848,10 +3915,22 @@
     <Cell><Data ss:Type="String">创建可执行文件</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">显示远程工作者安装程序</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">运行</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">调试</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">错误</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">无法连接远程工作者。请检查你的安装，然后重试。</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">远程工作者留空。请重命名远程工作者，然后重试。</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">保存...</Data></Cell>
@@ -3899,7 +3978,7 @@
     <Cell><Data ss:Type="String">还原到这次修订</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell><Data ss:Type="String">源代码控制冲突</Data></Cell>
+    <Cell><Data ss:Type="String">源码控制冲突</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">使用他们的</Data></Cell>
@@ -3911,10 +3990,10 @@
     <Cell><Data ss:Type="String">选择合并工具</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell><Data ss:Type="String">合并工具路径</Data></Cell>
+    <Cell><Data ss:Type="String">工具的路径</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell><Data ss:Type="String">合并工具选项</Data></Cell>
+    <Cell><Data ss:Type="String">工具选项</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">使用我的</Data></Cell>
@@ -4043,10 +4122,13 @@
     <Cell><Data ss:Type="String">没有可以预览声音的音频设备</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">声音流不能在音频组中使用。你确定想要将它设置为流吗?？它会将音频组重置回默认。</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">混音器</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell><Data ss:Type="String">音频列音量</Data></Cell>
+    <Cell><Data ss:Type="String">列音量?</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">无标题组</Data></Cell>
@@ -4061,25 +4143,25 @@
     <Cell><Data ss:Type="String">尝试在'{0}'请求在结束后进一步的源代码控制动作被调用， 创建新的sourcecontrolaction（源控制）类或者使用WaitForPrevious在请求之间插入代码块。</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell><Data ss:Type="String">源控制动作'{0}'尚未成功完成</Data></Cell>
+    <Cell><Data ss:Type="String">源码控制动作'{0}'尚未成功完成</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell><Data ss:Type="String">源控制动作'{0}'在请求队列中有一个无效的动作</Data></Cell>
+    <Cell><Data ss:Type="String">源码控制动作'{0}'在请求队列中有一个无效的动作</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell><Data ss:Type="String">源控制(Git)无效凭据</Data></Cell>
+    <Cell><Data ss:Type="String">源码控制(Git)无效凭据</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell><Data ss:Type="String">项目库需要一个与标识设置(?)不同的用户名/密码。</Data></Cell>
+    <Cell><Data ss:Type="String">库 '{0}' 需要一个与身份设置偏好设置不同的用户名/密码。</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell><Data ss:Type="String">源代码管理(Git)中没有项目库</Data></Cell>
+    <Cell><Data ss:Type="String">源码管理(Git)中没有项目库</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">这个项目没有配置Git项目库。\n如果你想要要一个本地项目库，请尝试创建或者导入一个现有的库。</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell><Data ss:Type="String">源控制(Git)没有标识</Data></Cell>
+    <Cell><Data ss:Type="String">源码控制(Git)没有标识</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">首选项中没有设置Git标识。\n请设置一个以便提交能够正确的被归属！</Data></Cell>
@@ -4116,6 +4198,78 @@
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">这个项目里出现了冲突。如果这个项目关闭了或重新加载，可能会崩溃直至手动解决。你确定要继续吗？</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">授权类型</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">库网址</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">用户名</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">密码</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">公共密钥路径</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">私钥路径</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">用户名/密码</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">SSH 密钥</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">源码控制 (Git) 身份认证设置</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">差异工具（Diff Tool）路径</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">差异工具（Diff Tool）选项</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">添加新的用户/密码身份验证</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">添加新的 SSH 密钥对身份验证</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">源码控制 (Git) 身份验证失败</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">找不到 {0} 的有效的用户名/密码身份验证详细信息</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">找不到 {0} 的有效的SSH密码对身份验证详细信息</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">创建密钥对</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">源码控制 (Git) 无效的身份验证</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">库字段不能为空</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">用户名字段不能为空</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">密码字段不能为空</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">无法找到公共密钥 - 请确认路径是否有效</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">不能找到私钥 - 请确保路径有效</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">库的身份验证详细信息已经存在</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">完成。</Data></Cell>
@@ -4478,6 +4632,9 @@
     <Cell><Data ss:Type="String">自动裁剪</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">生成多级渐进纹理（mipmap）</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">图块集</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
@@ -4727,9 +4884,6 @@
     <Cell><Data ss:Type="String">时间线时刻：{0}</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell><Data ss:Type="String">更改描述</Data></Cell>
-   </Row>
-   <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">转换为 {0}</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
@@ -4797,6 +4951,9 @@
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">重试</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">你一次登录太多设备；请在我们网站上管理设置和会话。</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">无效会话(用户)</Data></Cell>
@@ -4901,7 +5058,7 @@
     <Cell><Data ss:Type="String">搜索结果</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell><Data ss:Type="String">源控制输出</Data></Cell>
+    <Cell><Data ss:Type="String">源码控制输出</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">断点</Data></Cell>
@@ -5003,6 +5160,12 @@
     <Cell><Data ss:Type="String">搜索...</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">查找...</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">替换...</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">方向输入</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
@@ -5024,10 +5187,10 @@
     <Cell><Data ss:Type="String">表达式</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell><Data ss:Type="String">枚举输入</Data></Cell>
+    <Cell><Data ss:Type="String">菜单输入</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell><Data ss:Type="String">菜单输入</Data></Cell>
+    <Cell><Data ss:Type="String">菜单中表达式输入</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">资源选择</Data></Cell>
@@ -5037,6 +5200,9 @@
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">布尔输入</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">布尔表达式输入</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">吸管</Data></Cell>
@@ -5291,7 +5457,7 @@
     <Cell><Data ss:Type="String">标题</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell><Data ss:Type="String">参数部件</Data></Cell>
+    <Cell><Data ss:Type="String">小工具</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">标签名</Data></Cell>
@@ -5378,7 +5544,7 @@
     <Cell><Data ss:Type="String">教程</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell><Data ss:Type="String">无法找到{0}</Data></Cell>
+    <Cell><Data ss:Type="String">找不到 {0}'</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">显示名称必须设置。</Data></Cell>
@@ -5391,6 +5557,9 @@
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">为用户添加文件，这些文件将被导入内含文件的&quot;TutorialResources&quot;文件夹?</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">有可用更新： {0}</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">获取Demo出错：{0}</Data></Cell>
@@ -5429,13 +5598,16 @@
     <Cell><Data ss:Type="String">DnD™ 预览</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell><Data ss:Type="String">游动到这</Data></Cell>
+    <Cell><Data ss:Type="String">平移</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">复制</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">剪切</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">显示帮助...</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">粘贴</Data></Cell>
@@ -5762,7 +5934,7 @@
     <Cell><Data ss:Type="String">Facebook 应用名称</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell><Data ss:Type="String">启用通知推送</Data></Cell>
+    <Cell><Data ss:Type="String">启用推送通知</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">GCM发件人Id</Data></Cell>
@@ -5984,13 +6156,13 @@
     <Cell><Data ss:Type="String">团队标识符</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell><Data ss:Type="String">取自您的 developer.apple.com/#/overview 网址的10位字母数字标识符</Data></Cell>
+    <Cell><Data ss:Type="String">取自您的developer.apple.com/#/overview 网址的10位字母数字标识符。如果为空则将继承平台选项中设置的值。</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">签名标识符</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell><Data ss:Type="String">在EI Capitan 的苹果应用商店（Mac App Store）外面发布你的游戏需要数字签名。请提供在这里使用的签名身份，这应该是一个开发者ID的应用身份，并且应该在你的Mac登录钥匙扣证书里?。签名身份很容易创建，它在\n Xcode-&gt;Preferences（首选项）-&gt;Accounts（帐户）-&gt;Team（团队）-&gt;View Details（查看详情）-&gt;Developer ID\nApplication（开发者ID应用）-&gt;Create（创建）。仅仅是开发团队的成员，签名身份也将会匹配，默认值应该也是满足的?。留空\n这个字段空白以跳过数字签名。</Data></Cell>
+    <Cell><Data ss:Type="String">在EI Capitan 的苹果应用商店（Mac App Store）外面发布你的游戏需要数字签名。请提供在这里使用的签名身份，这应该是一个开发者ID的应用身份，并且应该在你的Mac登录钥匙扣证书里?。签名身份很容易创建，它在\n Xcode-&gt;Preferences（首选项）-&gt;Accounts（帐户）-&gt;Team（团队）-&gt;View Details（查看详情）-&gt;Developer ID\nApplication（开发者ID应用）-&gt;Create（创建）。如果您是开发团队唯一的成员，那么签名身份也会匹配，因此默认值应该足够。留空\n这个字段空白以跳过数字签名。</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">版权</Data></Cell>
@@ -6035,7 +6207,7 @@
     <Cell><Data ss:Type="String">信息</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell><Data ss:Type="String">启用源代码控制</Data></Cell>
+    <Cell><Data ss:Type="String">启用源码控制</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">程序包内容 Id</Data></Cell>
@@ -6143,10 +6315,16 @@
     <Cell><Data ss:Type="String">无边框窗口</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell><Data ss:Type="String">在请求时创建纹理Create Textures on Demand</Data></Cell>
+    <Cell><Data ss:Type="String">在请求时创建纹理</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell><Data ss:Type="String">窗口睡眠延迟（毫秒）</Data></Cell>
+    <Cell><Data ss:Type="String">睡眠延迟（毫秒）</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">睡眠延迟（默认10毫秒）</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">睡眠延迟 （默认4毫秒）</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">交替同步方法</Data></Cell>
@@ -6185,7 +6363,7 @@
     <Cell><Data ss:Type="String">720x1280 启动画面</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell><Data ss:Type="String">768x1280 启动画面</Data></Cell>
+    <Cell><Data ss:Type="String">720x1280 启动画面</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">向前翻转的小型图片</Data></Cell>
@@ -6296,7 +6474,7 @@
     <Cell><Data ss:Type="String">宽的循环图片 8</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell><Data ss:Type="String">宽的循环图片9</Data></Cell>
+    <Cell><Data ss:Type="String">宽的循环图片 9</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">导入</Data></Cell>
@@ -6332,7 +6510,7 @@
     <Cell><Data ss:Type="String">新房间的默认宽度</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell><Data ss:Type="String">新房间的默认宽度</Data></Cell>
+    <Cell><Data ss:Type="String">新房间的默认高度</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">新房间的默认速度（帧每秒，FPS）</Data></Cell>
@@ -6503,31 +6681,31 @@
     <Cell><Data ss:Type="String">默认删除事件</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell><Data ss:Type="String">颜色色应用到路径</Data></Cell>
+    <Cell><Data ss:Type="String">用于路径的颜色</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell><Data ss:Type="String">颜色应用到了无效路径</Data></Cell>
+    <Cell><Data ss:Type="String">用于无效路径的颜色</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell><Data ss:Type="String">颜色应用到了无效锚点</Data></Cell>
+    <Cell><Data ss:Type="String">用于无效锚点的颜色</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell><Data ss:Type="String">颜色应用到高亮路径段</Data></Cell>
+    <Cell><Data ss:Type="String">用于高亮路径段的颜色</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell><Data ss:Type="String">颜色应用到锚点</Data></Cell>
+    <Cell><Data ss:Type="String">用于锚点的颜色</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell><Data ss:Type="String">颜色色应用到高亮锚点</Data></Cell>
+    <Cell><Data ss:Type="String">用于高亮锚点的颜色</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell><Data ss:Type="String">颜色应用到无效高亮锚点</Data></Cell>
+    <Cell><Data ss:Type="String">用于无效高亮锚点的有难色</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell><Data ss:Type="String">颜色应用到活动的锚点</Data></Cell>
+    <Cell><Data ss:Type="String">用于活动锚点的颜色</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell><Data ss:Type="String">颜色应用到活动的无效锚点</Data></Cell>
+    <Cell><Data ss:Type="String">用于无效活动锚点的颜色</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">路径段上插入一个点需要的精度（像素）</Data></Cell>
@@ -6581,13 +6759,13 @@
     <Cell><Data ss:Type="String">忽略拖拽资源到锁定或不可层的错误</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell><Data ss:Type="String">房间编辑器中浮动链的连接颜色?</Data></Cell>
+    <Cell><Data ss:Type="String">房间编辑器中浮动链的连接颜色</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell><Data ss:Type="String">链条开始透明淡出的像素距离?</Data></Cell>
+    <Cell><Data ss:Type="String">链条透明度开始淡出的像素距离</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell><Data ss:Type="String">链条透明度停止淡出的像素距离?</Data></Cell>
+    <Cell><Data ss:Type="String">链条透明度停止淡出的像素距离</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">在衰减停止距离的链条连杆透明度</Data></Cell>
@@ -6612,6 +6790,9 @@
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">立即打开新的时刻点开始编辑</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">关闭除此的所有</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">文本颜色</Data></Cell>
@@ -6704,10 +6885,10 @@
     <Cell><Data ss:Type="String">空白区文本样式</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell><Data ss:Type="String">保持选项卡</Data></Cell>
+    <Cell><Data ss:Type="String">保持tabs</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell><Data ss:Type="String">选项卡大小</Data></Cell>
+    <Cell><Data ss:Type="String">Tab大小</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">显示空白</Data></Cell>
@@ -6716,13 +6897,13 @@
     <Cell><Data ss:Type="String">显示行数</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell><Data ss:Type="String">显示选项卡数目</Data></Cell>
+    <Cell><Data ss:Type="String">显示tab线</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell><Data ss:Type="String">允许代码颜色</Data></Cell>
+    <Cell><Data ss:Type="String">允许颜色编码</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell><Data ss:Type="String">文档行限制 (&lt;=0 不限)</Data></Cell>
+    <Cell><Data ss:Type="String">文档行限制 (&lt;=0 表示不限)</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">在另起行保持缩进</Data></Cell>
@@ -6785,13 +6966,43 @@
     <Cell><Data ss:Type="String">用于提交的邮箱</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell><Data ss:Type="String">合并工具路径</Data></Cell>
+    <Cell><Data ss:Type="String">工具路径</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell><Data ss:Type="String">合并工具选项</Data></Cell>
+    <Cell><Data ss:Type="String">工具选项</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">记录详细日志</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">源码控制 (Git) 外部工具错误</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">合并工具路径无效</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">差异工具路径无效</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">自动启用源码控制</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">推送...</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">拉取...</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">签出...</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">还原文件...</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">还原更改...</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">克隆中...</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">延缓双击时间（毫秒）</Data></Cell>
@@ -6810,6 +7021,12 @@
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">滚动速度</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">文件监视频率（毫秒）</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">笔记本上的文件监视频率（毫秒）</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">启用 Steam</Data></Cell>
@@ -6852,6 +7069,12 @@
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">游戏 GUID</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">为单独的纹理页生成多级渐进纹理（mipmap）</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">工作者：</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">平台：</Data></Cell>
@@ -6977,13 +7200,13 @@
     <Cell><Data ss:Type="String">这将会丢失所有未应用的更改 - 你想要继续吗？</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell><Data ss:Type="String">工具栏</Data></Cell>
+    <Cell><Data ss:Type="String">工具箱</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">等价代码</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell><Data ss:Type="String">工具栏</Data></Cell>
+    <Cell><Data ss:Type="String">工具箱</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">最近使用</Data></Cell>
@@ -7037,7 +7260,7 @@
     <Cell><Data ss:Type="String">如果有一个浮动工具栏，新的工具栏应该折叠吗？</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell><Data ss:Type="String">默认情况下是否应该折叠概述？</Data></Cell>
+    <Cell><Data ss:Type="String">是否默认将该概述面板折叠?？</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">工具栏动作缩略图的最大尺寸</Data></Cell>
@@ -7088,7 +7311,7 @@
     <Cell><Data ss:Type="String">没有监测到语法错误！</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell><Data ss:Type="String">工程目录 '{0}'不在可用，在目录重新连接之前您可能无法保存进度</Data></Cell>
+    <Cell><Data ss:Type="String">项目目 '{0}' 不再可用，你将无法进度，直到目录重新连接。</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">项目目录不可用</Data></Cell>
@@ -7118,7 +7341,7 @@
     <Cell><Data ss:Type="String">项目目录被修改</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell><Data ss:Type="String">项目根目录 '{0}'检测到大量变动。您希望重新载入工程吗？</Data></Cell>
+    <Cell><Data ss:Type="String">基础项目目录 '{0}' 已经连接。可能有未被发现的更改，你想要重新加载项目吗？</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">项目根目录被修改</Data></Cell>
@@ -7139,7 +7362,7 @@
     <Cell><Data ss:Type="String">基础项目目录'{0}'中监测到更改。你想要重新加载项目，还保存呢？n\n警告：保存只会更新当前内存中的资源文件，因此可能不会恢复一些删除或编辑过的文件。</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell><Data ss:Type="String">项目根目录被修改</Data></Cell>
+    <Cell><Data ss:Type="String">项目目录被修改</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">主项目文件 '{0}' 已被修改。你想要重新加载项目，还保存呢？n\n警告：保存只会更新当前内存中的资源文件，因此可能不会恢复一些删除或编辑过的文件。</Data></Cell>
@@ -7151,7 +7374,7 @@
     <Cell><Data ss:Type="String">项目删除</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell><Data ss:Type="String">工程 '{0}' 已被删除。你的项目现在将被关闭。</Data></Cell>
+    <Cell><Data ss:Type="String">项目 '{0}' 已经删除。你的项目现在将被关闭。</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">文件名</Data></Cell>
@@ -7241,13 +7464,13 @@
     <Cell><Data ss:Type="String">安装APK程序包</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell><Data ss:Type="String">JDK 最大堆大小</Data></Cell>
+    <Cell><Data ss:Type="String">JDK 最大堆大小 (1GB以内?)</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">在Android平台构建时允许使用GB数量级的内存</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell><Data ss:Type="String">使用Mac上的ADB连接</Data></Cell>
+    <Cell><Data ss:Type="String">使用 Mac 作为 ADB 连接</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">Mac 上的 ADB 路径</Data></Cell>
@@ -7283,13 +7506,13 @@
     <Cell><Data ss:Type="String">配置问题</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell><Data ss:Type="String">路径下无法找到Android SDK。请确保它被正确设定。</Data></Cell>
+    <Cell><Data ss:Type="String">路径下无法找到Android SDK。请确认它被正确的设置。</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell><Data ss:Type="String">该路径下无法找到Android NDK。请确保它被正确设定。</Data></Cell>
+    <Cell><Data ss:Type="String">该路径下无法找到Android NDK。请确认它被正确的设置。</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell><Data ss:Type="String">路径下无法找到Java JDK。请确保它被正确设定。</Data></Cell>
+    <Cell><Data ss:Type="String">路径下无法找到Java JDK。请确认它被正确的设置。</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">在Android选项中没有指定架构</Data></Cell>
@@ -7310,7 +7533,16 @@
     <Cell><Data ss:Type="String">当使用 YYC 调试时警告</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">使用默认许可协议</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">使用默认 NSIS 安装脚本</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">/// @description 在这里插入描述\n// 你可以在此编辑器中写入代码</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">默认事件评论</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">是否默认在新的事件中显示默认帮助注释？</Data></Cell>
@@ -7355,6 +7587,12 @@
     <Cell><Data ss:Type="String">默认 DnD™ 转换为 GML</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">DnD™ 节点删除的默认值</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">确定要删除这个DnD™ 动作吗？</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">转换成GML</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
@@ -7391,7 +7629,7 @@
     <Cell><Data ss:Type="String">自身</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell><Data ss:Type="String">其它</Data></Cell>
+    <Cell><Data ss:Type="String">对方</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">所有</Data></Cell>
@@ -7430,7 +7668,16 @@
     <Cell><Data ss:Type="String">密码必须超过5个字符</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">安卓平台设置中JDK安装位置不正确</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">不能处理密钥库：可能已损坏或密码不正确。</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">别名必须超过5个字符</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">精灵纹理组 '{0}' 无效 - 使用默认纹理组代替</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">开启 Flurry 分析</Data></Cell>
@@ -7551,6 +7798,12 @@
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">创建 Arm 程序包</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">名称</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">主机名</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">增加新设备</Data></Cell>
@@ -7745,6 +7998,9 @@
     <Cell><Data ss:Type="String">已安装</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">安装失败</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">日期</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
@@ -7817,7 +8073,7 @@
     <Cell><Data ss:Type="String">无法保存更改至 {0} 因为它的网址（URL）为空</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell><Data ss:Type="String">成功更新运行库种子</Data></Cell>
+    <Cell><Data ss:Type="String">成功更新运行库下载源</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">无效项目</Data></Cell>
@@ -7925,7 +8181,7 @@
     <Cell><Data ss:Type="String">源图像</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell><Data ss:Type="String">当您选定一个精灵时会显示图块组的预览</Data></Cell>
+    <Cell><Data ss:Type="String">选择一个精灵后，图块集预览将出现在这里</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">选择精灵</Data></Cell>
@@ -7952,7 +8208,7 @@
     <Cell><Data ss:Type="String">一条工作链中两行的间隔量</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell><Data ss:Type="String">工作区节点链的连线颜色</Data></Cell>
+    <Cell><Data ss:Type="String">工作区链接的连接颜色?</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">大小</Data></Cell>
@@ -7971,6 +8227,9 @@
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">你已经选择了一个 {0} 而非{1}。你想要改成导入为{2}吗？</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">添加现有失败</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">图块</Data></Cell>
@@ -8033,6 +8292,9 @@
     <Cell><Data ss:Type="String">无法导入不兼容的资源： {0} （未知文件类型）</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">不能添加现有的 {0} 资源</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">Android设备</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
@@ -8042,7 +8304,7 @@
     <Cell><Data ss:Type="String">Android SDK 路径配置错误</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell><Data ss:Type="String">源控制 (Git) 拉取错误</Data></Cell>
+    <Cell><Data ss:Type="String">源码控制 (Git) 拉取错误</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">在拉取之前你需要提交更改。</Data></Cell>
@@ -8087,16 +8349,31 @@
     <Cell><Data ss:Type="String">{0} 属性</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">{0} 函数</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">{0} 宏</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">初始函数：</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">终结函数：</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell><Data ss:Type="String">函数 / 宏：</Data></Cell>
+    <Cell><Data ss:Type="String">函数：</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">代理文件：</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">宏</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">添加常量</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">删除宏</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">拷贝到：</Data></Cell>
@@ -8282,7 +8559,7 @@
     <Cell><Data ss:Type="String">工作区概述</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell><Data ss:Type="String">工作区</Data></Cell>
+    <Cell><Data ss:Type="String">工作区（Workspace）</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">活动窗口</Data></Cell>
@@ -8291,7 +8568,7 @@
     <Cell><Data ss:Type="String">活动选项卡</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell><Data ss:Type="String">Windows</Data></Cell>
+    <Cell><Data ss:Type="String">窗口</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">资源</Data></Cell>
@@ -8303,7 +8580,7 @@
     <Cell><Data ss:Type="String">添加 SDK</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell><Data ss:Type="String">新增来源?</Data></Cell>
+    <Cell><Data ss:Type="String">添加源</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">输入Mac上的框架路径</Data></Cell>
@@ -8438,13 +8715,19 @@
     <Cell><Data ss:Type="String">PS4 (PSSL)</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell><Data ss:Type="String">当双击精灵资源节点时打开图像编辑器。</Data></Cell>
+    <Cell><Data ss:Type="String">双击精灵资源打开图片编辑器</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">双击资源中的一个物体时打开物体的全部事件</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">使用紧凑的资源树 （重新打开资源树）</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">允许标签字体在100%以下缩放</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">允许标签字体缩放 100%以上</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">资源项目的大小︰</Data></Cell>
@@ -8462,7 +8745,7 @@
     <Cell><Data ss:Type="String">显示密码</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell><Data ss:Type="String">源控制 (Git) 创建</Data></Cell>
+    <Cell><Data ss:Type="String">源码控制 (Git) 创建</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">这次创建一个开放的（服务器）库并且将你的项目绑定到它上面</Data></Cell>
@@ -8501,7 +8784,7 @@
     <Cell><Data ss:Type="String">所选控制点：{0}</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell><Data ss:Type="String">({0}, {1}), </Data></Cell>
+    <Cell><Data ss:Type="String">({0}, {1}),</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">帧每秒(FPS)</Data></Cell>
@@ -8537,7 +8820,7 @@
     <Cell><Data ss:Type="String">请注意这可能已经破坏了你的项目，因为命令没有成功，而你选择了不重试。</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell><Data ss:Type="String">未找到服务器</Data></Cell>
+    <Cell><Data ss:Type="String">未找到服务器 '{0}'</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">所选目录必须为空</Data></Cell>
@@ -8546,7 +8829,7 @@
     <Cell><Data ss:Type="String">URL无效</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell><Data ss:Type="String">源控制 (Git) 克隆</Data></Cell>
+    <Cell><Data ss:Type="String">源码控制 (Git) 克隆</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">这不是一个公开库，不支持直接克隆。\n然而我们找到了它的源点(origin)，所以我们将从源点中克隆并推送到那里?。</Data></Cell>
@@ -8582,13 +8865,13 @@
     <Cell><Data ss:Type="String">拆分视图模式</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell><Data ss:Type="String">放大 (CTRL +)</Data></Cell>
+    <Cell><Data ss:Type="String">放大 (${room_area_zoom_in})</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell><Data ss:Type="String">缩小 (CTRL -)</Data></Cell>
+    <Cell><Data ss:Type="String">缩小 (${room_area_zoom_out})</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell><Data ss:Type="String">重置缩放 (CTRL + Enter)</Data></Cell>
+    <Cell><Data ss:Type="String">重置缩放 (${room_area_zoom_reset})</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">居中适配</Data></Cell>
@@ -8715,6 +8998,24 @@
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">检查一个变量是否满足条件。</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">如果分数...</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">检查一个实例的分数是否满足一个条件。</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">如果生命数...</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">检查一个实例的生命数是否满足一个条件。</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">如果键康值...</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">检查一个实例的健康值是否满足一个条件。</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">如果表达式...</Data></Cell>
@@ -9233,7 +9534,7 @@
     <Cell><Data ss:Type="String">获取实例中的得分。</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell><Data ss:Type="String">设置生命数(Lives)</Data></Cell>
+    <Cell><Data ss:Type="String">设置生命数</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">设置实例中的生命数。</Data></Cell>
@@ -9245,7 +9546,7 @@
     <Cell><Data ss:Type="String">获取实例的生命数。</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell><Data ss:Type="String">设置生命值（Health）</Data></Cell>
+    <Cell><Data ss:Type="String">设置生命值</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">设置实例的生命值变量。</Data></Cell>
@@ -9581,7 +9882,7 @@
     <Cell><Data ss:Type="String">设置主音量，所有其它音频的音量与它相关。</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell><Data ss:Type="String">获取主音量设置主音量</Data></Cell>
+    <Cell><Data ss:Type="String">获取主音量</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">获取主音量，所有其它的音频音量都与它相关。</Data></Cell>
@@ -10079,9 +10380,6 @@
     <Cell><Data ss:Type="String">时间轴</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell><Data ss:Type="String">开始时间轴</Data></Cell>
-   </Row>
-   <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">时刻</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
@@ -10142,7 +10440,7 @@
     <Cell><Data ss:Type="String">爆发</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell><Data ss:Type="String">流</Data></Cell>
+    <Cell><Data ss:Type="String">流发</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">何处</Data></Cell>
@@ -10580,6 +10878,24 @@
     <Cell><Data ss:Type="String">翻转</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">边界框左边Bounding Box Left</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">边界框顶部</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">边界框右边</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">边界框底部</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">精灵原点 X</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">精灵原点 Y</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">旋转</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
@@ -10943,6 +11259,12 @@
     <Cell><Data ss:Type="String">处理中...</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">构建中... {0}</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">精灵预览...</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">禁止源精灵导出</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
@@ -10985,7 +11307,7 @@
     <Cell><Data ss:Type="String">Spine: json 文件未发现： {0}</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell><Data ss:Type="String">画刷生成器页面切换选择或编辑模式（Ctrl+E）</Data></Cell>
+    <Cell><Data ss:Type="String">画笔生成器页面中选区和编辑模式间切换 (${room_editor_tools_keyboard_shortcut22})</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">复制层</Data></Cell>
@@ -11021,10 +11343,7 @@
     <Cell><Data ss:Type="String">坐好，放轻松，让我们向您介绍我们的一些酷炫的{0}“新特性”{1}</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell><Data ss:Type="String">{0}“面面俱到”{1}。无需踏破铁鞋即可得来全不费功夫。教程、市场、支持……还远不止这些。</Data></Cell>
-   </Row>
-   <Row ss:AutoFitHeight="0">
-    <Cell><Data ss:Type="String">{0}“面面俱到”{1}。无需踏破铁鞋即可得来全不费功夫。教程、市场、支持……还远不止这些。</Data></Cell>
+    <Cell><Data ss:Type="String">{0}“面面俱到”{1}。无需踏破铁鞋即可得来全不费功夫。教程、市场、支持……还远不止这些。教程、市场，帮助支持或更多</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">在启动时显示欢迎页面</Data></Cell>
@@ -11072,7 +11391,7 @@
     <Cell><Data ss:Type="String">创建新项目</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell><Data ss:Type="String">拖拽按钮（Drag and Drop）</Data></Cell>
+    <Cell><Data ss:Type="String">拖拽按钮</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">GameMaker 语言</Data></Cell>
@@ -11084,13 +11403,10 @@
     <Cell><Data ss:Type="String">继承项目</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell><Data ss:Type="String">查看当前及以前版本的版本说明</Data></Cell>
+    <Cell><Data ss:Type="String">查看此版本和之前版本的发行说明</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell><Data ss:Type="String">点击这里</Data></Cell>
-   </Row>
-   <Row ss:AutoFitHeight="0">
-    <Cell><Data ss:Type="String">最近项目</Data></Cell>
+    <Cell><Data ss:Type="String">最近项目（Recent Projects）</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">最近教程</Data></Cell>
@@ -11102,49 +11418,10 @@
     <Cell><Data ss:Type="String">版本信息</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell><Data ss:Type="String">未安装</Data></Cell>
-   </Row>
-   <Row ss:AutoFitHeight="0">
-    <Cell><Data ss:Type="String">可用</Data></Cell>
-   </Row>
-   <Row ss:AutoFitHeight="0">
-    <Cell><Data ss:Type="String">已安装</Data></Cell>
-   </Row>
-   <Row ss:AutoFitHeight="0">
-    <Cell><Data ss:Type="String">下载中</Data></Cell>
-   </Row>
-   <Row ss:AutoFitHeight="0">
-    <Cell><Data ss:Type="String">进行中</Data></Cell>
-   </Row>
-   <Row ss:AutoFitHeight="0">
-    <Cell><Data ss:Type="String">已完成</Data></Cell>
-   </Row>
-   <Row ss:AutoFitHeight="0">
-    <Cell><Data ss:Type="String">安装</Data></Cell>
-   </Row>
-   <Row ss:AutoFitHeight="0">
-    <Cell><Data ss:Type="String">下载中...</Data></Cell>
-   </Row>
-   <Row ss:AutoFitHeight="0">
-    <Cell><Data ss:Type="String">打开教程</Data></Cell>
-   </Row>
-   <Row ss:AutoFitHeight="0">
-    <Cell><Data ss:Type="String">打开演示工程</Data></Cell>
-   </Row>
-   <Row ss:AutoFitHeight="0">
-    <Cell><Data ss:Type="String">下载</Data></Cell>
-   </Row>
-   <Row ss:AutoFitHeight="0">
-    <Cell><Data ss:Type="String">市场中查看</Data></Cell>
-   </Row>
-   <Row ss:AutoFitHeight="0">
-    <Cell><Data ss:Type="String">卸载</Data></Cell>
-   </Row>
-   <Row ss:AutoFitHeight="0">
-    <Cell><Data ss:Type="String">返回</Data></Cell>
-   </Row>
-   <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">已拥有</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">筛选出已安装项目</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">官方</Data></Cell>
@@ -11153,13 +11430,40 @@
     <Cell><Data ss:Type="String">展开或折叠</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell><Data ss:Type="String">筛选出已安装项目</Data></Cell>
-   </Row>
-   <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">入门</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">探索</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">已拥有</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">已安装</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">下载中...</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">未完成</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">已完成</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">可用</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">市场上查看</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">下载</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">打开</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">删除本地文件</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">默认音频设备</Data></Cell>
@@ -11174,7 +11478,7 @@
     <Cell><Data ss:Type="String">打开</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell><Data ss:Type="String">按 CTRL+SHIFT+F 打开查找和替换窗口。</Data></Cell>
+    <Cell><Data ss:Type="String">按下 ${open_search_replace} 打开查找和替换窗口</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">源码控制输出将出现在这里。如果你打开找到源码控制，你可以在主选项中找到它。</Data></Cell>
@@ -11183,7 +11487,7 @@
     <Cell><Data ss:Type="String">源码控制输出将出现在这里，但当前你正在使用试用版。\n请升级到付费版本启用源码控制！\n访问 https://www.yoyogames.com/get2 查看我们的定价。</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell><Data ss:Type="String">增加图块大小将导致房间失去图块层数据，你确定要更改吗？\n\n为避免数据丢失请按取消，然后增加受影响的房间的大小?： {0}</Data></Cell>
+    <Cell><Data ss:Type="String">增加图块大小将导致房间失去图块层数据，你确定要更改吗？\n\n为避免数据丢失请按取消，并扩大受影响的房间的大小： {0}</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">设置绘制透明度</Data></Cell>
@@ -11294,7 +11598,7 @@
     <Cell><Data ss:Type="String">打开教程吗？</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell><Data ss:Type="String">检测到教程包</Data></Cell>
+    <Cell><Data ss:Type="String">教程包检测</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">导入市场扩展包而不是添加一个数据文件？</Data></Cell>
@@ -11321,13 +11625,13 @@
     <Cell><Data ss:Type="String">所有资源</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell><Data ss:Type="String">可用的更新 ({0})</Data></Cell>
+    <Cell><Data ss:Type="String">新版本 ({0})</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">访问作者页面。</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell><Data ss:Type="String">查看该资源的评论</Data></Cell>
+    <Cell><Data ss:Type="String">查看资源评论。</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">离线</Data></Cell>
@@ -11432,7 +11736,7 @@
     <Cell><Data ss:Type="String">房间编辑器所有锁定项选框边界颜色</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell><Data ss:Type="String">网格对齐 (CTRL+G)</Data></Cell>
+    <Cell><Data ss:Type="String">对齐网格 (${toggle_grid_snap})</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">的</Data></Cell>
@@ -11505,6 +11809,18 @@
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">开/关断点</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">禁用</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">启用</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">切换启用</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">(禁用)</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">删除所有的断点</Data></Cell>
@@ -11621,7 +11937,7 @@
     <Cell><Data ss:Type="String">设置函数名</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell><Data ss:Type="String">设置外部名</Data></Cell>
+    <Cell><Data ss:Type="String">设置扩展名</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">设置返回类型</Data></Cell>
@@ -11633,7 +11949,7 @@
     <Cell><Data ss:Type="String">GML函数可以支持可变数量参数</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell><Data ss:Type="String">设置常量名</Data></Cell>
+    <Cell><Data ss:Type="String">设置宏名称</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">设置宏值（常量）</Data></Cell>
@@ -11756,7 +12072,7 @@
     <Cell><Data ss:Type="String">IDE运行时间</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell><Data ss:Type="String">在线状态：</Data></Cell>
+    <Cell><Data ss:Type="String">在线状态</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">在线</Data></Cell>
@@ -11837,6 +12153,9 @@
     <Cell><Data ss:Type="String">弃用</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">不支持文件 '{0}' 。请参见编译错误窗口。</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">Web服务器端口不可用</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
@@ -11909,10 +12228,10 @@
     <Cell><Data ss:Type="String">没有选中的图块集。无法完成操作。</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell><Data ss:Type="String">{0}: 片元着色器</Data></Cell>
+    <Cell><Data ss:Type="String">{0} 片段着色器</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell><Data ss:Type="String">{0}: 顶点着色器</Data></Cell>
+    <Cell><Data ss:Type="String">{0} 顶点着色器</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">{0}</Data></Cell>
@@ -12056,7 +12375,7 @@
     <Cell><Data ss:Type="String">锁定图形</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell><Data ss:Type="String">没有在字体中找到所使用的符号(?)</Data></Cell>
+    <Cell><Data ss:Type="String">使用这个字体没有的字符 (?)</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">这个字符缺少一个或更多的符号，将会从其它字体替换。</Data></Cell>
@@ -12071,22 +12390,43 @@
     <Cell><Data ss:Type="String">全局</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell><Data ss:Type="String">点击</Data></Cell>
+    <Cell><Data ss:Type="String">点按</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell><Data ss:Type="String">双击</Data></Cell>
+    <Cell><Data ss:Type="String">双点按</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell><Data ss:Type="String">拖拽起点</Data></Cell>
+    <Cell><Data ss:Type="String">拖动开始</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell><Data ss:Type="String">拖拽</Data></Cell>
+    <Cell><Data ss:Type="String">拖动</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell><Data ss:Type="String">拖拽终点</Data></Cell>
+    <Cell><Data ss:Type="String">拖动结束</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell><Data ss:Type="String">划过</Data></Cell>
+    <Cell><Data ss:Type="String">轻扫</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">捏合开始</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">捏合放大</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">捏合缩小</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">捏合结束</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">旋转开始</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">旋转</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">旋转结束</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">全局点击</Data></Cell>
@@ -12107,13 +12447,160 @@
     <Cell><Data ss:Type="String">全局划过</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">全局捏合开始</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">全局捏合放大</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">全局捏合缩小</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">全局捏合结束</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">全局旋转开始</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">全局旋转</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">全局旋转结束</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">仅下载</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell><Data ss:Type="String">市场功能不久之后将在Steam上可用</Data></Cell>
+    <Cell><Data ss:Type="String">Studio 2 资产</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell><Data ss:Type="String">市场</Data></Cell>
+    <Cell><Data ss:Type="String">选择IDE使用的语言</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">启用消息通知</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">通知超时（毫秒）</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">链接到Amazon提交指南</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">添加工作者</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">你确定想要删除这个远程库吗？</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">删除远程库</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">你必须指定 VCVARS32.BAT 文件的完整路径</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">PARAM.SFO 编辑器在Mac上不可用。\n请在Windows系统中编辑并且复制到 {0}/options/ps4/sce_sys/PARAM.SFO</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">奖杯编辑器在Mac上不可用。\n请在Windows系统中编辑并且复制到 {0}/options/ps4/sce_sys/trophy/trophy00.trp</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">查找和替换</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">切换为替换</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">全词匹配</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">区分大小写</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">查找上一个</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">查找下一个</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">替换下一个</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">替换全部</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">抑制构建和运行（仅在macOS上创建Xcode项目）</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">macOS 安装路径</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">默认团队标识符</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Android SDK 位置</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Android NDK 位置</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Java JDK 位置</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Visual Studio 路径</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Visual Studio 路径</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Win UWP 工具文件夹</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">默认团队标识符</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">PS4 SDK 目录</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">PS4 工具目录</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Visual Studio 路径</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">XDK 目录</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Xbox One 工具目录</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Microsoft Xbox One 目录</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Visual Studio 路径</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">不安全路径</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">该项目位于不安全的位置：{0}\n请将其保存到新位置，避免工作损失。</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">开发者</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">隐藏 GameMaker Studio 2</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">隐藏其它</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">项目错误</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">没有房间 - 至少需要一个房间来运行</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">着色器 '{0}' 具有一个无效的类型?。</Data></Cell>
    </Row>
   </Table>
   <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
@@ -12133,6 +12620,7 @@
    <Panes>
     <Pane>
      <Number>3</Number>
+     <ActiveRow>4120</ActiveRow>
      <RangeSelection>C1</RangeSelection>
     </Pane>
    </Panes>

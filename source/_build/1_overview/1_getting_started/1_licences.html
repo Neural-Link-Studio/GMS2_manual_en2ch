@@ -283,7 +283,7 @@ for="a">试用版（Trial）</label> <input id="a" type="checkbox">
 <tr>
 <td>
 </td>
-<td>skeleton_get_imageindex</td>
+<td>skeleton_slot_data</td>
 <td>skeleton_animation_list</td>
 <td>skeleton_skin_list</td>
 </tr>
@@ -291,15 +291,14 @@ for="a">试用版（Trial）</label> <input id="a" type="checkbox">
 <tr>
 <td>
 </td>
-<td>skeleton_slot_data</td>
 <td>draw_skeleton</td>
 <td>draw_skeleton_time</td>
+<td>draw_skeleton_instance</td>
 </tr>
 
 <tr>
 <td>
 </td>
-<td>draw_skeleton_instance</td>
 <td>draw_skeleton_collision</td>
 <td>
 </td>
@@ -366,12 +365,15 @@ for="a">试用版（Trial）</label> <input id="a" type="checkbox">
 </tr>
 </table>
 </div></blockquote>
+
+<div class="note"><b>重要！</b> 如果你已经使用一个<i>GameMaker Studio 2</i>的试用版许可证，然后买了一个其它许可证中的一个（桌面版、移动版、UWP、网页版或者控制台），然后你<b>可能</b>需要登出IDE，接着重启<i>GameMaker Studio 2</i>之后再次登录以确保新的许可证正确应用（尽管这应该会自动生效）。你可以从<a href=
+"../2_quick_start/menus/file_menu.html">文件菜单</a>中登出。</div>
 </div>
 <br>
 <a name="desktop" id="desktop"></a> <label class="collapse" for=
 "b">桌面端</label> <input id="b" type="checkbox">
 <div class="index_list">
-<p>使用桌面版的<i>GameMaker Studio 2</i>将会移除所有试用版许可的限制（见上文），并且你可以在下列目标的桌面平台上编译工程：</p>
+<p>对于GMS2的<b>桌面版</b><i></i>，试用版的所有限制（如上）都被解除了，你可以编译到如下的桌面目标平台：</p>
 
 <blockquote>
 <ul>
@@ -379,14 +381,85 @@ for="a">试用版（Trial）</label> <input id="a" type="checkbox">
 
 <li>Mac OS</li>
 
-<li>Linux (Ubuntu)</li>
+<li>Ubuntu</li>
 </ul>
 </blockquote>
 
 <p>所有目标平台都有两个编译选项：一个是<b>VM</b>，它使用一个运行器来解释代码；另一个是<b>YYC</b>，是创建本机代码并编译可执行程序。请注意，YYC选项需要额外安装。更多信息请参阅章节 <a href=
-"5_required_sdks.html">Required SDKs</a>或在<a href=
-"http://help.yoyogames.com/hc/en-us/sections/207157668">桌面目标平台</a>的技术支持部分。</p>
-</div></blockquote>
+"5_required_sdks.html">Required SDKs</a>或在<a href="http://help.yoyogames.com/hc/en-us/sections/207157668"
+target="_blank">桌面目标平台</a>的技术支持部分。</p>
+</div>
+<br>
+<a name="web" id="web"></a> <label class="collapse" for=
+"c">Web（网页端）</label> <input id="c" type="checkbox">
+<div class="index_list">
+<p>对于GMS2的 <b>网页版本</b><i></i>，所用试用版的限制将会解除（如上），你可以编译到<b>HTML5</b>目标平台。游戏使用 JavaScript 编译。你可以从YoYo游戏知识库找到更多的信息：<a href=
+"https://help.yoyogames.com/hc/en-us/articles/115000992307" target=
+"_blank">Web（HTML5）设置</a>。</p>
+</div>
+<br>
+<a name="mobile" id="mobile"></a> <label class="collapse" for=
+"d">Mobile（移动端）</label> <input id="d" type="checkbox">
+<div class="index_list">
+<p>对于GMS2的<b>移动端</b>版本<i></i>，所有试用版的限制都将解除（如上），你可以编译项目到下面的目标平台：</p>
+
+<blockquote>
+<ul>
+<li>Android</li>
+
+<li>iOS</li>
+</ul>
+</blockquote>
+
+<p>所有目标平台都有两个编译选项：一个是<b>VM</b>，它使用一个运行器来解释代码；另一个是<b>YYC</b>，是创建本机代码并编译可执行程序。请注意，YYC选项需要额外安装。设置上的更多信息请查看<a href=
+"5_required_sdks.html">所需SDK</a>部分，或者<a href="https://help.yoyogames.com/hc/en-us/sections/115000300567"
+target="_blank">移动平台</a>的知识库部分。</p>
+</div>
+<br>
+<a name="uwp" id="uwp"></a> <label class="collapse" for=
+"e">UWP</label> <input id="e" type="checkbox">
+<div class="index_list">
+<p>对于GMS2 的<b>UWP</b>版本<i></i>，所有试用版的限制（如上）将被解除，你可以将项目编译为UWP兼容的可执行文件。可以将这些可执行文件配置在三个UWP平台之一运行：</p>
+
+<blockquote>
+<ul>
+<li>Windows 10 桌面版</li>
+
+<li>Windows 10 移动版</li>
+
+<li>Xbox One</li>
+</ul>
+</blockquote>
+
+<p>UWP 平台带有两个编译选项，一个是 <b>VM（虚拟机）</b> ，它使用一个运行器来解释代码，另一个是 <b>YYC</b>（YoYo 编译器） ，创建本机代码并编译可执行程序。请注意，YYC选项需要额外安装。设置上的更多信息查看 <a href="5_required_sdks.html">所需SDK </a>，或者<a href=
+"https://help.yoyogames.com/hc/en-us/sections/115000309028" target=
+"_blank">UWP 平台</a>的知识库部分。</p>
+</div>
+<br>
+<a name="console" id="console"></a> <label class="collapse" for=
+"f">控制台</label> <input id="f" type="checkbox">
+<div class="index_list">
+<p>对于GMS2的 <b>控制台</b> 版本，<i></i>所有试用版的限制（如上）都将解除，你可以为以下目标平台编译项目：</p>
+
+<blockquote>
+<ul>
+<li>Xbox One</li>
+
+<li>PlayStation 4</li>
+</ul>
+</blockquote>
+
+<p>每个控制台目标平台都有两个编译选项，一个是使用运行器和解释代码的<b>VM（虚拟机）</b>，另一个是创建本机代码和编译可执行文件的<b>YYC</b>（YoYo编译器）。请注意，YYC选项需要额外安装。有关设置的详细信息，请参阅<a href="5_required_sdks.html">所需 SDK</a>部分或者<a href=
+"https://help.yoyogames.com/hc/en-us/sections/115000309048" target=
+"_blank">控制台平台</a>的知识库。</p>
+</div>
+<a name="education" id="education"></a> <label class="collapse"
+for="h">教育</label> <input id="h" type="checkbox">
+<div class="index_list">
+<p><i>GameMaker Studio 2</i> 也可以使用于大学教育。有关这方面的更多信息，请通过<a href="https://www.yoyogames.com/education"
+target="_blank">YoYo 教育门词的</a>联系YoYo游戏。</p>
+</div>
+<br></blockquote>
 
 <p><br>
 </p>
@@ -402,7 +475,7 @@ for="a">试用版（Trial）</label> <input id="a" type="checkbox">
 </div>
 </div>
 
-<h5>© Copyright YoYo Games Ltd. 2016 All Rights Reserved</h5>
+<h5>© Copyright YoYo Games Ltd. 2017 All Rights Reserved</h5>
 <script type="text/javascript">
    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)   })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');   ga('create', 'UA-2711665-14', 'auto');   ga('send', 'pageview'); 
 </script>

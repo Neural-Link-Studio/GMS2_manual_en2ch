@@ -43,34 +43,50 @@ if (window.name != "content")
 <p><b>拖拽按钮</b>设置用于定义拖拽按钮脚本编辑器看起来是什么样子。下面列举了各种可用选项及每一个的描述。</p>
 
 <ul>
-<li><b>默认状态下工具箱的位置？（What is the default Toolbox location?）</b>：默认状态下DnD的工具箱（持有各种动作库）会出现在编辑器的右侧，但是你可以使用这个选项来让他出现在左侧。<br>
+<li><b>DnD™ toolbox default location</b>: By default the DnD™
+toolbox (where all the different action libraries are held) is
+placed on the right of the Editor, but you can use this option to
+have it default to the left.<br>
 <br></li>
 
-<li><b>概览图什么时候出现在节点的旁边？（When does the overview appear next to a node?）</b>：一个节点的“概览”是出现在某个动作工作区中某个动作旁边的一段简短的描述性文字，比如这个<b>销毁实例（Destroy Instance）</b>动作：你可以选择启用一直显示、启用它们在动作块折叠时候显示（默认）或者是禁止它们显示。<br>
+<li><b>DnD™ node overview visibility mode</b>: A node "overview" is
+the short descriptive text that appears beside certain actions in
+the Action Workspace, for example this <b>Destroy Instance</b>
+action: <img class="center" src=
+"images/draganddrop_destroyaction.png" alt=
+"拖拽按钮概览节点"> You can choose to enable these
+always, enable them only if the action is collapsed (the default
+setting), or disable them altogether.<br>
 <br></li>
 
-<li><b>转换拖拽按钮为GML时默认该消息（Default message for converting Drag and Drop to GML）</b>：当你酱拖拽按钮事件或脚本转换为GML代码时，默认地你会得到一个关于你要做什么并且询问你是否继续的警告消息。将该选项置为"是"（OK）就会不显示这条警告信息而直接进行变动。<br>
+<li><b>Automatic response to DnD™ conversion to GameMaker Language</b>: When you convert a Drag and Drop event or script into GML code, you will by default get a message warning you about what you are about to do and asking if you want to continue. 将该选项置为"是"（OK）就会不显示这条警告信息而直接进行变动。<br>
 <br></li>
 
-<li><b>工具箱中动作按钮的缩略图最大尺寸（Maximum size of toolbox Action thumbnails）</b>：在动作按钮工具箱的底部你会看到一个滑条来改变拖拽按钮的图标大小。这项设定将被用于定义允许的最大尺寸（默认为64像素）。<br>
+<li><b>Automatic response to DnD™ node deletion</b>: When you
+delete a Drag and Drop event node, you will by default get a
+message warning you about what you are about to do and asking if
+you want to continue. Setting this option to "OK" will simply okay
+the deletion without showing the message.<br>
 <br></li>
 
-<li><b>工具箱中动作按钮的缩略图最小尺寸（Minimum size of toolbox Action thumbnails）</b>：在动作按钮工具箱的底部你会看到一个滑条来改变拖拽按钮的图标大小。这项设定将被用于定义允许的最小尺寸（默认为16像素。）<br>
+<li><b>Maximum size for DnD™ toolbox action thumbnails</b>: At the bottom of the Action Toolbox you have a slider for changing the size of the Drag and Drop icons. 这项设定将被用于定义允许的最大尺寸（默认为64像素）。<br>
 <br></li>
 
-<li><b>工具箱中动作按钮缩略图的默认尺寸（Default size of toolbox Action thumbnails）</b>：这个设置用于定义工具箱中所有动作图标的默认大小。（默认为32像素）<br>
+<li><b>Minimum size for DnD™ toolbox action thumbnails</b>: At the bottom of the Action Toolbox you have a slider for changing the size of the Drag and Drop icons. 这项设定将被用于定义允许的最小尺寸（默认为16像素。）<br>
 <br></li>
 
-<li><b>最近使用动作的最大数量（Maximum amount of recently used actions）</b>：在动作工具箱的顶端有一个库，其持有你最近使用过的动作按钮。你可以使用这个选项来改变最近使用的动作的最大显示数量（默认为5）。<br>
+<li><b>Default size for DnD™ toolbox action thumbnails</b>: This
+setting will be used to define the default size for all action
+icons in the toolbox (default 32px).<br>
 <br></li>
 
-<li><b>按住鼠标到拖动节点所需的毫秒时间（Time in milliseconds to hold the mouse down to drag nodes）</b>：当你点击一个节点并拖拽时，你就会在动作代码中改变节点的位置。然而如果按住鼠标一段时间后再移动，你会移动工作区中节点的位置而不是代码的顺序。这个设定设置了在节点能够被移动之前需要等待鼠标按下的毫秒数（不重置）。默认值为350。<br>
+<li><b>Maximum number of recently used actions to display</b>: In the action toolbox there is a library at the top which holds the actions you have most recently used. 你可以使用这个选项来改变最近使用的动作的最大显示数量（默认为5）。<br>
 <br></li>
 
-<li><b>当你有一个浮动的工具箱时是否将其折叠？（Should new toolboxes collapse it you have a floating toolbox?）</b>：当你将一个工具箱“拉”至一个事件之外并成为一个浮动的窗口时，这个选项（默认为<i>开</i>）将会在任何新编辑器中折叠工具箱栏。关闭这个选项意味着所有的事件都会带有一个工具箱栏并无视浮动窗口。<br>
+<li><b>Mouse down time to start dragging nodes (ms)</b>: When you click on a node and drag it, you will be repositioning the node within the action code. 然而如果按住鼠标一段时间后再移动，你会移动工作区中节点的位置而不是代码的顺序。这个设定设置了在节点能够被移动之前需要等待鼠标按下的毫秒数（不重置）。默认值为350。<br>
 <br></li>
 
-<li><b>概览面板是否默认被折叠？（Should the overview panel be collapsed by default?）</b>：在这里你可以选择是否隐藏动作代码编辑器。默认该选项是禁用的，启用它将会移除编辑器左侧的纯文本动作链</li>
+<li><b>Hide DnD™ node overview panel</b>: Here you can choose to hide the overview panel of the Action Code Editor. 默认该选项是禁用的，启用它将会移除编辑器左侧的纯文本动作链</li>
 </ul>
 
 <p><br>
@@ -88,7 +104,7 @@ if (window.name != "content")
 </div>
 </div>
 
-<h5>© Copyright YoYo Games Ltd. 2016 All Rights Reserved</h5>
+<h5>© Copyright YoYo Games Ltd. 2017 All Rights Reserved</h5>
 <script type="text/javascript">
    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)   })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');   ga('create', 'UA-2711665-14', 'auto');   ga('send', 'pageview'); 
 </script>

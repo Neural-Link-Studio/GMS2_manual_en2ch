@@ -44,13 +44,7 @@ then you may have seen comments like this at the top of the
 function:  <img class="center" src=
 "images/javadoc_import_example.png" alt="JSDoc导入范例"></p>
 
-<p>The format for a typical script header would be to have the
-description of the function, the function name and then list the
-different arguments (parameters) that the function takes, making
-sure to start each line with a triple backslash "///" as that tells
-<i>GameMaker Studio 2</i> to parse comment as JSDoc. The comments
-themselves need to be given an identifier (preceded by "@") and
-content, and the available identifiers are as follows:</p>
+<p>The format for a typical script header would be to have the description of the function, the function name and then list the different arguments (parameters) that the function takes, making sure to start each line with a triple backslash "///" as that tells <i>GameMaker Studio 2</i> to parse comment as JSDoc. 这种注释本身需要一个标识符（以"@"打头）及其内容，其中可供使用的标识符如下所示：</p>
 
 <div class="compat">
 <table>
@@ -71,8 +65,7 @@ content, and the available identifiers are as follows:</p>
 </table>
 </div>
 
-<p>To get an idea of how this would work when writing your own
-scripts, let's take this basic example:</p>
+<p>为了了解其在你撰写自己脚本时候的工作机理，我们来看一下这个基本的例子：</p>
 
 <p class="code">// is_same_object(id, object)<br>
 if argument0.object_index == argument1<br>
@@ -81,18 +74,14 @@ if argument0.object_index == argument1<br>
 &nbsp;&nbsp;&nbsp;}<br>
 else return false;<br></p>
 
-<p>All this script does is check to see if an instance has the same
-object_index as a given object and would be called simply as:</p>
+<p>该脚本所做的事情无非就是检测实例是否具有和所给定object一致的object_index，并且可以简化调用为：</p>
 
 <p class="code">if is_same_object(id, obj_Player)<br>
 &nbsp;&nbsp;&nbsp;{<br>
 &nbsp;&nbsp;&nbsp;instance_destroy()<br>
 &nbsp;&nbsp;&nbsp;}<br></p>
 
-<p>However, writing that into the script editor wouldn't show you
-the arguments nor give you any help when using it, so we need to
-add in a description, a function name, and the arguments as JSDoc
-comments like this:</p>
+<p>然而，在脚本编辑器中写入这些东西既不会向你显示参数也不会给你关于它用法的任何信息，因此，我们需要按照JSDoc注释的格式加入一个描述、一个函数名、以及参数如下：</p>
 
 <p class="code">/// @description Compare an instance object index
 with that of another.<br>
@@ -107,27 +96,13 @@ if argument0.object_index == argument1<br>
 &nbsp;&nbsp;&nbsp;}<br>
 else return false;<br></p>
 
-<p>Now, when calling this script in code anywhere, you will get
-auto-complete and argument help etc...  <img class="center" src=
+<p>现在，在其他任意位置的代码中调用该脚本的时候，就会有自动补全以及参数提示等信息了。 <img class="center" src=
 "images/javadoc_example.png" alt="JSDoc 范例"></p>
 
-<p>In the image above, the top part shows the function in the
-auto-complete and the bottom part shows how the argument helper at
-the bottom works. It's important to note that when you use the
-<tt>@function</tt> identifier, then the script name that you give
-there will show in the IDE <i>just the same as the script name in
-the resource tree</i>. So, you can name the script one thing in the
-resource tree and name it as another using <tt>@function</tt> and
-the IDE will recognise <i>both</i> as alias of the same script
-resource, but only the <tt>@function</tt> one will have
-auto-complete, etc...</p>
+<p>在上图中，上方部分展示了函数的补全提示，而底部则展现了参数提示器在底部信息栏中如何运作。请务必注意，当你使用<tt>@function</tt>标识符的时候，在IDE中是显示<i>和资源树中一致的脚本名</i>。因此，你可以在资源树中把这个脚本命名成一个名字，而在<tt>@function</tt>中使用另一个名字，IDE会判别<i>两者</i>都是同一脚本资源的别名，但是只有<tt>@function</tt>所使用的名字具有自动补全等功能……</p>
 
-<p>Note that both the optional "type" and the obligatory
-"description" parts of <tt>@param</tt> are not displayed by default
-in the IDE code complete, and to see them you must activate the
-options in the <a href=
-"../1_getting_started/preferences/prefs_languages.html">GML
-Preferences</a>.</p>
+<p>注意，在<tt>@param</tt>中无论是可写可不写的"type"还是还是必须写的"description"，在IDE的代码补全当中默认是都不显示的，如果想查看它们你必须在<a href=
+"../1_getting_started/preferences/prefs_languages.html">GML 偏好设置(GML Preference)</a>中激活相应选项。</p>
 
 <p><br>
 </p>
