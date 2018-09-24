@@ -10,7 +10,7 @@ image: Ubuntu1804
 
 environment:
   CODING_TOKEN:
-    secure: MnYloU4sOET9OWZg4MjYyJCFbEY5C6tN/ltAAcJEKU6krCNDACheYm4QThCKKBWo
+    secure: TszWxK+JfsR5jkuYlc8a/t+XTudCgQpgii4st7B7sFNh8TTxRv/OCuXcRuCNUa7v
 
 build_script:
 - sh: >-
