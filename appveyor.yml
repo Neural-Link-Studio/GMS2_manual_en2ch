@@ -9,8 +9,6 @@ branches:
 image: Ubuntu1804
 
 environment:
-  CODING_REPO: git.coding.net/deciia/GMS2_help.git
-  
   CODING_TOKEN:
     secure: MnYloU4sOET9OWZg4MjYyJCFbEY5C6tN/ltAAcJEKU6krCNDACheYm4QThCKKBWo
 
@@ -29,4 +27,4 @@ build_script:
     
     git commit -m "Sync By AppVeyor"
     
-    git push --force --quiet "https://deciia:%CODING_TOKEN%@%CODING_REPO%" coding-pages:coding-pages
+    git push --force --quiet "https://deciia:%CODING_TOKEN%@git.coding.net/deciia/GMS2_help.git" coding-pages:coding-pages
